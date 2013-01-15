@@ -1,0 +1,35 @@
+#!/bin/bash
+LOGDIR=/var/log/minerva
+
+TYPE=`echo $1 | tr '[a-z]' '[A-Z]'`
+shift
+
+if [ "$TYPE" == "INIT" ]; then
+	mkdir $LOGDIR
+	chmod ug+rwx $LOGDIR
+	exit 0
+fi
+
+if [ "$1" == "" ]; then
+	echo "Usage: minlog <init|cmd|sys|status> <command_name> [message]"
+	exit 0
+fi
+
+COMMAND=`basename $1`
+shift
+
+case "$TYPE" in
+	CMD)
+  		LOGFILE=$LOGDIR/bearskin/$COMMAND
+		;;
+	*)
+  		LOGFILE=$LOGDIR/minerva.$TYPE
+		;;
+esac
+
+echo -n `date +"%F %H:%M "` >>$LOGFILE
+echo -n " "`whoami`" " >>$LOGFILE
+echo -n "$TYPE $COMMAND " >>$LOGFILE
+echo -n $* >>$LOGFILE
+echo  >>$LOGFILE
+

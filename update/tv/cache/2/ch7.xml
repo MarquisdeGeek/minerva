@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Sun Jul  8 07:19:49 2012 -->
+<channel id="five" source="XMLTV" date="13/07/2012">
+  <programme>
+<subtitle>Time for a Story</subtitle>
+<desc>Railway adventures. The Fat Controller announces that the library is holding a story time for the children and he needs an engine to deliver the storybooks.</desc>
+<title>Thomas and Friends</title>
+<end>0610</end>
+<start>0600</start>
+  </programme>
+  <programme>
+<subtitle>Sir Spotty Wot</subtitle>
+<desc>In this episode DottyWot has her heart set on becoming a knight, and sets out to find herself a dragon at the zoo.</desc>
+<title>The WotWots</title>
+<end>0620</end>
+<start>0610</start>
+  </programme>
+  <programme>
+<desc>Animation. When Frankie breaks down on the way to a fire, he blames his age. But his pride is restored in time for him to enjoy his 15th anniversary party.</desc>
+<title>City of Friends</title>
+<end>0635</end>
+<start>0620</start>
+  </programme>
+  <programme>
+<subtitle>Inventor Bello</subtitle>
+<desc>Animated adventures. Bello meddles with Mina's latest creation, a giant robot for changing light bulbs.</desc>
+<title>Jelly Jamm</title>
+<end>0645</end>
+<start>0635</start>
+  </programme>
+  <programme>
+<subtitle>Sports Day</subtitle>
+<desc>Animated series about a lovable little pig. It is Sports Day at Peppa's playgroup and lots of special events are due to take place.</desc>
+<title>Peppa Pig</title>
+<end>0650</end>
+<start>0645</start>
+  </programme>
+  <programme>
+<subtitle>Hebaa's Wool</subtitle>
+<desc>Farmer can't persuade Hebaa to let her have some of his precious wool for her mattress. Leonard might be more successful, but his mattress wants stuffing too.</desc>
+<title>Castle Farm</title>
+<end>0700</end>
+<start>0650</start>
+  </programme>
+  <programme>
+<subtitle>I Want to Sing</subtitle>
+<desc>Regal larks. There is a singing competition in the Kingdom and everyone is entering. Little Princess is determined to win, but which song will she sing?</desc>
+<title>Little Princess</title>
+<end>0710</end>
+<start>0700</start>
+  </programme>
+  <programme>
+<desc>Impish animation. Holly accidentally breaks her mum's special new teapot. Can Ben help her repair it?</desc>
+<title>Ben and Holly's Little Kingdom</title>
+<end>0720</end>
+<start>0710</start>
+  </programme>
+  <programme>
+<subtitle>Hats</subtitle>
+<desc>Mr Fussy visits Miss Magic's shop in search of the perfect headgear. Mr Stubborn goes for a dangerous drive in an oversized bonnet.</desc>
+<title>Mr Men</title>
+<end>0730</end>
+<start>0720</start>
+  </programme>
+  <programme>
+<desc>A look ahead to today's children's programmes, including competitions and dedications.</desc>
+<title>Milkshake</title>
+<end>0735</end>
+<start>0730</start>
+  </programme>
+  <programme>
+<subtitle>Thomas and the Rubbish Train</subtitle>
+<desc>Train fun. Thomas is working with Whiff the Rubbish Engine today, but how can he freshen up later to take the Duchess of Boxford to tea?</desc>
+<title>Thomas and Friends</title>
+<end>0745</end>
+<start>0735</start>
+  </programme>
+  <programme>
+<desc>Hold on to Your Hat Noddy. Join Noddy and his friends in Toytown as Noddy is trying to plan a surprise party for Big Ears, who isn't very happy, but the weather is just too windy.</desc>
+<title>Make Way For Noddy</title>
+<end>0800</end>
+<start>0745</start>
+  </programme>
+  <programme>
+<desc>Garden fun. Stingo dispatches Slugsy to steal Fifi's jelly. Slugsy starts to play with the twins and forgets what he set out to do, much to Stingo's wrath!</desc>
+<title>Fifi and The Flowertots</title>
+<end>0815</end>
+<start>0800</start>
+  </programme>
+  <programme>
+<subtitle>Lunch</subtitle>
+<desc>Pig tales. When the family goes to Granny and Grandpa Pig's house for dinner, George is reluctant to eat his salad.</desc>
+<title>Peppa Pig</title>
+<end>0825</end>
+<start>0815</start>
+  </programme>
+  <programme>
+<subtitle>Camping</subtitle>
+<desc>Animated series about a lovable little pig. Peppa and family go camping, but soon realise that their tent is too small for everyone to fit in.</desc>
+<title>Peppa Pig</title>
+<end>0830</end>
+<start>0825</start>
+  </programme>
+  <programme>
+<subtitle>Roary and Nigel</subtitle>
+<desc>Peter Kay &amp; Sir Stirling Moss provide the voices in another episode of the animated series. Roary brings Nigel the crab back from the beach. But things go wrong when Nigel disappears.</desc>
+<title>Roary The Racing Car</title>
+<end>0845</end>
+<start>0830</start>
+  </programme>
+  <programme>
+<subtitle>World Tour</subtitle>
+<desc>Animation. Camembert tells the Bananas about her dream to travel to the pyramids and ride on a camel. B1 and B2 find a way to bring the pyramids to Cuddlestown.</desc>
+<title>Bananas In Pyjamas</title>
+<end>0900</end>
+<start>0845</start>
+  </programme>
+  <programme>
+<subtitle>I'm Bouncing</subtitle>
+<desc>Prehistoric animation. Igam Ogam finds a space hopper-like vegetable and goes bouncing crazy!</desc>
+<title>Igam Ogam</title>
+<end>0915</end>
+<start>0900</start>
+  </programme>
+  <programme>
+<desc>Lively magazine show in which Matthew Wright and guests discuss the topical issues of the day.</desc>
+<title>The Wright Stuff</title>
+<end>1110</end>
+<start>0915</start>
+  </programme>
+  <programme>
+<desc>Documentary series. The London Piccadilly lights need moving, a biomass trailer goes missing and the firm's first-ever trucking festival needs a last-minute change of venue.</desc>
+<title>Eddie Stobart: Trucks &amp; Trailers</title>
+<end>1210</end>
+<start>1110</start>
+  </programme>
+  <programme>
+<desc>National and International news update.</desc>
+<title>5 News at Lunchtime</title>
+<end>1215</end>
+<start>1210</start>
+  </programme>
+  <programme>
+<desc>Coverage of all the latest goings-on from inside the Big Brother house.</desc>
+<title>Big Brother</title>
+<end>1315</end>
+<start>1215</start>
+  </programme>
+  <programme>
+<desc>After a drugs binge, Liam wakes up with a cut on his head. When Leah notes that he is bleeding, she rushes him to hospital where they learn Liam had a cocaine-induced seizure.</desc>
+<title>Home and Away</title>
+<end>1345</end>
+<start>1315</start>
+  </programme>
+  <programme>
+<desc>Zoe presents Paul with a way to improve his image by making his once-promised donation to Erinsborough High. Paul eventually decides to swallow his pride and agrees to do it.</desc>
+<title>Neighbours</title>
+<end>1415</end>
+<start>1345</start>
+  </programme>
+  <programme>
+<subtitle>Flame Red</subtitle>
+<desc>Crime drama. The agents are on the trail of an arsonist who deliberately killed a man in a rural community (9/23).</desc>
+<title>The Mentalist</title>
+<end>1515</end>
+<start>1415</start>
+  </programme>
+  <programme>
+<desc>Comedy starring Poppy Montgomery and Adam Kaufman. An overweight editor with a double life as an advice columnist makes a pact with her friends to lose weight. (2010)</desc>
+<type>Film</type>
+<title>Lying To Be Perfect</title>
+<end>1700</end>
+<start>1515</start>
+  </programme>
+  <programme>
+<desc>National and International news update.</desc>
+<title>5 News at 5</title>
+<end>1730</end>
+<start>1700</start>
+  </programme>
+  <programme>
+<desc>Zoe presents Paul with a way to improve his image by making his once-promised donation to Erinsborough High. Paul eventually decides to swallow his pride and agrees to do it.</desc>
+<title>Neighbours</title>
+<end>1800</end>
+<start>1730</start>
+  </programme>
+  <programme>
+<desc>After a drugs binge, Liam wakes up with a cut on his head. When Leah notes that he is bleeding, she rushes him to hospital where they learn Liam had a cocaine-induced seizure.</desc>
+<title>Home and Away</title>
+<end>1830</end>
+<start>1800</start>
+  </programme>
+  <programme>
+<desc>National and International news update.</desc>
+<title>5 News at 6.30</title>
+<end>1900</end>
+<start>1830</start>
+  </programme>
+  <programme>
+<desc>With interviews with engineers and practical demonstrations, this film provides the ultimate explanation of how ingenious technology has enabled the biggest metro system in the world, the Tube.</desc>
+<title>Building The London Underground</title>
+<end>1958</end>
+<start>1900</start>
+  </programme>
+  <programme>
+<desc>National and International news update.</desc>
+<title>5 News at 19.58</title>
+<end>2000</end>
+<start>1958</start>
+  </programme>
+  <programme>
+<subtitle>Lisa vs The Devil's Bridge</subtitle>
+<desc>Driving challenge. After two veteran truckers give up and head home, Hugh and Lisa are forced to take on the Death Road without spotters.</desc>
+<title>Ice Road Truckers: Deadliest Roads</title>
+<end>2058</end>
+<start>2000</start>
+  </programme>
+  <programme>
+<desc>National and International news update.</desc>
+<title>5 News at 20.58</title>
+<end>2100</end>
+<start>2058</start>
+  </programme>
+  <programme>
+<desc>Coverage of all the latest goings-on from inside the Big Brother house.</desc>
+<title>Big Brother: Live Eviction</title>
+<end>2200</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<desc>Thirteen girls are still in with a chance of winning the Bachelor's heart. In the French Riviera, Spencer lays on a champagne picnic for the girls but not all of the girls will go away with a rose...</desc>
+<title>The Bachelor</title>
+<end>2300</end>
+<start>2200</start>
+  </programme>
+  <programme>
+<desc>Emma Willis hosts a round-up of Big Brother-related news and debate, with special guests, exclusive footage and behind the scenes treats.</desc>
+<title>Big Brother's Bit On The Side</title>
+<end>0000</end>
+<start>2300</start>
+  </programme>
+  <programme>
+<desc>Live interactive gaming featuring roulette, blackjack and autowheel. For more information and to register visit www.SuperCasino.com.</desc>
+<title>Super Casino</title>
+<end>0355</end>
+<start>0000</start>
+  </programme>
+  <programme>
+<desc>Another chance to catch up with the latest motor racing action from around the world.</desc>
+<title>Motorsport Mundial</title>
+<end>0420</end>
+<start>0355</start>
+  </programme>
+  <programme>
+<desc>Documentary series about the work of dedicated animal lovers who save injured and orphaned wild animals brought into their sanctuary.</desc>
+<title>Wildlife SOS</title>
+<end>0445</end>
+<start>0420</start>
+  </programme>
+  <programme>
+<desc>Documentary series about the work of dedicated animal lovers who save injured and orphaned wild animals brought into their sanctuary.</desc>
+<title>Wildlife SOS</title>
+<end>0510</end>
+<start>0445</start>
+  </programme>
+  <programme>
+<desc>Ann Maurice presents more home improvements for properties that are proving difficult to sell. Ann comes to the aid of a semi-detached house in Darlington.</desc>
+<title>House Doctor</title>
+<end>0535</end>
+<start>0510</start>
+  </programme>
+  <programme>
+<desc>Ann Maurice presents more home improvements for properties that are proving difficult to sell. A young couple struggle to sell a five-bedroom house in Leicester.</desc>
+<title>House Doctor</title>
+<end>0600</end>
+<start>0535</start>
+  </programme>
+  <programme>
+<subtitle>Gym Class</subtitle>
+<desc>Pig tales. Madame Gazelle takes the children to Grampy Rabbit's gym class, where they learn how to be real explorers.</desc>
+<title>Peppa Pig</title>
+<end>0605</end>
+<start>0600</start>
+  </programme>
+</channel>

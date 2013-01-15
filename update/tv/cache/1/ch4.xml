@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Sat Jul  7 07:20:54 2012 -->
+<channel id="bbc4" source="XMLTV" date="12/07/2012">
+  <programme>
+<desc></desc>
+<title>..programmes start at 7.00pm</title>
+<end>1200</end>
+<start>0600</start>
+  </programme>
+  <programme>
+<desc></desc>
+<title>..programmes start at 7.00pm</title>
+<end>1800</end>
+<start>1200</start>
+  </programme>
+  <programme>
+<title>..programmes start at 7.00pm</title>
+<end>1857</end>
+<start>1800</start>
+  </programme>
+  <programme>
+<desc>This is BBC Four. Programmes start at 7.00pm.</desc>
+<title>This Is BBC Four</title>
+<end>1900</end>
+<start>1858</start>
+  </programme>
+  <programme>
+<desc>The latest national and international news, exploring the day's events from a global perspective. [S] Followed by weather.</desc>
+<title>World News Today</title>
+<end>1930</end>
+<start>1900</start>
+  </programme>
+  <programme>
+<desc>Featuring John Miles, Hot Chocolate, Archie Bell and the Drells, the Foster Brothers, Queen, Tom Petty and the Heartbreakers, Olivia Newton-John, the Muppets and Kenny Rogers. [S]</desc>
+<title>Top of the Pops: 1977</title>
+<end>2000</end>
+<start>1930</start>
+  </programme>
+  <programme>
+<desc>5/5. Aliens: Professor Brian Cox explores how the search for aliens in the solar system has followed the search for water. He looks at Jupiter's moon Europa - a dazzling ball of ice. [AD,S]</desc>
+<title>Wonders of the Solar System</title>
+<end>2100</end>
+<start>2000</start>
+  </programme>
+  <programme>
+<desc>...Mysterious World of the Human Stomach. Part of The Amazing Human Body. Michael Mosley swallows a camera to get a unique view of his innards digesting his food. Also in HD. [S]</desc>
+<title>Guts: The Strange and...</title>
+<end>2200</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<desc>...Brain. Part of The Amazing Human Body. Maryam d'Abo recounts her recovery from a brain haemorrhage and meets other survivors. Contains some upsetting scenes.  [S]</desc>
+<title>Rupture: Living with a Broken...</title>
+<end>2310</end>
+<start>2200</start>
+  </programme>
+  <programme>
+<desc>...Human? David Malone asks if we are right to see the heart as merely a brilliant pump or whether it should be allowed to reclaim something of its old place at the centre of our humanity. [S]</desc>
+<title>Heart vs Mind: What Makes Us...</title>
+<end>0010</end>
+<start>2310</start>
+  </programme>
+  <programme>
+<desc>Featuring John Miles, Hot Chocolate, Archie Bell and the Drells, the Foster Brothers, Queen, Tom Petty and the Heartbreakers, Olivia Newton-John, the Muppets and Kenny Rogers. [S]</desc>
+<title>Top of the Pops: 1977</title>
+<end>0050</end>
+<start>0010</start>
+  </programme>
+  <programme>
+<desc>...Kenyan Athletics. A look at the role of Irish missionaries in securing Kenya's dominance in world athletics. [AD,S]</desc>
+<title>Born to Run: The Secrets of...</title>
+<end>0140</end>
+<start>0050</start>
+  </programme>
+  <programme>
+<desc>5/5. Aliens: Professor Brian Cox explores how the search for aliens in the solar system has followed the search for water. He looks at Jupiter's moon Europa - a dazzling ball of ice. [AD,S]</desc>
+<title>Wonders of the Solar System</title>
+<end>0240</end>
+<start>0140</start>
+  </programme>
+  <programme>
+<desc>...Mysterious World of the Human Stomach. Michael Mosley swallows a camera to get a unique view of his innards digesting his food. [S,SL]</desc>
+<title>Guts: The Strange and...</title>
+<end>0340</end>
+<start>0240</start>
+  </programme>
+  <programme>
+<desc>BBC Four is the BBC channel for people who want more. More depth, more range, more to stimulate the mind. More daily from 7.00pm.</desc>
+<title>This Is BBC Four</title>
+<end>0530</end>
+<start>0340</start>
+  </programme>
+  <programme>
+<title>..programmes start at 7.00pm</title>
+<end>0600</end>
+<start>0530</start>
+  </programme>
+  <programme>
+<desc></desc>
+<title>..programmes start at 7.00pm</title>
+<end>1200</end>
+<start>0600</start>
+  </programme>
+</channel>

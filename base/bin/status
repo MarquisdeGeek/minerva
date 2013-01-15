@@ -1,0 +1,31 @@
+#!/bin/bash
+
+MINBIN=/usr/local/minerva/bin
+WAVPLAY=$MINBIN/wavplayer
+
+$MINBIN/minlog cmd $0 $*
+
+DEVICE=$1
+
+if [ "$DEVICE" == "" ]; then
+   DEVICE=default
+fi
+
+#
+# basic date and time
+#
+STATUS="Report for "
+STATUS=$STATUS`$MINBIN/hdate`;
+STATUS=$STATUS". the time is ";
+STATUS=$STATUS`$MINBIN/htime`;
+echo $STATUS
+
+$MINBIN/weatherstatus
+
+$MINBIN/netstatus
+
+$MINBIN/mstatus $DEVICE
+
+$MINBIN/lstatus
+
+

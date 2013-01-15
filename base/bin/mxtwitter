@@ -1,0 +1,11 @@
+#!/bin/bash
+
+MINBASE=/usr/local/minerva
+
+TYPE=$1; shift
+TOADDR=$1; shift
+MSG=$*
+
+$MINBASE/bin/tweet $TOADDR $MSG
+
+

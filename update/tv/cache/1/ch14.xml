@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Sat Jul  7 07:24:34 2012 -->
+<channel id="e4" source="XMLTV" date="12/07/2012">
+  <programme>
+<flags>(S)</flags>
+<desc>Farm girl Savannah travels to the Big Apple, while city boy Pierce learns the value of a rural lifestyle.</desc>
+<title>Switched</title>
+<end>0620</end>
+<start>0600</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Hot-air-balloon pilot Ryan experiences boogie boarding in the ocean, while boogie boarder Hunter overcomes his fear of heights in a balloon.</desc>
+<title>Switched</title>
+<end>0645</end>
+<start>0620</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Erich and Beverly Froebrich need a Supernanny intervention. Their five children smack, pinch, yell, fight and talk back, and homework is a battleground. Can Jo Frost help them find peace?</desc>
+<title>Supernanny US</title>
+<end>0725</end>
+<start>0645</start>
+  </programme>
+  <programme>
+<subtitle>Guy Code</subtitle>
+<flags>(S)</flags>
+<desc>Audrey learns all about the 'guy code' when Jeff shares a secret about a new friend with her.</desc>
+<title>Rules of Engagement</title>
+<end>0750</end>
+<start>0725</start>
+  </programme>
+  <programme>
+<subtitle>Old School Jeff</subtitle>
+<flags>(S)</flags>
+<desc>Audrey and Jen go to a wedding but Jeff is not willing to attend and takes the opportunity to have a night out with his male friends.</desc>
+<title>Rules of Engagement</title>
+<end>0815</end>
+<start>0750</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Erich and Beverly Froebrich need a Supernanny intervention. Their five children smack, pinch, yell, fight and talk back, and homework is a battleground. Can Jo Frost help them find peace?</desc>
+<title>Supernanny US</title>
+<end>0915</end>
+<start>0815</start>
+  </programme>
+  <programme>
+<subtitle>You Call it Madness but I Call it Love</subtitle>
+<flags>(S)</flags>
+<desc>Lucas discovers who witnessed his uncle's killing. Meanwhile, Peyton's decision not to attend the prom has dire consequences.</desc>
+<title>One Tree Hill</title>
+<end>1005</end>
+<start>0915</start>
+  </programme>
+  <programme>
+<subtitle>Journey to Regionals</subtitle>
+<flags></flags>
+<desc>Quinn awaits the birth of her baby, Emma tells Will she's seeing someone else and the clubs battle it out at the Regionals.  [AD,S]</desc>
+<title>Glee</title>
+<end>1105</end>
+<start>1005</start>
+  </programme>
+  <programme>
+<subtitle>Don't Walk on the Grass</subtitle>
+<flags></flags>
+<desc>Juanita reacts badly to her proposed punishment for swearing during the school play. Tension wells between Katherine and Susan, while Tom's in trouble with Lynette.  [AD,S]</desc>
+<title>Desperate Housewives</title>
+<end>1200</end>
+<start>1105</start>
+  </programme>
+  <programme>
+<subtitle>My Five Stages</subtitle>
+<flags>(S)</flags>
+<desc>JD and Dr Cox grow close as they go through the five stages of grief with their favourite patient, whose health is deteriorating.</desc>
+<title>Scrubs</title>
+<end>1230</end>
+<start>1200</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>The village is reeling following yesterday's events. George is forced to spend the day in London with Ryan. Mercedes plays the doting carer as she works to keep Riley and Mitzeee apart.  [AD,S]</desc>
+<title>Hollyoaks</title>
+<end>1300</end>
+<start>1230</start>
+  </programme>
+  <programme>
+<subtitle>As Fast as She Can</subtitle>
+<flags></flags>
+<desc>Ted bumps into Stella and Tony. But after chatting to Ted, will Tony change his mind about Stella? Meanwhile, Barney puts his charm to the test.  [AD,S]</desc>
+<title>How I Met Your Mother</title>
+<end>1330</end>
+<start>1300</start>
+  </programme>
+  <programme>
+<subtitle>The Leap</subtitle>
+<flags></flags>
+<desc>Ted has a career epiphany, Barney prepares to tell Robin how he feels about her, and Marshall considers leaping from his building to the neighbour's roof.  [AD,S]</desc>
+<title>How I Met Your Mother</title>
+<end>1400</end>
+<start>1330</start>
+  </programme>
+  <programme>
+<subtitle>The Loobenfeld Decay</subtitle>
+<flags></flags>
+<desc>Leonard and Sheldon each tell a lie to avoid going to see Penny on stage singing in a production of Rent, but Sheldon's lie gets out of control.  [AD,S]</desc>
+<title>The Big Bang Theory</title>
+<end>1430</end>
+<start>1400</start>
+  </programme>
+  <programme>
+<subtitle>The Pancake Batter Anomaly</subtitle>
+<flags></flags>
+<desc>Penny volunteers to nurse Sheldon when he's sick. However, his friends know how miserable he is when he's ill and stay well away from him.  [AD,S]</desc>
+<title>The Big Bang Theory</title>
+<end>1500</end>
+<start>1430</start>
+  </programme>
+  <programme>
+<subtitle>Guy Code</subtitle>
+<flags>(S)</flags>
+<desc>Audrey learns all about the 'guy code' when Jeff shares a secret about a new friend with her.</desc>
+<title>Rules of Engagement</title>
+<end>1530</end>
+<start>1500</start>
+  </programme>
+  <programme>
+<subtitle>Old School Jeff</subtitle>
+<flags>(S)</flags>
+<desc>Audrey and Jen go to a wedding but Jeff is not willing to attend and takes the opportunity to have a night out with his male friends.</desc>
+<title>Rules of Engagement</title>
+<end>1600</end>
+<start>1530</start>
+  </programme>
+  <programme>
+<subtitle>Journey to Regionals</subtitle>
+<flags></flags>
+<desc>Quinn awaits the birth of her baby, Emma tells Will she's seeing someone else and the clubs battle it out at the Regionals.  [AD,S]</desc>
+<title>Glee</title>
+<end>1700</end>
+<start>1600</start>
+  </programme>
+  <programme>
+<subtitle>As Fast as She Can</subtitle>
+<flags></flags>
+<desc>Ted bumps into Stella and Tony. But after chatting to Ted, will Tony change his mind about Stella? Meanwhile, Barney puts his charm to the test.  [AD,S]</desc>
+<title>How I Met Your Mother</title>
+<end>1730</end>
+<start>1700</start>
+  </programme>
+  <programme>
+<subtitle>The Leap</subtitle>
+<flags></flags>
+<desc>Ted has a career epiphany, Barney prepares to tell Robin how he feels about her, and Marshall considers leaping from his building to the neighbour's roof.  [AD,S]</desc>
+<title>How I Met Your Mother</title>
+<end>1800</end>
+<start>1730</start>
+  </programme>
+  <programme>
+<subtitle>The Adhesive Duck Deficiency</subtitle>
+<flags></flags>
+<desc>Leonard, Raj and Howard go on a camping trip that alters their minds. Penny dislocates her shoulder when she slips in the shower.  [AD,S]</desc>
+<title>The Big Bang Theory</title>
+<end>1830</end>
+<start>1800</start>
+  </programme>
+  <programme>
+<subtitle>The Vengeance Formulation</subtitle>
+<flags></flags>
+<desc>Howard is scared about committing to Bernadette and so avoids her. Then he realises he's made a mistake and, to compensate, proposes to her.  [AD,S]</desc>
+<title>The Big Bang Theory</title>
+<end>1900</end>
+<start>1830</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Ash rallies the students to support Will as the divide in the Savage family grows. Brendan is focused on protecting his empire, but it's clear that recent events have taken their toll.</desc>
+<title>Hollyoaks</title>
+<end>1930</end>
+<start>1900</start>
+  </programme>
+  <programme>
+<subtitle>Desperation Day</subtitle>
+<flags></flags>
+<desc>Barney declares February 13th Desperation Day; a holiday for women with low self- esteem because they are destined to be alone on Valentine's Day.  [AD,S]</desc>
+<title>How I Met Your Mother</title>
+<end>2000</end>
+<start>1930</start>
+  </programme>
+  <programme>
+<subtitle>The Vacation Solution</subtitle>
+<flags></flags>
+<desc>Sheldon is forced to use up his two weeks of holiday time from work, so he goes to help Amy in her biology lab during his fortnight off.  [AD,S]</desc>
+<title>The Big Bang Theory</title>
+<end>2030</end>
+<start>2000</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Brand new series - Now We're Even: Marshall discovers that Lily has had an erotic dream about Ranjit, and Robin's celebrity stock rises when she has to emergency land the news helicopter.  [AD,S]</desc>
+<title>How I Met Your Mother</title>
+<end>2100</end>
+<start>2030</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Brand new series - And the Secret Ingredient: Caroline develops an obsession with couponing, in the course of which she inadvertently discovers the secret ingredient in Max's cupcakes.  [AD,S]</desc>
+<title>2 Broke Girls</title>
+<end>2130</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Brand new series - Valentine's Day: Desperate not to be alone on Valentine's Day, Jess goes hunting for a man, while Julia's career clashes with Nick's romantic plans.  [AD,S]</desc>
+<title>New Girl</title>
+<end>2200</end>
+<start>2130</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Brand new series - Father's Day: Stef is beside himself when Ash loses their music video, but Dru offers up 'dirty money' from his dad to make a new one directed by an art world icon.</desc>
+<title>The Midnight Beast</title>
+<end>2230</end>
+<start>2200</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Kayvan Novak, star of BAFTA winning Fonejacker, returns for a second series of the ground-breaking Facejacker. Tonight new character Ray Fakadakis offers some dubious careers advice.</desc>
+<title>Facejacker</title>
+<end>2305</end>
+<start>2230</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>More fun and celebrity gossip with Alan and guests John Bishop and US film star Cuba Gooding Jr; Will.i.am and music from Plan B.</desc>
+<title>Alan Carr: Chatty Man</title>
+<end>0010</end>
+<start>2305</start>
+  </programme>
+  <programme>
+<subtitle>The Adhesive Duck Deficiency</subtitle>
+<flags></flags>
+<desc>Leonard, Raj and Howard go on a camping trip that alters their minds. Penny dislocates her shoulder when she slips in the shower.  [AD,S]</desc>
+<title>The Big Bang Theory</title>
+<end>0040</end>
+<start>0010</start>
+  </programme>
+  <programme>
+<subtitle>The Vengeance Formulation</subtitle>
+<flags></flags>
+<desc>Howard is scared about committing to Bernadette and so avoids her. Then he realises he's made a mistake and, to compensate, proposes to her.  [AD,S]</desc>
+<title>The Big Bang Theory</title>
+<end>0105</end>
+<start>0040</start>
+  </programme>
+  <programme>
+<subtitle>My Five Stages</subtitle>
+<flags>(S)</flags>
+<desc>JD and Dr Cox grow close as they go through the five stages of grief with their favourite patient, whose health is deteriorating.</desc>
+<title>Scrubs</title>
+<end>0135</end>
+<start>0105</start>
+  </programme>
+  <programme>
+<subtitle>Desperation Day</subtitle>
+<flags></flags>
+<desc>Barney declares February 13th Desperation Day; a holiday for women with low self- esteem because they are destined to be alone on Valentine's Day.  [AD,S]</desc>
+<title>How I Met Your Mother</title>
+<end>0200</end>
+<start>0135</start>
+  </programme>
+  <programme>
+<subtitle>Time Share</subtitle>
+<flags>(S)</flags>
+<desc>Adam and Jennifer agree to go away with Jeff and Audrey even though they must sit through a timeshare sales pitch in order to get a deal on the trip.</desc>
+<title>Rules of Engagement</title>
+<end>0225</end>
+<start>0200</start>
+  </programme>
+  <programme>
+<subtitle>Take This Job and Bleep It</subtitle>
+<flags>(S)</flags>
+<desc>When the insurance company that Dave works for begins reducing commissions, Dave and two of his co-workers quit to start their own business.</desc>
+<title>The War at Home</title>
+<end>0245</end>
+<start>0225</start>
+  </programme>
+  <programme>
+<subtitle>Don't Walk on the Grass</subtitle>
+<flags></flags>
+<desc>Juanita reacts badly to her proposed punishment for swearing during the school play. Tension wells between Katherine and Susan, while Tom's in trouble with Lynette.  [AD,S]</desc>
+<title>Desperate Housewives</title>
+<end>0330</end>
+<start>0245</start>
+  </programme>
+  <programme>
+<subtitle>Nerdy Little Secrets</subtitle>
+<flags>(S)</flags>
+<desc>Naomi is sick of hiding her relationship with Max. Afraid that he might be cheating on her, she follows him to an academic decathlon event.</desc>
+<title>90210</title>
+<end>0410</end>
+<start>0330</start>
+  </programme>
+  <programme>
+<subtitle>Pilot</subtitle>
+<flags>(S)</flags>
+<desc>Another chance to see this US comedy about a group of students. Rusty begins his freshman year at Cyprus-Rhodes University determined to change his life.</desc>
+<title>Greek</title>
+<end>0500</end>
+<start>0410</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Small-town award-winning cheerleader Jordan gets a chance to swap her pom-poms for roller skates in this switch with Ally, a self-proclaimed rocker and champion artistic roller skater.   [S,SL]</desc>
+<title>Switched</title>
+<end>0520</end>
+<start>0500</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>In rural Texas, beauty queen Karina risks chipping a nail while extreme skating, and punk rocker Brandon jets to the glamorous O.C. to play violin in an all-female band.  [S,SL]</desc>
+<title>Switched</title>
+<end>0600</end>
+<start>0520</start>
+  </programme>
+</channel>

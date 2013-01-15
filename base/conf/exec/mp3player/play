@@ -1,0 +1,10 @@
+#!/bin/bash
+
+MINBIN=/usr/local/minerva/bin
+
+TRACK=`$MINBIN/mp3player default fullname`
+
+#$MINBIN/facebook default "I am listening to $TRACK"
+
+$MINBIN/publishinfostream mp3frame 
+

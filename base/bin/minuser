@@ -1,0 +1,79 @@
+#!/bin/bash
+
+MINBIN=/usr/local/minerva
+
+$MINBIN/minlog cmd $0 $*
+
+USER=$2
+DIR=$MINBIN/etc/users/$USER
+
+if [ "$1" == "auth" ]; then
+  if [ -d $DIR ]; then
+
+     APP=$3
+
+     if [ "$APP" == "" ]; then
+       for FILE in $DIR/auth/*
+       do
+          echo -n `basename $FILE` \: \ 
+          ls $FILE
+       done
+     else
+       # when given a specific app, we can either
+       # 1) create access rights
+       # 2) query specific rights
+       RIGHTS=$5
+ 
+       if [ "$4" == "set" ]; then
+         mkdir -p $DIR/auth/$APP
+
+         rm $DIR/auth/$APP/r 2>/dev/null
+         rm $DIR/auth/$APP/w 2>/dev/null
+
+         if [ "$RIGHTS" == "ro" -o "$RIGHTS" == "r" -o "$RIGHTS" == "rw" ]; then
+           touch $DIR/auth/$APP/r
+         fi
+         if [ "$RIGHTS" == "w" -o "$RIGHTS" == "rw" ]; then
+           touch $DIR/auth/$APP/w
+         fi
+       else
+          # e.g. minuser auth steev cdplayer get rw
+          if [ -f $DIR/auth/$APP/$RIGHTS ]; then
+             exit 1
+          fi
+       fi
+     fi
+  else
+     echo No known user as $USER
+  fi
+
+elif [ "$1" == "pass" ]; then
+  if [ -d $DIR ]; then
+     if [ "$3" == "check" ]; then
+        if [ -f $DIR/pass/$4 ]; then
+           exit 1
+        else
+           exit 0
+        fi
+     elif [ "$3" == "set" ]; then
+        rm $DIR/pass/* 2>/dev/null
+        mkdir $DIR/pass 2>/dev/null
+        touch $DIR/pass/$4
+     fi
+  else
+     echo No known user as $USER
+  fi
+
+
+     
+
+
+else 
+  # no known command given
+  echo "Usage:"
+  echo "     $0 <auth> <username> [protocol] [set|get] [r|rw|ro]"
+  echo "     $0 <pass> <username> <check|set> <password>"
+fi
+
+exit 0
+

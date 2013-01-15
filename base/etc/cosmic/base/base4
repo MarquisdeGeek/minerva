@@ -1,0 +1,5 @@
+#!/bin/bash
+# Pause all playing media
+
+/usr/local/minerva/bin/pmedia default
+

@@ -1,0 +1,133 @@
+#!/bin/bash
+
+LOGDIR=/var/log/minerva/cosmic
+ETCDIR=/usr/local/minerva/etc/cosmic
+MINBASE=/usr/local/minerva
+
+$MINBASE/bin/minlog cmd $0 $*
+
+REPORT=$MINBASE/bin/announce
+#REPORT=/bin/echo
+
+if [ -f $LOGDIR/mode ]; then
+   MODE=`cat $LOGDIR/mode`
+else
+   MODE=0
+fi
+
+DEVICE=$1
+CMD=$2
+PARAM=$3
+PARAM2=$4
+
+if [ "$DEVICE" == "text" ]; then
+  # device is set no null, to avoid the word appearing
+  # from the echo statement
+  DEVICE=
+  REPORT=/bin/echo
+fi
+
+echo $* >>$LOGDIR/cmdlist
+
+case $CMD in
+    init)
+           echo 0 >$LOGDIR/mode
+           echo  >$LOGDIR/cmd
+           chgrp minerva $LOGDIR/*
+           chmod ug+rw   $LOGDIR/*
+           ;; 
+
+   clear|root|reset)
+           $REPORT default Cosmic reset
+           echo 0 >$LOGDIR/mode
+           ;; 
+
+   nextmode)
+       MODE=$(($MODE + 1))
+
+       if [ -d $ETCDIR/$MODE ]; then
+          echo $MODE > $LOGDIR/mode
+       else
+          echo 0 > $LOGDIR/mode
+          MODE=0 
+       fi
+       $REPORT $DEVICE `cat $ETCDIR/$MODE/name`
+       ;;
+
+    mode)
+       echo $MODE
+       ;;
+
+    modestatus)
+       $REPORT $DEVICE `cat $ETCDIR/$MODE/name`
+       if [ -f $ETCDIR/$MODE/status ]; then
+          $REPORT $DEVICE `$ETCDIR/$MODE/status`
+       fi
+       ;;
+   help)
+       echo "Base commands:"
+       for IT_BASE in {1..8}
+       do
+         echo -n $IT_BASE
+         $0 $DEVICE describe base$IT_BASE
+       done
+       for IT_MODE in {0..2}
+       do
+         echo
+         echo Commands in mode $IT_MODE
+         for CMD in {1..8}
+         do
+            $0 $DEVICE describe c$CMD $IT_MODE
+         done
+       done
+       ;;
+
+   describe)
+       if [[ $PARAM == base* ]]; then
+          FILENAME=$MINBASE/etc/cosmic/base/$PARAM
+          if [ -f $FILENAME ]; then
+             head -n 2 $FILENAME | tail -n 1
+          else
+             echo Unknown 'base' command $param
+          fi
+       elif [[ $PARAM == c* ]]; then
+          USEMODE=$MODE
+          if [ "$PARAM2" != "" ]; then
+            USEMODE=$PARAM2
+          fi
+
+          FILENAME=$ETCDIR/$USEMODE/$PARAM
+          if [ -f $FILENAME ]; then
+             head -n 2 $FILENAME | tail -n 1
+             if [ "$PARAM2" == "" ]; then
+                echo "(whilst in mode $MODE)"
+             fi
+          else
+             echo Unknown 'command' $PARAM
+          fi
+       fi
+       ;;
+       
+   base1|base2|base3|base4|base5|base6|base7|base8)
+       $MINBASE/etc/cosmic/base/$CMD
+       date +"%F %H:%M BASE $CMD" >>$LOGDIR/cmd
+       ;;
+
+   c1|c2|c3|c4|c5|c6|c7|c8)
+        CMDFULL=$ETCDIR/$MODE/$CMD
+        if [ -f $CMDFULL ]; then
+            RESULT=`$CMDFULL`
+            if [ "$RESULT" != "" ]; then
+                $REPORT $DEVICE $RESULT
+            fi
+        fi
+        date +"%F %H:%M CMD $CMDFULL = $RESULT" >>$LOGDIR/cmd
+       ;;
+
+   *)
+       echo "Usage: $0 <device> <init|clear|nextmode|modestatus|c1|c2|c3|c4|c5|c6|c7|c8|baseX|mode>" 
+       ;;
+
+esac
+
+

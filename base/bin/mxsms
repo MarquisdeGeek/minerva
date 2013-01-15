@@ -1,0 +1,23 @@
+#!/usr/bin/php
+<?php
+
+include 'inc/IntelliSMS.php';
+include '/usr/local/minerva/conf/sms-global.conf';
+include '/usr/local/minerva/conf/sms-intelli.conf';
+
+array_shift($argv);     // ignore program name
+
+$type = array_shift($argv);
+$toAddr = array_shift($argv);
+$message = implode(" ", $argv);
+
+$objIntelliSMS = new IntelliSMS();
+
+//Set you account login details below:
+$objIntelliSMS->Username = $smsUsername;
+$objIntelliSMS->Password = $smsPassword;
+$objIntelliSMS->MaxConCatMsgs = 1;
+
+$SendStatusCollection = $objIntelliSMS->SendMessage($toAddr, $message, $fromAddr);
+
+?>

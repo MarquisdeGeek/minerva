@@ -1,0 +1,64 @@
+#!/bin/bash
+MINBASE=/usr/local/minerva
+
+if [ $# -lt 3 ]; then
+  echo "Usage: $0 [fromtype] [fromaddr] [command] <arguments>"
+  exit 1;
+fi
+
+$MINBASE/bin/minlog cmd $0 $*
+
+
+FROMCONDUIT=$1; shift
+FROMADDR=$1; shift
+PARSE_CMD=$1; shift
+PARSE_ARG=$*
+
+# Look up user name from this address, if available
+ADDRBOOK=$MINBASE/etc/msg/$FROMCONDUIT/addr/alias
+
+if [ -f $ADDRBOOK ]; then
+   ALIAS=`grep -m 1 " $FROMADDR" $ADDRBOOK | sed "s/ [^ ]*$//"`
+
+   if [ "$ALIAS" != "" ]; then
+     FROMADDR=$ALIAS
+   fi
+fi
+
+AUTHCMD=$MINBASE/etc/msg/$FROMCONDUIT/auth/$FROMADDR
+ALIASCMD=$MINBASE/etc/msg/$FROMCONDUIT/cmd/$PARSE_CMD
+BASECMD=$MINBASE/bin/$PARSE_CMD
+
+
+DOCMD=
+
+if [ -f "$ALIASCMD" ]; then
+  DOCMD=$ALIASCMD
+
+elif [ -f "$BASECMD" ]; then
+  DOCMD=$BASECMD
+
+fi
+
+
+# Invoke the message relay
+$MINBASE/bin/rlyexec $FROMCONDUIT $FROMADDR $DOCMD $PARSE_ARG
+
+
+if [ "$DOCMD" != "" ]; then
+  $MINBASE/bin/minuser auth $FROMADDR $FROMCONDUIT get w
+  if [ $? -eq 0 ]; then
+    echo "Access denied"
+  else
+    OUTPUT=`$DOCMD $PARSE_ARG`
+
+    # Send a reply back? If so, do it the same way it came in
+    if [ "$OUTPUT" != "" ]; then
+      $MINBASE/bin/msgxmit $FROMCONDUIT $FROMADDR $OUTPUT
+      exit 0
+    fi
+  fi
+fi
+
+exit 1
+

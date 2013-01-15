@@ -1,0 +1,67 @@
+#!/usr/bin/php
+<?php
+ini_set('include_path', '/usr/local/minerva/:'.ini_get('include_path'));
+
+require_once 'bin/inc/tvguide/progs.inc';
+require_once 'bin/inc/tvguide/users.conf';
+require_once 'bin/inc/tvguide/channels.conf';
+
+   // argv[1] = device. Unused, but kept for uniformity
+   if ($argc < 2) {
+      print "tvonnow <device> <username|all> [channelID] [name|info|timeon|timeoff]\n";
+		print "   channelID ::= bbc1 bbc2 ... all\n";
+      return 1;
+   }
+
+   $user = $argv[2];
+   if($user == "") {
+      $user = "public";
+   }
+
+   $channel = $argv[3];
+   if($channel == "") {
+      $channel = "all";
+   }
+
+   $detail = $argv[4];
+   if($detail == "") {
+      $detail = "name";
+   }
+
+   $u = TVGuide_Users::getUserGuide("public");
+   $day = 0;	// currently, day[0] is always 'today' 
+
+   $stations = TVGuide_Channels::getChannelList();
+   $attime = date("Gi");
+   $idx = 0;
+   foreach($stations as $id => $name) {
+      if ($id == $channel || $channel == "all") {
+          $prog = $u->getDay($day)->getProgrammeAt($id, $attime);
+          if ($prog->_name != "") {
+
+              if ($channel == "all") {
+                 print "$name : ";
+              }
+
+              switch($detail) {
+                case "name":
+                   print $prog->_name;
+                   break;
+                case "info":
+                   print $prog->_description;
+                   break;
+                case "timeon":
+                   print $prog->_timeOn;
+                   break;
+                case "timeoff":
+                   print $prog->_timeOff;
+                   break;
+               }
+              print "\n";
+          }
+       }
+       ++$idx;
+    }
+
+?>
+

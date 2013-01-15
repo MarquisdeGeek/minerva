@@ -1,0 +1,95 @@
+#!/bin/bash
+
+if [ $# -lt 1 ]; then
+  echo "Usage: $0 <conduit> <address> <report_type> [param1] [param2]"
+  echo "   conduit ::= say echo (etc) or cache"
+  echo "   address ::= specific to conduit"
+  echo "   report_type ::= weather | time | datetime | trains | calendar | lstatus | echo"
+  echo "   If only one argument is given, the default conduit is used."
+  echo "   The echo report_type writes the parameters to the appropriate conduit. It is"
+  echo "     for uniformity."
+  exit -1
+fi
+
+MINBASE=/usr/local/minerva
+MINBIN=$MINBASE/bin
+MSGXMIT=$MINBIN/msgxmit
+
+$MINBASE/bin/minlog cmd $0 $*
+
+if [ $# -lt 2 ]; then
+	# only a command is give, force default conduit
+	DEVICE=vox
+	#DEVICE=echo
+	ADDRESS=default
+	CMD=$1
+   PARAM1=$2
+   PARAM2=$3
+else
+	DEVICE=$1
+	ADDRESS=$2
+	CMD=$3
+   PARAM1=$4
+   PARAM2=$5
+fi
+
+
+case $CMD in
+  init)
+		;;
+
+	time)
+        $MSGXMIT $DEVICE $ADDRESS it is `$MINBIN/htime`
+		;;
+		
+	date)
+        $MSGXMIT $DEVICE $ADDRESS it is `$MINBIN/hdate`
+			;;
+
+	datetime)
+        $MSGXMIT $DEVICE $ADDRESS it is `$MINBIN/htime` on `$MINBIN/hdate`
+		;;
+		
+
+	train|trains|ldb)
+   		$MSGXMIT $DEVICE $ADDRESS `$MINBIN/ldbquery get LUT STP 0 30`
+			;;
+
+	calendar|events|hacal)
+			if [ "$PARAM1" == "" ]; then
+				PARAM1=0
+			fi
+			if [ "$PARAM2" == "" ]; then
+				PARAM2=$PARAM1
+			fi
+        TODAY_EVENTS=`$MINBIN/hacal list steev all $PARAM1 $PARAM2`
+        if [ -n "$TODAY_EVENTS" ]; then
+                $MSGXMIT $DEVICE $ADDRESS Here is the calendar
+                $MSGXMIT $DEVICE $ADDRESS $TODAY_EVENTS
+			else
+					$MSGXMIT $DEVICE $ADDRESS There are no events today
+        fi
+			;;
+
+	lstatus)
+         $MSGXMIT $DEVICE $ADDRESS `$MINBIN/lstatus $PARAM1`
+			;;
+
+	weather|weatherstatus)
+         $MSGXMIT $DEVICE $ADDRESS `$MINBIN/weatherstatus $PARAM1`
+			;;
+
+	alarm)
+			FIRST=`crontab -l | grep "^[^#].*alarm" | head -n 1`
+			HOUR=`echo $FIRST | cut -d " " -f 2`
+			MIN=`echo $FIRST | cut -d " " -f 1`
+			echo The first alarm is set for `$MINBIN/htime $HOUR $MIN`
+			;;
+
+   echo)
+			shift; shift; shift
+         $MSGXMIT $DEVICE $ADDRESS $*
+         ;;
+esac
+
+

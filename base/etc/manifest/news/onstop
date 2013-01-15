@@ -1,0 +1,9 @@
+#!/bin/bash
+
+MINBASE=/usr/local/minerva
+DEVICE=$1
+
+$MINBASE/bin/say $DEVICE "And that's the end of the news"
+
+
+

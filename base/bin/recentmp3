@@ -1,0 +1,37 @@
+
+# Simple uses:
+
+# Most popular 5 songs:
+# recentmp3 |sort -nr | head -n 5
+
+# Most recent 5 songs:
+# recentmp3 recent |sort -nr | head -n 5
+
+MEDIADIR=/var/log/minerva/mediamirror
+SORTBY=$1
+
+function r() 
+{ 
+	FULLPATH=$2
+	cd -- "$1"
+
+	for d in *
+	do
+		if [ -d "$d" ]; then
+			( r "$d" "$FULLPATH/$d" )
+		fi;
+
+		if [ -f "$d" ]; then
+			if [ "$SORTBY" == "recent" ]; then
+				FILEDATE=`date -r "$FULLPATH/$d" "+%F %X"`
+				echo $FILEDATE $FULLPATH/$d
+			else
+				read LINE < "$FULLPATH/$d"
+				echo $LINE $FULLPATH/$d
+			fi
+		fi
+	done
+}
+
+r $MEDIADIR $MEDIADIR
+

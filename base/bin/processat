@@ -1,0 +1,8 @@
+#!/bin/bash
+MINBASE=/usr/local/minerva
+$MINBASE/bin/minlog cmd $0 $*
+
+DELAY=`date +%S`
+
+cat sleep $DELAY | /usr/bin/at $* 
+

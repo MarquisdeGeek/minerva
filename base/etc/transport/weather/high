@@ -1,0 +1,14 @@
+#!/bin/bash
+
+INFO=`basename $0`
+THEDAY=today
+
+if [ "$1" == "tomorrow" ]; then
+	THEDAY=$1
+fi
+
+echo "<weather day='$THEDAY' info='$INFO'>"
+/usr/local/minerva/bin/weatherinfo $THEDAY $INFO
+echo "</weather>"
+
+

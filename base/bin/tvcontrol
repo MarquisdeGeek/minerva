@@ -1,0 +1,128 @@
+#!/bin/bash
+
+# TODO: New commands for incstation decstation
+
+if [ $# -le 1 ]; then
+  echo "Usage: $0 [device] [command] <value>"
+  echo "   command ::= station on|start off|stop volume ison status|getstation"
+  exit -1
+fi
+
+MINBIN=/usr/local/minerva/bin
+VARLOG=/var/log/minerva
+LOGSTUB=$VARLOG/tvcontrol
+
+$MINBIN/minlog cmd $0 $*
+
+TVEXEC=/usr/bin/xawtv
+TVEXEC_OPTIONS=-f
+TVCONTROL=/usr/bin/xawtv-remote
+CMD=$2
+VALUE=$3
+
+# Reference usage for finddev...
+#
+# We've sent (and presumably rcv'd) a request from the finddev call
+# Therefore:
+# 1. DEVICE is actually the output from that command, which we might
+#    need and so reflect to the calling command.
+# 2. We exit now with a code of '0'. All Bearskin commands must check
+#    for 0. If they receive it, they must also exit immediately.
+
+DEVICE=`$MINBIN/finddev tvcontrol $*`
+if [ $? == 0 ]; then
+  echo $DEVICE
+  exit 0;
+fi
+
+if [ "$DEVICE" == "" ]; then
+   DEVICE=":0"
+fi
+
+export DISPLAY=$DEVICE
+
+# Do general purpose commands (without channel designations)
+case "$CMD" in
+  init)
+     touch $LOGSTUB.lst 
+     chgrp minerva $LOGSTUB.lst 
+     chmod ug+rw   $LOGSTUB.lst 
+     exit 0
+     ;;
+
+  enumdev)
+     $MINBIN/enumdev tvcontrol
+     exit $?
+     ;;
+
+  volume)
+		$MINBIN/mixer default set linein $VALUE
+     $TVCONTROL volume $VALUE
+		echo "TV volume at $VALUE"
+     exit 0
+     ;;
+
+  station)
+		$0 $DEVICE ison >/dev/null
+		if [ "$?" == 0 ]; then
+			$0 $DEVICE on
+		fi
+
+		$TVCONTROL setstation $VALUE
+		echo $VALUE > $VARLOG/tvcontrol.sta
+     exit 0
+     ;;
+
+  status|getstation)
+		$0 $DEVICE ison >/dev/null
+		if [ "$?" == 1 ]; then
+			echo -n "TV is on and showing "
+			cat $VARLOG/tvcontrol.sta
+			exit 1
+		else
+			echo "TV is off"
+			exit 0
+		fi
+     ;;
+
+  on|start)
+		$0 $DEVICE ison >/dev/null
+		if [ "$?" == 0 ]; then
+			$TVEXEC $TVEXEC_OPTIONS &
+			PID=$!
+			echo $PID > $VARLOG/tvcontrol.pid
+			echo 1 > $VARLOG/tvcontrol.on
+			$0 $DEVICE volume 50
+		fi
+		echo "TV is on"
+		exit 0
+     ;;
+
+  off|stop)
+		$0 $DEVICE ison >/dev/null
+		if [ "$?" == 1 ]; then
+			$0 $DEVICE volume 0
+			PID=`cat $VARLOG/tvcontrol.pid`
+			echo 0 > $VARLOG/tvcontrol.on
+			kill -9 $PID 2>/dev/null
+		fi
+		echo "TV is off"
+     exit 0
+     ;;
+
+	ison)
+		ISON=`cat $VARLOG/tvcontrol.on`
+		if [ "$ISON" == "1" ]; then
+			echo "TV is on"
+			exit 1
+		else
+			echo "TV is off"
+			exit 0
+		fi
+		;;
+esac
+
+
+echo $CMD $VALUE >$LOGSTUB.lst
+
+

@@ -1,0 +1,281 @@
+#!/bin/bash
+
+MINBIN=/usr/local/minerva/bin
+VARLOG=/var/log/minerva
+LOGSTUB=$VARLOG/mp3player
+MEDIAMIRROR=$VARLOG/mediamirror
+
+$MINBIN/minlog cmd $0 $*
+
+#MPLAY=/usr/bin/mpg123
+MPLAY=/usr/bin/mplayer
+MPLAYARG="-really-quiet"
+# -vo null"
+MP3INFO=/usr/bin/mp3info
+
+
+if [ $# == 0 ]; then
+  echo "Usage : $0 <default> <command> <trackname>*"
+  echo "   command ::= start|play stop pause resume current artist title album length"
+  echo "               isplaying status fullname"
+  echo "Note : This command is blocking, therefore it is usual to place"
+  echo "       it in the background with &"
+  echo "Note : The play command can produce spurious output, so redirect these"
+  echo "       to null."
+  exit -1
+fi
+
+DEVICE=`$MINBIN/finddev mp3player $*`
+if [ $? == 0 ]; then
+  echo $DEVICE
+  exit 0;
+fi
+
+CMD=$2
+shift;shift;
+
+export IFS=$'\n'
+
+case $CMD in
+  init)
+     echo >$LOGSTUB.art
+     echo >$LOGSTUB.ttl
+     echo >$LOGSTUB.alb
+     echo >$LOGSTUB.len
+     echo >$LOGSTUB.trk
+     echo >$LOGSTUB.ftn
+     echo >$LOGSTUB.cmd
+     echo >$LOGSTUB.pid
+     echo 0 > $LOGSTUB.ply
+     chgrp minerva $LOGSTUB.*
+     chmod ug+rw $LOGSTUB.*
+     ;;
+
+  enumdev)
+     $MINBIN/enumdev mp3player
+     exit $?
+     ;;
+
+  start|play)
+     # first, stop anything (and everything) else
+     $0 $DEVICE stop
+
+     # we build an array of the arguments, so we can go forward and backwards
+     # in the list.
+     # I thought there was an internal array of the args, but I couldn't
+     # find it.
+     TOTAL=$#
+     IDX=0
+     while [ $# != 0 ]; do
+        TRACKS[$IDX]="$1"
+        IDX=$(($IDX + 1))
+        shift
+     done
+
+     IDX=0
+     while [ $IDX -lt $TOTAL ]; do
+        TRACK=${TRACKS[$IDX]}
+
+			# Basic info logging
+        echo $TRACK > $LOGSTUB.ftn 2>/dev/null
+        echo `basename $TRACK` > $LOGSTUB.trk 2>/dev/null
+
+			# Keep a track of the number of times this has been played
+			# and the most recent time. (through the date stamp)
+			MIRRORFILE=$MEDIAMIRROR/$TRACK
+			MIRRORDIR=`dirname $MIRRORFILE`
+			mkdir -p $MIRRORDIR
+
+			if [ -f $MIRRORFILE ]; then
+				CURRENTFILE=`head -n 1 $MIRRORFILE`
+				(( CURRENTFILE=$CURRENTFILE + 1))
+				echo $CURRENTFILE > $MIRRORFILE
+			else
+				echo 1 > $MIRRORFILE
+			fi
+
+			# File-processed information logging
+        if [ -f $MP3INFO ]; then
+           $MP3INFO -p %a $TRACK >$LOGSTUB.art 2>/dev/null
+           $MP3INFO -p %l $TRACK >$LOGSTUB.alb 2>/dev/null
+           $MP3INFO -p %t $TRACK >$LOGSTUB.ttl 2>/dev/null
+
+           LEN=`$MP3INFO -p %S $TRACK`
+           if [ "$LEN" == "" ]; then
+              echo -n Unknown >$LOGSTUB.len
+           else
+              MIN=$(($LEN / 60))
+              SEC=$(($LEN - $(($MIN * 60)) ))
+              if [ $SEC -lt 10 ]; then
+                 SEC="0"$SEC
+              fi
+              echo -n $MIN.$SEC >$LOGSTUB.len
+           fi
+        fi
+
+        echo next >$LOGSTUB.cmd
+        $MPLAY $MPLAYARG $TRACK   2>/dev/null >/dev/null &
+        PID=$!
+ 
+        echo $PID >$LOGSTUB.pid
+        echo 1 > $LOGSTUB.ply
+
+        $MINBIN/monexec mp3player play & 2>/dev/null >/dev/null
+
+			$0 $DEVICE status
+        
+        wait $PID 2>/dev/null >/dev/null
+
+        echo 0 > $LOGSTUB.ply
+        echo >$LOGSTUB.pid
+     
+        CMD=`cat $LOGSTUB.cmd`
+        if [ "$CMD" == "prev" ]; then
+           IDX=$(($IDX - 1))
+           if [ $IDX -lt 0 ]; then
+              IDX=0
+           fi
+
+        elif [ "$CMD" == "next" ]; then
+           IDX=$(($IDX + 1))
+
+			elif [ "$CMD" == "list" ]; then
+     			LIST_COUNT=IDX
+     			while [ $LIST_COUNT -lt $TOTAL ]; do
+        			echo ${TRACKS[$LIST_COUNT]}
+					LIST_COUNT=$(($LIST_COUNT + 1))
+				done
+
+        else
+           IDX=$TOTAL
+        fi 
+
+     done
+    ;;
+
+  prev|previous)
+      $0 $DEVICE process prev
+      ;;
+  next)
+      $0 $DEVICE process next
+      ;;
+
+  list)
+      $0 $DEVICE process list
+      ;;
+
+  stop)
+      $0 $DEVICE process stop
+      ;;
+
+  process)
+     MP3PID=`cat $LOGSTUB.pid`
+     if [ "$MP3PID" != "" ]; then
+        kill -9 $MP3PID > /dev/null 2>&1
+        if [ $? -eq 0 ]; then
+           echo $1 >$LOGSTUB.cmd
+           echo 0 > $LOGSTUB.ply
+           echo >$LOGSTUB.pid
+        fi
+     fi
+     ;;
+
+  pause)
+     MP3PID=`cat $LOGSTUB.pid`
+     if [ "$MP3PID" != "" ]; then
+        kill -STOP $MP3PID > /dev/null 2>&1 
+        if [ $? -eq 0 ]; then
+           echo 0 > $LOGSTUB.ply
+        fi
+     fi
+     ;;
+
+  resume)
+     MP3PID=`cat $LOGSTUB.pid`
+     if [ "$MP3PID" != "" ]; then
+        kill -CONT $MP3PID > /dev/null 2>&1
+        if [ $? -eq 0 ]; then
+           echo 1 > $LOGSTUB.ply
+        fi
+     fi
+     ;;
+
+  curr|current)
+     if [ "`$0 $DEVICE isplaying`" -eq "1" ] && [ -f $LOGSTUB.trk ]; then
+        cat $LOGSTUB.trk
+     fi
+     ;;
+
+  full|fullname)
+     if [ "`$0 $DEVICE isplaying`" -eq "1" ] && [ -f $LOGSTUB.ftn ]; then
+        cat $LOGSTUB.ftn
+     fi
+     ;;
+
+  status)
+		$0 $DEVICE isplaying >/dev/null
+		if [ $? == 1 ]; then
+			echo -n "Artist:"; $0 $DEVICE artist
+			echo -n "Title:"; $0 $DEVICE title
+			echo -n "Album:"; $0 $DEVICE album 
+			echo -n "Length:"; $0 $DEVICE length
+			echo -n "Filename:"; $0 $DEVICE fullname
+			exit 1
+		fi
+		exit 0
+		;;
+
+  title)
+     if [ "`$0 $DEVICE isplaying`" -eq 1 ] && [ -f $LOGSTUB.ttl ]; then
+        cat $LOGSTUB.ttl
+			echo
+     fi
+     ;;
+
+  artist)
+     if [ "`$0 $DEVICE isplaying`" -eq 1 ] && [ -f $LOGSTUB.art ]; then
+        cat $LOGSTUB.art
+		  echo
+     fi
+     ;;
+
+  album)
+     if [ "`$0 $DEVICE isplaying`" -eq 1 ] && [ -f $LOGSTUB.alb ]; then
+        cat $LOGSTUB.alb
+		  echo
+     fi
+     ;;
+
+  length)
+     if [ "`$0 $DEVICE isplaying`" -eq 1 ] && [ -f $LOGSTUB.len ]; then
+        cat $LOGSTUB.len
+		  echo
+     fi
+     ;;
+
+  isplaying)
+     MP3PID=`cat $LOGSTUB.pid`
+     if [ "$MP3PID" != "" ]; then
+        echo 1
+        exit 1
+     else
+        echo 0
+        exit 0
+     fi
+     ;;
+
+  ispaused)
+     if [ "`cat $LOGSTUB.ply`" == "0" ]; then
+     	   echo 1
+			exit 1
+     else
+     		echo 0
+			exit 0
+     fi
+     ;;
+
+  *)
+    echo -n ""
+    ;;
+esac
+

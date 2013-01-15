@@ -1,0 +1,61 @@
+#!/bin/bash
+
+if [ $# -le 1 ]; then
+  echo "Usage: $0 <device> <command> [params]"
+  echo "  command ::= channels getchannel getname getstation getxawtv onnow"
+fi
+
+MINBASE=/usr/local/minerva
+
+$MINBASE/bin/minlog cmd $0 $*
+
+DEVICE=$1
+CMD=$2
+PARAM=$3
+
+. $MINBASE/conf/tvconf.conf
+
+case "$CMD" in
+  init)
+     exit 0;
+     ;;
+
+  channels)
+     echo ${#channel[@]}
+     exit 0;
+     ;;
+
+  getchannel)
+     echo ${channel[$PARAM]}
+     exit 0;
+     ;;
+
+  getname)
+     echo ${names[$PARAM]}
+     exit 0;
+     ;;
+
+  getstation)
+     echo ${stations[$PARAM]}
+     exit 0;
+     ;;
+
+  onnow)
+     $MINBASE/bin/tvonnow $DEVICE all $PARAM $4
+     exit 0;
+     ;;
+
+  getxawtv)
+     for NUM in $(seq 0 $((${#channel[@]} - 1)))
+     do
+        echo "["${names[$NUM]}"]"
+        echo "channel="${channel[$NUM]}
+        echo "key="$(($NUM+1))
+        echo
+     done
+     exit 0;
+     ;;
+esac
+ 
+
+

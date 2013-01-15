@@ -1,0 +1,21 @@
+ #!/bin/bash
+
+if [ "$1" == "query" ]; then
+  echo "Shower button 5"
+  exit 0
+fi
+
+ # Default paths
+MINBASE=/usr/local/minerva
+MINBIN=$MINBASE/bin
+
+## Code goes here
+$MINBIN/usr/shower start
+
+$MINBIN/report cache default ldb 
+$MINBIN/pmedia shower toggle
+$MINBIN/report vox shower ldb
+$MINBIN/pmedia shower toggle
+
+$MINBIN/usr/shower end
+

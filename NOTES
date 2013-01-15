@@ -1,0 +1,7 @@
+
+You may need to open port 8080 to use the video streamer.
+
+The TV recording channels (as set in conf/tvconf.conf) do NOT match
+with those used in the web applet 'TV Guide'. This will be fixed in
+a future version.
+

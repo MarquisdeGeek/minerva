@@ -1,0 +1,4 @@
+MINBIN=/usr/local/minerva/bin
+
+$MINBIN/addinfostream status sunrise `$MINBIN/sunrise`
+

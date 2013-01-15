@@ -1,0 +1,13 @@
+#!/bin/bash
+
+MINBIN=/usr/local/minerva/bin
+
+STATION_FROM=$1
+STATION_TO=$2
+
+if [ "$STATION_FROM" == "" ]; then
+  $MINBIN/ldbquery getshort stp lut
+else
+  $MINBIN/ldbquery getshort $STATION_FROM $STATION_TO
+fi
+

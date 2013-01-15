@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Wed Jul 11 08:45:40 2012 -->
+<channel id="fiver" source="XMLTV" date="11/07/2012">
+  <programme>
+<flags></flags>
+<desc>Teleshopping</desc>
+<title>Teleshopping</title>
+<end>0630</end>
+<start>0600</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping</desc>
+<title>Teleshopping</title>
+<end>0730</end>
+<start>0700</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping</desc>
+<title>Teleshopping</title>
+<end>0800</end>
+<start>0730</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping</desc>
+<title>Teleshopping</title>
+<end>0830</end>
+<start>0800</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping</desc>
+<title>Teleshopping</title>
+<end>0900</end>
+<start>0830</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Beautiful genuine gemstone jewellery supplied direct from the Gems TV designers at amazing prices. A UK family-owned business, Gems TV has been creating gemstone jewellery since 2004.</desc>
+<title>Gems TV - Teleshopping</title>
+<end>1300</end>
+<start>0900</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Documentary series. There is a Wales versus England truck-off as drivers Ashley and Mark race to deliver new turf for the pitch at Cardiff's Millennium Stadium.</desc>
+<title>Eddie Stobart: Trucks &amp; Trailers</title>
+<end>1400</end>
+<start>1300</start>
+  </programme>
+  <programme>
+<subtitle>Qualities and Difficulties</subtitle>
+<flags></flags>
+<desc>US comedy about a dysfunctional family. Adam and Kristina are determined to talk to Max about his Asperger's Syndrome and go to see Dr Pelikan.</desc>
+<title>Parenthood</title>
+<end>1500</end>
+<start>1400</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Jade presents evidence about Troy's violent past at the court case. Ajay argues there is no solid evidence. Furthermore, he raises the issue of Sonya's violent history. [AD,S]</desc>
+<title>Neighbours</title>
+<end>1530</end>
+<start>1500</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Alf urges Roo to make sure that Lottie is OK. Casey is avoiding home, opting to stay at Sasha's. She is excited, hoping that their friendship can be taken to the next level. [AD,S]</desc>
+<title>Home and Away</title>
+<end>1600</end>
+<start>1530</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Coverage of all the latest goings-on from inside the Big Brother house.</desc>
+<title>Big Brother</title>
+<end>1700</end>
+<start>1600</start>
+  </programme>
+  <programme>
+<subtitle>Ida's Boyfriend</subtitle>
+<flags></flags>
+<desc>Sitcom about a gifted boy growing up in a chaotic family. Lois and Malcolm are suspicious when battle-axe Ida announces she's getting married and moving to Hong Kong.</desc>
+<title>Malcolm In The Middle</title>
+<end>1725</end>
+<start>1700</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Malcolm joins a softball team to get out of working the early shift with Lois. Unfortunately for Malcolm, Lois is also coaching the team.</desc>
+<title>Malcolm In The Middle</title>
+<end>1800</end>
+<start>1725</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Lois is furious when her sister bestows lavish gifts on the kids during a rare visit. Only later does she realise the ulterior motive behind her sibling's atypical generosity.</desc>
+<title>Malcolm In The Middle</title>
+<end>1825</end>
+<start>1800</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>All the latest celebrity news and gossip. Presented by Stephanie Prentice.</desc>
+<title>5* Access</title>
+<end>1830</end>
+<start>1825</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>It is the day of Danny's court case and Brax is stressing that his father could get out of jail. Lottie decides to act like a teenager by skipping school. [AD,S]</desc>
+<title>Home and Away</title>
+<end>1900</end>
+<start>1830</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Jade presents evidence about Troy's violent past at the court case. Ajay argues there is no solid evidence. Furthermore, he raises the issue of Sonya's violent history. [AD,S]</desc>
+<title>Neighbours</title>
+<end>1935</end>
+<start>1900</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Malcolm clicks with his girlfriend's family to such an extent that he forgets about his girlfriend. Lois bars the boys from visiting their favourite restaurant.</desc>
+<title>Malcolm In The Middle</title>
+<end>2000</end>
+<start>1935</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Competitive cooking show with Marco Pierre White. Marco's food selection for the contenders is challenging - lamb with sweetbreads, red mullet and haunch of venison.</desc>
+<title>Marco Pierre White's Kitchen Wars</title>
+<end>2100</end>
+<start>2000</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>The dynamic duo meet a nurse and her husband in Wolverhampton who were ripped off at a time when she was recovering from breast cancer.</desc>
+<title>New Cowboy Builders</title>
+<end>2200</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>...S****ed Me: Spoof of 1960s spy films starring Mike Myers and Heather Graham. Dr Evil travels back in time to steal Austin Powers's libido and incapacitate the self-styled Casanova.</desc>
+<type>Film</type>
+<title>Austin Powers: The Spy Who...</title>
+<year>1999</year>
+<end>0000</end>
+<start>2200</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping on 5*.</desc>
+<title>Teleshopping</title>
+<end>0025</end>
+<start>0000</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping on 5*.</desc>
+<title>Teleshopping</title>
+<end>0050</end>
+<start>0025</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping on 5*.</desc>
+<title>Teleshopping</title>
+<end>0055</end>
+<start>0050</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping on 5*.</desc>
+<title>Teleshopping</title>
+<end>0120</end>
+<start>0055</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping on 5*.</desc>
+<title>Teleshopping</title>
+<end>0125</end>
+<start>0120</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping on 5*.</desc>
+<title>Teleshopping</title>
+<end>0155</end>
+<start>0125</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping on 5*.</desc>
+<title>Teleshopping</title>
+<end>0200</end>
+<start>0155</start>
+  </programme>
+</channel>

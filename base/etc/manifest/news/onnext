@@ -1,0 +1,18 @@
+#!/bin/bash
+
+MINBASE=/usr/local/minerva
+DEVICE=$1
+STORY=$2
+
+HEADLINE=`$MINBASE/bin/news-read bbc public vox $STORY headline`
+
+# No more data, so exit and stop the calling iterator in manifest
+if [ "$HEADLINE" == "" ]; then
+  exit 1
+fi
+
+$MINBASE/bin/say $DEVICE $HEADLINE
+
+# Delay for effect, and let the /dev/dsp clear up
+sleep 1
+

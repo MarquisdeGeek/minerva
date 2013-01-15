@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Sat Jul  7 07:19:11 2012 -->
+<channel id="bbc1" source="XMLTV" date="12/07/2012">
+  <programme>
+<flags></flags>
+<desc>The latest news, sport, business and weather from the BBC's Breakfast team. Also in HD. [S] Including regional news at 25 and 55 minutes past each hour.</desc>
+<title>Breakfast</title>
+<end>0915</end>
+<start>0600</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>24/25. Series following the work of probate researchers. Ronald Fawcett died in Stoke-on-Trent in 2010 without leaving a will, so the heir hunters get to work tracking down his relatives.</desc>
+<title>Heir Hunters</title>
+<end>1000</end>
+<start>0915</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Martin Roberts and Lucy Alexander visit a house in Derby, a chapel in Chelmsford and a flat in London, and find out how much they sold for at auction. [S] Then BBC News; Weather.</desc>
+<title>Homes Under the Hammer</title>
+<end>1100</end>
+<start>1000</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Clive Holland has help for those who have fallen victim to cowboy builders. The team help a Surrey mum whose new kitchen has a bouncy floor - an indicator of serious problems.</desc>
+<title>Cowboy Trap</title>
+<end>1145</end>
+<start>1100</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>9/10. Gloria Hunniford investigates how people are fighting back against rogue traders. Today, the story of consumer swindled out of  143,000 by builders. Also in HD. [S] Then BBC News; Weather.</desc>
+<title>Doorstep Crime 999</title>
+<end>1215</end>
+<start>1145</start>
+  </programme>
+  <programme>
+<subtitle>Shepton Mallet</subtitle>
+<flags>(S)</flags>
+<desc>Antiques challenge. Experts Philip Serrell and Anita Manning lead the teams on a hunt in Shepton Mallet. Tim Wonnacott finds inspiration at the John Soane Museum.</desc>
+<title>Bargain Hunt</title>
+<end>1300</end>
+<start>1215</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>The latest national and international news stories from the BBC News team, followed by weather.</desc>
+<title>BBC News at One</title>
+<end>1330</end>
+<start>1300</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>The latest news, sport and weather for the Midlands.</desc>
+<title>Midlands Today</title>
+<end>1345</end>
+<start>1330</start>
+  </programme>
+  <programme>
+<subtitle>Embers</subtitle>
+<flags></flags>
+<desc>Elaine goes back to school to hold a careers seminar, but the teacher needs her help. Also in HD. [AD,S]</desc>
+<title>Doctors</title>
+<end>1415</end>
+<start>1345</start>
+  </programme>
+  <programme>
+<subtitle>Carmarthenshire</subtitle>
+<flags>(S)</flags>
+<desc>Property series. Nicki Chapman helps a couple who are seeking an impressive house to retire to in South Wales. They have a healthy budget of 650,000 pounds.</desc>
+<title>Escape to the Country</title>
+<end>1500</end>
+<start>1415</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>The latest national and international news stories from the BBC News team, followed by weather.</desc>
+<title>BBC News</title>
+<end>1505</end>
+<start>1500</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>CBBC. Behind the Scenes: Steve Backshall looks back at his favourite encounters from the wildlife series, from abseiling into a cave looking for bats to a thrilling meeting with a hippo.</desc>
+<title>Deadly 60</title>
+<end>1535</end>
+<start>1505</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>CBBC. Computer Mayhem: Comedy series. Liam attempts to convince Dylan he has shut down the traffic light system and is causing traffic chaos. [S] Then Diddy Dick and Dom.</desc>
+<title>Prank Patrol Down Under</title>
+<end>1600</end>
+<start>1535</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>CBBC. Sam and Mark host as two families battle it out in a range of hilarious games, like Quick on the Draw, Mime Time, Music Round, and the formidable Copycats Challenge. Also in HD.</desc>
+<title>Copycats</title>
+<end>1630</end>
+<start>1600</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>CBBC. 13/13. All for One: Supernatural drama. Bertrand believes that if he reads the last words of the Praedictum Impaver, all the power within the book will go to him. Also in HD.</desc>
+<title>Young Dracula</title>
+<end>1700</end>
+<start>1630</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>CBBC. Topical news magazine for children.</desc>
+<title>Newsround</title>
+<end>1715</end>
+<start>1700</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Quiz in which contestants try to score as few points as possible by plumbing the depths of their general knowledge to come up with the answers no-one else can think of.</desc>
+<title>Pointless</title>
+<end>1800</end>
+<start>1715</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>The latest national and international news stories from the BBC News team, followed by weather.</desc>
+<title>BBC News at Six</title>
+<end>1830</end>
+<start>1800</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>The latest news, sport and weather for the Midlands.</desc>
+<title>Midlands Today</title>
+<end>1900</end>
+<start>1830</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Matt Baker and Alex Jones bring you the stories that matter from across the country. Also in HD.</desc>
+<title>The One Show</title>
+<end>1930</end>
+<start>1900</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Jay struggles to cope with his grim discovery and makes a decision that could affect his life forever - but will someone prevent him from going through with it? Also in HD. [AD,S] Then BBC News.</desc>
+<title>EastEnders</title>
+<end>2000</end>
+<start>1930</start>
+  </programme>
+  <programme>
+<subtitle>Bash Cash</subtitle>
+<flags>(S)</flags>
+<desc>Documentary series. The traffic cops come across a suspicious accident on an empty motorway sliproad that bears the hallmarks of an insurance-cheating 'crash for cash'. Also in HD.</desc>
+<title>Traffic Cops</title>
+<end>2100</end>
+<start>2000</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>2/2. The remaining pensioners face competition from genuine young job seekers. Also in HD. [AD,S]</desc>
+<title>The Town that Never Retired</title>
+<end>2200</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>The latest national and international news, with reports from BBC correspondents worldwide.</desc>
+<title>BBC News at Ten</title>
+<end>2225</end>
+<start>2200</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>The latest news, sport and weather for the Midlands. [S] Followed by national weather.</desc>
+<title>Midlands Today</title>
+<end>2235</end>
+<start>2225</start>
+  </programme>
+  <programme>
+<subtitle>June Brown</subtitle>
+<flags>(S)</flags>
+<desc>Why Old People Matter: EastEnders actress June Brown takes a look at how older people are treated in the UK. Also in HD.</desc>
+<title>June Brown: Respect Your Elders</title>
+<end>2325</end>
+<start>2235</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>A political review of the week presented by Andrew Neil, with Michael Portillo, Alan Johnson and guests.</desc>
+<title>This Week</title>
+<end>0010</end>
+<start>2325</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Detailed weather forecast.</desc>
+<title>Holiday Weatherview</title>
+<end>0015</end>
+<start>0010</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>...the 70s? - Panorama. Panorama asks whether Britain is able to cope with a new age of austerity. [S,SL]</desc>
+<title>Britain on the Brink: Back to...</title>
+<end>0045</end>
+<start>0015</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>This episode of Countryfile comes from the Kent hills. Ellie Harrison follows in the footsteps of Octavia Hill, social reformer and founder of the National Trust. [S,SL]</desc>
+<title>Countryfile</title>
+<end>0145</end>
+<start>0045</start>
+  </programme>
+  <programme>
+<subtitle>Birmingham University</subtitle>
+<flags></flags>
+<desc>A second visit to Birmingham University for the team as they embark on a busy day of valuations, with objects including the biggest vases seen on the show. [S,SL]</desc>
+<title>Antiques Roadshow</title>
+<end>0245</end>
+<start>0145</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>10/10. A look at crime and punishment in modern Britain. Louise Minchin and Gethin Jones chart the changes in crime, criminals, police and prisons over the last 60 years. [S,SL]</desc>
+<title>Crime and Punishment</title>
+<end>0330</end>
+<start>0245</start>
+  </programme>
+  <programme>
+<subtitle>South West Main</subtitle>
+<flags></flags>
+<desc>Chefs Paul Ainsworth, Nathan Outlaw and Simon Hulstone cook their main courses, but who will take gold? Great British Menu veteran Tom Kerridge scores the dishes. [S,SL]</desc>
+<title>Great British Menu</title>
+<end>0400</end>
+<start>0330</start>
+  </programme>
+  <programme>
+<subtitle>South West Dessert</subtitle>
+<flags></flags>
+<desc>It's the chefs' final chance to impress, this time presenting their desserts. Dishes include elderflower and lemon tart with strawberry sorbet and meringues. [S,SL]</desc>
+<title>Great British Menu</title>
+<end>0430</end>
+<start>0400</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>BBC One joins the BBC's rolling news channel for a night of news, with bulletins on the hour and the headlines every 15 minutes.</desc>
+<title>BBC News</title>
+<end>0600</end>
+<start>0430</start>
+  </programme>
+</channel>

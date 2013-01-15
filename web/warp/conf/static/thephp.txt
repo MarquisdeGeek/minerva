@@ -1,0 +1,32 @@
+Initialization gives an opportunity to parse the GET arguments.
+
+Note that the Applet Manager does all the work!
+
+<pre>
+    function init(&$appMan)
+    {
+        // pickup any control parameters passed in
+        $prm = $appMan->queryParameter($this, "on");
+        if ($prm != "") {
+            X10::setStatus($prm, X10::$device_on);
+        }
+    }
+</pre>
+
+The other half of the equation involves creating a suitably configured link:
+
+<pre>
+    $html.= $appMan->getAppletLink($this, "on", "bedroom_light", "Switch Light On");
+</pre>
+
+
+For anything that isn't a command, but merely holds additional state there this:
+
+<pre>
+    function getRefreshParams(&$appMan)
+    {
+        return $appMan->getArgument($this, "current", $this->_which);
+    }
+</pre>
+
+

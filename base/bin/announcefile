@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# NOTE: This doesn't use finddev because it does no work itself, but
+# uses the code of others. This allows the script to be called with
+# 'bedroom' or 'lounge' and the individual scripts (mixer/say) can
+# use the appropriate devices for that room. (This is necessary since
+# there are many devices involved, and no single $DEVICE could handle
+# them all.)
+
+MINBIN=/usr/local/minerva/bin
+
+$MINBIN/minlog cmd $0 $*
+
+DEVICE=$1
+
+CDVOL=`$MINBIN/mixer $DEVICE get cd`
+LINEVOL=`$MINBIN/mixer $DEVICE get linein`
+
+$MINBIN/mixer $DEVICE dec cd 50
+$MINBIN/mixer $DEVICE dec linein 50
+
+$MINBIN/sfx $DEVICE play start
+$MINBIN/sayfile $DEVICE $2
+$MINBIN/sfx $DEVICE play stop
+
+$MINBIN/mixer $DEVICE set linein $LINEVOL
+$MINBIN/mixer $DEVICE set cd $CDVOL
+
+

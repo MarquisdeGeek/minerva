@@ -1,0 +1,70 @@
+#
+WHICH=$1
+
+SAY=/usr/local/minerva/bin/say
+BINDIR=/usr/local/minerva/bin
+WAVPLAY=/usr/local/minerva/bin/wavplayer
+
+POPVOL=`$BINDIR/mixer default get wave`
+$BINDIR/mixer default set wave 90
+
+SLEEP_TIME=2
+
+if [ "$WHICH" == "" ]; then
+  WHICH=1
+fi
+
+case $WHICH in
+query)
+	#FIRST=`(crontab -l | grep "^[^#].*alarm" | head -n 1)`
+	#echo $FIRST
+	;;
+
+1)
+	# first alarm
+	$WAVPLAY default splay /usr/local/minerva/media/wav/chime.wav
+   $WAVPLAY default splay /usr/local/minerva/media/voxwav/messages/hello.wav
+   $BINDIR/vtime
+
+	$WAVPLAY default splay /usr/local/minerva/media/wav/chime.wav
+   $SAY default `$BINDIR/ldbquery get LUT STP 0 30`
+
+	#$SAY default wake up
+	;;
+
+2)
+	# first alarm
+	$WAVPLAY default splay /usr/local/minerva/media/wav/chime.wav
+	$WAVPLAY default splay /usr/local/minerva/media/voxwav/messages/wake-up-now.wav
+	$BINDIR/vtime
+
+	$WAVPLAY default splay /usr/local/minerva/media/wav/chime.wav
+   $SAY default `$BINDIR/ldbquery get LUT STP 0 30`
+
+	$WAVPLAY default splay /usr/local/minerva/media/wav/chime.wav
+	#$SAY default wake up
+	TODAY_EVENTS=`$BINDIR/hacal list steev all 0 0`
+	if [ -n "$TODAY_EVENTS" ]; then
+		$SAY default Here is todays calendar
+		$SAY default $TODAY_EVENTS
+	fi
+
+	#$SAY default it is `$BINDIR/htime`
+	$SAY default `$BINDIR/weatherstatus`
+	;;
+
+3)
+	# first alarm
+	$WAVPLAY default play /usr/local/minerva/media/wav/chime.wav
+	sleep $SLEEP_TIME
+	$SAY default Enough is enough - leave now!
+	$SAY default it is `$BINDIR/htime`
+	;;
+
+esac
+
+sleep $SLEEP_TIME
+$WAVPLAY default play /usr/local/minerva/media/wav/chime.wav
+
+$BINDIR/mixer default set wave $POPVOL
+

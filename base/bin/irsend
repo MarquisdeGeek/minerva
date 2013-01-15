@@ -1,0 +1,47 @@
+#!/bin/bash
+
+MINBASE=/usr/local/minerva
+
+DEVICE=`$MINBASE/bin/finddev irsend $*`
+if [ $? == 0 ]; then
+  echo $DEVICE
+  exit 0;
+fi
+
+
+
+CMD=$2
+EQUIPMENT=$3
+COMMAND=$4
+
+if [ "$CMD" == "enumdev" ]; then
+  $MINBASE/bin/enumdev irsend
+  exit $?
+fi
+
+
+$MINBASE/bin/minlog cmd $0 $*
+
+IRFILE=$MINBASE/etc/ir/$EQUIPMENT/codes/$COMMAND
+IRMETHODFILE=$MINBASE/etc/ir/$EQUIPMENT/method
+
+if [ -f $IRMETHODFILE ]; then
+  IRMETHOD=`head -n 1 $IRMETHODFILE`
+else
+  IRMETHOD="kira"
+fi
+
+# Process
+if [ "$IRMETHOD" == "kira" ]; then
+
+  if [ -f $IRFILE ]; then
+    cat $IRFILE | nc -q 0  -u $KIRA 65432
+  else
+    exit -1
+  fi
+
+else
+  echo "Unknown IR method."
+  exit 1
+fi
+

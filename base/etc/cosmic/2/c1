@@ -1,0 +1,7 @@
+#!/bin/bash
+# Report on all media playing
+
+MINBIN=/usr/local/minerva/bin/
+
+$MINBIN/mstatus
+

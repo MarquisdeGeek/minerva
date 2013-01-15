@@ -1,0 +1,46 @@
+#!/bin/bash
+
+MINBASE=/usr/local/minerva
+
+$MINBASE/bin/minlog cmd $0 $*
+
+REPLY_TO=$1; shift;
+COMMAND=$1; shift;
+ARGS=$*
+
+ROUTE=sms
+
+if [ "$REPLY_TO" = "vox" ]; then
+   ROUTE=vox
+   REPLY_TO=me
+elif [ "$REPLY_TO" = "echo" ]; then
+   ROUTE=echo
+   REPLY_TO=default
+elif [ "$REPLY_TO" = "twitter" ]; then
+   ROUTE=twitter
+   REPLY_TO=default
+elif [ "$REPLY_TO" = "facebook" ]; then
+   ROUTE=facebook
+   REPLY_TO=default
+elif [ ${REPLY_TO:0:1} = "@" ]; then
+   # using @steev uses the email address book lookup the ID
+   ROUTE=email
+	REPLY_TO=${REPLY_TO:1}
+elif [[ "$REPLY_TO" =~ "@" ]]; then
+   # whereas an @ anywhere else in the string uses the whole email
+   ROUTE=email
+elif [[ "$REPLY_TO" =~ "#" ]]; then
+   ROUTE=sms
+	REPLY_TO=${REPLY_TO:1}
+fi
+
+CMD_PATH=$MINBASE/etc/sis/cmd/$COMMAND 
+
+if [ -f $CMD_PATH ]; then
+   OUTPUT=`$CMD_PATH $ARGS`
+else
+   OUTPUT="Unknown command"
+fi
+
+$MINBASE/bin/msgxmit $ROUTE $REPLY_TO $OUTPUT
+

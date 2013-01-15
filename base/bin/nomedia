@@ -1,0 +1,8 @@
+#!/bin/bash
+MINBASE=/usr/local/minerva
+MINBIN=$MINBASE/bin
+$MINBASE/bin/minlog cmd $0 $*
+
+echo "No media is playing."
+exit 0
+

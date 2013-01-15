@@ -1,0 +1,29 @@
+#!/bin/bash
+
+MINETC=/usr/local/minerva/etc/users
+VARLOG=/var/log/minerva
+MINBASE=/usr/local/minerva
+
+USER=$1
+FULLNAME=$2
+
+if [ "$USER" == "" ]; then
+   echo "Usage: $0 <username> [fullname]"
+   exit 1;
+fi
+
+if [ "$FULLNAME" == "" ]; then
+   FULLNAME=$USER
+fi
+
+$MINBASE/bin/minlog sys Creating user "$USER ($FULLNAME)"
+
+mkdir -p $MINETC/$USER
+echo $FULLNAME > $MINETC/$USER/name
+
+mkdir -p $MINETC/$USER/tvsearch
+echo > $MINETC/$USER/tvsearch/list
+
+chgrp -R minerva $MINETC/$USER
+chmod -R ug+rw $MINETC/$USER
+

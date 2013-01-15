@@ -1,0 +1,85 @@
+#!/bin/bash
+CONFSTUB=/usr/local/minerva/conf/routine
+VARSTUB=/var/log/minerva/routine
+MINBASE=/usr/local/minerva
+
+$MINBASE/bin/minlog cmd $0 $*
+
+if [ $# -lt 1 ]; then
+  echo "Usage: $0 <init|start|list|process> <time> [routine_number]"
+  echo "   You will not normally use the 'process' command, as that is called by cron"
+  echo "   The 'start' command ignores the <time> parameter, as it's implicitly 'now'"
+  exit 1
+fi
+
+CMD=$1
+THETIME=$2
+ROUTINE=$3
+
+if [ "$THETIME" == "" ]; then
+	THETIME=`date +%H:%M`
+fi
+
+case $CMD in
+	init)
+			mkdir $VARSTUB
+         rm $VARSTUB/*
+			;;
+
+	start|now)
+			$0 process now $ROUTINE
+			;;
+
+	list|query)
+			for DIR in $CONFSTUB/*
+         do
+				echo -n `basename $DIR` : `head -n 1 $DIR/name` at `head -n 1 $DIR/normal`
+				if [ -f  $DIR/override ]; then
+					echo " Tomrrow at " `head -n 1 $DIR/override`
+				else
+					echo
+				fi
+			done
+			;;
+
+	process)
+			if [ "$ROUTINE" == "" ]; then
+				# no routine given, try them all
+				SEARCH_PATH=$CONFSTUB/*
+			else
+				SEARCH_PATH=$CONFSTUB/$ROUTINE
+			fi
+			#
+			for DIR in $SEARCH_PATH
+			do
+				if [ -f $DIR/override ]; then
+					CHECKTIME"=`head -n 1 $DIR/override`
+				else
+					CHECKTIME"=`head -n 1 $DIR/normal`
+				fi
+
+				if [ "$THETIME" == "$CHECKTIME"  -o "$THETIME" == "now" ]; then
+					RID=`basename $DIR`
+
+					# 1. Check to see if it's already running.
+					#    (if so, ignore it)
+					if [ -f $VARSTUB/$RID.pid ]; then
+						exit 1
+					fi
+
+					head -n 1 $DIR/name >> $VARSTUB/log
+
+					rm  $DIR/override 2>/dev/null
+
+					. $DIR/script &
+					PID=$!
+					echo $PID > $VARSTUB/$RID.pid
+					wait $PID 2>/dev/null
+					rm $VARSTUB/$RID.pid
+
+				fi
+
+			done
+			;;
+esac
+

@@ -1,0 +1,28 @@
+# Based on the findev code, this lists (one per line) each possible
+# device available for the given command.
+
+# Note: localhost is explicitly not given.
+
+# This is called with the same set of arguments as any of the
+# standard media controls. 
+
+MINROOT=/usr/local/minerva
+
+COMMAND=$1
+DEVLIST="$MINROOT/etc/devices/$COMMAND/devlist"
+
+if [ ! -f $DEVLIST ]; then
+  # we have no such a list
+  exit 1;
+fi
+
+cut --delimiter=' ' -f 1 < $DEVLIST |
+while read LINE
+do
+	if [[ "$LINE" != "" && "$LINE" != "localhost" ]]; then
+		echo $LINE
+	fi
+done
+
+exit 0;
+

@@ -1,0 +1,63 @@
+#!/usr/bin/php
+<?php
+
+if ($argc < 2) {
+   print "Usage: weatherinfo [today|tomorrow] [low|high|img|description]\n";
+   return 1;
+}
+
+$dayRequest = $argv[1];
+$request = $argv[2];
+$cr = "";
+
+$data = file("/var/log/minerva/cache/weather_info.txt");
+
+$whichDay = "today";
+$parseThis = false;
+foreach($data as $line) {
+	$data = explode(':', $line);
+	$field = trim($data[0]);
+	$param = trim($data[1]);
+
+	if ($field == "day") {
+		if (strcasecmp($param, $dayRequest) == 0 || $whichDay == $dayRequest) {
+			$parseThis = true;
+			if ($request == "day") {
+				echo $param;
+			}
+		} else if ($whichDay == "today") {
+		}
+			$whichDay = "tomorrow";
+	}
+	//
+	if ($parseThis) {
+		switch($field) {
+			case "high":
+			case "low":
+				if ($field == $request){
+					echo "$param$cr";
+					$parseThis = false;
+				}
+				break;
+			case "description":
+				if ($field == $request) {
+					$parseThis = false;
+					echo "$param$cr";
+				} else if ($request == "image") {
+					$parseThis = false;
+					if (stristr($param, "snow")) $img = "snow";
+					else if (stristr($param, "storm")) $img = "thunder-storm";
+					else if (stristr($param, "thunder")) $img = "thunder-storm";
+					else if (stristr($param, "wind")) $img = "wind";
+					else if (stristr($param, "fog")) $img = "fog";
+					else if (stristr($param, "cloud")) $img = "cloudy";
+					else if (stristr($param, "rain")) $img = "showers";
+					else $img = "sunny";
+					echo "$img$cr";
+				}
+				break;
+		}//switch
+	}//fi
+}//rof
+
+?>

@@ -1,0 +1,24 @@
+#!/bin/bash
+
+MINBASE=/usr/local/minerva
+MINBIN=$MINBASE/bin
+
+MIXER_PUSH=/var/log/minerva/shower_mixer
+
+DEVICE=shower
+CMD=$1
+
+if [ "$CMD" == "start" ]; then
+	$MINBIN/minty start shower_speaker
+	$MINBIN/homedevice default on shower_speaker
+	$MINBIN/mixer $DEVICE store $MIXER_PUSH
+	$MINBIN/mixer $DEVICE set wave 100
+	$MINBIN/sfx shower start
+
+else
+	$MINBIN/sfx shower end
+	$MINBIN/minty end shower_speaker
+	$MINBIN/mixer $DEVICE recall $MIXER_PUSH
+	rm $MIXER_PUSH
+fi
+

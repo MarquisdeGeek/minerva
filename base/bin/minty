@@ -1,0 +1,89 @@
+#!/bin/bash
+MINBASE=/usr/local/minerva
+LOGDIR=/var/log/minerva/minty
+LOGFILE=/var/log/minerva/bearskin/minty
+CONFDIR=$MINBASE/conf/minty
+
+
+$MINBASE/bin/minlog cmd $0 $*
+
+CMD=$1
+REF=$2
+
+REFFILE=$LOGDIR/$REF
+DATEFORMAT="%H:%M %D"
+
+if [ $# -lt 1 ]; then
+  echo $0 "[start|end|pump] [timeout_ref]"
+fi
+
+case $CMD in
+	init)
+			mkdir $LOGDIR
+			mkdir $CONFDIR
+			chgrp -R minerva $LOGDIR/*
+			chmod -R ug+rw   $LOGDIR/*
+			chgrp minerva $LOGFILE
+			chmod ug+rw   $LOGFILE
+			;;
+
+	start)
+			if [ ! -f $REFFILE ]; then
+				echo 1 > $REFFILE
+			else
+				CURRENT=`cat $REFFILE`
+				CURRENT=$((CURRENT + 1))
+				echo $CURRENT > $REFFILE
+			fi	
+			;;
+	end)
+			CURRENT=`cat $REFFILE`
+         CURRENT=$((CURRENT - 1))
+         echo $CURRENT > $REFFILE
+
+			if [ $CURRENT == "0" ]; then
+				date --date "now +3 minutes" +"$DATEFORMAT" > $REFFILE.date
+			fi
+			;;
+
+	ready)
+			CURRENT=`cat $REFFILE`
+
+			if [ $CURRENT == "0" ]; then
+				echo "1"
+				exit 1
+			fi
+			echo 0
+			exit 0
+			;;
+
+	get)
+			cat $REFFILE
+			;;
+
+	pump)
+			NOWDATE=`date +"$DATEFORMAT"`
+			for F in $LOGDIR/*
+			do
+				if [ -f $F ]; then
+					STATE=`cat $F`
+					if [ "$STATE" == "0" ]; then
+						CHECK=`cat $F.date`
+	
+						if [ "$NOWDATE" == "$CHECK" ]; then
+							NAME=`basename $F`
+							EXECFILE=$CONFDIR/$NAME
+							if [ -f $EXECFILE ]; then
+								. $EXECFILE
+							fi
+	
+						rm $F.date >/dev/null 2>/dev/null
+						rm $F >/dev/null 2>/dev/null
+						fi
+					fi
+				fi
+			done
+			;;	
+esac
+
+

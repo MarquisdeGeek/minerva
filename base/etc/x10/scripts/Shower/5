@@ -1,0 +1,23 @@
+ #!/bin/bash
+
+if [ "$1" == "query" ]; then
+  echo "Calendar"
+  exit 0
+fi
+
+ # Default paths
+MINBASE=/usr/local/minerva
+MINBIN=$MINBASE/bin
+
+## Code goes here
+$MINBIN/sfx shower start
+
+$MINBIN/report cache default calendar
+$MINBIN/pmedia shower toggle
+$MINBIN/sfx shower start
+$MINBIN/report vox shower calendar
+$MINBIN/sfx shower stop
+$MINBIN/pmedia shower toggle
+
+$MINBIN/sfx shower end
+

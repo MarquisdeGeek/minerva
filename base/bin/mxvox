@@ -1,0 +1,19 @@
+#!/bin/bash
+
+MINBASE=/usr/local/minerva
+
+VOX=$1; shift
+USER=$1; shift
+
+VOXFILE=$MINBASE/etc/users/$USER/festvox
+if [ -f $VOXFILE ]; then
+  VOXDEVICE=`head -n 1 $VOXFILE`
+else
+  VOXDEVICE=default
+fi
+
+$MINBASE/bin/announce $VOXDEVICE $*
+
+echo $MINBASE/bin/announce $VOXDEVICE $* >> /var/log/minerva/bearskin/yaks
+
+

@@ -1,0 +1,14 @@
+ #!/bin/bash
+
+if [ "$1" == "query" ]; then
+  echo "HouseE button 6"
+  exit 0
+fi
+
+ # Default paths
+MINBASE=/usr/local/minerva
+MINBIN=$MINBASE/bin
+
+## Code goes here
+$MINBIN/homedevice default off shower_speaker
+

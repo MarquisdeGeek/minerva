@@ -1,0 +1,69 @@
+#!/usr/bin/php
+<?php
+require_once 'inc/rssreader/rss_fetch.inc';
+
+if ($argc < 2) {
+   print "Usage: news-get [username] [siteref]\n";
+   return 1;
+}
+
+$maxItems = 10;
+$user = $argv[1];
+$siteRef = $argv[2];
+
+if ($user == "") {
+   $user = "public";
+}
+
+$configFile = "/usr/local/minerva/etc/users/$user/news/$siteRef";
+if ($argc < 3) {
+   if (file_exists($configFile))  {
+      system("ls -1 $configFile");
+   }
+   return 1;
+}
+
+$logfile = "/var/log/minerva/rss/$user-$siteRef";
+@mkdir($logfile);
+@chmod($logfile, 0777);
+
+
+// if the file exists, and is recent, we don't re-get it
+$firstStoryFile = $logfile."/0";
+if (file_exists($firstStoryFile))  {
+  $filetime = filemtime($firstStoryFile);
+  $nowtime = time();
+  $age = 5 * 60;	// 5 minutes
+
+  if ($filetime + $age > $nowtime) {
+     echo $logfile;
+     return 0;
+  }
+}
+
+$config = file($configFile);
+$url = chop($config[1]);
+
+$rss = fetch_rss($url);
+$lastItem = count($rss->items);
+
+if ($lastItem > $maxItems) {
+   $lastItem = $maxItems;
+}
+
+
+for($i=0;$i < $lastItem;++$i) {
+  $filename = "$logfile/$i";
+  $filedata = array();
+  $filedata[]= $config[0]."\n";
+  $filedata[]= $rss->items[$i]['title']."\n";
+  $filedata[]= $rss->items[$i]['link']."\n";
+  $filedata[]= $rss->items[$i]['description']."\n";
+
+  @file_put_contents($filename, $filedata);
+  @chmod($filename, 0666);
+}
+
+echo $logfile
+
+?>

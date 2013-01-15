@@ -1,0 +1,203 @@
+#!/bin/bash
+MINBASE=/usr/local/minerva
+MINBIN=$MINBASE/bin
+VARLOG=/var/log/minerva
+VARBASE=$VARLOG/manifest
+ETCBASE=$MINBASE/etc/manifest
+BLOCKPATH=$VARBASE/block
+
+if [ $# -le 1 ]; then
+  echo "Usage: $0 <device> <start|next|more|current|stop|list|block|blocklist> [type] [max items]"
+  echo "       Note: this is a synchronous method"
+  echo "       Note: block works on the current file, iff media is playing. It is no use for non-mp3s"
+  exit -1
+fi
+
+$MINBASE/bin/minlog cmd $0 $*
+
+DEVICE=$1
+COMMAND=$2
+TYPE=$3
+PARAMETER=$4
+
+QUIET=1
+
+DEVICE=`$MINBASE/bin/finddev manifest $*`
+if [ $? == 0 ]; then
+  echo $DEVICE
+  exit 0;
+fi
+
+
+case "$COMMAND" in
+  init)
+     rm -r $VARBASE
+     rm -r $BLOCKPATH
+     mkdir $VARBASE 
+     mkdir $BLOCKPATH
+     touch $VARBASE/curr
+     chgrp -R minerva $VARBASE
+     chmod -R ugo+rw $VARBASE
+     exit 0
+     ;;
+
+  enumdev)
+     $MINBIN/enumdev manifest
+     exit $?
+     ;;
+
+  list)
+     ls -1 $ETCBASE
+     ;;
+
+  start)
+		$0 $DEVICE isplaying >/dev/null
+		if [ $? = 1 ]; then
+	     $0 $DEVICE stop
+		fi
+
+     MAXCOUNT=$4
+     if [ "$MAXCOUNT" == "" ]; then
+        MAXCOUNT=5
+     fi
+     if [ -f $ETCBASE/$TYPE/onstart ]; then
+        $ETCBASE/$TYPE/onstart $DEVICE $PARAMETER
+     fi
+     COUNT=0
+     EXITCODE=0
+     echo next > $VARBASE/cmd
+
+     if [ $QUIET == 0 ]; then
+        $MINBIN/sfx $DEVICE start
+     fi
+
+	 touch $VARBASE/isplaying
+	chmod ugo+rw $VARBASE/isplaying
+
+     while [ "$EXITCODE" -eq 0 ]; do
+         echo $TYPE > $VARBASE/curr
+         echo $COUNT > $VARBASE/count
+
+         $ETCBASE/$TYPE/onnext $DEVICE $COUNT $PARAMETER &
+         PID=$!
+         echo $PID > $VARBASE/pid
+         wait $PID 2>/dev/null
+         EXITCODE=$?
+
+         NEXTCMD=`cat $VARBASE/cmd`
+         if [ "$NEXTCMD" == "next" ]; then
+            # let it just loop around
+            NEXTCMD=$NEXTCMD
+
+         elif [ "$NEXTCMD" == "more" ]; then
+            if [ -f $ETCBASE/$TYPE/onmore ]; then
+               $ETCBASE/$TYPE/onmore $DEVICE $COUNT $PARAMETER
+               EXITCODE=$?
+            fi
+            echo next > $VARBASE/cmd
+
+         elif [ "$NEXTCMD" == "stop" ]; then
+            EXITCODE=1
+
+            if [ $QUIET == 0 ]; then
+			     $MINBIN/sfx $DEVICE stop
+            fi
+
+         fi
+
+         # terminate at end (rem: we started from 0, therefore use -ge)
+         COUNT=$(($COUNT+1))
+         if [ $COUNT -ge $MAXCOUNT ]; then 
+            EXITCODE=1
+         fi
+     done 
+
+		rm $VARBASE/isplaying 2>/dev/null
+
+      if [ $QUIET == 0 ]; then
+        $MINBIN/sfx $DEVICE stop
+      fi
+
+
+     if [ -f $ETCBASE/$TYPE/onstop ]; then
+        $ETCBASE/$TYPE/onstop $DEVICE $PARAMETER
+     fi
+
+     exit 0
+     ;;
+
+  isplaying)
+     if [ -f $VARBASE/isplaying ]; then
+		 echo 1
+       exit 1
+     else
+		 echo 0
+       exit 0
+     fi
+     ;;
+
+  current)
+     if [ -f $VARBASE/curr ]; then
+       head -n 1 $VARBASE/curr
+       exit 0
+     else
+       exit 1
+     fi
+     ;;
+
+  next|stop)
+		# for 'next' when nothing is playing, simulate a 'start' command
+		if [ "$COMMAND" == "next" ]; then
+			$0 $DEVICE isplaying >/dev/null
+			if [ "$?" == "0" ]; then
+				if [ "$TYPE" == "" -a -f $VARBASE/curr ]; then
+					TYPE=`head -n 1 $VARBASE/curr`
+				fi
+				if [ "$TYPE" == "" ]; then
+					TYPE=music
+				fi
+				if [ "$PARAMETER" == "" ]; then
+					PARAMETER=5
+				fi
+
+				$0 $DEVICE start $TYPE $PARAMETER
+				exit $?
+			fi
+		fi
+
+      if [ $QUIET == 0 ]; then
+        $MINBIN/sfx $DEVICE play next
+      fi
+
+     echo $COMMAND > $VARBASE/cmd
+
+     TYPE=`head -n 1 $VARBASE/curr`
+     if [ -f $ETCBASE/$TYPE/terminate ]; then
+        $ETCBASE/$TYPE/terminate $DEVICE
+
+     elif [ -f $VARBASE/pid ]; then
+        PID=`cat $VARBASE/pid`
+        kill -9 $PID 2>/dev/null
+        sleep 1
+     fi
+     ;;
+
+  more)
+     echo more > $VARBASE/cmd
+     exit 0
+     ;;
+
+  block)
+     BLOCKFILE=`$MINBIN/mp3player $DEVICE fullname`
+     FULL=$BLOCKPATH/$BLOCKFILE
+     FULLDIR=`dirname "$FULL"`
+     mkdir -p "$FULLDIR"
+     touch "$FULL"
+     ;;
+
+  blocklist)
+     ls -R $BLOCKPATH | grep -B 1 -e "\."
+     ;;
+
+esac
+

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Usage: $0 <device> <text>
+MINBASE=/usr/local/minerva
+
+$MINBASE/bin/minlog cmd $0 $*
+
+DEVICENAME=$1
+shift
+TEXTNAME=`mktemp`
+echo $* > $TEXTNAME
+
+$MINBASE/bin/sayfile $DEVICENAME $TEXTNAME
+
+rm $TEXTNAME
+

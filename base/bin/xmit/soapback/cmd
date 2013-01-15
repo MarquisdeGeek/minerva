@@ -1,0 +1,25 @@
+#!/usr/bin/php
+<?php
+$argc = $_SERVER['argc'];
+$argv = $_SERVER['argv'];
+
+$server = $argv[1];
+$port = $argv[2];
+
+   $client = new SoapClient(null, array(
+      'location' => "http://$server/minerva/marple/cmd.php",
+      'uri'      => "urn://www.minervahome.net/soapreq",
+      'trace'    => 0 ));
+
+   # Build a full command string
+   $command = $argv[3];
+   $fullArguments = "";
+   for ($i=4;$i<$argc;++$i) {
+      $fullArguments .= $argv[$i]." ";
+   } 
+
+   $return = $client->__soapCall("marpleback", array($command, $fullArguments));
+
+   print $return;
+?>
+

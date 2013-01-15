@@ -1,0 +1,8 @@
+#!/bin/bash
+# Stop random music
+
+MINBIN=/usr/local/minerva/bin/
+
+$MINBIN/manifest default stop
+
+

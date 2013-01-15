@@ -1,0 +1,4 @@
+# The cache conduit exists only to swallow output, like /dev/null
+# It is useful to eliminate gaps when requesting external content
+# i.e. report cache x data; play_sfx; report say x data;
+

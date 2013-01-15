@@ -1,0 +1,29 @@
+#!/bin/bash
+MINBASE=/usr/local/minerva
+VARLOG=/var/log/minerva
+MINCONF=$MINBASE/conf
+MINLOG=$VARLOG/monexec
+
+DATE=`date +"%F %H:%M"`
+
+$MINBASE/bin/minlog cmd $0 $*
+
+if [ $# == 0 ]; then
+  echo "Usage: $0 <program> <command>"
+fi
+
+PROG=$1
+CMD=$2
+shift
+shift
+
+EXEC=$MINCONF/exec/$PROG/$CMD
+
+echo -n "$DATE  $PROG $CMD : " >> $MINLOG
+if [ -f $EXEC ]; then
+  . $EXEC $*
+  echo "$EXEC $*" >> $MINLOG
+else
+  echo "(no command)"  >> $MINLOG
+fi
+

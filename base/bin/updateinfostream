@@ -1,0 +1,12 @@
+#!/bin/bash
+
+CONFDIR=/usr/local/minerva/etc/infostream
+
+ls "$CONFDIR" |
+while read FILE
+do
+  . $CONFDIR/$FILE
+done
+
+
+

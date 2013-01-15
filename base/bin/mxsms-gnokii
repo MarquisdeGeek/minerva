@@ -1,0 +1,12 @@
+#!/usr/bin/php
+<?php
+
+array_shift($argv);     // ignore program name
+
+$type = array_shift($argv);
+$toAddr = array_shift($argv);
+$message = implode(" ", $argv);
+
+system("echo \"$message\" | gnokii --sendsms $toAddr");
+
+?>

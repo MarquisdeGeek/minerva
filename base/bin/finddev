@@ -1,0 +1,106 @@
+# This is called with the same set of arguments as any of the
+# standard media controls. It then looks fora suitable machine to whom
+# the command will be sent. It then, if appropriate, sends that SOAP
+# packet.
+
+# There are four ways a device may be controled, and therefore four options.
+# for the 'device' parameter.
+# 1. A Linux device, e.g. /dev/cdrom
+# 2. The standard appliance connected to the localhost 
+# 3. A locally-resolved device
+# 4. A remotely-resolved device
+
+# Reading the output:
+# If this command returns 0 (in $?), then everything was fine, and we sent a
+# suitable command. The calling script must write the output, and exit 
+# immediately.
+#
+# If non-0 is returned, then we couldn't resolve the device, so the calling
+# script must. This generally (only?) happens when the device is /dev
+
+MINROOT=/usr/local/minerva
+
+COMMAND=$1
+DEVICE=$2
+shift; shift;
+ALLARGS=$*
+
+function checkDevice() {
+DEVLIST=$1
+DEVICE=$2
+
+if [ ! -f $DEVLIST ]; then
+  # we have no such a list
+  return 1;
+fi
+
+DEVICE=$( awk '{ 
+
+if ( $1 ~ /'"$DEVICE"'/) { 
+   print $0
+} 
+}
+' $DEVLIST ) # command substitution
+
+DEVARRAY=($DEVICE)
+
+# The array is:
+# device.name   protocol   address1   address2  address3
+# e.g.          dev/soap   ip         port      local.name
+
+if [ "${DEVARRAY[1]}" == "dev" ]; then
+   echo ${DEVARRAY[2]}
+   exit 1;
+fi
+
+
+# Look for a suitable piece of transmission code to
+# communicate this instruction via the given protocol
+MARPLEPROTO=$MINROOT/bin/xmit/${DEVARRAY[1]}
+
+if [ -d $MARPLERATPROTO ]; then
+  if [ -f $MARPLEPROTO/cmd ]; then
+    $MARPLEPROTO/cmd ${DEVARRAY[2]} ${DEVARRAY[3]} $COMMAND ${DEVARRAY[4]} $ALLARGS
+    return 0;
+  fi
+fi
+
+return 1;
+}
+
+#
+# Main code
+#
+
+# Is it already suitably?
+if [ "/" == "${DEVICE%${DEVICE#?}}" ]; then
+   # found a real device if the first character is /
+   echo $DEVICE
+   exit 1;
+fi
+
+
+# Read the local device list
+# One of these MUST be localhost
+DEVLIST="$MINROOT/etc/devices/$COMMAND/devlist"
+checkDevice $DEVLIST $DEVICE
+
+if [ $? == 1 ]; then
+   # Look in the global house list
+   # This directory is usually mounted remoted
+   DEVLIST="$MINROOT/house/marple/$COMMAND/devlist"
+   checkDevice $DEVLIST $DEVICE
+
+   if [ $? == 1 ]; then
+      # still found nothing
+      # assume it's a device, and let the caller handle it
+
+      # Send back the device name; it makes the calling scripts easier
+      echo $DEVICE
+      exit 1;
+   fi
+fi
+
+exit 0;
+
+

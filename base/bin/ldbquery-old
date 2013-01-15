@@ -1,0 +1,124 @@
+#!/usr/bin/perl -w
+use strict;
+# use Data::Dumper;
+
+
+# use directly in cron with | head -n 1 piped into say
+# Needs config for: leaving train, home train
+# also means args are broken
+# 1. use this as example
+# 2. separate minerva version
+
+use WWW::Mechanize;
+use HTML::TokeParser;
+use Time::Local;
+
+my %stations = (
+  ltn => 'Luton',
+  lut => 'Luton Airport Parkway',
+  stp => 'St Pancras',
+  bdm => 'Beford',
+);
+
+my $timeToStation = 0; 
+#37;
+my $graceThreshold = 0;
+my $maxGracePeriod = 60;
+my $currentTime = localtime();
+
+my $command = $ARGV[0];
+
+if (!defined $command || $command eq "help") {
+  print "Usage: [stations|get] [from] [to] <grace>\n";
+  exit 1;
+
+} elsif ($command eq "stations") {
+  if (defined $ARGV[1]) {
+     print $stations{$ARGV[1]}."\n";
+  } else {
+     for my $id(keys %stations) {
+        print "$id\n";
+     }
+  }
+  exit 0;
+}
+
+my $fromCode = $ARGV[1];
+my $toCode = $ARGV[2];
+
+$graceThreshold = $ARGV[3] if defined $ARGV[3];
+$maxGracePeriod = $ARGV[4] if defined $ARGV[4];
+
+my $currentHour = (localtime)[2];
+my $currentMin = (localtime)[1];
+
+
+my $agent = WWW::Mechanize->new();
+my $ldburl = "http://realtime.nationalrail.co.uk/ldb/sumdep.aspx?T=$fromCode&S=$toCode";
+
+#$agent->get("http://realtime.nationalrail.co.uk/ldb/sumdep.aspx?T=STP&S=LUT");
+$agent->get($ldburl);
+
+
+my $stream = HTML::TokeParser->new(\$agent->{content});
+my $tag;
+
+ #print Dumper($stream);
+#print "It's now: $currentHour.$currentMin\n";
+
+while ($tag = $stream->get_tag("tr")) {
+  if (defined $tag->[1]{class} && $tag->[1]{class} eq "row2") {
+    $stream->get_tag("td");
+    my $destination = $stream->get_trimmed_text("/td");
+
+    $stream->get_tag("td");
+    my $platform = $stream->get_trimmed_text("/td");
+
+    $stream->get_tag("td");
+    my $expectedTime = $stream->get_trimmed_text("/td");
+
+    $stream->get_tag("td");
+    my $arrivalTime = $stream->get_trimmed_text("/td");
+    #print "Arrival:".$arrivalTime."\n";
+
+    # the 0? inclusion here shortens '04' to '4'
+    $expectedTime =~ /(\d+):0?(\d+)/;
+    my $arriveHour = $1;
+    my $arriveMins = $2;
+
+    if ($arrivalTime =~ /(\d+):0?(\d+)/) {
+    #print "LATE! $1 $2 \n";
+       $arriveHour = $1;
+       $arriveMins = $2;
+    }
+
+    my $t;
+    my $minsAway = 0;
+
+    $t = $arriveMins - $currentMin;
+    if ($t >= 0) {
+       $minsAway += $t;
+    } else {
+       $minsAway += 60+$t;
+       --$arriveHour;   # because we carry over '1'
+       $arriveHour = 23 if $arriveHour == -1;
+    }
+
+    $t = $arriveHour - $currentHour;
+#print "$arriveHour - $currentHour = da:$t";
+    if ($t >= 0) {
+       $minsAway += $t * 60;
+    } else {
+       $minsAway += (24+$t) * 60;
+   }
+
+   my $graceMinutes = $minsAway-$timeToStation;
+   if ($graceMinutes >= $graceThreshold && $graceMinutes < $maxGracePeriod) {
+      print "You can get the $expectedTime to $destination. There is $graceMinutes minutes grace.\n";
+   }
+
+     #print $stream->get_trimmed_text("/tr");
+  }
+}
+0;
+

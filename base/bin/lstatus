@@ -1,0 +1,60 @@
+#!/bin/bash
+# Usage: $0 [today|tomorrow|day_of_week|index]
+
+MINBASE=/usr/local/minerva
+ETCDIR=$MINBASE/etc
+
+
+$MINBASE/bin/minlog cmd $0 $*
+
+PARAM=$1
+
+if [ "$PARAM" == "" ]; then
+  DAY=`date +%u`
+else
+  case $PARAM in
+     today|Today)
+			DAY=`date +%u`
+        ;;
+     tomorrow|Tomorrow)
+         DAY=$((`date +%u` + 1))
+        ;;
+
+     0|1|2|3|4|5|6|7)
+        DAY=$PARAM
+        ;; 
+     mon|Mon|monday|Monday)
+        DAY=1
+        ;;
+     tue|tues|Tues|tuesday|Tuesday)
+        DAY=2
+        ;;
+     wed|weds|Weds|wednesday|Wednesday)
+        DAY=3
+        ;;
+     thr|thur|thrs|thurs|thrs|thursday|Thursday)
+        DAY=4
+        ;;
+     fri|Fri|friday|Friday)
+        DAY=5
+        ;;
+     sat|Sat|saturday|Saturday)
+        DAY=6
+        ;;
+     sun|Sun|sunday|Sunday)
+        DAY=7
+        ;;
+  esac
+fi
+
+
+if [ -f $ETCDIR/daily/$DAY/status ]; then
+   TODAY=`. $ETCDIR/daily/$DAY/status`
+fi
+
+if [ "$TODAY" == "" ]; then
+   TODAY="There are no events today"
+fi
+
+echo $TODAY
+

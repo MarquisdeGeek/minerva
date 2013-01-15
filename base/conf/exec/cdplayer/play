@@ -1,0 +1,13 @@
+#!/bin/bash
+
+MINBIN=/usr/local/minerva/bin
+
+TRACK_NAME=`$MINBIN/cdplayer $DEVICE currentname`
+ALBUM=`$MINBIN/cdplayer $DEVICE discname`
+
+if [ "$TRACK_NAME" == "" ]; then
+  $MINBIN/tweet default I have switched the CD off
+else
+  $MINBIN/tweet default I am listening to track  "$TRACK_NAME" from "$ALBUM" 
+fi
+

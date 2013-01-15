@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Sat Jul  7 07:19:39 2012 -->
+<channel id="ch4" source="XMLTV" date="12/07/2012">
+  <programme>
+<subtitle>One Flu Over the Boggart's Nest</subtitle>
+<flags>(S)</flags>
+<desc>When an outbreak of the dreaded Boggart flu occurs, every Boggart in Sabden falls sick. Luckily, Brendon's Scottish cousin has a guaranteed cure.</desc>
+<title>The Treacle People</title>
+<end>0615</end>
+<start>0605</start>
+  </programme>
+  <programme>
+<subtitle>Yawning</subtitle>
+<flags></flags>
+<desc>Tula started first, then Groove, then Iver and finally Hubba Hubba. Why are all the Hoobs yawning? How can they stop?   [AD,S,SL]</desc>
+<title>The Hoobs</title>
+<end>0640</end>
+<start>0615</start>
+  </programme>
+  <programme>
+<subtitle>Shoobage</subtitle>
+<flags></flags>
+<desc>There's a really 'whiffy' smell on the roof garden. The Hooby Sprouter has grown a Shoobage and there is only one thing to do: eat it. But how?  [AD,S]</desc>
+<title>The Hoobs</title>
+<end>0705</end>
+<start>0640</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Celebrity interviews, music videos and a gig guide. Catch new videos from Calvin Harris featuring Example, B.o.B featuring Taylor Swift and Far East Movement featuring Cover Drive.</desc>
+<title>Freshly Squeezed</title>
+<end>0735</end>
+<start>0705</start>
+  </programme>
+  <programme>
+<subtitle>The Lemonade Stand</subtitle>
+<flags>(S)</flags>
+<desc>Jim encourages Gracie and Ruby to open a lemonade stand to earn extra money but things get out of hand when their neighbours open a competing stand.</desc>
+<title>According to Jim</title>
+<end>0800</end>
+<start>0735</start>
+  </programme>
+  <programme>
+<subtitle>Raybert</subtitle>
+<flags>(S)</flags>
+<desc>Robert meets a beautiful woman who is a big fan of Ray ports column, but when she mistakes Robert for Raymond, Robert doesn't set her straight.</desc>
+<title>Everybody Loves Raymond</title>
+<end>0830</end>
+<start>0800</start>
+  </programme>
+  <programme>
+<subtitle>The Matchmaker</subtitle>
+<flags>(S)</flags>
+<desc>Frasier invites the new station manager home for dinner to fix him up with Daphne. But he thinks it's Frasier who's interested in him.</desc>
+<title>Frasier</title>
+<end>0900</end>
+<start>0830</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Churchill Downs owns America's most famous horse tracks, including the home of the Kentucky Derby. Chief Operating Officer Bill is scared of horses, but steels himself to go undercover...</desc>
+<title>Undercover Boss USA</title>
+<end>1000</end>
+<start>0900</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>The dealers have to decide how much they're willing to offer for a Tracy Emin print, a piece of tattooed skin pickled in a jar, a rare Beatles poster and a vintage electric shock machine.</desc>
+<title>Four Rooms</title>
+<end>1100</end>
+<start>1000</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Amanda Lamb and the team have just two days to make over the home of foster carer Maria Henry in Tottenham, before she returns from an overnight break. Will they finish on time?</desc>
+<title>You Deserve This House</title>
+<end>1200</end>
+<start>1100</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Includes news headlines and weather.</desc>
+<title>Channel 4 News Summary</title>
+<end>1205</end>
+<start>1200</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Jamie Oliver shows how to cook spaghetti alla puttanesca with crunchy salad, garlic bread, and silky chocolate ganache.  [AD,S]</desc>
+<title>Jamie's 30 Minute Meals</title>
+<end>1230</end>
+<start>1205</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>The boys focus on slow food, pulled pork, sourdough loaf, and steamed pudding soaked in flaming booze and covered with toffee sauce.</desc>
+<title>The Fabulous Baker Brothers</title>
+<end>1300</end>
+<start>1230</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>From Newmarket. Presenters: Mike Cattermole and Emma Spencer. Commentary and analysis: John Francome, Simon Holt, John McCririck, Jim McGrath and Tanya Stevenson.</desc>
+<title>Channel 4 Racing</title>
+<end>1510</end>
+<start>1300</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Nick Hewer hosts with Rachel Riley, as contestants race against the clock to pit their wits against vowels, consonants and numbers. The Dictionary Corner guest is Jo Brand.</desc>
+<title>Countdown</title>
+<end>1600</end>
+<start>1510</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Noel Edmonds asks the all-important question as contestants do battle with the Banker in their quest to leave the Dream Factory with £250,000.  [AD,S]</desc>
+<title>Deal or No Deal</title>
+<end>1700</end>
+<start>1600</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Irene Ward-Kendall's Wold View House in Lincolnshire provides a homely welcome for most, and she takes her guests on an old-fashioned steam train ride.</desc>
+<title>Four in a Bed</title>
+<end>1730</end>
+<start>1700</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Nicknamed 'the assassin', choir director Joseph Benneh's chicken liver pâté and groundnut soup with coconut rice need to be sensational, or he may have just set himself up for a fall.</desc>
+<title>Come Dine with Me</title>
+<end>1800</end>
+<start>1730</start>
+  </programme>
+  <programme>
+<subtitle>Half Decent Proposal</subtitle>
+<flags></flags>
+<desc>When Homer's snoring becomes too much to bear, a drunken Marge makes contact with her incredibly rich high school prom date Artie.  [AD,S]</desc>
+<title>The Simpsons</title>
+<end>1830</end>
+<start>1800</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Dodger has to choose between Texas and his family. Esther manages to turn things around at the magazine and a new resident in the village forces Mercedes to make a deal with the devil...  [AD,S]</desc>
+<title>Hollyoaks</title>
+<end>1855</end>
+<start>1830</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Yasmin Aktar wants to train to be a female cleric. But she says women can't lead religious services in the mosque because menstruation makes them 'impure' for five days each month.</desc>
+<title>4thought.tv</title>
+<end>1900</end>
+<start>1855</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Includes sports and weather.</desc>
+<title>Channel 4 News</title>
+<end>1955</end>
+<start>1900</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>...Sainsbury's and Channel 4 Present: The Paralympic wheelchair rugby player and double European Champion gold medallist discusses the prospect of competing in front of a 2012 home crowd.</desc>
+<title>2012: Mendip Sehmi Part III...</title>
+<end>2000</end>
+<start>1955</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Simon visits the Cookson family of Meldon Park, Northumberland, and tries to persuade them to make a go of running a money-making café in the estate's walled garden.</desc>
+<title>Country House Rescue</title>
+<end>2100</end>
+<start>2000</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Businessman David Fishwick is so fed up with the banks he's opening his own to serve his local community in Burnley. The money starts pouring out of Dave's bank, but not much is coming in.</desc>
+<title>Bank of Dave</title>
+<end>2200</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>This episode focuses on mothers and daughters, including Jackie, who's trying to come to terms with her terminally ill mother Josephine's mortality.</desc>
+<title>24 Hours in A&amp;E</title>
+<end>2305</end>
+<start>2200</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Gordon's Bad Boy Bakery needs to make some real money, so they pitch a sweet treat snack to several major coffee shop chains. But will anyone be interested in prison-made product?</desc>
+<title>Gordon Behind Bars</title>
+<end>0010</end>
+<start>2305</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Channel 4's nightly short-form arts strand. One of the world's oldest and one of the world's youngest capoeira dancers perform together.</desc>
+<title>Random Acts</title>
+<end>0015</end>
+<start>0010</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>The CEO of Britain's biggest nightclub chain goes undercover in his own business and sees the results of cheap drinks promotions, but also meets dedicated medics and cleaners.</desc>
+<title>Undercover Boss</title>
+<end>0110</end>
+<start>0015</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Tenerife consul Maria helps military veteran Steven get home to the UK, while vice consul Helen supports the only British woman in prison on the island.  [S,SL]</desc>
+<title>Our Man in... Tenerife</title>
+<end>0205</end>
+<start>0110</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>...Channel 4 Dispatches: An undercover report partly filmed in the Channel Islands promises new revelations about tax avoidance.</desc>
+<title>Secrets of the Taxman...</title>
+<end>0235</end>
+<start>0205</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Two years ago Kashmir erupted in violent protests in which 118 demonstrators died. This programme meets the Kashmiri lawyer determined to bring India to account for events in Kashmir.</desc>
+<title>Kashmir's Torture Trail</title>
+<end>0330</end>
+<start>0235</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Tony and the Team rip up the pristine lawns of Paul Whight's stately home in search the secrets of its illustrious former owners: the De Veres, including the dissolute Earl of Oxford.</desc>
+<title>Time Team</title>
+<end>0425</end>
+<start>0330</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Noel Edmonds asks the all-important question as contestants do battle with the Banker in their quest to leave the Dream Factory with £250,000.  [AD,S]</desc>
+<title>Deal or No Deal</title>
+<end>0520</end>
+<start>0425</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Nick Hewer hosts with Rachel Riley, as contestants race against the clock to pit their wits against vowels, consonants and numbers. The Dictionary Corner guest is Jo Brand.</desc>
+<title>Countdown</title>
+<end>0605</end>
+<start>0520</start>
+  </programme>
+</channel>

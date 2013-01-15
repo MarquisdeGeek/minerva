@@ -1,0 +1,10 @@
+#!/bin/bash
+
+MINBIN=/usr/local/minerva/bin
+
+CHANNEL=$1
+DURATION=$2
+FILENAME=auto
+ 
+$MINBIN/tvrecord default $CHANNEL $DURATION $FILENAME
+

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Sun Jul  8 07:20:53 2012 -->
+<channel id="bbc4" source="XMLTV" date="13/07/2012">
+  <programme>
+<desc></desc>
+<title>..programmes start at 7.00pm</title>
+<end>1200</end>
+<start>0600</start>
+  </programme>
+  <programme>
+<desc></desc>
+<title>..programmes start at 7.00pm</title>
+<end>1800</end>
+<start>1200</start>
+  </programme>
+  <programme>
+<title>..programmes start at 7.00pm</title>
+<end>1857</end>
+<start>1800</start>
+  </programme>
+  <programme>
+<desc>This is BBC Four. Programmes start at 7.00pm.</desc>
+<title>This Is BBC Four</title>
+<end>1900</end>
+<start>1858</start>
+  </programme>
+  <programme>
+<desc>The latest national and international news, exploring the day's events from a global perspective. [S] Followed by weather.</desc>
+<title>World News Today</title>
+<end>1930</end>
+<start>1900</start>
+  </programme>
+  <programme>
+<desc>Musical and psychological portrait of classical composer Ralph Vaughan Williams, which explores the passions that drove this giant of 20th century English music. [S]</desc>
+<title>The Passions of Vaughan Williams</title>
+<end>2100</end>
+<start>1930</start>
+  </programme>
+  <programme>
+<desc>...O' in Britain. Documentary celebrating the extraordinary talent of Roy Orbison and his relationship with his loyal fans, British musicians and the British public. [S]</desc>
+<title>Legends: Roy Orbison - The 'Big...</title>
+<end>2200</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<desc>...Monument Concert. Roy Orbison performs some of his classic songs at a 1965 concert in Holland. [S]</desc>
+<title>Roy Orbison Live in 1965: The...</title>
+<end>2225</end>
+<start>2200</start>
+  </programme>
+  <programme>
+<desc>...Black and White Night. Roy Orbison performs his greatest hits, with guests including Bruce Springsteen. b&amp;w. [S]</desc>
+<title>Roy Orbison and Friends: A...</title>
+<end>2330</end>
+<start>2225</start>
+  </programme>
+  <programme>
+<subtitle>Woody Guthrie</subtitle>
+<desc>Documentary on the life of Woody Guthrie, the travelling folk songwriter and singer who paved the way for the likes of Bob Dylan and Bruce Springsteen. [S]</desc>
+<title>Arena: Woody Guthrie</title>
+<end>0040</end>
+<start>2330</start>
+  </programme>
+  <programme>
+<desc>...O' in Britain. Documentary celebrating the extraordinary talent of Roy Orbison and his relationship with his loyal fans, British musicians and the British public. [S]</desc>
+<title>Legends: Roy Orbison - The 'Big...</title>
+<end>0140</end>
+<start>0040</start>
+  </programme>
+  <programme>
+<desc>...Monument Concert. Roy Orbison performs some of his classic songs at a 1965 concert in Holland. [S]</desc>
+<title>Roy Orbison Live in 1965: The...</title>
+<end>0205</end>
+<start>0140</start>
+  </programme>
+  <programme>
+<desc>...Black and White Night. Roy Orbison performs his greatest hits, with guests including Bruce Springsteen. [S]</desc>
+<title>Roy Orbison and Friends: A...</title>
+<end>0310</end>
+<start>0205</start>
+  </programme>
+  <programme>
+<subtitle>Woody Guthrie</subtitle>
+<desc>Documentary on the life of Woody Guthrie, the travelling folk songwriter and singer who paved the way for the likes of Bob Dylan and Bruce Springsteen. [S]</desc>
+<title>Arena: Woody Guthrie</title>
+<end>0415</end>
+<start>0310</start>
+  </programme>
+  <programme>
+<desc>BBC Four is the BBC channel for people who want more. More depth, more range, more to stimulate the mind. More daily from 7.00pm.</desc>
+<title>This Is BBC Four</title>
+<end>0530</end>
+<start>0415</start>
+  </programme>
+  <programme>
+<title>..programmes start at 7.00pm</title>
+<end>0600</end>
+<start>0530</start>
+  </programme>
+  <programme>
+<desc></desc>
+<title>..programmes start at 7.00pm</title>
+<end>1200</end>
+<start>0600</start>
+  </programme>
+</channel>

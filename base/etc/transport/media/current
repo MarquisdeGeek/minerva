@@ -1,0 +1,19 @@
+#!/bin/bash
+
+INFO=`basename $0`
+
+function writeField() {
+	echo "  <data field=\"$1\">"
+	$BASECMD $CHANNEL $2
+	echo "  </data>"
+}
+
+BASECMD="/usr/local/minerva/bin/mp3player default"
+echo "<media info='$INFO'>"
+	writeField Title current
+	writeField Artist artist
+	writeField Album album
+	writeField Duration length
+	writeField Path fullname
+echo "</media>"
+

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Sat Jul  7 07:24:49 2012 -->
+<channel id="film_four" source="XMLTV" date="12/07/2012">
+  <programme>
+<flags></flags>
+<desc>Teleshopping.</desc>
+<title>Teleshopping</title>
+<end>1100</end>
+<start>0700</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Yasujiro Ozu's Japanese drama explores the power of speech. Two boys refuse to speak until their family get a TV, but the parents resist, afraid it will kill the art of conversation.</desc>
+<type>Film</type>
+<title>Good Morning</title>
+<year>1959</year>
+<end>1255</end>
+<start>1100</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Drama starring Dirk Bogarde as a married, but secretly gay, barrister who risks his reputation to track down blackmailers who are targeting gay friends and colleagues.  [AD,S]</desc>
+<type>Film</type>
+<title>Victim</title>
+<year>1961</year>
+<end>1455</end>
+<start>1255</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Howard Hawks' Second World War propaganda morale-booster and tribute to the air force focuses on the crew of a single B-17 Flying Fortress, the 'Mary Ann'.</desc>
+<type>Film</type>
+<title>Air Force</title>
+<year>1943</year>
+<end>1720</end>
+<start>1455</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>From the team behind Ice Age, this animated coming-of-age-tale features Rodney Copperbottom, an inventor who travels to Robot City to sell his ideas to the tycoon Big Weld.</desc>
+<type>Film</type>
+<title>Robots</title>
+<year>2005</year>
+<end>1905</end>
+<start>1720</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Comedy in which Jennifer Lopez meets the man of her dreams (Michael Vartan), but his mother (Jane Fonda) is hell-bent against the match and sets out to destroy it.  [AD,S]</desc>
+<type>Film</type>
+<title>Monster-in-Law</title>
+<year>2005</year>
+<end>2100</end>
+<start>1905</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Thriller starring Mark Wahlberg as an ex-marksman called out of retirement by Danny Glover to foil an assassination attempt on the President. Bloody violence/strong language.</desc>
+<type>Film</type>
+<title>Shooter</title>
+<year>2007</year>
+<end>2325</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Michael Keaton is in deep mourning for his dead wife Anna (Chandra West) when medium Ian McNeice shockingly tells him that she is attempting to contact him. Supernatural horror.  [AD,S]</desc>
+<type>Film</type>
+<title>White Noise</title>
+<year>2005</year>
+<end>0120</end>
+<start>2325</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Nathan Fillion tries to kill himself after witnessing his wife and child's murder but, brought back to life, he finds he can see the auras of those about to die. Supernatural horror.  [AD,S]</desc>
+<type>Film</type>
+<title>White Noise 2: The Light</title>
+<year>2007</year>
+<end>0315</end>
+<start>0120</start>
+  </programme>
+  <programme>
+<subtitle>...Special</subtitle>
+<flags>(S)</flags>
+<desc>Andrew Garfield, Emma Stone, Rhys Ifans and director Marc Webb talk about bringing the new version of Spider-Man to the screen.</desc>
+<title>Amazing Spider-Man Interview...</title>
+<end>0326</end>
+<start>0315</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping.</desc>
+<title>Teleshopping</title>
+<end>0700</end>
+<start>0326</start>
+  </programme>
+</channel>

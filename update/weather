@@ -1,0 +1,26 @@
+#!/bin/bash
+
+LOGFILE=/var/log/minerva/cache/weather.xml
+RESULT=/var/log/minerva/cache/weather.txt
+RESULT_INFO=/var/log/minerva/cache/weather_info.txt
+
+# remove the old files first, that way we'll get an error whenthe 
+# user requests the weather, as opposed to old data
+
+if [ -f $LOGFILE ]; then
+  rm $LOGFILE
+fi
+
+if [ -f $RESULT ]; then
+   rm $RESULT
+fi
+
+if [ -f $RESULT_INFO ]; then
+   rm $RESULT_INFO
+fi
+
+wget -q http://weather.yahooapis.com/forecastrss?p=UKXX0088 -O $LOGFILE
+
+xsltproc /usr/local/minerva/bin/weather/sayit.xsl $LOGFILE > $RESULT
+xsltproc /usr/local/minerva/bin/weather/makedata.xsl $LOGFILE > $RESULT_INFO
+

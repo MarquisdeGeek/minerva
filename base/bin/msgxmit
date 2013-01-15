@@ -1,0 +1,78 @@
+#!/bin/bash
+
+MINBASE=/usr/local/minerva
+VARLOG=/var/log/minerva
+LOGFILE=$VARLOG/msgxmit
+
+if [ $# -lt 2 ]; then
+  echo "Usage: $0 <conduit> <address> [message]"
+  echo "     ([message] will be read from stdin if arg is omitted)"
+  exit 1;
+fi
+
+$MINBASE/bin/minlog cmd $0 $*
+
+# The prototype can support multiple types
+SAVEIFS=$IFS
+ IFS=","
+ declare -a CONDUIT_ARRAY=($1)
+ shift
+
+ declare -a TO_ARRAY=($1)
+ shift
+IFS=$SAVEIFS
+
+function lookupAddress() {
+  FROMFILE=$1
+  if [ -f $FROMFILE ]; then
+    ALIAS=`grep -m 1 "^$TOADDR " $FROMFILE | sed "s/^[^ ]* //"`
+    # (if possible)
+    if [ "$ALIAS" != "" ]; then
+      TOADDR=$ALIAS
+    fi
+  fi
+}
+
+# If no message is given, read it from STDIN
+# this is -eq 0 because we've already shifted two args
+if [ $# -eq 0 ]; then
+  while  read LINE ; do
+    MSG="$MSG""""$LINE"
+  done
+else
+  MSG=$*
+fi
+
+
+for CONDUIT in ${CONDUIT_ARRAY[@]}
+do
+   CMD=$MINBASE/etc/msg/$CONDUIT/xmit/cmd
+
+   # pass on cmd to appropriate handle.
+   # Argument order is ALWAYS
+   # type (sms/vox etc)
+   # address (canonical, according to the type)
+   # message (with 0 or more space-separated parts)
+   if [ -f $CMD ]; then
+      for TOADDR in ${TO_ARRAY[@]}
+      do
+         # check in both contacts list
+         lookupAddress $MINBASE/etc/msg/$CONDUIT/addr/contacts
+         lookupAddress $MINBASE/etc/msg/$CONDUIT/addr/alias
+
+         # now send it!
+         $CMD $CONDUIT $TOADDR $MSG
+
+         # add to log
+         echo -n `date` >>$LOGFILE
+         BRIEF_MSG=`echo $MSG | cut -b 1-200`
+         echo " SEND" $CONDUIT ADDR $TOADDR MSG $BRIEF_MSG \($?\) >>$LOGFILE
+
+      done # for each recipient
+
+   else
+      echo No such transmit command for $CONDUIT \($CMD doesnt exist\)
+   fi
+
+done  # for each type of transmission
+

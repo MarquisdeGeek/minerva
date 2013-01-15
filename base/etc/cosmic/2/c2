@@ -1,0 +1,8 @@
+#!/bin/bash
+# Vocally state the time and date
+
+MINBIN=/usr/local/minerva/bin/
+
+$MINBIN/hdate
+$MINBIN/htime
+

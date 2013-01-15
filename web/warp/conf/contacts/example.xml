@@ -1,0 +1,27 @@
+<minerva-contacts>
+
+<minerva-person>
+
+<minerva-personal>
+	<full-name><name first="Steven"/><name surname="Goodwin"/></full-name>
+	<dob day="1" month="1" year="1911"/>
+</minerva-personal>
+
+<minerva-contact>
+	<location at="mobile">
+		<phone code="01234" number="567890"/>
+	</location>
+	<location at="home">
+		<address>
+<addr-line><addr number="100"/><addr road="Buckingham Palace"/></addr-line>
+<addr-line><addr town="London"/></addr-line>
+</address>
+		<email address="minervahome@gmail.com"/>
+		<phone code="01234" number="567890"/>
+	</location>
+</minerva-contact>
+</minerva-person>
+
+
+</minerva-contacts>
+

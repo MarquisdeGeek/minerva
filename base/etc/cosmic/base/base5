@@ -1,0 +1,5 @@
+#!/bin/bash
+# Report the current mode status
+
+/usr/local/minerva/bin/cosmic default modestatus
+

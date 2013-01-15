@@ -1,0 +1,14 @@
+#!/usr/bin/php
+<?php
+
+require_once '/var/www/minerva/warp/applets/rssreader/rss_fetch.inc';
+
+
+$logfile = "/var/log/minerva/rss/$siteRef/";
+$siteOld = $argv[1];
+$siteNew = $argv[2];
+
+rmdir("$logfile$siteOld");
+rename("$logilfe$siteNew", "$logfile$siteOld");
+
+?>

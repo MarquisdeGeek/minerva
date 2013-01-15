@@ -1,0 +1,36 @@
+#!/bin/bash
+
+source /usr/local/minerva/conf/infostream/stdphotoframe
+
+FRAMESIZE=76800
+FRAMEDEVICE=/dev/rfcomm0
+FRAMEMAC=00:12:1c:00:18:ee
+
+FILESTUB=$TARGET/loungeframe/
+mkdir -p $FILESTUB
+
+
+# Some frames:
+# 1. Don't overwrite images with the same name
+# 2. Crash when you delete old images
+# These utilities attempt to get you out of those holes.
+
+#removeallimages
+#removeoldimages
+#powercycle e1
+
+rm $TARGET/*
+
+todaysdate
+weather
+mediamp3
+ontoday
+
+
+# Must be done last since the IMAGEINDEX gets incremented inside
+# a piped command, meaning that (upon return) the count hasn't changed
+# and those images are overwritten. MUST FIX THIS!
+calendar
+
+sendimages &
+

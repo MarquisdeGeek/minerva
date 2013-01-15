@@ -1,0 +1,17 @@
+#!/bin/bash
+
+FILE_PREFIX=$1
+FILE_RESULT=${FILE_PREFIX}_combined.mpg
+
+echo -n > ${FILE_RESULT}
+
+for i in $FILE_PREFIX*.flv;do 
+  echo Processing $i
+  prefix=${i%.*}; 
+  #mencoder "$i" -ovc lavc -of mpeg -oac copy -xvidencopts fixed_quant=2:me_quality=6:trellis:chroma_opt:vhq=4:lumi_mask:profile=dxnhtntsc -o "$prefix".mpg; 
+
+  ffmpeg -i "$i" "$prefix".mpg
+  cat "$prefix".mpg >> $FILE_RESULT
+done
+
+

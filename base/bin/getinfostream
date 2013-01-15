@@ -1,0 +1,38 @@
+#!/bin/bash
+
+CONFDIR=/usr/local/minerva/etc/infostream
+VARLOG=/var/log/minerva/infostream
+
+STREAM=$1; shift
+WHICH=$1
+
+if [ "$WHICH" == "" ]; then
+	WHICH=all
+fi
+
+
+if [ "$STREAM" == "action" ]; then
+	if [ "$WHICH" == "last" ]; then
+		tail -n 1 $VARLOG/action/list
+	else
+		cat $VARLOG/action/list
+	fi
+
+elif [ "$STREAM" == "event" ]; then
+	echo
+
+elif [ "$STREAM" == "status" ]; then
+	for FILE in `ls $VARLOG/status`
+	do
+		if [[ "$WHICH" == "all" || "$WHICH" == "$FILE" ]]; then
+			cat $VARLOG/status/$FILE 2>/dev/null
+		fi
+	done
+
+else
+   echo "Usage: $0 <stream> <all|last|which>"
+	echo "  stream ::= action event status"
+   exit 1;
+fi
+
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Wed Jul 11 08:45:12 2012 -->
+<channel id="film_four" source="XMLTV" date="11/07/2012">
+  <programme>
+<flags></flags>
+<desc>Teleshopping.</desc>
+<title>Teleshopping</title>
+<end>1100</end>
+<start>0700</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Western starring Clark Gable as a Civil War veteran who, with his brother Cameron Mitchell, takes up crooked cattleman Robert Ryan's offer to be trail boss on a big cattle drive.</desc>
+<type>Film</type>
+<title>The Tall Men</title>
+<year>1955</year>
+<end>1325</end>
+<start>1100</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Alexander Korda's dramatic film is set on the Northwest Frontier of India where young prince Sabu helps the British defeat his evil uncle (Raymond Massey), who murdered his father.</desc>
+<type>Film</type>
+<title>The Drum</title>
+<year>1938</year>
+<end>1520</end>
+<start>1325</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Sam Peckinpah's classic western starring Randolph Scott as a lawman turned sharpshooter who plans to steal gold from a remote mining town. With Joel McCrea.</desc>
+<type>Film</type>
+<title>Ride the High Country</title>
+<year>1962</year>
+<end>1710</end>
+<start>1520</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Aishwarya Rai is a member of a secret clan of women, who draw on the mystical properties of Indian spices to cure anything from heartache to heartburn, and is pursued by two lovers.</desc>
+<type>Film</type>
+<title>The Mistress of Spices</title>
+<year>2005</year>
+<end>1900</end>
+<start>1710</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>The Addams Family welcome baby Pubert to the clan. But sister Wednesday (Christina Ricci) and brother Pugsley (Jimmy Workman) are less than friendly...</desc>
+<type>Film</type>
+<title>Addams Family Values</title>
+<year>1993</year>
+<end>2050</end>
+<start>1900</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Director James Cameron talks about his career, including Aliens, The Abyss and his Oscar-winning film, Avatar.</desc>
+<title>Avatar Special</title>
+<end>2100</end>
+<start>2050</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Paul Haggis's Oscar-winning movie weaves stories covering bigotry and racism in Los Angeles. With Matt Dillon, Don Cheadle, Sandra Bullock. Very strong language/violent scenes.  [AD,S]</desc>
+<type>Film</type>
+<title>Crash</title>
+<year>2004</year>
+<end>2310</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Johnny Knoxville, Bam Margera, Steve-O, Chris Pontius and the rest of the gang return with more stunts that are do-not-try perilous and disgusting by turns. Strong language/violence.</desc>
+<type>Film</type>
+<title>Jackass Number Two</title>
+<year>2006</year>
+<end>0100</end>
+<start>2310</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>John Badham's iconic film stars John Travolta as a champion disco dancer hoping to win the prize that will get him out of the ghetto. Very strong, offensive language/sexual violence.</desc>
+<type>Film</type>
+<title>Saturday Night Fever</title>
+<year>1977</year>
+<end>0320</end>
+<start>0100</start>
+  </programme>
+  <programme>
+<subtitle>...Special</subtitle>
+<flags>(S)</flags>
+<desc>Andrew Garfield, Emma Stone, Rhys Ifans and director Marc Webb talk about bringing the new version of Spider-Man to the screen.</desc>
+<title>Amazing Spider-Man Interview...</title>
+<end>0331</end>
+<start>0320</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping.</desc>
+<title>Teleshopping</title>
+<end>0700</end>
+<start>0331</start>
+  </programme>
+</channel>

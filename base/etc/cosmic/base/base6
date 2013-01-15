@@ -1,0 +1,5 @@
+#!/bin/bash
+# Switch into the next mode
+
+/usr/local/minerva/bin/cosmic default nextmode
+

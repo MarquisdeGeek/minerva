@@ -1,0 +1,21 @@
+#!/bin/bash
+MINBASE=/usr/local/minerva
+MINBIN=$MINBASE/bin
+
+$MINBIN/minlog cmd $0 $*
+
+USER=$1; shift
+PRIORITY=$2; shift
+MSG=$*
+
+LOCATION=`$MINBASE/bin/mtspick $USER $PRIORITY`
+CONDUIT=$MINBASE/etc/users/$USER/mts/key/$LOCATION
+
+if [ -f $CONDUIT ]; then
+   REFERENCE=`$CONDUIT $USER $PRIORITY`
+else
+   REFERENCE="sms,email $USER $PRIORITY"
+fi
+
+$MINBASE/bin/msgxmit $REFERENCE $MSG
+

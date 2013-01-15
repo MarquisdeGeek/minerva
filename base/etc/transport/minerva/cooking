@@ -1,0 +1,14 @@
+#!/bin/bash
+
+INFO=`basename $0`
+DATA=$1
+
+COOKING_HTML=/usr/local/minerva/media/info/cooking
+
+echo "<minerva info='$INFO'>"
+  echo "  <data field=\"$DATA\">"
+    html2text $COOKING_HTML/$DATA.htm
+  echo "  </data>"
+echo "</minerva>"
+
+

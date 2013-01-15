@@ -1,0 +1,12 @@
+The Minerva system has several individual components that interact:
+
+<p>
+
+Webface . An underlying technology that abstracts the control and visual aspects of a web page, away from the control logic.
+<p>
+WARP . A system that utilises WebFace to allow many different .applets. to run on a single page, and maintain the state between.
+
+<p>Zinc . Server-side code that abstracts various types of device, and allows them to be controlled through WARP. This is also known in Minerva parlance as a Web Gateway Conduit.
+
+<p>BearSkin . A series of command wrappers that creates a common interface for controlling the device types under Minerva.s control. It also maintains the state, in those cases where other software does not support it. This allows replacement software to control the CD player (for example), or for the command to be sent across a network to a different machine.
+

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+MINBIN=/usr/local/minerva/bin
+
+DEVICE=$1
+NAME=`$MINBIN/homedevice default getcode $DEVICE`
+
+#$MINBIN/tweet default $NAME has been switched off
+

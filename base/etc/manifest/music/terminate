@@ -1,0 +1,6 @@
+#!/bin/bash
+
+MINBASE=/usr/local/minerva
+
+$MINBASE/bin/mp3player default stop
+

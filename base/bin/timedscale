@@ -1,0 +1,51 @@
+#!/bin/bash
+
+# Fading script
+#
+
+if [ $# == 0 ]; then
+  echo "Usage: $0 [from] [to] [duration] [command]"
+  exit -1
+fi
+
+MINBASE=/usr/local/minerva
+$MINBASE/bin/minlog cmd $0 $*
+
+
+FADE_FROM=$1
+shift
+FADE_TO=$1
+shift
+FADE_DURATION=$1
+shift
+
+FADE_CMD=$*
+
+if [ $FADE_TO -gt $FADE_FROM ]; then
+  FADE_RANGE=$(($FADE_TO-$FADE_FROM))
+  FADE_LOW=$FADE_FROM
+  FADE_HIGH=$FADE_TO
+else
+  FADE_RANGE=$(($FADE_FROM-$FADE_TO))
+  FADE_LOW=$FADE_TO
+  FADE_HIGH=$FADE_FROM
+fi
+
+#echo $FADE_FROM to $FADE_TO range $FADE_RANGE
+
+CURR_DURATION=0
+
+for COUNT in $(seq $FADE_LOW $FADE_HIGH)
+do
+   NEXT_DURATION=$(($FADE_DURATION * $COUNT))
+   NEXT_DURATION=$(($NEXT_DURATION / $FADE_RANGE))
+
+   THIS_DELAY=$(($NEXT_DURATION - $CURR_DURATION))
+      
+   $FADE_CMD $COUNT
+   
+   sleep $THIS_DELAY
+
+   CURR_DURATION=$NEXT_DURATION
+done
+

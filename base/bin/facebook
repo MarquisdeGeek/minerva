@@ -1,0 +1,30 @@
+#!/usr/bin/php
+<?php
+
+require_once '/usr/local/minerva/conf/facebook.inc';
+
+$user = $argv[1];
+
+$argv[0] = "";
+$argv[1] = "";
+$message = trim(implode(" ", $argv));
+$message = htmlentities($message);
+$message = str_replace(" ", "%20", $message);
+
+if ($user == "default") {
+  $user = getDefaultUser();
+}
+
+$password = getUserPassword($user);
+
+$url = "http://www.minervahome.net/fb/postmessage.php?uid=$user&msg=$message&pass=$password";
+
+$result = file_get_contents($url);
+
+print $result;
+
+$logline = date("Y-m-d H:i")." CMD ".$argv[0]." $user $message $result\n";
+file_put_contents("/var/log/minerva/bearskin/facebook", $logline, FILE_APPEND);
+
+?>
+

@@ -1,0 +1,12 @@
+<p>
+applets  conf  system  warplib
+<p>
+applets . Each applet has its own directory with all its source and images. Stops collisions. It may also have its own specific ID. If not one is not supplied, it is auto generated. A specific ID indicates it has been .signed., and the codes .MIN000a. are distributed on request
+<p>
+conf . Applet-specific settings. E.g. list of photos or which drives for diskfree. May also contain content.
+<p>
+system . System-specific settings. E.g. contents of master bar, directory paths
+<p>
+Warplib . the appletmanager, specific web-face visualizer
+
+

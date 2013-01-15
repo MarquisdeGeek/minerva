@@ -1,0 +1,30 @@
+#!/bin/bash
+
+MINBASE=/usr/local/minerva
+
+if [ $# -lt 1 ]; then
+  echo "Usage: $0 <conduit>"
+  exit 1;
+fi
+
+$MINBASE/bin/minlog cmd $0 $*
+
+if [ "$1" == "all" ]; then
+   CONDUIT_ARRAY=`$MINBASE/bin/msgconduit list`
+else
+	# The prototype can support multiple types
+	SAVEIFS=$IFS
+ 	IFS=","
+ 	declare -a CONDUIT_ARRAY=($1)
+	IFS=$SAVEIFS
+fi
+
+for CONDUIT in ${CONDUIT_ARRAY[@]}
+do
+  echo $CONDUIT
+  echo "--------"
+  cat $MINBASE/etc/msg/$CONDUIT/addr/contacts 2>/dev/null
+  cat $MINBASE/etc/msg/$CONDUIT/addr/alias 2>/dev/null
+  echo
+done  # for each type of transmission
+

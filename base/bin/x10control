@@ -1,0 +1,150 @@
+#!/bin/bash
+MINBIN=/usr/local/minerva/bin
+LOGSTUB=/var/log/minerva/x10control
+HEYU=/usr/local/bin/heyu
+HEYU_CONF=/etc/heyu/x10.conf
+
+
+if [ $# == 0 ]; then
+  echo "Usage: $0 <device> <command> <device> <parameter>"
+  echo "   command ::= on onifdark off allon alloff set dim bright ison get status"
+  echo "           ::= getcode getcodetype getcodelist getcodecount"
+  echo "   device ::= e1 e2 bedroom_light etc.."
+  exit -1
+fi
+
+$MINBIN/minlog cmd $0 $*
+
+# We include device to be consistent with the other bearskin commands,
+# but in reality it is rarely used. This is because X10 commands do not 
+# need to be sent across the network to be executed remotely.
+
+# Generally, finddev will query the Marple devlist and find a device
+# labelled '/'; this is treated as a device, and returned into $DEVICE.
+# Since this is unused in the script it will cause no damage.
+
+DEVICE=`$MINBIN/finddev x10control $*`
+if [ $? == 0 ]; then
+  echo $DEVICE
+  exit 0;
+fi
+
+CMD=$2
+X10DEVICE=$3
+X10PARAM=$4
+
+case "$CMD" in
+  init)
+    touch $LOGSTUB.err
+    chgrp minerva $LOGSTUB.err
+    chmod ug+rw   $LOGSTUB.err
+    $HEYU engine >/dev/null
+    ;;
+
+  enumdev)
+     $MINBIN/enumdev x10control
+     exit $?
+     ;;
+
+  on)
+    $HEYU turn $X10DEVICE on  2>>$LOGSTUB.err
+    $MINBIN/monexec x10control on $X10DEVICE
+	 $0 $DEVICE ison $X10DEVICE
+    ;;
+
+	onifdark)
+		SUNLIGHT=`$MINBIN/sunlight`
+		# TODO: Customize each light (X10DEVICE) so that darker corners
+		# of the house are trigger sooner, than traditionally lighter areas
+		if [ "$SUNLIGHT" -lt 75 ]; then
+			$0 $DEVICE on $X10DEVICE $X10PARAM
+		fi
+		;;
+
+  off)
+    $HEYU turn $X10DEVICE off  2>>$LOGSTUB.err
+    $MINBIN/monexec x10control off $X10DEVICE
+	 $0 $DEVICE ison $X10DEVICE
+    ;;
+
+  allon)
+    # X10DEVICE is a house code in this instance
+    $HEYU lightson $X10DEVICE 2>>$LOGSTUB.err
+    $MINBIN/monexec x10control allon
+	 echo "All devices turned on"
+    ;;
+
+  alloff)
+    # X10DEVICE is a house code in this instance
+    $HEYU lightsoff $X10DEVICE 2>>$LOGSTUB.err
+    $MINBIN/monexec x10control alloff 
+	 echo "All devices turned off"
+    ;;
+
+  set)
+    # We pass a value between 0 and 100 (off - on)
+    # 1=Bright, 22=Almost off
+    SETTING=`echo "22 - ($X10PARAM * 21)/100" | bc`
+    $HEYU dimb $X10DEVICE $SETTING 2>>$LOGSTUB.err
+	 $0 $DEVICE get $X10DEVICE
+    ;;
+
+  dim)
+    $HEYU dim $X10DEVICE $X10PARAM 2>>$LOGSTUB.err
+	 $0 $DEVICE get $X10DEVICE
+    ;;
+
+  bright)
+    $HEYU bright $X10DEVICE $X10PARAM 2>>$LOGSTUB.err
+	 $0 $DEVICE get $X10DEVICE
+    ;;
+
+  ison)
+    STATE=`$HEYU onstate $X10DEVICE  2>>$LOGSTUB.err`
+	 if [ "$STATE" == "0" ]; then
+	 	echo $X10DEVICE is off
+		exit 0
+	 else
+	 	echo $X10DEVICE is on
+		exit 1
+	 fi
+    ;;
+
+  get)
+    # dimlevel returns a %
+    LEVEL=`$HEYU dimlevel $X10DEVICE 2>>$LOGSTUB.err`
+	 echo "Level of $X10DEVICE is $LEVEL"
+	 exit $LEVEL
+    ;;
+
+  status)
+    $HEYU info 2>>$LOGSTUB.err
+    ;;
+
+  getcode)
+    # $X10DEVICE is actually the parameter
+    ANS=`cat $HEYU_CONF | perl -nle 'print $1 if /^\s*ALIAS\s+(\w+)\s+'$X10DEVICE'/i'`
+    if [ "$ANS" == "" ]; then
+       echo $X10DEVICE
+    else
+       echo $ANS
+    fi
+    ;;
+
+  getcodetype)
+    # $X10DEVICE is actually the parameter
+    cat $HEYU_CONF | perl -nle 'print $1 if /^\s*ALIAS\s+.*?'$X10DEVICE'.*\s+(.*)$/i'
+    ;;
+
+  getcodelist)
+     cat $HEYU_CONF | perl -nle 'print $1 if /^\s*ALIAS\s+(\w+)\s+/i'
+    ;;
+
+  getcodecount)
+     cat $HEYU_CONF | perl -nle 'print $1 if /^\s*ALIAS\s+(\w+)\s+/i' | wc -l
+    ;;
+
+  *)
+    ;;
+esac
+

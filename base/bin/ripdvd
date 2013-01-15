@@ -1,0 +1,28 @@
+#!/usr/bin/perl
+my $language = "en";
+my $subtitles = "off";
+my $output = `lsdvd`;
+
+$output =~ /Disc Title\:\s+(.*?)\n/s;
+
+my $title = lc $1;
+$title =~ s/\b(\w)/\U$1/g;
+$title =~ s/_(\w)/ \U$1/g;
+
+my $cmd = "undvd -t 1";
+
+my $count = $output=~s/\nTitle\://g;
+foreach(2..$count) {
+  $cmd .= ",$_";
+}
+
+mkdir($title);
+chdir($title);
+
+$cmd .= " -a $language -s $subtitles -e 2";
+print $cmd;
+system($cmd);
+
+chdir("..");
+
+

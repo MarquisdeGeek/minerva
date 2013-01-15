@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Sun Jul  8 07:24:07 2012 -->
+<channel id="dave" source="XMLTV" date="13/07/2012">
+  <programme>
+<flags></flags>
+<desc>Shopping from home.</desc>
+<title>Home Shopping</title>
+<end>0710</end>
+<start>0700</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>New. More from the daring pilots of Africa's Okavango Delta. Canadian pilot Paul races against torrential thunderstorms, and the rookies face the final round of testing.</desc>
+<title>Bush Pilots</title>
+<end>0800</end>
+<start>0710</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>A look at the most exciting new cars on the road. Vicki-Butler Henderson drives the one-off Nissan Murano GTC and Jonny Smith engages in a head-to-head grass-cutting challenge.</desc>
+<title>Fifth Gear</title>
+<end>0830</end>
+<start>0800</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Info-packed motoring show. Jason Plato tries out the Subaru Litchfield Type 25, Tom Ford samples BMW's twin turbo 335i, and Tim Lovejoy meets up with golfer Ian Poulter.</desc>
+<title>Fifth Gear</title>
+<end>0900</end>
+<start>0830</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>More automotive antics with Jeremy Clarkson and the team. Jeremy and James show off the ageing but massive luxury cars they bought for the price of a new Ford Mondeo. [AD,S]</desc>
+<title>Top Gear</title>
+<end>1000</end>
+<start>0900</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>New. More from the daring pilots of Africa's Okavango Delta. Canadian pilot Paul races against torrential thunderstorms, and the rookies face the final round of testing.</desc>
+<title>Bush Pilots</title>
+<end>1100</end>
+<start>1000</start>
+  </programme>
+  <programme>
+<subtitle>Darhad</subtitle>
+<flags></flags>
+<desc>While living with the nomadic Darhad herders of Mongolia, Bruce Parry helps a migrating family move their livestock across a high mountain pass. [AD,S]</desc>
+<title>Tribe</title>
+<end>1200</end>
+<start>1100</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Jeremy Clarkson and his fellow motoring obsessives take on their rivals from the show's German equivalent, and James May tries out a very strange Japanese car. [AD,S]</desc>
+<title>Top Gear</title>
+<end>1300</end>
+<start>1200</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>More automotive antics with Jeremy Clarkson and the team. Jeremy and James show off the ageing but massive luxury cars they bought for the price of a new Ford Mondeo. [AD,S]</desc>
+<title>Top Gear</title>
+<end>1400</end>
+<start>1300</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>New. More from the daring pilots of Africa's Okavango Delta. Canadian pilot Paul races against torrential thunderstorms, and the rookies face the final round of testing.</desc>
+<title>Bush Pilots</title>
+<end>1500</end>
+<start>1400</start>
+  </programme>
+  <programme>
+<subtitle>Darhad</subtitle>
+<flags></flags>
+<desc>While living with the nomadic Darhad herders of Mongolia, Bruce Parry helps a migrating family move their livestock across a high mountain pass. [AD,S]</desc>
+<title>Tribe</title>
+<end>1600</end>
+<start>1500</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Jeremy Clarkson and his fellow motoring obsessives take on their rivals from the show's German equivalent, and James May tries out a very strange Japanese car. [AD,S]</desc>
+<title>Top Gear</title>
+<end>1700</end>
+<start>1600</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>More motoring high jinks. Jezza squares up against a Challenger 2 tank in the new Range Rover Sport, while James and Richard play five-a-side footie with the Toyota Aygo. [AD,S]</desc>
+<title>Top Gear</title>
+<end>1800</end>
+<start>1700</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>More motoring fun with Clarkson and co. The team find out if you can buy a stylish two-door coupe for less than 1,500 quid and Jack Dee is the Star in a Reasonably Priced Car. [AD,S]</desc>
+<title>Top Gear</title>
+<end>1900</end>
+<start>1800</start>
+  </programme>
+  <programme>
+<subtitle>Gifts</subtitle>
+<flags>(S)</flags>
+<desc>Stephen Fry chairs the ever-informative quiz show. Our genial host gets to grips with gifts, while joining him are Jan Ravens, Jimmy Carr, Clive Anderson and Alan Davies.</desc>
+<title>QI XL</title>
+<end>2000</end>
+<start>1900</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>New. Fast-paced documentary series following the pilots of Africa's Okavango Delta. After weeks of tests, three rookies learn whether they have got jobs with Wilderness Air.</desc>
+<title>Bush Pilots</title>
+<end>2100</end>
+<start>2000</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>A bumper edition of the evergreen comedy news quiz. Joining Paul Merton and Ian Hislop this time are guest host Jack Dee and guest panellists Caroline Wyatt and Jon Richardson.</desc>
+<title>Have I Got a Bit More News for You</title>
+<end>2200</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Satirical panel show that takes an irreverent look at current affairs, and throws in plenty of stand-up comedy and improv games. Guests include Jo Brand, Mark Steel and Hugh Dennis.</desc>
+<title>Mock the Week</title>
+<end>2240</end>
+<start>2200</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Frank Skinner tours the UK with the sharply satirical comedy series that unpicks the week's biggest stories. This time, Frank is joined by guest comedians in Norwich.</desc>
+<title>Frank Skinner's Opinionated</title>
+<end>2320</end>
+<start>2240</start>
+  </programme>
+  <programme>
+<subtitle>Gifts</subtitle>
+<flags>(S)</flags>
+<desc>Stephen Fry chairs the ever-informative quiz show. Our genial host gets to grips with gifts, while joining him are Jan Ravens, Jimmy Carr, Clive Anderson and Alan Davies.</desc>
+<title>QI XL</title>
+<end>0020</end>
+<start>2320</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Satirical panel show that takes an irreverent look at current affairs, and throws in plenty of stand-up comedy and improv games. Guests include Jo Brand, Mark Steel and Hugh Dennis.</desc>
+<title>Mock the Week</title>
+<end>0100</end>
+<start>0020</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Frank Skinner tours the UK with the sharply satirical comedy series that unpicks the week's biggest stories. This time, Frank is joined by guest comedians in Norwich.</desc>
+<title>Frank Skinner's Opinionated</title>
+<end>0135</end>
+<start>0100</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Join Alexander Armstrong and Ben Miller as they offer up a selection of memorable eccentrics in their super-sharp sketch show.</desc>
+<title>The Armstrong and Miller Show</title>
+<end>0205</end>
+<start>0135</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>More sublime silliness from Alexander Armstrong and Ben Miller, as their exuberant sketch show delves beneath the surface of po-faced British respectability.</desc>
+<title>The Armstrong and Miller Show</title>
+<end>0235</end>
+<start>0205</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Spoof Japanese-style comedy game show with outrageous and surreal stunts and bizarre characters.</desc>
+<title>Banzai</title>
+<end>0300</end>
+<start>0235</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Close.</desc>
+<title>Close</title>
+<end>0700</end>
+<start>0300</start>
+  </programme>
+</channel>

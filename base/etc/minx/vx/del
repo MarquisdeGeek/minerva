@@ -1,0 +1,7 @@
+#!/bin/bash
+
+DIR_INCOMING=/usr/local/minerva/media/voxrecord
+
+rm -f $DIR_INCOMING/*
+
+

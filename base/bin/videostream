@@ -1,0 +1,94 @@
+#!/bin/bash
+
+MINBASE=/usr/local/minerva
+VARLOG=/var/log/minerva
+LOGSTUB=$VARLOG/videostream
+VLC=/usr/bin/vlc
+
+$MINBASE/bin/minlog cmd $0 $*
+
+if [ $# == 0 ]; then
+  echo "Usage: $0 <device> <command> [url]"
+  echo "   device ::= default"
+  echo "   command ::= play|start stop geturl getcurrent isplaying|status getip getport"
+  exit -1
+fi
+
+ALLARGS=$*
+CMD=$2
+URL=$3
+
+. $MINBASE/conf/videostream.conf
+
+DEVICE=`$MINBASE/bin/finddev videostream $*`
+if [ $? == 0 ]; then
+  echo $DEVICE
+  exit 0;
+fi
+
+
+case $CMD in
+  init)
+       touch $LOGSTUB.err
+       touch $LOGSTUB.pid
+       echo 0 > $LOGSTUB.ply
+       echo   > $LOGSTUB.url
+		chgrp -R minerva $LOGSTUB/*
+		chmod -R ug+rw   $LOGSTUB/*
+    ;;
+
+  enumdev)
+     $MINBIN/enumdev videostream
+     exit $?
+     ;;
+
+  getip)
+       echo $SERVER_IP
+       ;;
+
+  getport)
+       echo $SERVER_PORT
+       ;;
+
+  play|start)
+     # The '-I dummy' Trick courtesy of Alexis & Christopher from
+     # http://osdir.com/ml/video.videolan.vlc.general/2003-06/msg00226.html
+     $VLC --sout='#standard{access=http,mux=ogg,dst='$SERVER_IP':'$SERVER_PORT'}' $URL -I dummy 2>>$LOGSTUB.err >/dev/null &
+
+     if [ $? == 0 ]; then
+       echo $! > $LOGSTUB.pid
+       echo 1 > $LOGSTUB.ply
+       echo $URL >$LOGSTUB.url
+     fi
+     ;;
+
+  status|isplaying)
+     if [ -f $LOGSTUB.ply ]; then
+        cat $LOGSTUB.ply
+     else
+        echo 0
+     fi
+     ;;
+
+  geturl)
+     ISPLAYING=`$0 $DEVICE isplaying`
+     if [ "$ISPLAYING" -eq 1 ]; then
+        cat $LOGSTUB.url
+     else
+        echo
+     fi
+     ;;
+
+  stop)
+     ISPLAYING=`$0 $DEVICE isplaying`
+     if [ "$ISPLAYING" -eq 1 ]; then
+        kill -9 `cat $LOGSTUB.pid`
+        echo   > $LOGSTUB.pid
+        echo 0 > $LOGSTUB.ply
+     fi
+     ;;
+
+  *)
+    ;;
+esac
+

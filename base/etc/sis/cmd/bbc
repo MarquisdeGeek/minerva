@@ -1,0 +1,6 @@
+#!/bin/bash
+
+MINBIN=/usr/local/minerva/bin
+
+echo Not ready
+

@@ -1,0 +1,28 @@
+#!/bin/bash
+MINBASE=/usr/local/minerva
+
+$MINBASE/bin/minlog cmd $0 $*
+
+VOICE=default
+if [ -f $MINBASE/etc/defaults/samplevox ]; then
+   VOICE=`cat $MINBASE/etc/defaults/samplevox`
+fi
+
+VOXDIR=$MINBASE/media/voices/$VOICE
+VOXMESSAGE=$VOXDIR/messages/goodnight.wav
+
+if [ -f $VOXMESSAGE ]; then
+  $MINBASE/bin/wavplayer default play $VOXMESSAGE
+else
+  $MINBASE/bin/say default Good night
+fi
+
+$MINBASE/bin/homedevice default off studio
+$MINBASE/bin/homedevice default off lounge
+$MINBASE/bin/homedevice default off shower_speaker 
+$MINBASE/bin/homedevice default off shower
+$MINBASE/bin/homedevice default off landing
+$MINBASE/bin/homedevice default off bedroom
+
+$MINBASE/bin/tweet default Good night everyone!
+

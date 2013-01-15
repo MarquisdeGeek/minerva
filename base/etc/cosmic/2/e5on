@@ -1,0 +1,6 @@
+MINBIN=/usr/local/minerva/bin/
+
+$MINBIN/announce default `$MINBIN/weatherstatus`
+
+
+

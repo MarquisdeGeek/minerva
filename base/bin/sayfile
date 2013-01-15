@@ -1,0 +1,47 @@
+#!/bin/bash
+MINBASE=/usr/local/minerva/
+MINBIN=/usr/local/minerva/bin
+REAL_DEVICE=$1
+FILENAME=$2
+
+$MINBIN/minlog cmd $0 $*
+
+# Set default evaluation
+VOX="()"
+
+# get default voice
+if [ -f $MINBASE/etc/defaults/festvox ]; then
+  VOX=\(`cat $MINBASE/etc/defaults/festvox`\)
+fi
+
+# get override
+SPEAKER=/usr/share/festival/voices/english/$1
+if [ -d $SPEAKER ]; then
+  VOX=\(voice_$1\)
+fi
+
+DEVICE=`$MINBIN/finddev say $*`
+if [ $? == 0 ]; then
+  echo $DEVICE
+  exit 0;
+fi
+
+
+if [ -f "$FILENAME" ]; then
+
+	if [ "$DEVICE" == "tempwav" ]; then
+		WAVNAME=`mktemp`
+
+		text2wave -o $WAVNAME $FILENAME -eval $VOX 2>/dev/null
+		$MINBIN/wavplayer $REAL_DEVICE splay $WAVNAME
+
+		rm $WAVNAME
+	else
+	  festival --tts $FILENAME
+	fi
+
+  exit 0;
+fi
+
+exit 1;
+

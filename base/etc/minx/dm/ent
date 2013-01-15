@@ -1,0 +1,5 @@
+#!/bin/bash
+
+say default welcome home
+/usr/local/minerva/bin/homedevice default on lounge_light
+

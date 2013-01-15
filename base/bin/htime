@@ -1,0 +1,86 @@
+#!/bin/bash
+
+if [ $# -eq 2 ]; then
+	HOURS="$1"
+	MINS="$2"
+	HOURS24=$HOURS
+
+else
+	HOURS=`date +%I`
+	MINS=`date +%M`
+	HOURS24=`date +%H`
+
+
+	if [ $MINS -lt 10 ]; then
+	  	MINS=${MINS:1:1}
+	fi
+
+	if [ $HOURS -lt 10 ]; then
+  		HOURS=${HOURS:1:1}
+	fi
+fi
+
+if [ $HOURS -eq 0 ]; then
+  HOURS="midnight"
+fi
+
+NEXTHOUR=$((HOURS + 1))
+
+if [ $NEXTHOUR -gt 12 ]; then
+   NEXTHOUR=$((NEXTHOUR - 12))
+fi
+
+if [ $NEXTHOUR -eq 12 ]; then
+   NEXTHOUR="midnight"
+fi
+
+
+
+case $MINS in
+  0)
+     HUMAN=$HOURS" o clock"
+     ;;
+
+  1)
+     HUMAN="1 minute past $HOURS"
+     ;;
+
+  5|10|20|25)
+     HUMAN="$MINS past $HOURS"
+     ;;
+  15)
+     HUMAN="quarter past $HOURS"
+     ;;
+  30)
+     HUMAN="half past $HOURS"
+     ;;
+  35|40|50|55)
+     HUMAN=$((60 - $MINS))" to $NEXTHOUR"
+     ;;
+
+  45)
+     HUMAN="a quarter to $NEXTHOUR"
+     ;;
+
+  59)
+     HUMAN="1 minute to $NEXTHOUR"
+     ;;
+esac
+
+if [ "$HUMAN" == "" ]; then
+  if [ $MINS -lt 30 ]; then
+     HUMAN="$MINS minutes past $HOURS"
+  else
+     HUMAN=$((60 - $MINS))" minutes to $NEXTHOUR"
+  fi
+fi
+
+if [ $HOURS24 -lt 12 ]; then
+	HUMAN=$HUMAN" a m"
+else
+	HUMAN=$HUMAN" p m"
+fi
+
+
+echo $HUMAN
+

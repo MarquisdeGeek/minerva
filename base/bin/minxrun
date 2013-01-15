@@ -1,0 +1,19 @@
+#!/bin/bash
+MINBASE=/usr/local/minerva
+
+$MINBASE/bin/minlog cmd $0 $*
+
+CODE="$1"
+
+shift
+PARAMS=${CODE:5}" $*"
+
+DEVICE=${CODE:0:2}
+INSTRUCTION=${CODE:2:3}
+
+SCRIPT=$MINBASE/etc/minx/$DEVICE/$INSTRUCTION 
+
+if [ -f $SCRIPT ]; then
+  $SCRIPT $PARAMS
+fi
+

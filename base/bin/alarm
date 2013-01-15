@@ -1,0 +1,17 @@
+#!/bin/bash
+
+MINBIN=/usr/local/minerva/bin
+SAY=$MINBIN/say
+VARLOG=/var/log/minerva
+
+$MINBIN/minlog cmd $0 $*
+
+# usage: <device> <duration of timer> <timer id>
+
+DEVICE=$1
+
+$MINBIN/sfx $DEVICE ok
+$SAY default The $3 minute timer has elapsed. Timer I D $2 lasted $3 minutes
+
+$MINBIN/monexec alarm off
+

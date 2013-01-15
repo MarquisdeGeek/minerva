@@ -1,0 +1,13 @@
+#!/bin/bash
+
+MINBASE=/usr/local/minerva
+
+shift; 
+USER=$1; shift
+
+# We could look for the users on the system
+export DISPLAY=:0.0
+
+kdialog --msgbox "$USER : $*" &
+
+

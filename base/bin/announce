@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# NBOTE: This doesn't use finddev - as covered in announcefile
+
+MINBIN=/usr/local/minerva/bin/
+
+$MINBIN/minlog cmd $0 $*
+
+DEVICE=$1; shift
+
+MIXDUMP=`mktemp`
+
+$MINBIN/mixer $DEVICE store $MIXDUMP
+
+$MINBIN/mixer $DEVICE dec cd 50
+$MINBIN/mixer $DEVICE dec linein 50
+$MINBIN/mixer $DEVICE dec microphone 50
+
+$MINBIN/mp3player DEVICE pause
+
+#$MINBIN/sfx $DEVICE start
+$MINBIN/say $DEVICE $*
+#$MINBIN/sfx $DEVICE stop
+
+$MINBIN/mp3player DEVICE resume
+
+$MINBIN/mixer $DEVICE recall $MIXDUMP
+rm $MIXDUMP
+
+$MINBIN/monexec announce made $*
+

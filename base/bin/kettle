@@ -1,0 +1,19 @@
+#!/bin/bash
+MINBIN=/usr/local/minerva/bin
+ETCDIR=/usr/local/minerva/etc
+
+$MINBIN/minlog cmd $0 $*
+
+DEVICE=$1
+
+$MINBIN/homedevice default on `$ETCDIR/kettle.conf $DEVICE device` 
+$MINBIN/monexec kettle on
+
+sleep `$ETCDIR/kettle.conf $DEVICE time`
+
+$MINBIN/announce $DEVICE The kettle has boiled
+
+$MINBIN/homedevice default off `$ETCDIR/kettle.conf $DEVICE device` 
+$MINBIN/monexec kettle off
+
+

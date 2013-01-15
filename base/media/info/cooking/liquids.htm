@@ -1,0 +1,73 @@
+<script language="JavaScript">
+function hideUnits(id) {
+  document.getElementById(id).style.display = 'none';
+}
+
+function showUnits(id) {
+hideUnits('q');
+hideUnits('p');
+hideUnits('c');
+hideUnits('f');
+hideUnits('s');
+hideUnits('t');
+
+document.getElementById(id).style.display = 'block';
+}
+</script>
+
+<table border=1 cellpadding=0 cellspacing=0 width=100%><tr><td>
+
+<table border=0 cellpadding=10 width=100%><tr>
+<td><a href="javascript:showUnits('q');">1 Quart</a></td>
+<td><a href="javascript:showUnits('p');">1 Pint</a></td>
+<td><a href="javascript:showUnits('c');">1 Cup</a></td>
+<td><a href="javascript:showUnits('f');">1 Fluid Ounce</a></td>
+<td><a href="javascript:showUnits('s');">1 Tablespoon</a></td>
+<td><a href="javascript:showUnits('t');">1 Teaspoon</a></td>
+</tr></table>
+
+
+<p id='q' style=display:none><table border=0 cellpadding=10 width=100%><tr>
+<td/><td><b>1 Quart</b></td>
+<td>= 4 Cups </td>
+<td>= 2 Pints</td>
+<td>= 1/4 Gallon</td>
+</tr></table></p>
+
+<p id='p' style=display:block><table border=0 cellpadding=10 width=100%><tr>
+<td/><td><b>1 Pint</b></td>
+<td>= 16 Fluid Ounces</td>
+<td>= 2 Cups</td>
+<td>= 1/2 Quart</td>
+</tr></table></p>
+
+<p id='c' style=display:none><table border=0 cellpadding=10 width=100%><tr>
+<td/><td><b>1 Cup</b></td>
+<td>= 16 Tablespoons</td>
+<td>= 8 Fluid Ounces</td>
+<td>= 1/2 Pint</td>
+<td>= 1/4 Quart</td>
+</tr></table></p>
+
+<p id='f' style=display:none><table border=0 cellpadding=10 width=100%><tr>
+<td/><td><b>1 Fluid Ounce</b></td>
+<td>= 6 Teaspoons</td>
+<td>= 2 Tablespoons</td>
+</tr></table></p>
+
+<p id='s' style=display:none><table border=0 cellpadding=10 width=100%><tr>
+<td/><td><b>1 Tablespoon</b></td>
+<td>= 3 Teaspoons</td>
+<td>= 1/2 Fluid Ounce</td>
+</tr></table></p>
+
+<p id='t' style=display:none><table border=0 cellpadding=10 width=100%><tr>
+<td/><td><b>1 Teaspoon</b></td>
+<td>= 1/3 Tablespoon</td>
+<td>= 1/6 Fluid Ounce</td>
+<td>= 60 Drops</td>
+</tr></table></p>
+
+
+</td></tr></table>
+

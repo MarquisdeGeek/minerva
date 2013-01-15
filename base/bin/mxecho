@@ -1,0 +1,4 @@
+shift
+TOADDR=$1; shift
+echo "MSG (to $TOADDR):" $*
+

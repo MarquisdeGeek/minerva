@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Sat Jul  7 07:25:13 2012 -->
+<channel id="fiver" source="XMLTV" date="12/07/2012">
+  <programme>
+<flags></flags>
+<desc>Teleshopping</desc>
+<title>Teleshopping</title>
+<end>0630</end>
+<start>0600</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping</desc>
+<title>Teleshopping</title>
+<end>0700</end>
+<start>0630</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping</desc>
+<title>Teleshopping</title>
+<end>0730</end>
+<start>0700</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping</desc>
+<title>Teleshopping</title>
+<end>0800</end>
+<start>0730</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping</desc>
+<title>Teleshopping</title>
+<end>0830</end>
+<start>0800</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping</desc>
+<title>Teleshopping</title>
+<end>0900</end>
+<start>0830</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Beautiful genuine gemstone jewellery supplied direct from the Gems TV designers at amazing prices. A UK family-owned business, Gems TV has been creating gemstone jewellery since 2004.</desc>
+<title>Gems TV - Teleshopping</title>
+<end>1300</end>
+<start>0900</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Highlights from the road-crime documentary series. A belligerent body-builder makes the mistake of trying to muscle his way out of trouble (1/3).</desc>
+<title>Police Interceptors</title>
+<end>1400</end>
+<start>1300</start>
+  </programme>
+  <programme>
+<subtitle>Taking the Leap</subtitle>
+<flags></flags>
+<desc>US comedy about the dysfunctional Braverman family. Adam and Kristina have an unexpected meeting with the principal of Max's school.</desc>
+<title>Parenthood</title>
+<end>1500</end>
+<start>1400</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Vanessa cracks and invites Rhys over for dinner. The couple close in on a kiss, only for Lucas to arrive and spoil it. Callum goes to throw a rock through Troy's window. [AD,S]</desc>
+<title>Neighbours</title>
+<end>1530</end>
+<start>1500</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>It is the day of Danny's court case and Brax is stressing that his father could get out of jail. Lottie decides to act like a teenager by skipping school. [AD,S]</desc>
+<title>Home and Away</title>
+<end>1600</end>
+<start>1530</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Coverage of all the latest goings-on from inside the Big Brother house.</desc>
+<title>Big Brother</title>
+<end>1700</end>
+<start>1600</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Reese misbehaves so badly that Hal and Lois kick him out. While Dewey makes himself comfy in his brother's former bedroom, Francis takes the opportunity to vent some anger at his parents' method.</desc>
+<title>Malcolm In The Middle</title>
+<end>1725</end>
+<start>1700</start>
+  </programme>
+  <programme>
+<subtitle>Malcolm's Job</subtitle>
+<flags></flags>
+<desc>Family comedy about a gifted boy growing up in a chaotic family. Malcolm discovers Lois' secret. Hal starts betting on babies in his father-and-child classes.</desc>
+<title>Malcolm In The Middle</title>
+<end>1800</end>
+<start>1725</start>
+  </programme>
+  <programme>
+<subtitle>Christmas Trees</subtitle>
+<flags></flags>
+<desc>Sitcom about a gifted boy growing up in a chaotic family. Hal and the boys get competitive when the local church starts to undercut them on Christmas tree prices.</desc>
+<title>Malcolm In The Middle</title>
+<end>1825</end>
+<start>1800</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>All the latest celebrity news and gossip. Presented by Stephanie Prentice.</desc>
+<title>5* Access</title>
+<end>1830</end>
+<start>1825</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>After a drugs binge, Liam wakes up with a cut on his head. When Leah notes that he is bleeding, she rushes him to hospital where they learn Liam had a cocaine-induced seizure. [AD,S]</desc>
+<title>Home and Away</title>
+<end>1900</end>
+<start>1830</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Vanessa cracks and invites Rhys over for dinner. The couple close in on a kiss, only for Lucas to arrive and spoil it. Callum goes to throw a rock through Troy's window. [AD,S]</desc>
+<title>Neighbours</title>
+<end>1935</end>
+<start>1900</start>
+  </programme>
+  <programme>
+<subtitle>Block Party</subtitle>
+<flags></flags>
+<desc>Sitcom. The Wilkersons return home early from holiday only to find out that neighbours throw a street party every year while they are away.</desc>
+<title>Malcolm In The Middle</title>
+<end>2000</end>
+<start>1935</start>
+  </programme>
+  <programme>
+<subtitle>Red-Handed</subtitle>
+<flags>(S)</flags>
+<desc>Fantasy drama. Ruby suddenly disappears after being seen with a mysterious man. The story of Red Riding Hood is revealed.</desc>
+<title>Once Upon A Time</title>
+<end>2100</end>
+<start>2000</start>
+  </programme>
+  <programme>
+<subtitle>Red Badge</subtitle>
+<flags>(S)</flags>
+<desc>New Episode. Crime drama series. When a convicted child molester turns up dead near CBI HQ, Lisbon finds herself at the centre of a murder investigation (3/23).</desc>
+<title>The Mentalist</title>
+<end>2200</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<subtitle>Red Menace</subtitle>
+<flags>(S)</flags>
+<desc>Crime drama. The agents get up close and personal with a biker gang after the gang's lawyer is found dead (4/23).</desc>
+<title>The Mentalist</title>
+<end>2255</end>
+<start>2200</start>
+  </programme>
+  <programme>
+<subtitle>Unoriginal Sin</subtitle>
+<flags></flags>
+<desc>Matters of faith abound in this episode, with Miranda unsure whether to have her son baptised and Samantha in a quandary over whether to take Richard back.</desc>
+<title>Sex and The City</title>
+<end>2335</end>
+<start>2255</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Comedian Dan Wright presents a hilarious clip show. Dan looks at educational materials that give advice on being gay, including the world's catchiest song about lesbians (7/10).</desc>
+<title>Sex Lessons</title>
+<end>0000</end>
+<start>2335</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping on 5*.</desc>
+<title>Teleshopping</title>
+<end>0005</end>
+<start>0000</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping on 5*.</desc>
+<title>Teleshopping</title>
+<end>0035</end>
+<start>0005</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping on 5*.</desc>
+<title>Teleshopping</title>
+<end>0105</end>
+<start>0035</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping on 5*.</desc>
+<title>Teleshopping</title>
+<end>0135</end>
+<start>0105</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping on 5*.</desc>
+<title>Teleshopping</title>
+<end>0200</end>
+<start>0135</start>
+  </programme>
+</channel>

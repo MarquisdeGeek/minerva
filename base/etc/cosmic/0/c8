@@ -1,0 +1,8 @@
+#!/bin/bash
+# Stop all media from playing
+
+MINBIN=/usr/local/minerva/bin/
+
+$MINBIN/stopmedia default
+$MINBIN/wavplayer default play /usr/local/minerva/media/wav/chime.wav
+

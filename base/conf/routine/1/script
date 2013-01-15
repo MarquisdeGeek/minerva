@@ -1,0 +1,17 @@
+MINBIN=/usr/local/minerva/bin
+sleep 0
+$MINBIN/alarm 1
+sleep 300
+$MINBIN/homedevice default on bedroom
+sleep 600
+$MINBIN/homedevice default on shower
+sleep 60
+$MINBIN/homedevice default on shower_speaker
+sleep 10
+$MINBIN/report say shower calendar
+sleep 1200
+$MINBIN/say shower Hurry up
+$MINBIN/homedevice default on shower_speaker
+$MINBIN/homedevice default on shower 
+$MINBIN/homedevice default on bedroom
+

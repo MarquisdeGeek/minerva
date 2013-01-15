@@ -1,0 +1,23 @@
+
+BODY {color: black; background: #ffffff; }
+
+.main          { background: #654B00; }
+.main_table    { background: #ffffff; }
+
+.panel_caption { background: #C20000; color:white; font-size: 100%; font-style:italic; }
+.panel_control { background: #C20000; }
+.panel_body    { background: #bbbbbb; color:black;}
+
+.main_caption  { background: #E14B32; font-size: 125%; font-weight: bold;}
+.main_control  { background: #9B6400; font-size: 125%; font-weight: bold;}
+.main_body     { background: #eeeeee; color:black; }
+
+.cfg_caption   { background: #E17D32; color:white; font-weight: bold;}
+.cfg_caption2  { background: #E0AF63; color:white; }
+.cfg_body      { background: #FAE17D; color:black; }
+
+.info_caption  { background: #6644ff; color:white; font-weight: bold; }
+.info_caption2 { background: #6644ff;color:white; font-weight: bold; }
+.info_body     { background: #FAAF32; color:black; }
+
+

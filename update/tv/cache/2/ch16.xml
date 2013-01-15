@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Sun Jul  8 07:25:11 2012 -->
+<channel id="fiver" source="XMLTV" date="13/07/2012">
+  <programme>
+<flags></flags>
+<desc>Teleshopping</desc>
+<title>Teleshopping</title>
+<end>0630</end>
+<start>0600</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping</desc>
+<title>Teleshopping</title>
+<end>0700</end>
+<start>0630</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping</desc>
+<title>Teleshopping</title>
+<end>0730</end>
+<start>0700</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping</desc>
+<title>Teleshopping</title>
+<end>0800</end>
+<start>0730</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping</desc>
+<title>Teleshopping</title>
+<end>0830</end>
+<start>0800</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping</desc>
+<title>Teleshopping</title>
+<end>0900</end>
+<start>0830</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Beautiful genuine gemstone jewellery supplied direct from the Gems TV designers at amazing prices. A UK family-owned business, Gems TV has been creating gemstone jewellery since 2004.</desc>
+<title>Gems TV - Teleshopping</title>
+<end>1300</end>
+<start>0900</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Road-crime documentary series. A team of cars and helicopters chases a driver across two counties, and an apocalyptic downpour hampers a rescue after a major crash. (2/3)</desc>
+<title>Police Interceptors</title>
+<end>1400</end>
+<start>1300</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Crosby decides to try and get Jasmine back, while Adam worries about Haddie and Alex going to her prom together. Elsewhere, Sarah works on her playscript.</desc>
+<title>Parenthood</title>
+<end>1500</end>
+<start>1400</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Zoe presents Paul with a way to improve his image by making his once-promised donation to Erinsborough High. Paul eventually decides to swallow his pride and agrees to do it. [AD,S]</desc>
+<title>Neighbours</title>
+<end>1530</end>
+<start>1500</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>After a drugs binge, Liam wakes up with a cut on his head. When Leah notes that he is bleeding, she rushes him to hospital where they learn Liam had a cocaine-induced seizure. [AD,S]</desc>
+<title>Home and Away</title>
+<end>1600</end>
+<start>1530</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Coverage of all the latest goings-on from inside the Big Brother house.</desc>
+<title>Big Brother</title>
+<end>1700</end>
+<start>1600</start>
+  </programme>
+  <programme>
+<subtitle>Dirty Magazine</subtitle>
+<flags></flags>
+<desc>Sitcom about a gifted boy. When Malcolm becomes editor of the school literary magazine, the principal instructs him to censor a well-written story.</desc>
+<title>Malcolm In The Middle</title>
+<end>1725</end>
+<start>1700</start>
+  </programme>
+  <programme>
+<subtitle>Hot Tub</subtitle>
+<flags></flags>
+<desc>Sitcom. Lois and Hal clash when Hal purchases a hot tub without her consultation. Malcolm gets his driver's licence.</desc>
+<title>Malcolm In The Middle</title>
+<end>1800</end>
+<start>1725</start>
+  </programme>
+  <programme>
+<subtitle>Ida's Boyfriend</subtitle>
+<flags></flags>
+<desc>Sitcom about a gifted boy growing up in a chaotic family. Lois and Malcolm are suspicious when battle-axe Ida announces she's getting married and moving to Hong Kong.</desc>
+<title>Malcolm In The Middle</title>
+<end>1825</end>
+<start>1800</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>All the latest celebrity news and gossip. Presented by Stephanie Prentice.</desc>
+<title>5* Access</title>
+<end>1830</end>
+<start>1825</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Alf gives Lottie a fishing lesson and she opens up about her brother dying. Brax is angry that Danny is out of jail. Danny moves into the caravan park across from Ruby. [AD,S]</desc>
+<title>Home and Away</title>
+<end>1900</end>
+<start>1830</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Zoe presents Paul with a way to improve his image by making his once-promised donation to Erinsborough High. Paul eventually decides to swallow his pride and agrees to do it. [AD,S]</desc>
+<title>Neighbours</title>
+<end>1935</end>
+<start>1900</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Malcolm joins a softball team to get out of working the early shift with Lois. Unfortunately for Malcolm, Lois is also coaching the team.</desc>
+<title>Malcolm In The Middle</title>
+<end>2000</end>
+<start>1935</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Reality series featuring TV hearthrob Spencer Matthews. Spencer has laid on a cruise for eight of the girls in a luxury catamaran with a beach party at their destination.</desc>
+<title>The Bachelor</title>
+<end>2100</end>
+<start>2000</start>
+  </programme>
+  <programme>
+<subtitle>The Oakland</subtitle>
+<flags>(S)</flags>
+<desc>Documentary series with Alex Polizzi. Alex visits a hotel and nightclub in Essex that is run by a family who are simply not dancing to the same beat.</desc>
+<title>The Hotel Inspector</title>
+<end>2200</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>5* brings you an hour of exclusive live action from the house following another eviction. Witness the fallout after another housemate's time in the house is up.</desc>
+<title>Big Brother: Live From The House</title>
+<end>2300</end>
+<start>2200</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Bangladesh. The story of how, in 1992, 18-year-old Texan Lia found herself sentenced to 30 years imprisonment in a Bangladesh jail for smuggling heroin. (2/9)</desc>
+<title>Banged Up Abroad</title>
+<end>0000</end>
+<start>2300</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping on 5*.</desc>
+<title>Teleshopping</title>
+<end>0030</end>
+<start>0000</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping on 5*.</desc>
+<title>Teleshopping</title>
+<end>0055</end>
+<start>0030</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping on 5*.</desc>
+<title>Teleshopping</title>
+<end>0125</end>
+<start>0055</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping on 5*.</desc>
+<title>Teleshopping</title>
+<end>0155</end>
+<start>0125</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping on 5*.</desc>
+<title>Teleshopping</title>
+<end>0200</end>
+<start>0155</start>
+  </programme>
+</channel>

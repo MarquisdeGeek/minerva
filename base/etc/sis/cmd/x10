@@ -1,0 +1,14 @@
+#!/bin/bash
+
+MINBIN=/usr/local/minerva/bin
+
+UNIT=$1
+STATE=$2
+
+if [ "$UNIT" == "" ]; then
+   $MINBIN/homedevice default status | tail -n 3
+else
+   $MINBIN/homedevice default $STATE $UNIT 
+fi
+
+

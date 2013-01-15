@@ -1,0 +1,5 @@
+#!/bin/bash
+# Vocally report the system status
+
+/usr/local/minerva/bin/vstatus
+

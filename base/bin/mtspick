@@ -1,0 +1,60 @@
+#!/usr/bin/perl
+use strict;
+use Date::Format;
+
+my $user=$ARGV[0];
+my $priority=$ARGV[1];
+my $configBase="/usr/local/minerva/etc/users/$user/mts/";
+
+$priority = "mesg" if (! defined $priority);
+$priority = "mesg" if ($priority ne "error" && $priority ne "warn");
+
+if (! -d "$configBase/$priority") {
+  $priority = "mesg";
+}
+my $configDir="$configBase/$priority/";
+
+#if relgious festival
+my $festival="null";
+my $dayName=time2str("%a", time);
+my $dateRef=time2str("%b%d", time);
+my $dayType="weekday";
+my $configFile="";
+
+if ($dayName eq "Sun" || $dayName eq "Sat") {
+  $dayType="weekend";
+}
+
+
+if (-e "$configDir$festival") {
+  $configFile = $festival;
+} elsif (-e "$configDir$dateRef") {
+  $configFile = $dateRef;
+} elsif (-e "$configDir$dayName") {
+  $configFile = $dayName;
+} elsif (-e "$configDir$dayType") {
+  $configFile = $dayType;
+} elsif (-e "${configDir}daily") {
+  $configFile = "daily";
+}
+
+die "No configuration file for today. Please create default, at least.\n" if $configFile eq "";
+
+open FILE, "<", "$configDir$configFile" or die $!;
+my $format = <FILE>;
+
+if ($format =~ /^\!\s*hourly/) {
+  my $comment = <FILE>;
+  my $data = <FILE>;
+  
+  my $hour = time2str("%k", time);
+  my $idx = int($hour)*3+2;
+  my $process = substr $data, $hour*3+2, 2;
+  
+#  print "Cfg:$configDir$configFile\n";
+  print $process;
+}
+
+close(FILE);
+
+

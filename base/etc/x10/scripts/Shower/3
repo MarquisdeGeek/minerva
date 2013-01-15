@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ "$1" == "query" ]; then
+  echo "Play music"
+  exit 0
+fi
+
+# Default paths
+MINBASE=/usr/local/minerva
+MINBIN=$MINBASE/bin
+
+## Code goes here
+$MINBIN/usr/shower start
+$MINBIN/manifest shower next music 5
+$MINBIN/usr/shower end
+

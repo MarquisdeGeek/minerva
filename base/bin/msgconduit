@@ -1,0 +1,31 @@
+#!/bin/bash
+MINBASE=/usr/local/minerva
+
+$MINBASE/bin/minlog cmd $0 $*
+
+CMD=$1;  shift
+TYPE=$1; shift
+
+if [ "$CMD" == "create" ]; then
+   mkdir -p $MINBASE/etc/msg/$TYPE/xmit
+   mkdir -p $MINBASE/etc/msg/$TYPE/cmd
+   mkdir -p $MINBASE/etc/msg/$TYPE/addr
+   mkdir -p $MINBASE/etc/msg/$TYPE/auth
+
+   ln -s $MINBASE/bin/mx$TYPE $MINBASE/etc/msg/$TYPE/xmit/cmd
+
+elif [ "$CMD" == "list" ]; then
+   ls -1 $MINBASE/etc/msg
+
+elif [ "$CMD" == "add" ]; then
+   
+   ADDCMD=$1; shift
+   ARGS=$*
+
+   echo $ARGS > $MINBASE/etc/msg/$TYPE/cmd/$ADDCMD
+
+else
+   echo "Usage: msgconduit [create|list|add] [conduit type]"
+fi
+
+

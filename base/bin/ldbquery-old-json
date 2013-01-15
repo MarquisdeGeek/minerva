@@ -1,0 +1,135 @@
+#!/usr/bin/perl -w
+use strict;
+use JSON;
+use Data::Dumper;
+
+
+# use directly in cron with | head -n 1 piped into say
+# Needs config for: leaving train, home train
+# also means args are broken
+# 1. use this as example
+# 2. separate minerva version
+
+use WWW::Mechanize;
+use HTML::TokeParser;
+use Time::Local;
+
+
+my %stations = (
+  lut => 'Luton',
+  ltn => 'Luton Airport Parkway',
+  stp => 'London St Pancras International',
+  bdm => 'Beford',
+);
+
+my $timeToStation = 45;
+my $graceThreshold = 0;
+my $maxGracePeriod = 60;
+my $currentTime = localtime();
+
+my $command = $ARGV[0];
+my $fromCode = lc $ARGV[1];
+my $toCode = lc $ARGV[2];
+
+if (!defined $command || $command eq "help") {
+  print "Usage: [stations|get] [from] [to] <grace>\n";
+  exit 1;
+
+} elsif ($command eq "stations") {
+  if (defined $fromCode) {
+     print $stations{$fromCode}."\n";
+  } else {
+     for my $id(keys %stations) {
+        print "$id\n";
+     }
+  }
+  exit 0;
+}
+
+#print "From $fromCode to $toCode\n";
+my $fromName = $stations{$fromCode};
+my $toName = $stations{$toCode};
+
+if (!defined $fromName || !defined $toName) {
+  print "Unknown station code: $fromCode $toCode\n";
+  exit 0;
+}
+
+$fromName =~ s/ /+/g;
+$toName =~ s/ /+/g;
+
+$graceThreshold = $ARGV[3] if defined $ARGV[3];
+$maxGracePeriod = $ARGV[4] if defined $ARGV[4];
+
+my $currentHour = (localtime)[2];
+my $currentMin = (localtime)[1];
+
+
+my $agent = WWW::Mechanize->new();
+my $url = "http://ojp.nationalrail.co.uk/en/s/ldb/liveTrainsJson?departing=true&liveTrainsFrom=$fromName&liveTrainsTo=$toName&serviceId=";
+
+$agent->get($url);
+
+my $trainTimes = decode_json $agent->{content};
+my $trains = $trainTimes->{'trains'};
+
+foreach my $entry (@$trains) {
+	my $expectedTime = @$entry[1];
+	my $destination = @$entry[2];
+	my $status = @$entry[3];
+	my $platform = @$entry[4];
+	my $arrivalTime = $expectedTime;
+
+	$expectedTime = $1 if ($status =~ /((\d+):0?(\d+))/);
+   $destination =~ s/&amp;/&/g;
+
+#	print "Starting from $origin to $expectedTime to $destination is expected at '$expectedTime' on platform $platform\n";
+
+    #print "Arrival:".$arrivalTime."\n";
+
+    # the 0? inclusion here shortens '04' to '4'
+    $expectedTime =~ /(\d+):0?(\d+)/;
+    my $arriveHour = $1;
+    my $arriveMins = $2;
+
+    my $t;
+    my $minsAway = 0;
+
+    $t = $arriveMins - $currentMin;
+    if ($t >= 0) {
+       $minsAway += $t;
+    } else {
+       $minsAway += 60+$t;
+       --$arriveHour;   # because we carry over '1'
+       $arriveHour = 23 if $arriveHour == -1;
+    }
+
+    $t = $arriveHour - $currentHour;
+#print "$arriveHour - $currentHour = da:$t";
+    if ($t >= 0) {
+       $minsAway += $t * 60;
+    } else {
+       $minsAway += (24+$t) * 60;
+   }
+
+   my $graceMinutes = $minsAway-$timeToStation;
+   if ($graceMinutes >= $graceThreshold && $graceMinutes < $maxGracePeriod) {
+		if ($arrivalTime eq $expectedTime) {
+			if ($command eq "getshort") {
+				print "$arrivalTime to $destination. ";
+			} else {
+      		print "You can get the $arrivalTime to $destination. There is $graceMinutes minutes grace.\n";
+			}
+		} else {
+			if ($command eq "getshort") {
+				print "The delayed $arrivalTime to $destination,  expected at $expectedTime.";
+			} else {
+      		print "You can get the delayed $arrivalTime to $destination, now expected at $expectedTime. There is $graceMinutes minutes grace.\n";
+			}
+		}
+   }
+
+     #print $stream->get_trimmed_text("/tr");
+}
+
+0;

@@ -1,0 +1,20 @@
+ #!/bin/bash
+
+if [ "$1" == "query" ]; then
+  echo "HouseE button 4"
+  exit 0
+fi
+
+ # Default paths
+MINBASE=/usr/local/minerva
+MINBIN=$MINBASE/bin
+
+## Code goes here
+if [ `date +%H` -gt 20 -o `date +%H -lt 4 ]; then
+	$MINBIN/housenight
+else
+	$MINBIN/homedevice default off shower_speaker
+	$MINBIN/homedevice default off shower
+	$MINBIN/homedevice default off bedroom
+fi
+

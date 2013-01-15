@@ -1,0 +1,4 @@
+MINBIN=/usr/local/minerva/bin
+
+$MINBIN/addinfostream status media `$MINBIN/mstatus`
+

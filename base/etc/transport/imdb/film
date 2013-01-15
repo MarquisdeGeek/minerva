@@ -1,0 +1,29 @@
+#!/usr/bin/php
+<?php
+require("imdb.class.php");
+require("imdb.minerva.php");
+require("search.minerva.php");
+
+$charset = "iso-8859-1";
+
+$movieid = $argv[1];
+$movieid = getMovieID($movieid);
+$movie = new imdb($movieid);
+$movie->setid($movieid);
+
+writeField("Title", $movie->title(), "film", $movieid);
+writeField("Year", $movie->year());
+writeField("Running time", $movie->runtime());
+
+writeFieldList($movie->director(), "Director", "director");
+writeFieldList($movie->composer(), "Composer", "composer");
+writeFieldList($movie->writing(), "Writer", "writer");
+
+$castList = $movie->cast();
+foreach($castList AS $actor) {
+	writeField($actor["role"], $actor["name"], "actor", $actor["imdb"]);
+}
+
+return 0;
+
+?>

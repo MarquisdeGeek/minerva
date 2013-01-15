@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Sun Jul  8 07:29:27 2012 -->
+<channel id="tmf" source="XMLTV" date="13/07/2012">
+  <programme>
+<flags></flags>
+<desc>Teleshopping.</desc>
+<title>Teleshopping</title>
+<end>0900</end>
+<start>0600</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>The search is on to find the best dance crew in America... but then you probably worked that out from the title, didn't you?</desc>
+<title>America's Best Dance Crew</title>
+<end>1900</end>
+<start>0900</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>MTV counts down a list of the celebrities with the hottest bodies under the sun. Featuring Taylor Lautner and Jennifer Aniston.</desc>
+<title>10 Hottest Celebrity Beach Bodies</title>
+<end>1930</end>
+<start>1900</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>...The Shortlist. Narrowed down to the Top 10, these are the selections of the most excruciating celeb moments.</desc>
+<title>10 Most Awkward Celebrity Moments:...</title>
+<end>2000</end>
+<start>1930</start>
+  </programme>
+  <programme>
+<subtitle>I'm Sick Y'all</subtitle>
+<flags></flags>
+<desc>An epidemic of strep throat results in the Hellcats heading to the Nationals a few members short. This leaves the team dangerously close to being disqualified.</desc>
+<title>Hellcats</title>
+<end>2100</end>
+<start>2000</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Reality series. After moving in with her boyfriend's dysfunctional family, Allie needs to decide whether to raise her baby in an unstable environment or without a dad.</desc>
+<title>16 and Pregnant</title>
+<end>2200</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>No Information Available</desc>
+<title>No Information Available</title>
+<end>0000</end>
+<start>2200</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Whether it's Charlie Sheen and Denise Richards or Paul McCartney and Heather Mills, we'll give you the dirt on who got the kids, who got the millions and who just got the STDs.</desc>
+<title>40 Most Shocking Celebrity Divorces</title>
+<end>0200</end>
+<start>0000</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>An eclectic mix of the biggest hits from your favourite artists, all in one place. Presenting future smashes, pop classics and the biggest superstars around. Join us as we say VIVA The Hits!</desc>
+<title>VIVA The Hits!</title>
+<end>0300</end>
+<start>0200</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping.</desc>
+<title>Teleshopping</title>
+<end>0900</end>
+<start>0300</start>
+  </programme>
+</channel>

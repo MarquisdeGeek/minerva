@@ -1,0 +1,5 @@
+#!/bin/bash
+# Mute (or unmute) the audio
+
+/usr/local/minerva/bin/mixer default toggle
+

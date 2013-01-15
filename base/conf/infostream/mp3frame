@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# This adds the currently playing MP3 to the photo frame.
+# It doesn't delete anything, letting you keep a record of
+# everything you've listened to recently.
+
+# I use it for those songs I'm listening to in bed, but can't
+# remember the name of.
+
+source /usr/local/minerva/conf/infostream/stdphotoframe
+
+FRAMESIZE=76800
+FRAMEDEVICE=/dev/rfcomm0
+FRAMEMAC=00:12:1c:00:18:ee
+
+DIRSTUB=$TARGET/mediaframe/
+mkdir -p $DIRSTUB
+
+removeoldimages
+mediamp3
+
+sendimages &
+

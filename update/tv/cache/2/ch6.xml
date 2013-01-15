@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Sun Jul  8 07:24:46 2012 -->
+<channel id="film_four" source="XMLTV" date="13/07/2012">
+  <programme>
+<flags></flags>
+<desc>Teleshopping.</desc>
+<title>Teleshopping</title>
+<end>1100</end>
+<start>0700</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Randolph Scott plays a bounty hunter on the trail of three murderers who robbed a train. However, his investigation uncovers some murky secrets in the town of Twin Forks.</desc>
+<type>Film</type>
+<title>The Bounty Hunter</title>
+<year>1954</year>
+<end>1235</end>
+<start>1100</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>John Wayne stars as a moody young man living in the Ozarks who has sworn revenge on his long-absent father for deserting his mother. Then a kindly stranger appears on the scene...</desc>
+<type>Film</type>
+<title>The Shepherd of the Hills</title>
+<year>1941</year>
+<end>1430</end>
+<start>1235</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>In Cy Endfield's epic 1890s-set drama, Michael Caine and Stanley Baker play two British officers charged with defending Rorke's Drift from a force of 4000 Zulus. War violence.</desc>
+<type>Film</type>
+<title>Zulu</title>
+<year>1964</year>
+<end>1715</end>
+<start>1430</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>James Cameron talks about the creation of the planet Pandora for his new film Avatar.</desc>
+<title>Avatar Special</title>
+<end>1720</end>
+<start>1715</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Raquel Welch - in her famous fur bikini - stars in this prehistoric adventure set in an inhospitable landscape populated by roving dinosaurs and two warring tribes.</desc>
+<type>Film</type>
+<title>One Million Years B.C.</title>
+<year>1966</year>
+<end>1915</end>
+<start>1720</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Wes Anderson's acclaimed and witty stop-motion animated version of Roald Dahl's children's classic. With the voices of George Clooney, Meryl Streep, Owen Wilson and Jarvis Cocker.  [AD,S]</desc>
+<type>Film</type>
+<title>Fantastic Mr. Fox</title>
+<year>2009</year>
+<end>2100</end>
+<start>1915</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Romantic comedy. Cameron Diaz and Ashton Kutcher meet in Las Vegas. Together they get very drunk, marry and win a fortune. Then their troubles really begin...  [AD,S]</desc>
+<type>Film</type>
+<title>What Happens in Vegas</title>
+<year>2008</year>
+<end>2255</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Violent supernatural horror starring Arnold Schwarzenegger as a run-down, alcoholic ex-cop, who takes on The Devil himself.</desc>
+<type>Film</type>
+<title>End of Days</title>
+<year>1999</year>
+<end>0115</end>
+<start>2255</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>The alien Predator is back, hunting the streets of Los Angeles for his prey. But when he starts taking on the police, Danny Glover gets tough. Strong language/violence.</desc>
+<type>Film</type>
+<title>Predator 2</title>
+<year>1990</year>
+<end>0325</end>
+<start>0115</start>
+  </programme>
+  <programme>
+<subtitle>...Special</subtitle>
+<flags>(S)</flags>
+<desc>Andrew Garfield, Emma Stone, Rhys Ifans and director Marc Webb talk about bringing the new version of Spider-Man to the screen.</desc>
+<title>Amazing Spider-Man Interview...</title>
+<end>0335</end>
+<start>0325</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping.</desc>
+<title>Teleshopping</title>
+<end>0700</end>
+<start>0335</start>
+  </programme>
+</channel>

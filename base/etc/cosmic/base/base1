@@ -1,0 +1,5 @@
+#!/bin/bash
+# Decrease the master volume
+
+/usr/local/minerva/bin/mixer default dec master 10
+

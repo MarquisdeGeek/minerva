@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Sat Jul  7 07:29:31 2012 -->
+<channel id="tmf" source="XMLTV" date="12/07/2012">
+  <programme>
+<flags></flags>
+<desc>A countdown of the most downloaded tracks in the UK this week, as recorded by the Official Charts Company.</desc>
+<title>The Official UK Download Chart</title>
+<end>1100</end>
+<start>0900</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Tinie Tempah counts down his homegrown heroes and idols, so stay tuned as one of the hottest new things to come out of the UK Urban scene takes over the airwaves!</desc>
+<title>Tinie Tempah's Top 50 UK Urban All Stars</title>
+<end>1600</end>
+<start>1100</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>A look at the week's top chart videos in the race for number one.</desc>
+<title>The Official Chart Update Top 10</title>
+<end>1700</end>
+<start>1600</start>
+  </programme>
+  <programme>
+<subtitle>Papa's Got A Brand-New Excuse</subtitle>
+<flags></flags>
+<desc>US comedy series about a streetwise kid living with wealthy relatives. Will recognises a customer at the LA University restaurant as his father.</desc>
+<title>The Fresh Prince of Bel Air</title>
+<end>1730</end>
+<start>1700</start>
+  </programme>
+  <programme>
+<subtitle>For Sale by Owner</subtitle>
+<flags></flags>
+<desc>US comedy series about a streetwise kid living with his wealthy relatives. The Banks family are offered a huge sum of money for their home by an unknown client.</desc>
+<title>The Fresh Prince of Bel Air</title>
+<end>1800</end>
+<start>1730</start>
+  </programme>
+  <programme>
+<subtitle>Jane's Addition</subtitle>
+<flags></flags>
+<desc>Cartoon capers with the cynical teen. Jane falls for a cynical pizza-lover, leaving Daria feeling left out.</desc>
+<title>Daria</title>
+<end>1830</end>
+<start>1800</start>
+  </programme>
+  <programme>
+<subtitle>Partner's Complaint</subtitle>
+<flags></flags>
+<desc>Cartoon capers with the cynical teen. Tempers fray when Daria's classmates are set a financial management assignment.</desc>
+<title>Daria</title>
+<end>1900</end>
+<start>1830</start>
+  </programme>
+  <programme>
+<subtitle>The Philadelphia Story</subtitle>
+<flags></flags>
+<desc>American comedy series about a streetwise kid living with his wealthy relatives. Will and the entire Banks family take a holiday in Will's home town.</desc>
+<title>The Fresh Prince of Bel Air</title>
+<end>1930</end>
+<start>1900</start>
+  </programme>
+  <programme>
+<subtitle>What's Will Got to Do with It?</subtitle>
+<flags></flags>
+<desc>US comedy series about a streetwise kid living with wealthy relatives. When Ashley's music career takes off, Will finds he is in over his head.</desc>
+<title>The Fresh Prince of Bel Air</title>
+<end>2000</end>
+<start>1930</start>
+  </programme>
+  <programme>
+<subtitle>Papa's Got A Brand-New Excuse</subtitle>
+<flags></flags>
+<desc>US comedy series about a streetwise kid living with wealthy relatives. Will recognises a customer at the LA University restaurant as his father.</desc>
+<title>The Fresh Prince of Bel Air</title>
+<end>2030</end>
+<start>2000</start>
+  </programme>
+  <programme>
+<subtitle>For Sale by Owner</subtitle>
+<flags></flags>
+<desc>US comedy series about a streetwise kid living with his wealthy relatives. The Banks family are offered a huge sum of money for their home by an unknown client.</desc>
+<title>The Fresh Prince of Bel Air</title>
+<end>2100</end>
+<start>2030</start>
+  </programme>
+  <programme>
+<subtitle>You Got F***ed in the A**</subtitle>
+<flags></flags>
+<desc>Adult animated series featuring Cartman, Kyle, Stan and Kenny. Stan reluctantly finds himself in charge of the South Park dance team.</desc>
+<title>South Park</title>
+<end>2130</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<subtitle>Good Times with Weapons</subtitle>
+<flags></flags>
+<desc>Animated adult comedy. Whilst at a county fair, the boys get hold of some martial arts weapons and become ninja warriors.</desc>
+<title>South Park</title>
+<end>2200</end>
+<start>2130</start>
+  </programme>
+  <programme>
+<subtitle>AWESOM-O</subtitle>
+<flags></flags>
+<desc>Adult animated comedy series. Cartman decides to dress up as a Japanese robot to elicit an embarrassing tape from Butters.</desc>
+<title>South Park</title>
+<end>2230</end>
+<start>2200</start>
+  </programme>
+  <programme>
+<subtitle>Woodland Critter Christmas</subtitle>
+<flags></flags>
+<desc>Adult animated comedy series. Stan helps a group of woodland creatures anticipating the birth of their saviour, not realising that they worship Satan.</desc>
+<title>South Park</title>
+<end>2300</end>
+<start>2230</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>American reality series following a group who perform hilarious and highly dangerous stunts. Johnny battles Mr Mean while Chris Pontius and Wee Man hit up a local Renaissance Fair.</desc>
+<title>Jackass</title>
+<end>2330</end>
+<start>2300</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>American reality series following a group who perform hilarious and highly dangerous stunts. Johnny tries yoga and Chris wrestles some Florida alligators in a G-string.</desc>
+<title>Jackass</title>
+<end>0000</end>
+<start>2330</start>
+  </programme>
+  <programme>
+<subtitle>Good Times with Weapons</subtitle>
+<flags></flags>
+<desc>Animated adult comedy. Whilst at a county fair, the boys get hold of some martial arts weapons and become ninja warriors.</desc>
+<title>South Park</title>
+<end>0030</end>
+<start>0000</start>
+  </programme>
+  <programme>
+<subtitle>AWESOM-O</subtitle>
+<flags></flags>
+<desc>Adult animated comedy series. Cartman decides to dress up as a Japanese robot to elicit an embarrassing tape from Butters.</desc>
+<title>South Park</title>
+<end>0100</end>
+<start>0030</start>
+  </programme>
+  <programme>
+<subtitle>Woodland Critter Christmas</subtitle>
+<flags></flags>
+<desc>Adult animated comedy series. Stan helps a group of woodland creatures anticipating the birth of their saviour, not realising that they worship Satan.</desc>
+<title>South Park</title>
+<end>0130</end>
+<start>0100</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Hilarious stunts and high jinks. In a prank by the producers, Bam and Brandon get arrested by a fake police officer, Ehren hits the snowy slopes with a surfboard and the boys compare sperm counts.</desc>
+<title>Jackass</title>
+<end>0200</end>
+<start>0130</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Johnny, Chris, Mike &amp; Rick have a Western shoot out 'Jackass' style - paint guns and G-strings. The cast also strip and take turns lobbing a rubber ball at each other's scrotum!</desc>
+<title>Jackass</title>
+<end>0230</end>
+<start>0200</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>An eclectic mix of the biggest hits from your favourite artists, all in one place. Presenting future smashes, pop classics and the biggest superstars around. Join us as we say VIVA The Hits!</desc>
+<title>VIVA The Hits!</title>
+<end>0300</end>
+<start>0230</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping.</desc>
+<title>Teleshopping</title>
+<end>0600</end>
+<start>0300</start>
+  </programme>
+</channel>

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+MINBIN=/usr/local/minerva/bin
+PARAM=$1
+
+if [ "$PARAM" == "" ]; then
+	PARAM=default
+fi
+
+STATUS=`$MINBIN/getinfostream action last`
+STATUS=`echo $STATUS | $MINBIN/stripmarkup`
+
+$MINBIN/facebook $PARAM $STATUS
+

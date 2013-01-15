@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# This lets you map alias names (e.g. mp3dir) to a full path
+# so it can be used through the system by different code. i.e. API
+# This let's you make calls like:
+# ls `getalias mp3dir`
+# cd `getalias mp3dir`
+
+MINBASE=/usr/local/minerva
+ALIASFILE=$MINBASE/etc/aliaslist
+
+NAME=$1
+
+if [ $# -lt 1 ]; then
+  echo "Usage: $0 <alias name>"
+	echo "Current:"
+	cat $ALIASFILE
+  exit 1;
+fi
+
+if [ -f $ALIASFILE ]; then
+  ALIAS=`grep -m 1 "^$NAME " $ALIASFILE | sed "s/^[^ ]* //"`
+  # (if possible)
+  if [ "$ALIAS" != "" ]; then
+    echo $ALIAS
+    exit 0
+  fi
+fi
+
+echo "."
+
+exit 2
+

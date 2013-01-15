@@ -1,0 +1,32 @@
+#!/usr/bin/php
+<?php
+
+require_once '/usr/local/minerva/conf/twitter.inc';
+require_once '/usr/local/minerva/conf/twitteroauth.php';
+
+if ($argc < 2) {
+	echo "Usage: tweet [username|default] [message]\n";
+	return 1;
+}
+
+$user = $argv[1];
+if ($user == "default") {
+  $user = getDefaultUser();
+}
+
+$auth = getTwitterDetails($user);
+
+$all = "";
+for($i=2; $i < $argc;++$i) {
+   $all .= $argv[$i]." ";
+}
+
+$logline = date("Y-m-d H:i")." CMD ".$argv[0]." $user $all\n";
+@file_put_contents("/var/log/minerva/bearskin/tweet", $logline, FILE_APPEND);
+
+$connection = new TwitterOAuth($auth->ckey, $auth->csecret, $auth->oatoken, $auth->oasecret);
+$content = $connection->get('account/verify_credentials');
+ 
+$connection->post('statuses/update', array('status' => $all));
+
+?>

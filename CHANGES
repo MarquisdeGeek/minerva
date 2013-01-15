@@ -1,0 +1,130 @@
+Version 3.0.0 - 11 July 2012
+    * Script for handling the iPhone app - "universal remote control"
+    * Fully unified media playback handlers (start/stop/status)
+    * Command output and return codes better handled across bearskin (mp3player outputs the current track, for example)
+    * Expanded lstatus to take day parameter, 0=today, 1=tomorrow
+    * "Routines" added to perform sequenced actions at set times
+    * Manifest can block music tracks from playing
+    * Errors now reported on initialization failures
+    * Full status provided when mp3 playback is initiated
+    * Companion iPhone app at:
+      http://itunes.apple.com/us/app/universal-remote-control/id538062489?ls=1&mt=8
+    * Explanation video of iPhone app at:
+      http://youtu.be/AIExoACrNY0
+
+
+Version 2.7.0 - 6 Mar 2012
+    * Introduction of 'minty', a timeout system where devices will auto-turn 
+      off if not used within N seconds
+    * Introduction of a 'cache' conduit to save processor time when requests 
+      (like train times) are called for
+    * Introduction of 'routine', a system for processing N timed events from 
+      an intial trigger point. e.g. a 'wake up' routine, which turns on 
+      lights, starts showers, plays alarm, caches train times
+    * Introduction of 'yaks', a control system for processing arbitrary 
+      messages (from X10) into Linux-bound commands
+    * Changes to vox scripts to direct output into a WAV, then playing it. 
+      This means voice and music can happen simultaneously.
+    * Inclusion of usr script in bin
+    * Twitter script updated to use oauth
+    * Fixes in human time reading script
+    * Introduction of the 'homedevice' script, in preparation of ZigBee control
+    * Unified the logging of Bearskin commands into the 'minlog' script.
+    * Unified the audio stings into an 'sfx' script. Allows for easier audio 
+      skins.
+
+
+Version 2.6.1 - 1 Nov 2011
+    * An improved Google calendar download/handler. The install script has been fixed; it was causing problems on fresh installs.
+
+Version 2.6.0 - 21 Mar 2011
+    * SIS (SMS Information Service) was added to respond to basic SMS requests and to return data via the same route. This is intended as a specific instance of msgrelay. A few sample SIS services were added, including fortune cookie responses from Serverus Snape. A "short" version of LDB query was added, primarily for SIS
+
+Version 2.5.4 - 3 Dec 2010
+    * Fix UK Live Departure boards script to cope with changes to 3rd party site
+
+
+Version 2.5.3 - 11 Oct 2010
+    * Fix directory paths with ' and other oddities in them. (i.e. a proper fix to the emergency fix in 2.5.2!)
+
+
+Version 2.5.2 - 2 Oct 2010
+    * This version fixes a bug where the ampersand ("&") could not be passed through the Web conduit.
+
+
+Version 2.5.1
+    * Added (working) enumerate device to Bearskin commands and API
+    * Added info streams to report actions, and status reports
+    * Added data sets to query Minerva properties.
+    * Added data sets to API
+    * Added IMDB data retrieval
+    * Auto-publish MP3 status, weather, et al to Bluetooth-enabled photo frames.
+    * Fixed spurious 'cal_' files appearing, by moving them to cache.
+    * Updated to latest version of 'Huxley'
+
+
+Version 2.5.0
+    * Added Minerva REST API, to support third party control apps
+    * New Facebook conduit, to publish announcements to FB
+    * Info streams to reporting actions and status of the system
+    * Re-focused etc and conf dirs (Minx conf moved)
+    * Alternate LDB data source
+    * Improved list of (UK) train stations for LDB
+    * Sunrise/sunset moved to Bearskin code
+    * Support for enumerating Bearskin devices (bin/enumdev)
+    * FM Radio applet, Zinc control, and Bearskin driver
+    * Alias directories (bin/getalias to use list from etc/aliaslist)
+    * Calendar code moved to Bearskin
+    * Address book tool (msgaddr) to query addresses
+    * Improved TV control script
+    * Add path validation utilities to warplib
+    * Mediainfo applet to show what's currently playing
+    * Photo browser applet
+
+
+Version 2.4.0
+    * SMS conduits
+    * Complete message conduit and relay system
+    * Recipe and kitchen timing applet. 
+    * Factory class to generate size-specific (skinned) browser configurations
+      for different IP address. Used for large-scale buttons on touch devices.
+     
+Version 2.3.1
+    * Introduced four-stage alarm
+
+Version 2.3.0
+    * TV server! Recording utility script to control a TV card
+    * TV info script - find out what's on now.
+    * Video streaming server component for Bearskin
+    * Video streaming control applet for web site
+    * Incorporated 'Moonbeam' - the bookmark manager
+    * Various fixes and changes
+
+Version 2.2.2 	
+
+    * Much improved cookery information applet, now includes terminology
+    * Bar rendering for static applet
+    * New applet utils
+
+Version 2.2.1 	
+
+    * Contacts information applet (read-only)
+    * Cookery information to help with conversion of ingredient quantities
+    * Twitter supported
+
+Version 2.2.0 	
+
+    * Marple functionality introduced. Learn more about Marple.
+    * Soap and direct device supported in Marple
+
+Version 2.1.1 	
+
+    * Bearskin control for MP3 playback, CD player, X10, weather report, audio mixing, and speech.
+    * Web applets for calendar, CD and MP3 playerback, photo frame, TV guide, X10 and weather.
+    * Cosmic install and basic configuration
+    * TV Guide system
+    * Includes WebFace and WARP
+
+
+Version 2.0.x and 1.0 have been discontinued...
+

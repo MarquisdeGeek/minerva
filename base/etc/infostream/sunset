@@ -1,0 +1,5 @@
+MINBIN=/usr/local/minerva/bin
+
+$MINBIN/addinfostream status sunset `$MINBIN/sunset`
+
+

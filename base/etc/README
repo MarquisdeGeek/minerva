@@ -1,0 +1,5 @@
+This directory holds the system-oriented configuration of Minerva.
+
+If it interacts with the Minerva system, a device, or the network, it's conf
+is probably here.
+

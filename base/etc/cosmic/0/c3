@@ -1,0 +1,7 @@
+#!/bin/bash
+# Go the previous MP3 in the playlist
+
+MINBIN=/usr/local/minerva/bin/
+
+$MINBIN/mp3player default prev
+

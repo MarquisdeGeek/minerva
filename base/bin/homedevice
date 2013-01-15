@@ -1,0 +1,5 @@
+#!/bin/bash
+MINBIN=/usr/local/minerva/bin
+
+$MINBIN/x10control $*
+

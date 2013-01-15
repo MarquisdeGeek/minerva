@@ -1,0 +1,286 @@
+#!/bin/bash
+
+MINBIN=/usr/local/minerva/bin
+VARLOG=/var/log/minerva
+
+LOGSTUB=$VARLOG/cdplayer
+CDDBCACHE=$VARLOG/cddb
+CDCD=/usr/bin/cdcd
+DISCID=/usr/bin/cd-discid
+CDDBTOOL=/usr/bin/cddb-tool
+
+$MINBIN/minlog cmd $0 $*
+
+if [ $# == 0 ]; then
+  echo "Usage: $0 <device> <command> [track number]"
+  echo "   command ::= status count tracks close eject play stop pause resume"
+  echo "               isdiscpresent isplaying isstopped isdraweropen"
+  echo "               current currentname trackname discname"
+  exit -1
+fi
+
+ALLARGS=$*
+CMD=$2
+TRACK=$3
+
+DEVICE=`$MINBIN/finddev cdplayer $*`
+if [ $? == 0 ]; then
+  echo $DEVICE
+  exit 0;
+fi
+
+
+check_cddb()
+{
+   ID=`$DISCID $DEVICE 2>/dev/null | cut -d ' '  -f 1 2>/dev/null`
+
+   if [ "`cat $LOGSTUB.did`" == "" ]; then
+      echo $ID > $LOGSTUB.did
+      echo Unknown disc >$LOGSTUB.dtt
+   fi
+
+   if [ -f $CDDBCACHE/$ID ]; then
+     false; 
+   else
+
+      TI=`$DISCID $DEVICE 2>/dev/null`
+      TITLE=`$CDDBTOOL query http://freedb.freedb.org/~cddb/cddb.cgi 6 minerva myhome $TI`
+
+      if [ "`echo $TITLE | cut -d ' ' -f 1`" == "200" ]; then
+         GENRE=`echo $TITLE | cut -d ' ' -f 2`
+         CDTITLE=`echo $TITLE | cut -d ' ' -f 4-`
+
+         echo $CDTITLE >$LOGSTUB.dtt
+
+         $CDDBTOOL read http://freedb.freedb.org/~cddb/cddb.cgi 6 minerva myhome $GENRE $ID >$CDDBCACHE/$ID
+         chmod ugo+r $CDDBCACHE/$ID 
+      fi 
+   fi
+
+}
+
+if [ "$DEVICE" == "default" ]; then
+   DEVICE=/dev/cdrom
+fi
+
+case $CMD in
+  init)
+       touch $LOGSTUB.err
+       touch $LOGSTUB.pid
+       echo 0 > $LOGSTUB.ido
+       echo 0 > $LOGSTUB.ply
+       echo 0 > $LOGSTUB.trk
+       echo 0 > $LOGSTUB.pse
+       echo 1 > $LOGSTUB.stp
+       echo   > $LOGSTUB.did
+       echo   > $LOGSTUB.dtt
+       mkdir $CDDBCACHE
+		chgrp minerva $LOGSTUB*
+		chmod ug+rw $LOGSTUB*
+    ;;
+
+  enumdev)
+     $MINBIN/enumdev cdplayer
+     exit $?
+     ;;
+
+  count)
+    $CDCD -d $DEVICE info 2>/dev/null | perl -n -e 'print $1 if /tracks:\s*(\d+)/' 
+    ;;
+
+  tracks)
+    $CDCD -d $DEVICE tracks 2>/dev/null | perl -n -e 'print (($2 eq "")?"Track $1\t$3\n":"$2\t$3\n") if /^(.*?):\s*(.*?)\s*\>?\s*\[(.*)\]/'
+    ;;
+
+  close)
+       $CDCD -d $DEVICE close 2>>$LOGSTUB.err  >/dev/null
+       echo 0 > $LOGSTUB.ido
+       check_cddb;
+       $MINBIN/monexec cdplayer $CMD
+    ;;
+
+  eject)
+    $CDCD -d $DEVICE eject 2>>$LOGSTUB.err >/dev/null
+    if [ $? == 0 ]; then
+       echo 0 > $LOGSTUB.ply
+       echo 1 > $LOGSTUB.stp
+
+       echo 0 > $LOGSTUB.ido
+       echo   > $LOGSTUB.did
+    fi
+    $MINBIN/monexec cdplayer $CMD
+    ;;
+
+  status)
+		$0 $DEVICE isplaying >/dev/null
+      if [ $? == 1 ]; then
+   		TRACK=`$MINBIN/cdplayer $DEVICE current`
+   		TRACK_NAME=`$MINBIN/cdplayer $DEVICE currentname`
+   		ALBUM=`$MINBIN/cdplayer $DEVICE discname`
+		
+   		STATUS=$STATUS"The CD is playing track "$TRACK" of "$ALBUM" called "$TRACK_NAME""
+			echo $STATUS
+		else
+			echo "The CD is not playing"
+		fi
+    ;;
+
+  play)
+     $CDCD -d $DEVICE play $TRACK 2>>$LOGSTUB.err >/dev/null
+     if [ $? == 0 ]; then
+       echo $! > $LOGSTUB.pid
+       echo 1 > $LOGSTUB.ply
+       echo 0 > $LOGSTUB.stp
+       echo 0 > $LOGSTUB.pse
+       echo $TRACK > $LOGSTUB.trk
+     fi
+     $MINBIN/monexec cdplayer $CMD
+     ;;
+  next)
+     $CDCD -d $DEVICE next >/dev/null
+     $CDCD -d $DEVICE info 2>>$LOGSTUB.err | perl -n -e 'print $1 if /Playing:\s+(\d+)\s*/' > $LOGSTUB.trk
+     $MINBIN/monexec cdplayer play
+     ;;
+  prev)
+     $CDCD -d $DEVICE prev >/dev/null
+     $CDCD -d $DEVICE info 2>>$LOGSTUB.err | perl -n -e 'print $1 if /Playing:\s+(\d+)\s*/' > $LOGSTUB.trk
+     $MINBIN/monexec cdplayer play
+     ;;
+
+  pause)
+     $CDCD -d $DEVICE pause 2>>$LOGSTUB.err >/dev/null
+     if [ $? == 0 ]; then
+       echo $! > $LOGSTUB.pid
+       echo 1 > $LOGSTUB.pse
+     fi
+     $MINBIN/monexec cdplayer $CMD
+     ;;
+
+  resume)
+     $CDCD -d $DEVICE resume 2>>$LOGSTUB.err >/dev/null
+     if [ $? == 0 ]; then
+       echo $! > $LOGSTUB.pid
+       echo 0 > $LOGSTUB.pse
+     fi
+     $MINBIN/monexec cdplayer $CMD
+     ;;
+
+  isdiscpresent)
+     ID=`$DISCID $DEVICE 2>/dev/null`
+     if [ "$ID" == "" ]; then
+        echo 0
+     else
+        echo 1
+     fi
+     ;;
+
+  ispaused)
+     if [ -f $LOGSTUB.pse ]; then
+        cat $LOGSTUB.pse
+     else
+        echo 0
+     fi
+     ;;
+
+
+  isplaying)
+     if [ -f $LOGSTUB.ply ]; then
+        # do an extra check for finished discs
+        TRACK=`$0 $DEVICE current`
+        if [ "$TRACK" == "" ]; then
+           $0 $DEVICE stop
+        fi
+        cat $LOGSTUB.ply
+			exit 1
+     else
+        echo 0
+			exit 0
+     fi
+     ;;
+
+  isstopped)
+     if [ -f $LOGSTUB.stp ]; then
+        # do an extra check for finished discs
+        TRACK=`$0 $DEVICE current`
+        if [ "$TRACK" == "" ]; then
+           $0 $DEVICE stop
+        fi
+        cat $LOGSTUB.stp
+     else
+        echo 1
+     fi
+     ;;
+
+  isdraweropen)
+     if [ -f $LOGSTUB.ido ]; then
+        echo 0
+     else
+        echo 1
+     fi
+     ;;
+
+  stop)
+     $CDCD -d $DEVICE stop 2>>$LOGSTUB.err >/dev/null
+     echo   > $LOGSTUB.pid
+     echo 0 > $LOGSTUB.ply
+     echo 1 > $LOGSTUB.stp
+     echo 0 > $LOGSTUB.pse
+     $MINBIN/monexec cdplayer $CMD
+     ;;
+
+  currentname)
+     TRACK=`$0 $DEVICE current`
+     $0 $DEVICE trackname $TRACK
+     ;;
+
+  current)
+		# Early out, if nothing's playing. The CDDB check and device check
+		# take too long in many cases
+     if [ -f $LOGSTUB.ply ]; then
+        ISPLAY=`cat $LOGSTUB.ply`
+			if [ "$ISPLAY" == "0" ]; then
+				exit 0
+			fi
+		fi
+
+     check_cddb;
+     $CDCD -d $DEVICE info 2>>$LOGSTUB.err | perl -n -e 'print $1 if /Playing:\s+0?(\d+)\s*/' 
+
+#Playing:         01 00:08 of 03:14
+
+    ;;
+
+   discname)
+     if [ "`$0 $DEVICE isdiscpresent`" == "1" ]; then
+        check_cddb;
+        cat $LOGSTUB.dtt
+     fi
+     ;;
+
+   trackname)
+     if [ "`$0 $DEVICE isdiscpresent`" == "1" ]; then
+        check_cddb;
+
+        if [ "`cat $LOGSTUB.did`" != "" ]; then
+           # if we successfully parsed the disc id, the name might be
+           # in the cddb cache.
+
+           # the file uses track0 as the first, everything else on the CD
+           # begins with 1, thus the subtraction
+           TRACKLESSONE=$(($TRACK - 1))
+  
+           CDINFO=$CDDBCACHE/`cat $LOGSTUB.did`
+           if [ -f "$CDINFO" ]; then
+              sed -n "s/^TTITLE$TRACKLESSONE=//p" $CDINFO
+           else
+              echo Track $TRACK
+           fi
+        else
+           echo Track $TRACK
+        fi
+     fi
+     ;;
+  *)
+    ;;
+esac
+

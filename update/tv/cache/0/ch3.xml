@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Wed Jul 11 08:40:51 2012 -->
+<channel id="bbc3" source="XMLTV" date="11/07/2012">
+  <programme>
+<desc></desc>
+<title>..programmes start at 7.00pm</title>
+<end>1130</end>
+<start>0530</start>
+  </programme>
+  <programme>
+<desc></desc>
+<title>..programmes start at 7.00pm</title>
+<end>1730</end>
+<start>1130</start>
+  </programme>
+  <programme>
+<title>..programmes start at 7.00pm</title>
+<end>1858</end>
+<start>1730</start>
+  </programme>
+  <programme>
+<desc>BBC Three. The best in new entertainment, comedy, contemporary drama and music for the digital generation. Stay tuned for 60 Seconds news.</desc>
+<title>This Is BBC Three</title>
+<end>1900</end>
+<start>1858</start>
+  </programme>
+  <programme>
+<desc>9/13. Night Terrors: Sci-fi drama series. The Doctor must deal with sinister dolls coming to life as he fights to help a terrified child and his father. [AD,S]</desc>
+<title>Doctor Who</title>
+<end>1945</end>
+<start>1900</start>
+  </programme>
+  <programme>
+<desc>9/13. About a Boy: Confidential is on location, presenting behind-the-scenes action from a 17th century estate in the Gloucestershire countryside and a high-rise housing estate in Bristol. [S]</desc>
+<title>Doctor Who Confidential</title>
+<end>2000</end>
+<start>1945</start>
+  </programme>
+  <programme>
+<desc>2/11. Richard and Catherine: Richard and Catherine are given money towards their wedding, which Richard must organise alone. Can he live up to Catherine's expectations? [S]</desc>
+<title>Don't Tell the Bride</title>
+<end>2100</end>
+<start>2000</start>
+  </programme>
+  <programme>
+<desc>4/6. How Prejudiced Are We?: Cherry Healey finds out how prejudiced we are in today's politically-correct world, meeting a female firefighter, a black ballet dancer and a wheelchair user. [AD,S]</desc>
+<title>Cherry Healey: How to Get a Life</title>
+<end>2200</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<desc>Ireland's economic recession has led to a boom in the unlikely genre of Irish rap. This film follows bands like Class A'z as they try to find success. Contains very strong language.  [S]</desc>
+<title>Irish Rappers Revealed</title>
+<end>2240</end>
+<start>2200</start>
+  </programme>
+  <programme>
+<desc>6/21. Quagmire's Baby: Animated comedy. Father doesn't know best when Quagmire assumes responsibility for a baby who looks just like him. Meanwhile, Stewie clones himself. Contains adult humour.  [S]</desc>
+<title>Family Guy</title>
+<end>2305</end>
+<start>2240</start>
+  </programme>
+  <programme>
+<desc>7/21. Jerome Is the New Black: Animated US comedy. Peter and the guys interview potential friends to replace Cleveland. Brian discovers that Quagmire hates him. Contains adult humour.  [S]</desc>
+<title>Family Guy</title>
+<end>2325</end>
+<start>2305</start>
+  </programme>
+  <programme>
+<desc>2/16. Meter Made: Animated comedy series. In order to be taken more seriously, Stan becomes a meter maid, and is intoxicated by power. Meanwhile, Hayley poses nude. Contains adult humour.  [S]</desc>
+<title>American Dad!</title>
+<end>2345</end>
+<start>2325</start>
+  </programme>
+  <programme>
+<desc>3/16. Dope and Faith: Animated US comedy. Stan thinks God has sent him a friend but he's an atheist. Roger convinces Steve that he has been accepted by Hogwarts. Contains adult humour.  [S]</desc>
+<title>American Dad!</title>
+<end>0010</end>
+<start>2345</start>
+  </programme>
+  <programme>
+<desc>4/6. How Prejudiced Are We?: Cherry Healey finds out how prejudiced we are in today's politically-correct world, meeting a female firefighter, a black ballet dancer and a wheelchair user. [AD,S]</desc>
+<title>Cherry Healey: How to Get a Life</title>
+<end>0110</end>
+<start>0010</start>
+  </programme>
+  <programme>
+<desc>Ireland's economic recession has led to a boom in the unlikely genre of Irish rap. This film follows bands like Class A'z as they try to find success. Contains very strong language.  [S]</desc>
+<title>Irish Rappers Revealed</title>
+<end>0150</end>
+<start>0110</start>
+  </programme>
+  <programme>
+<desc>2/11. Richard and Catherine: Richard and Catherine are given money towards their wedding, which Richard must organise alone. Can he live up to Catherine's expectations? Contains adult themes.  [S]</desc>
+<title>Don't Tell the Bride</title>
+<end>0250</end>
+<start>0150</start>
+  </programme>
+  <programme>
+<desc>Radio 1's Gemma Cairney investigates how the 2011 UK riots changed the lives of those who got caught up in them, both perpetrators and victims. Contains some strong language.  [S]</desc>
+<title>Riots: The Aftershock</title>
+<end>0345</end>
+<start>0250</start>
+  </programme>
+  <programme>
+<desc>5/6. Comedy series. Governor Margaret announces the annual prison choir competition. Helen is certain to be made lead vocalist until the surprise appearance of Virna. Contains adult humour.  [AD,S]</desc>
+<title>Dead Boss</title>
+<end>0415</end>
+<start>0345</start>
+  </programme>
+  <programme>
+<desc>...of the Rising Sun. 3/3. Stacey Dooley looks at how the economic crisis has affected young people in Japan. [S,SL]</desc>
+<title>Coming Here Soon: Japan, Fall...</title>
+<end>0515</end>
+<start>0415</start>
+  </programme>
+  <programme>
+<subtitle>BBC Three</subtitle>
+<desc>Refreshing TV for the digital age. Tune in daily from 7.00pm.</desc>
+<title>This Is BBC Three</title>
+<end>0530</end>
+<start>0515</start>
+  </programme>
+  <programme>
+<title>..programmes start at 7.00pm</title>
+<end>0600</end>
+<start>0530</start>
+  </programme>
+  <programme>
+<desc></desc>
+<title>..programmes start at 7.00pm</title>
+<end>1200</end>
+<start>0600</start>
+  </programme>
+</channel>

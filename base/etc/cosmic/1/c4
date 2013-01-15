@@ -1,0 +1,8 @@
+#!/bin/bash
+# Add 10 minutes to timer
+
+TIMER=/usr/local/minerva/bin/ctimer
+REPORT=/usr/local/minerva/bin/say
+
+$TIMER default press 10
+

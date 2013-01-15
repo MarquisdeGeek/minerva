@@ -1,0 +1,12 @@
+ #!/bin/bash
+
+if [ "$1" == "query" ]; then
+  echo "HouseE button 14"
+  exit 0
+fi
+
+ # Default paths
+MINBASE=/usr/local/minerva
+MINBIN=$MINBASE/bin
+
+## Code goes here

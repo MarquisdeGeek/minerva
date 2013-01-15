@@ -1,0 +1,28 @@
+Huxley - Classes to produce XML/JSON/txt results within REST APIs
+Version 1.1 - Steven Goodwin 2010
+Released under the 3 clause BSD license
+
+
+This set of classes make it trivial to produce legitimate output for queries
+made by the, prevailing standard, of REST queries.  Instead of writing a
+network API with many methods, being run over RPC, you instead write only a
+couple of methods which are accessed by HTTP GET requests. You then return the
+results (in either XML, JSON, or txt) for processing. XML and JSON are chosen
+because of the ease by which they can be parsed by most languages. In this
+way, you open up the scope of your network services to many more people than
+would otherwise have access to it.
+
+
+
+Usage:
+
+$processor = getProcessor($fmt);
+$node = $processor->createRootNode("getGameList", "uid=$uid", $result);
+
+$gameNode = $processor->createNode("game");
+$gameNode->addParam("index", $game[1]);
+$gameNode->addParam("id", $game[0]);
+$node->addChild($gameNode);
+
+echo $node->generate();
+

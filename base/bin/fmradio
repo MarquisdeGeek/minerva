@@ -1,0 +1,101 @@
+#!/bin/bash
+
+if [ $# -lt 1 ]; then
+  echo "Usage: $0 <device> <command> <frequency>"
+  echo "   command ::= status get set start|on stop|off"
+  exit -1
+fi
+
+MINBASE=/usr/local/minerva
+MINBIN=$MINBASE/bin
+LOGSTUB=/var/log/minerva/radio
+DEVICE=$1
+CMD=$2
+FREQ=$3
+
+DEVICE=`$MINBIN/finddev fmradio $*`
+if [ $? == 0 ]; then
+  echo $DEVICE
+  exit 0;
+fi
+
+$MINBASE/bin/minlog cmd $0 $*
+
+if [ "$DEVICE" == "default" ]; then
+	DEVICE=
+else
+  DEVICE="-d $DEVICE"
+fi
+
+RADIO=/usr/bin/fm
+
+case $CMD in
+  init)
+    # We can't retrieve the actual frequency, so we set it to something
+    # we know.
+    touch $LOGSTUB.err
+    echo 104.4 > $LOGSTUB.frq
+    echo 0 >$LOGSTUB.ply
+    $RADIO $DEVICE off
+		chgrp -R minerva $LOGSTUB/*
+		chmod -R ug+rw   $LOGSTUB/*
+    ;;
+ 
+  enumdev)
+     $MINBIN/enumdev fmradio
+     exit $?
+     ;;
+
+  status)
+		$0 $DEVICE isplaying >/dev/null
+		if [ $? == 1 ]; then
+			echo -n "Tuned to "
+     		cat $LOGSTUB.frq
+		else
+			echo "Radio is not on"
+		fi
+    ;;
+
+  get)
+     cat $LOGSTUB.frq
+    ;;
+
+	getstationlist)
+		cat $MINBASE/conf/fmstations.conf
+		;;
+
+  set)
+     $RADIO $DEVICE $FREQ >/dev/null 2>$LOGSTUB.err
+     if [ $? == 0 ]; then
+        echo $FREQ > $LOGSTUB.frq
+        echo 1 >$LOGSTUB.ply
+        echo "Tuned to $FREQ"
+	  else
+		echo "Couldn't tune the radio"
+     fi
+    ;;
+
+  isplaying)
+    	CODE=`cat $LOGSTUB.ply`
+		echo $CODE
+		exit $CODE
+    ;;
+
+  on|start)
+     $RADIO $DEVICE `cat $LOGSTUB.frq`  >/dev/null 2>$LOGSTUB.err
+     echo 1 >$LOGSTUB.ply
+		$0 $DEVICE status
+		exit 1
+     ;;
+
+  off|stop)
+     $RADIO $DEVICE off >/dev/null 2>$LOGSTUB.err
+     echo 0 >$LOGSTUB.ply
+		$0 $DEVICE status
+		exit 0
+     ;;
+
+  *)
+    ;;
+esac
+

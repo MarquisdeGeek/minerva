@@ -1,0 +1,16 @@
+#!/bin/bash
+
+TEMPFILE=`mktemp`
+nc -u -l -p 30303 >$TEMPFILE &
+PROCESS=$!
+
+echo disD | nc -q 0  -u 192.168.1.111 30303
+
+# Wait for a second so the output has finished writing
+sleep 1
+
+kill $PROCESS
+cat $TEMPFILE
+
+rm $TEMPFILE
+

@@ -1,0 +1,42 @@
+MINBIN=/usr/local/minerva/bin
+CONDUIT=vox
+#CONDUIT=echo
+
+# For early morning/late nights
+if [ `date +"%H"` -le 4 ]; then
+ REQUEST_DAY=today
+ DAY_OFFSET=0
+ MESSAGE="Back late - I hope it was a good night. Let's talk about the morning"
+else
+ REQUEST_DAY=tomorrow
+ DAY_OFFSET=1
+ MESSAGE="Let us talk about tomorrow"
+fi
+
+sleep 0
+$MINBIN/homedevice default on bedroom
+sleep 15
+$MINBIN/homedevice default on shower
+$MINBIN/homedevice default on shower_speaker
+sleep 10
+$MINBIN/report $CONDUIT shower echo $MESSAGE
+$MINBIN/report $CONDUIT shower echo Let me look at the calendar
+$MINBIN/report $CONDUIT shower calendar $DAY_OFFSET
+$MINBIN/report $CONDUIT shower echo Checking house events
+$MINBIN/report $CONDUIT shower lstatus $REQUEST_DAY
+$MINBIN/report $CONDUIT shower weather $REQUEST_DAY
+
+$MINBIN/media shower isplaying >/dev/null
+if [ "$?" == "0" ]; then
+	$MINBIN/homedevice default off shower_speaker
+fi
+
+sleep 300
+$MINBIN/homedevice default on shower_speaker
+sleep 2
+$MINBIN/report $CONDUIT shower echo Good night
+$MINBIN/homedevice default off shower_speaker
+
+sleep 10
+$MINBIN/homedevice default off shower 
+

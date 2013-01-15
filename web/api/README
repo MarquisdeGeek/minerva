@@ -1,0 +1,72 @@
+The Minerva API
+
+A typical query will be in the form:
+
+http://domain/minerva/api/tv.php?cmd=status&fmt=text&user=xxx&pass=xxx&fmt=xml
+
+Provided you have access to the api directory of your Minerva install, 
+everything should work normally. If you can only access Minerva through SSL
+you will need to modify the query to begin,
+
+http://secureUser:securePass@domain/minerva/... etc ...
+
+Where the secure pass/user combination is as specified normally in the 
+dialog boxes that appear.
+
+The 'fmt' (format) argument determines how the result will be presented. By
+default, this is XML, but can also be 'text' (plain text) and 'json' (for 
+JSON).
+
+The user/pass is prepared with:
+
+   minuser pass [username] set [newpassword]
+
+Only a valid Linux system user can change passwords.
+
+
+There are three sets of permissions necessary for a specific user to
+control Minerva through the API:
+
+1. rw access to the API conduit. Set this with:
+
+   minuser auth [username] set api rw
+
+2. read access to the conduit applicable to the command itself. So, to 
+   review the status of the TV (api/tv.php) that user must have the read
+   permission for tv.
+
+3. Write access to the same conduit for those commands which change the state
+   of the conduit. In the TV example, this would involve changing the channel.
+
+
+Examples
+
+For the sake of brevity, the main URL component (along with user/pass and 
+format parameters) shall be omitted.
+
+
+events.php?cmd=[week|today] 
+
+tv.php?cmd=status
+tv.php?cmd=change&station=[on|off|1|2|3...]
+
+cdplayer.php?cmd=[tracks|status]
+cdplayer.php?cmd=[play|stop]&play=[1|2|3...]
+
+mixer.php?cmd=status
+mixer.php?cmd=set&channel=[wave|speaker|cd|linein]&volume=[0-100]
+
+status.php?filter=[life|sunrise|sunset|ldbstations|ldb|ir|media|weather|net|todo]
+
+x10control.php?cmd=[codes|status]
+x10control.php?cmd=[on|off|set]&unit=[codeName]&value[0-100]
+
+config.php
+(no parameters, simply retrieves the public defaults, e.g. LDB train stations)
+
+log.php?cmd=[cdplayer|mixer|mp3player...]&tail=[tailSize]&length=[maxLines]
+
+system.php?cmd=[ping|auth]
+
+
+

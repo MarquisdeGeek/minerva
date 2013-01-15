@@ -1,0 +1,24 @@
+ #!/bin/bash
+
+if [ "$1" == "query" ]; then
+  echo "Shower button 6"
+  exit 0
+fi
+
+ # Default paths
+MINBASE=/usr/local/minerva
+MINBIN=$MINBASE/bin
+
+## Code goes here
+$MINBIN/minty start shower_speaker
+$MINBIN/homedevice default on shower_speaker
+$MINBIN/sfx shower ok
+$MINBIN/report cache default weather
+$MINBIN/pmedia shower toggle
+$MINBIN/sfx shower start
+$MINBIN/report vox shower weather
+$MINBIN/sfx shower end
+$MINBIN/pmedia shower toggle
+$MINBIN/minty end shower_speaker
+
+

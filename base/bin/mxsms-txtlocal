@@ -1,0 +1,32 @@
+#!/usr/bin/php
+<?php
+include_once "/usr/local/minerva/conf/sms-global.conf"
+include_once "/usr/local/minerva/conf/sms-txtlocal.conf"
+
+array_shift($argv);	// ignore program name
+
+$type = array_shift($argv);
+$toAddr = array_shift($argv);
+$message = implode(" ", $argv);
+
+// Authorisation details
+$uname = $smsUsername;
+$pword = $smsPassword;
+
+// Configuration variables
+$info = "1";
+$test = "0";
+
+// Data for text message
+$message = urlencode($message);
+
+// Prepare data for POST request
+$data = "uname=".$uname."&pword=".$pword."&message=".$message."&from=". $fromAddr."&selectednums=".$toAddr."&info=".$info."&test=".$test; // Send the POST request with cURL
+
+$ch = curl_init('http://www.txtlocal.com/sendsmspost.php');
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$result = curl_exec($ch); //This is the result from Txtlocal
+curl_close($ch);
+?>

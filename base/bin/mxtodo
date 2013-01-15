@@ -1,0 +1,10 @@
+#!/bin/bash
+
+MINBASE=/usr/local/minerva
+
+CONDUIT=$1; shift
+USER=$1; shift
+MSG=$*
+
+$MINBASE/bin/todo add $USER $MSG
+

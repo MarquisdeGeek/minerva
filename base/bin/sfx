@@ -1,0 +1,22 @@
+#!/bin/bash
+MINBIN=/usr/local/minerva/bin
+MEDIADIR=/usr/local/minerva/media
+WAVPLAY=$MINBIN/wavplayer
+
+$MINBIN/minlog cmd $0 $*
+
+DEVICE=$1
+SFX=$2
+
+case $SFX in
+	ok|start|end|error|next|prev|previous)
+		if [ -f $MEDIADIR/wav/$SFX.wav ]; then
+			$WAVPLAY $DEVICE splay $MEDIADIR/wav/$SFX.wav
+		fi
+		;;
+
+	*)
+		$WAVPLAY $DEVICE splay $MEDIADIR/wav/ack.wav
+		;;
+esac
+

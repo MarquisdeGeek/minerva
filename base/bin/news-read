@@ -1,0 +1,71 @@
+#!/bin/bash
+MINBASE=/usr/local/minerva
+
+if [ $# -lt 1 ]; then
+  echo "Usage: $0 <site reference> [public|username] [txt|html|vox] [story index] [headline|url|story]";
+  echo -n "  Sites references can be : "
+  ls $MINBASE/etc/users/public/news
+  exit 1;
+fi
+
+$MINBASE/bin/minlog cmd $0 $*
+
+SITEREF=$1; shift
+USERNAME=$1; shift
+FORMAT=$1; shift
+STORYIDX=$1; shift
+ELEMENTS=$1; shift
+
+if [ "$USERNAME" == "" ]; then
+  USERNAME=public
+fi
+if [ "$FORMAT" == "" ]; then
+  FORMAT="txt"
+fi
+if [ "$STORYIDX" == "" ]; then
+  STORYIDX=0
+fi
+if [ "$ELEMENTS" == "" ]; then
+  ELEMENTS="name,headline,url,story"
+fi
+
+if [[ "$ELEMENTS" == "name" ]]; then 
+  head -n 1 /usr/local/minerva/etc/users/$USERNAME/news/$SITEREF
+  exit 0;
+fi
+
+NEWSFILE=`$MINBASE/bin/news-get $USERNAME  $SITEREF`
+NEWSFILE=$NEWSFILE/$STORYIDX
+
+if [ ! -f "$NEWSFILE" ]; then
+  exit 1
+fi
+
+OUTPUT=
+if [[ "$ELEMENTS" =~ "headline" ]]; then 
+  OUTPUT=$OUTPUT`cat $NEWSFILE | head -n 3 | tail --lines=1`
+fi
+
+if [[ "$ELEMENTS" =~ "url" ]]; then 
+  OUTPUT=$OUTPUT`cat $NEWSFILE | head -n 4 | tail --lines=1`
+fi
+
+if [[ "$ELEMENTS" =~ "story" ]]; then 
+  OUTPUT=$OUTPUT`cat $NEWSFILE | tail --lines=5`
+fi
+case $FORMAT in
+  html|htm)
+       TEXT=$OUTPUT
+       ;;
+
+  txt|text)
+       TEXT=`echo -e "$OUTPUT" | html2text `
+       ;;
+ 
+  vox)
+       TEXT=`echo -e "$OUTPUT" | html2text`
+       ;;
+esac
+
+echo $TEXT
+

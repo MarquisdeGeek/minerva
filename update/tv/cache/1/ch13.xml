@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Sat Jul  7 07:24:10 2012 -->
+<channel id="dave" source="XMLTV" date="12/07/2012">
+  <programme>
+<flags></flags>
+<desc>Shopping from home.</desc>
+<title>Home Shopping</title>
+<end>0710</end>
+<start>0700</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>New. More treacherous weather and dangerous wildlife as the bush pilots fly over Africa. In a special Christmas episode, the pilots' plans are jeopardised by a tropical storm.</desc>
+<title>Bush Pilots</title>
+<end>0800</end>
+<start>0710</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>The most exciting cars on the road and top consumer tips. Tom Ford tests the latest new MINI, and Jonny Smith learns more about the most powerful street-legal car in Britain.</desc>
+<title>Fifth Gear</title>
+<end>0830</end>
+<start>0800</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Info-packed motoring show. Tom Ford test drives stunning Aussie supercar the Vauxhall Monaro, and Vicki Butler-Henderson fulfils a lifetime ambition by driving a racing truck.</desc>
+<title>Fifth Gear</title>
+<end>0900</end>
+<start>0830</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>The very latest motoring news and views. Jeremy puts the gargantuan Bentley Brooklands to the test, and the Stars in the Reasonably Priced Car are James Corden and Mathew Horne. [AD,S]</desc>
+<title>Top Gear</title>
+<end>1000</end>
+<start>0900</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>New. More treacherous weather and dangerous wildlife as the bush pilots fly over Africa. In a special Christmas episode, the pilots' plans are jeopardised by a tropical storm.</desc>
+<title>Bush Pilots</title>
+<end>1100</end>
+<start>1000</start>
+  </programme>
+  <programme>
+<subtitle>Babongo</subtitle>
+<flags></flags>
+<desc>While living with the Babongo tribe of Gabon in west Africa, Bruce Parry undergoes an initiation ceremony involving taking a powerful hallucinogen that lasts for three days. [AD,S]</desc>
+<title>Tribe</title>
+<end>1200</end>
+<start>1100</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>In another instalment of motoring mayhem, Jeremy Clarkson tries to outrun Japan's legendary 'bullet train' in the remarkable new Nissan GT-R. Fiona Bruce and Kate Silverton guest. [AD,S]</desc>
+<title>Top Gear</title>
+<end>1300</end>
+<start>1200</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>The very latest motoring news and views. Jeremy puts the gargantuan Bentley Brooklands to the test, and the Stars in the Reasonably Priced Car are James Corden and Mathew Horne. [AD,S]</desc>
+<title>Top Gear</title>
+<end>1400</end>
+<start>1300</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>New. More treacherous weather and dangerous wildlife as the bush pilots fly over Africa. In a special Christmas episode, the pilots' plans are jeopardised by a tropical storm.</desc>
+<title>Bush Pilots</title>
+<end>1500</end>
+<start>1400</start>
+  </programme>
+  <programme>
+<subtitle>Babongo</subtitle>
+<flags></flags>
+<desc>While living with the Babongo tribe of Gabon in west Africa, Bruce Parry undergoes an initiation ceremony involving taking a powerful hallucinogen that lasts for three days. [AD,S]</desc>
+<title>Tribe</title>
+<end>1600</end>
+<start>1500</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>In another instalment of motoring mayhem, Jeremy Clarkson tries to outrun Japan's legendary 'bullet train' in the remarkable new Nissan GT-R. Fiona Bruce and Kate Silverton guest. [AD,S]</desc>
+<title>Top Gear</title>
+<end>1700</end>
+<start>1600</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>More automotive antics with Jeremy Clarkson and the team. Jeremy and James show off the ageing but massive luxury cars they bought for the price of a new Ford Mondeo. [AD,S]</desc>
+<title>Top Gear</title>
+<end>1800</end>
+<start>1700</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Jeremy Clarkson and his fellow motoring obsessives take on their rivals from the show's German equivalent, and James May tries out a very strange Japanese car. [AD,S]</desc>
+<title>Top Gear</title>
+<end>1900</end>
+<start>1800</start>
+  </programme>
+  <programme>
+<subtitle>Greats</subtitle>
+<flags>(S)</flags>
+<desc>Ever-popular quiz show where guests get points for being interesting. Stephen Fry and guests Jo Brand, David Mitchell, Sean Lock and Alan Davies grapple with the greats.</desc>
+<title>QI XL</title>
+<end>2000</end>
+<start>1900</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>New. More from the daring pilots of Africa's Okavango Delta. Canadian pilot Paul races against torrential thunderstorms, and the rookies face the final round of testing.</desc>
+<title>Bush Pilots</title>
+<end>2100</end>
+<start>2000</start>
+  </programme>
+  <programme>
+<subtitle>Amy</subtitle>
+<flags>(S)</flags>
+<desc>Another instalment of quickfire sitcom fun. Over-excited by the appearance of a lesbian couple in their building, Lee and Tim ask them over for dinner.</desc>
+<title>Not Going Out</title>
+<end>2140</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<subtitle>Party</subtitle>
+<flags>(S)</flags>
+<desc>Witty sitcom. Lee and Tim organise a birthday party for Lucy, but when she arrives arm-in-arm with another man, Lee makes it his mission to get rid of him without a fuss.</desc>
+<title>Not Going Out</title>
+<end>2220</end>
+<start>2140</start>
+  </programme>
+  <programme>
+<subtitle>Gary in Love</subtitle>
+<flags>(S)</flags>
+<desc>Comedy with the badly behaved lads you just can't help liking. During a weekend away, Dorothy thinks she is pregnant and Gary thinks he is falling in love - with Wendy.</desc>
+<title>Men Behaving Badly</title>
+<end>2315</end>
+<start>2220</start>
+  </programme>
+  <programme>
+<subtitle>Gunmen of the Apocalypse</subtitle>
+<flags>(AD)</flags>
+<desc>Fun with the mismatched space-travelling buffoons. Kryten contracts a deadly computer virus and the crew must enter his electronic mind to save him.</desc>
+<title>Red Dwarf VI</title>
+<end>2355</end>
+<start>2315</start>
+  </programme>
+  <programme>
+<subtitle>Emohawk</subtitle>
+<flags>(AD)</flags>
+<desc>Polymorph II: More silliness in space in the cult sci-fi comedy. In this edition, the Dwarfers need replacement engine parts from the fearsome and ugly Kinatowi.</desc>
+<title>Red Dwarf VI</title>
+<end>0035</end>
+<start>2355</start>
+  </programme>
+  <programme>
+<subtitle>Amy</subtitle>
+<flags>(S)</flags>
+<desc>Another instalment of quickfire sitcom fun. Over-excited by the appearance of a lesbian couple in their building, Lee and Tim ask them over for dinner.</desc>
+<title>Not Going Out</title>
+<end>0115</end>
+<start>0035</start>
+  </programme>
+  <programme>
+<subtitle>Party</subtitle>
+<flags>(S)</flags>
+<desc>Witty sitcom. Lee and Tim organise a birthday party for Lucy, but when she arrives arm-in-arm with another man, Lee makes it his mission to get rid of him without a fuss.</desc>
+<title>Not Going Out</title>
+<end>0145</end>
+<start>0115</start>
+  </programme>
+  <programme>
+<subtitle>Gunmen of the Apocalypse</subtitle>
+<flags>(AD)</flags>
+<desc>Fun with the mismatched space-travelling buffoons. Kryten contracts a deadly computer virus and the crew must enter his electronic mind to save him.</desc>
+<title>Red Dwarf VI</title>
+<end>0215</end>
+<start>0145</start>
+  </programme>
+  <programme>
+<subtitle>Emohawk</subtitle>
+<flags>(AD)</flags>
+<desc>Polymorph II: More silliness in space in the cult sci-fi comedy. In this edition, the Dwarfers need replacement engine parts from the fearsome and ugly Kinatowi.</desc>
+<title>Red Dwarf VI</title>
+<end>0245</end>
+<start>0215</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Excitement with unconventional and high-risk sports. Featuring British sky surfers Andy Ford and Mike Frost, plus a report from Milton Keynes on in-line skating.</desc>
+<title>Radical Highs</title>
+<end>0300</end>
+<start>0245</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Close.</desc>
+<title>Close</title>
+<end>0700</end>
+<start>0300</start>
+  </programme>
+</channel>

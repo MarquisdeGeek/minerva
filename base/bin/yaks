@@ -1,0 +1,60 @@
+#!/usr/bin/php
+<?php
+// YAKS - Yet Another Kontrol Script
+
+require_once 'inc/yaks.inc';
+
+$config = new YaksConfig();
+
+eval(file_get_contents($configURL));
+
+$command = $argv[1];
+$device = $argv[2];
+$param = $argv[3];
+
+if ($command == "create") {
+	// e.g. yaks create shower ss13 d 1
+	$house = $argv[4];
+	$unit = $argv[5];
+	$config->createNewController($device, $param, $house, $unit);
+	return 0;
+	
+} else if ($argc < 3) {
+     print "yaks [query|control] [device] [state]\n";
+     return 1;
+}
+
+$handler = $config->getHandler($device, $param);
+
+if ($handler) {
+
+	$url = $handler->getScript();
+	
+	if ($command == "query") {
+		$url .= " query";
+		echo $handler->trace();
+		echo "Peforms : ";
+	}
+
+	exec($url, $output);
+	$full = "";
+	foreach($output as $line) {
+		$full .= "$line\n";
+	}
+	echo $full;
+
+	
+	$logline = date("Y-m-d H:i")." CMD ".$argv[0]." $full";
+	@file_put_contents("/var/log/minerva/bearskin/yaks", $logline, FILE_APPEND);
+
+} else {
+
+	echo "Unknown device '$device'\n";
+	return 1;
+}
+
+
+
+
+
+?>

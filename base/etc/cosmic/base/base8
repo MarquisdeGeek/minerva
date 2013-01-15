@@ -1,0 +1,5 @@
+#!/bin/bash
+# Reset to default status, and mode
+
+/usr/local/minerva/bin/cosmic default root
+

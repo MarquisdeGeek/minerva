@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Sun Jul  8 07:24:58 2012 -->
+<channel id="five_us" source="XMLTV" date="13/07/2012">
+  <programme>
+<flags></flags>
+<desc>The Jewellery Channel. Beautifully handcrafted jewellery at fantastic prices.</desc>
+<title>Jewellery Channel</title>
+<end>1200</end>
+<start>0600</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Drew Carey is the chairman for another session of comedy as a regular panel and guests create spontaneous routines and sketches based on suggestions from the studio audience.</desc>
+<title>Whose Line Is It Anyway?</title>
+<end>1225</end>
+<start>1200</start>
+  </programme>
+  <programme>
+<subtitle>Iced</subtitle>
+<flags>(S)</flags>
+<desc>Forensic drama series. Sara and Greg investigate the deaths of two students, while Catherine's team looks at the body of a young man found in a crop circle (23/26).</desc>
+<title>CSI: Crime Scene Investigation</title>
+<end>1325</end>
+<start>1225</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Crime investigation drama starring Gary Basaraba and Anne Openshaw. When a detective's goddaughter is mysteriously killed in a car crash, he takes charge of the case.</desc>
+<type>Film</type>
+<title>Recipe For Murder</title>
+<year>2001</year>
+<end>1515</end>
+<start>1325</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>New Series. Jacked. Don and his team have only four hours to stop a group of hijackers who have taken over a bus and are holding a group of Hollywood tourists hostage.</desc>
+<title>Numbers</title>
+<end>1610</end>
+<start>1515</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Fact-based drama starring Kimberly Williams-Paisley and Tammy Blanchard. Exploring the aftermath of a shooting at an Amish school in Pennsylvania.</desc>
+<type>Film</type>
+<title>Amish Grace</title>
+<year>2010</year>
+<end>1800</end>
+<start>1610</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>New Series. First Law. A special super computer has apparently killed its creator. Charlie and Amita want to find out what happened, but soon her life is in danger.</desc>
+<title>Numbers</title>
+<end>1855</end>
+<start>1800</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>HASH(0x1f625f8)</desc>
+<title>Inside Hollywood</title>
+<end>1900</end>
+<start>1855</start>
+  </programme>
+  <programme>
+<subtitle>Iced</subtitle>
+<flags>(S)</flags>
+<desc>Forensic drama series. Sara and Greg investigate the deaths of two students, while Catherine's team looks at the body of a young man found in a crop circle (23/26).</desc>
+<title>CSI: Crime Scene Investigation</title>
+<end>2000</end>
+<start>1900</start>
+  </programme>
+  <programme>
+<subtitle>Wasted</subtitle>
+<flags></flags>
+<desc>Crime drama series. Mac, Hawkes and Danny investigate the death of two models at a fashion show. Stella and Lindsay look into the death of an alternative healer (12/24).</desc>
+<title>CSI: New York</title>
+<end>2058</end>
+<start>2000</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Get your daily fix of the latest film and TV news from the USA. Presented by Mark Morris.</desc>
+<title>Inside Hollywood</title>
+<end>2100</end>
+<start>2058</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Action thriller starring Steven Seagal and Wass M. Stevens. A troubled ex-cop sets about removing the city's most dangerous criminals.</desc>
+<type>Film</type>
+<title>Pistol Whipped</title>
+<year>2007</year>
+<end>2300</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<subtitle>Balm</subtitle>
+<flags></flags>
+<desc>US drama. The chapter votes on whether to allow Jax to go nomad, prompting Gemma to take drastic action to unify the Sons. Chibs makes a deal with the enemy (10/13).</desc>
+<title>Sons of Anarchy</title>
+<end>0015</end>
+<start>2300</start>
+  </programme>
+  <programme>
+<subtitle>Gimmie Shelter</subtitle>
+<flags></flags>
+<desc>Steven Seagal moonlights as a deputy sheriff in Louisiana. Steven befriends a rescue pitbull at a local shelter and makes it his mission to save him (7/8).</desc>
+<title>Steven Seagal: Lawman</title>
+<end>0045</end>
+<start>0015</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Get your daily fix of the latest film and TV news from the USA. Presented by Mark Morris.</desc>
+<title>Inside Hollywood</title>
+<end>0100</end>
+<start>0045</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Live interactive gaming featuring roulette, blackjack and autowheel. For more information and to register visit www.SuperCasino.com.</desc>
+<title>Super Casino</title>
+<end>0400</end>
+<start>0100</start>
+  </programme>
+</channel>

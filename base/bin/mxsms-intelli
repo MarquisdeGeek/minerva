@@ -1,0 +1,24 @@
+#!/usr/bin/php
+<?php
+
+include 'inc/IntelliSMS.php';
+
+array_shift($argv);     // ignore program name
+
+$type = array_shift($argv);
+$toAddr = array_shift($argv);
+$message = implode(" ", $argv);
+
+#$fromAddr = "MinervaHome";
+#$fromAddr = "SteevsHome";
+
+$objIntelliSMS = new IntelliSMS();
+
+//Set you account login details below:
+$objIntelliSMS->Username = 'StevenGoodwin';
+$objIntelliSMS->Password = 'Minerva';
+$objIntelliSMS->MaxConCatMsgs = 1;
+
+$SendStatusCollection = $objIntelliSMS->SendMessage($toAddr, $message, $fromAddr);
+
+?>

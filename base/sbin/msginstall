@@ -1,0 +1,21 @@
+#!/bin/bash
+
+MINBASE=/usr/local/minerva
+
+# intended for installation process only
+# (so don't copy into bin!)
+
+$MINBASE/bin/msgconduit create sms
+$MINBASE/bin/msgconduit create echo
+$MINBASE/bin/msgconduit create email
+$MINBASE/bin/msgconduit create vox
+$MINBASE/bin/msgconduit create weblog
+$MINBASE/bin/msgconduit create todo
+$MINBASE/bin/msgconduit create ir
+$MINBASE/bin/msgconduit create winalert
+$MINBASE/bin/msgconduit create log
+$MINBASE/bin/msgconduit create twitter
+
+ln -s $MINBASE/etc/msg/twit $MINBASE/etc/msg/twitter
+ln -s $MINBASE/etc/msg/tweet $MINBASE/etc/msg/twitter
+

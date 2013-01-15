@@ -1,0 +1,34 @@
+#!/bin/bash
+MINBASE=/usr/local/minerva
+
+$MINBASE/bin/minlog cmd $0 $*
+
+if [ $# -lt 1 ]; then
+  echo "Usage: $0 [init|add|list|clear] [username] <message>"
+  exit 1
+fi
+
+CMD=$1; shift
+USER=$1; shift
+MSG=$*
+
+TODOFILE=$MINBASE/etc/users/$USER/todolist
+
+if [ "$CMD" == "init" ]; then
+  echo >> $TODOFILE
+	chmod -R ug+rw $TODOFILE
+	chgrp -R minerva $TODOFILE
+fi
+
+if [ "$CMD" == "add" ]; then
+  date +"%Y-%m-%d $MSG" >> $TODOFILE
+fi
+
+if [ -f $TODOFILE ]; then
+  if [ "$CMD" == "list" ]; then
+    cat $TODOFILE
+  elif [ "$CMD" == "clear" ]; then
+    rm $TODOFILE
+  fi
+fi
+

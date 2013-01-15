@@ -1,0 +1,12 @@
+#!/bin/bash
+
+MINBASE=/usr/local/minerva/bin
+$MINBASE/hacal get steev all 0 7 | while read x; do
+  read day;
+  read date; 
+  read event;
+  echo "$day($date) $event"
+done
+
+
+

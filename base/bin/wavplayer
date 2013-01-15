@@ -1,0 +1,107 @@
+#!/bin/bash
+
+PLAY=/usr/bin/play
+#PLAY=/usr/bin/mplayer 
+
+MINBIN=/usr/local/minerva/bin
+LOGSTUB=/var/log/minerva/wavplayer
+
+if [ $# -le 1 ]; then
+  echo "This plays basic WAV files - it is intended for the system only. For media"
+  echo "playback, please use the more advanced mp3player."
+  echo "Usage : $0 <device> <command> <trackname>"
+  echo "   command ::= play stop pause resume current"
+  echo "               isplaying status"
+  exit -1
+fi
+
+$MINBIN/minlog cmd $0 $*
+
+DEVICE=`$MINBIN/finddev wavplayer $*`
+if [ $? == 0 ]; then
+  echo $DEVICE
+  exit 0;
+fi
+
+CMD=$2
+TRACK=$3
+export IFS=$'\n'
+
+OLDPID=`cat $LOGSTUB.pid`;
+
+case $CMD in
+  init)
+    touch $LOGSTUB.out $LOGSTUB.err
+    echo null > $LOGSTUB.pid
+    echo null > $LOGSTUB.trk
+    echo 0 > $LOGSTUB.ply
+		chgrp -R minerva $LOGSTUB/*
+		chmod -R ug+rw   $LOGSTUB/*
+    ;;
+
+  enumdev)
+     $MINBIN/enumdev wavplayer
+     exit $?
+     ;;
+
+  splay)
+     ($PLAY -q $TRACK; $0 $DEVICE stop; ) >$LOGSTUB.out 2>>$LOGSTUB.err
+     ;;
+
+  play)
+     if [ "$OLDPID" != "null" ]; then
+        $0 $DEVICE stop
+     fi
+    #($PLAY -really-quiet $TRACK; $0 $DEVICE stop; ) & >$LOGSTUB.out 2>>$LOGSTUB.err
+    ($PLAY -q $TRACK; $0 $DEVICE stop; ) & >$LOGSTUB.out 2>>$LOGSTUB.err
+
+    if [ $? == 0 ]; then
+       echo $! > $LOGSTUB.pid
+
+       echo `basename $TRACK` > $LOGSTUB.trk
+       echo 1 > $LOGSTUB.ply
+    fi
+    ;;
+
+  stop)
+     if [ "$OLDPID" != "null" ]; then
+        kill -9 $OLDPID > /dev/null 2>&1
+        echo null > $LOGSTUB.pid
+     fi
+     echo null > $LOGSTUB.trk
+     echo 0 > $LOGSTUB.ply
+     ;;
+
+  pause)
+     if [ "$OLDPID" != "null" ]; then
+        kill -STOP $OLDPID > /dev/null 2>&1
+        echo 0 > $LOGSTUB.ply
+     fi
+     ;;
+
+  resume)
+     if [ "$OLDPID" != "null" ]; then
+        kill -CONT $OLDPID > /dev/null 2>&1
+        echo 1 > $LOGSTUB.ply
+     fi
+     ;;
+
+  status|current)
+     cat $LOGSTUB.trk
+     ;;
+
+  isplaying)
+     if [ "$OLDPID" != "null" ]; then
+        if [ "`cat $LOGSTUB.ply`" == "1" ]; then
+           echo 1;
+           exit 0;
+        fi
+     fi
+
+     echo 0
+     ;;
+
+  *)
+    ;;
+esac
+

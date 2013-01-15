@@ -1,0 +1,28 @@
+#!/bin/bash
+
+MINBIN=/usr/local/minerva/bin/
+
+$MINBIN/minlog cmd $0 $*
+
+#
+# general networking test
+#
+$MINBIN/ipcheck >/dev/null
+
+if [ $? == 0 ] ; then
+   echo "The network is fine." 
+else
+   echo "We have network problems."
+fi
+
+#
+# our own web server
+#
+
+wget localhost -q -O /dev/null 
+if [ $? == 0 ]; then
+   echo "The local home web server is fine."
+else
+   echo "We have local server problems."
+fi
+

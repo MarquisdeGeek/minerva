@@ -1,0 +1,13 @@
+#!/bin/bash
+
+DIR_INCOMING=/usr/local/minerva/media/voxrecord
+MINBIN=/usr/local/minerva/bin
+WAVPLAY=$MINBIN/wavplayer
+
+for F in "$DIR_INCOMING"/*.wav
+do
+ if [ -f $F ]; then
+   $WAVPLAY default play $F
+ fi
+done
+

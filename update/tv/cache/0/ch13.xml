@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Wed Jul 11 08:44:27 2012 -->
+<channel id="dave" source="XMLTV" date="11/07/2012">
+  <programme>
+<flags></flags>
+<desc>Shopping from home.</desc>
+<title>Home Shopping</title>
+<end>0710</end>
+<start>0700</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>New. The pilots face more treacherous weather and wildlife in Africa. Nerves set in as the rookies face their long-awaited test flights, hoping to bag themselves a job.</desc>
+<title>Bush Pilots</title>
+<end>1100</end>
+<start>1000</start>
+  </programme>
+  <programme>
+<subtitle>Kombai</subtitle>
+<flags></flags>
+<desc>Documentary series with explorer Bruce Parry. He travels to the jungles of West Papua to spend time with the Kombai people, once notorious for their cannibalistic tendencies. [AD,S]</desc>
+<title>Tribe</title>
+<end>1200</end>
+<start>1100</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Jeremy and the team deliver more high octane hi-jinks. Jeremy falls in love with the Mercedes CLK Black and Richard takes on some annoyingly cool French skiers. [AD,S]</desc>
+<title>Top Gear</title>
+<end>1300</end>
+<start>1200</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Jeremy Clarkson and the team present more motoring mayhem. Top Gear Stunt Man joins the show and the Reasonably Priced Car welcomes Alan Carr and Justin Lee Collins. [AD,S]</desc>
+<title>Top Gear</title>
+<end>1400</end>
+<start>1300</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>New. The pilots face more treacherous weather and wildlife in Africa. Nerves set in as the rookies face their long-awaited test flights, hoping to bag themselves a job.</desc>
+<title>Bush Pilots</title>
+<end>1500</end>
+<start>1400</start>
+  </programme>
+  <programme>
+<subtitle>Kombai</subtitle>
+<flags></flags>
+<desc>Documentary series with explorer Bruce Parry. He travels to the jungles of West Papua to spend time with the Kombai people, once notorious for their cannibalistic tendencies. [AD,S]</desc>
+<title>Tribe</title>
+<end>1600</end>
+<start>1500</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Jeremy and the team deliver more high octane hi-jinks. Jeremy falls in love with the Mercedes CLK Black and Richard takes on some annoyingly cool French skiers. [AD,S]</desc>
+<title>Top Gear</title>
+<end>1700</end>
+<start>1600</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>The very latest motoring news and views. Jeremy puts the gargantuan Bentley Brooklands to the test, and the Stars in the Reasonably Priced Car are James Corden and Mathew Horne. [AD,S]</desc>
+<title>Top Gear</title>
+<end>1800</end>
+<start>1700</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>In another instalment of motoring mayhem, Jeremy Clarkson tries to outrun Japan's legendary 'bullet train' in the remarkable new Nissan GT-R. Fiona Bruce and Kate Silverton guest. [AD,S]</desc>
+<title>Top Gear</title>
+<end>1900</end>
+<start>1800</start>
+  </programme>
+  <programme>
+<subtitle>Gallimaufrey</subtitle>
+<flags>(S)</flags>
+<desc>Being interesting wins points in the offbeat comedy quiz. Stephen Fry introduces Phill Jupitus, Hugh Dennis and Andy Hamilton to a gallimaufrey of gingambobs.</desc>
+<title>QI XL</title>
+<end>2000</end>
+<start>1900</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>New. More treacherous weather and dangerous wildlife as the bush pilots fly over Africa. In a special Christmas episode, the pilots' plans are jeopardised by a tropical storm.</desc>
+<title>Bush Pilots</title>
+<end>2100</end>
+<start>2000</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Topical comedy with the irrepressible Russell Howard. Russell takes a look at the big stories of the week and also picks up on some of the smaller items that make him smile.</desc>
+<title>Russell Howard's Good News Extra</title>
+<end>2200</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Another roof-raising comedy homecoming. Inbetweeners star Greg Davies returns to Shrewsbury to perform at the Severn Theatre, ably supported by Roisin Conaty and Tom Deacon.</desc>
+<title>Dave's One Night Stand</title>
+<end>2300</end>
+<start>2200</start>
+  </programme>
+  <programme>
+<subtitle>Greats</subtitle>
+<flags>(S)</flags>
+<desc>Ever-popular quiz show where guests get points for being interesting. Stephen Fry and guests Jo Brand, David Mitchell, Sean Lock and Alan Davies grapple with the greats.</desc>
+<title>QI XL</title>
+<end>0000</end>
+<start>2300</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Topical comedy with the irrepressible Russell Howard. Russell takes a look at the big stories of the week and also picks up on some of the smaller items that make him smile.</desc>
+<title>Russell Howard's Good News Extra</title>
+<end>0100</end>
+<start>0000</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Another roof-raising comedy homecoming. Inbetweeners star Greg Davies returns to Shrewsbury to perform at the Severn Theatre, ably supported by Roisin Conaty and Tom Deacon.</desc>
+<title>Dave's One Night Stand</title>
+<end>0150</end>
+<start>0100</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Comedy royalty Sean Lock and Dom Joly join host John 'the Sarge' Sergeant in the humorously heated debate show. Arguments include: 'Facebook friends are not real friends'.</desc>
+<title>Argumental</title>
+<end>0220</end>
+<start>0150</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Science-based fun. Jem Stansfield attempts to defeat the US Navy's latest weapon with some foam and a crash helmet, while Liz Bonnin gets in contact with her frog brain.</desc>
+<title>Bang Goes the Theory</title>
+<end>0300</end>
+<start>0220</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Close.</desc>
+<title>Close</title>
+<end>0700</end>
+<start>0300</start>
+  </programme>
+</channel>

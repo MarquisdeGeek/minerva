@@ -1,0 +1,218 @@
+#!/bin/bash
+MINBASE=/usr/local/minerva
+VARLOG=/var/log/minerva
+LOGSTUB=$VARLOG/mixer
+
+if [ $# -le 1 ]; then
+  echo "Usage: $0 <device> <command> <channel> [value]"
+  echo "   command ::= get set inc dec store recall quiet loud mute unmute toggle ismute"
+  echo "   channel ::= master bass treble wave speaker linein microphone"
+  echo "               cd recording linein1 linein2 linein3"
+  echo "   value   ::= a filename, when doing store/recall"
+  echo "   value   ::= a delta value when doing quiet/loud"
+  exit -1
+fi
+
+$MINBASE/bin/minlog cmd $0 $*
+
+MIXER=/usr/bin/aumix
+CMD=$2
+CHANNEL=$3
+VALUE=$4
+
+function getScaledVariance() {
+local VARY=30
+
+	CURRENT=`$0 $DEVICE get master`
+	if [ "$CURRENT" -lt "5" -o "$CURRENT" -gt "95" ]; then
+		VARY=1
+	elif [ "$CURRENT" -lt "10" -o "$CURRENT" -gt "90" ]; then
+		VARY=2
+	elif [ "$CURRENT" -lt "20" -o "$CURRENT" -gt "80" ]; then
+		VARY=8
+	elif [ "$CURRENT" -lt "40" -o "$CURRENT" -gt "60" ]; then
+		VARY=15
+	fi
+
+echo $VARY
+}
+
+# Reference usage for finddev...
+#
+# We've sent (and presumably rcv'd) a request from the finddev call
+# Therefore:
+# 1. DEVICE is actually the output from that command, which we might
+#    need and so reflect to the calling command.
+# 2. We exit now with a code of '0'. All Bearskin commands must check
+#    for 0. If they receive it, they must also exit immediately.
+
+DEVICE=`$MINBASE/bin/finddev mixer $*`
+if [ $? == 0 ]; then
+  echo $DEVICE
+  exit 0;
+fi
+
+
+
+# Do general purpose commands (without channel designations)
+case "$CMD" in
+  init)
+     touch $LOGSTUB.lst 
+     echo 0 >$LOGSTUB.mut
+     $MIXER -f $LOGSTUB.mix -S
+     chgrp minerva $LOGSTUB.lst $LOGSTUB.mix $LOGSTUB.mut
+     chmod ug+rw   $LOGSTUB.lst $LOGSTUB.mix $LOGSTUB.mut
+     exit 0
+     ;;
+
+  enumdev)
+     $MINBASE/bin/enumdev mixer
+     exit $?
+     ;;
+
+  quiet)
+     # re-use channel as value parameter
+     if [ "$CHANNEL" == "" ]; then
+        CHANNEL=$(getScaledVariance)
+     fi
+     $0 $DEVICE dec master $CHANNEL
+     exit 0
+     ;;
+
+  loud)
+     if [ "$CHANNEL" == "" ]; then
+        CHANNEL=$(getScaledVariance)
+     fi
+     $0 $DEVICE inc master $CHANNEL
+     exit 0
+     ;;
+
+  store)
+     $MIXER -f $CHANNEL -S
+     exit 0
+     ;;
+
+  recall)
+     $MIXER -f $CHANNEL -L >/dev/null
+     exit 0
+     ;;
+
+  mute)
+     # don't mute it twice, or we'll overwrite the settings
+     if [ "`$0 $DEVICE ismute`" == "0" ]; then
+        $MIXER -f $LOGSTUB.mix -S
+        $0 $DEVICE set master 0
+        echo 1 >$LOGSTUB.mut
+     fi
+     exit 0
+     ;;
+  unmute)
+     $MIXER -f $LOGSTUB.mix -L >/dev/null
+     echo 0 >$LOGSTUB.mut
+     exit 0
+     ;;
+  ismute)
+     if [ -f $LOGSTUB.mut ]; then
+        cat $LOGSTUB.mut
+     else
+        echo 0
+     fi
+     exit 0
+     ;;
+  toggle)
+     if [ "`$0 $DEVICE ismute`" == "1" ]; then
+        $MINBASE/bin/mixer default unmute
+     else
+        $MINBASE/bin/mixer default mute
+     fi
+     exit 0
+     ;;
+esac
+
+# Patch device to match the devices
+# (currently, we assume one mixer)
+if [ "$DEVICE" == "default" ]; then
+   DEVICE=
+fi
+
+# Anything left must be a channel command, so this will
+# fail if no channel is specified
+
+# So first remap the channels, if appropriate
+CHANNEL=`$MINBASE/etc/mixer.conf $CHANNEL`
+SAVEIFS=$IFS
+ IFS=","
+ declare -a CHANNEL_ARRAY=($CHANNEL)
+IFS=$SAVEIFS
+
+for CHNL in ${CHANNEL_ARRAY[@]}
+do
+   case "$CHNL" in
+     master)		
+       CHN=v
+       ;; 
+     bass)
+       CHN=b
+       ;; 
+     treble)
+       CHN=t
+       ;; 
+     wave)
+       CHN=w
+       ;; 
+     speaker)
+       CHN=p
+       ;; 
+     linein)
+       CHN=l
+       ;; 
+     microphone)
+       CHN=m
+       ;; 
+     cd)
+       CHN=c
+       ;; 
+     recording)
+       CHN=r
+       ;; 
+     linein1)
+       CHN=1
+       ;; 
+     linein2)
+       CHN=1
+       ;; 
+     linein3)
+       CHN=1
+       ;; 
+     *)
+       CHN=
+       ;;
+   esac
+
+   if [ "$CHN" != "" ]; then
+      case "$CMD" in
+         get)
+            $MIXER -$CHN q $DEVICE | sed 's/\,.*//' |  sed 's/[^0-9]\+//'
+            ;;
+         set)
+            $MIXER -$CHN $VALUE $DEVICE
+            ;;
+         inc)
+            $MIXER -$CHN +$VALUE $DEVICE
+            ;;
+         dec)
+            $MIXER -$CHN -$VALUE $DEVICE
+            ;;
+         *)
+            ;;
+      esac
+   
+   fi
+done
+
+# Write the last command into a mini-log.
+# (not essential, just an amusing feature)
+@echo $CMD $CHN $VALUE >$LOGSTUB.lst 2>/dev/null
+
+
+

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Sun Jul  8 07:20:44 2012 -->
+<channel id="bbc3" source="XMLTV" date="13/07/2012">
+  <programme>
+<desc></desc>
+<title>..programmes start at 7.00pm</title>
+<end>1200</end>
+<start>0600</start>
+  </programme>
+  <programme>
+<desc></desc>
+<title>..programmes start at 7.00pm</title>
+<end>1800</end>
+<start>1200</start>
+  </programme>
+  <programme>
+<title>..programmes start at 7.00pm</title>
+<end>1857</end>
+<start>1800</start>
+  </programme>
+  <programme>
+<desc>BBC Three. The best in new entertainment, comedy, contemporary drama and music for the digital generation. Stay tuned for 60 Seconds news.</desc>
+<title>This Is BBC Three</title>
+<end>1900</end>
+<start>1858</start>
+  </programme>
+  <programme>
+<desc>11/16. Muscle Cars: Motoring show. Which is the best modern muscle car? Adam, Rutledge and Tanner fight it out on the way to a high speed attempt at a Nascar track. [S]</desc>
+<title>Top Gear USA</title>
+<end>1945</end>
+<start>1900</start>
+  </programme>
+  <programme>
+<desc>12/16. Dangerous Cars: Motoring show. The hosts each choose a car thought of as the 'most dangerous car in the country' and try to restore its reputation in a series of crazy challenges. [S]</desc>
+<title>Top Gear USA</title>
+<end>2030</end>
+<start>1945</start>
+  </programme>
+  <programme>
+<desc>9/10. Tessa, Nina and Ryan: Makeunder show with Ellie Taylor. POD helps two Barbie wannabes who've turned sisterhood into an un-classy act and a burger-flipper often mistaken for a girl. [S]</desc>
+<title>Snog Marry Avoid?</title>
+<end>2100</end>
+<start>2030</start>
+  </programme>
+  <programme>
+<desc>6/6. Comedy murder mystery series. Helen is moved to D Wing where she is befriended by white collar criminal Jo. Margaret is determined to make her potential incumbent's life a misery. [AD,S]</desc>
+<title>Dead Boss</title>
+<end>2130</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<desc>5/6. A comic look at life in Britain. Emily and Florence play tennis while Kenny Craig has a girlfriend. With Anthony Head and John Culshaw. Contains adult humour.  [AD,S]</desc>
+<title>Little Britain</title>
+<end>2200</end>
+<start>2130</start>
+  </programme>
+  <programme>
+<desc>Phil is furious when Jay and Ben confess the truth about their recent actions, and points out that things could soon be over for them all as a result. [AD,S]</desc>
+<title>EastEnders</title>
+<end>2230</end>
+<start>2200</start>
+  </programme>
+  <programme>
+<desc>10/21. Big Man on Hippocampus: Animated US comedy. After hitting his head Peter develops amnesia and forgets everything, including his family and friends. Contains adult humour.  [S]</desc>
+<title>Family Guy</title>
+<end>2250</end>
+<start>2230</start>
+  </programme>
+  <programme>
+<desc>11/21. Dial Meg for Murder: Animated comedy. After trailing Meg around for research for his magazine writer's job, Brian discovers she has a secret boyfriend. Contains some violence.  [S]</desc>
+<title>Family Guy</title>
+<end>2315</end>
+<start>2250</start>
+  </programme>
+  <programme>
+<desc>6/16. The 42-Year-Old Virgin: Animated series. Stan is outed as a virgin, in that he has never killed anyone, so the guys rally round to help him pop his cherry. Contains adult humour.  [S]</desc>
+<title>American Dad!</title>
+<end>2335</end>
+<start>2315</start>
+  </programme>
+  <programme>
+<desc>7/16. Surro-Gate: Animated series about a CIA man. When Francine decides to be a surrogate for her gay neighbours Terry and Greg, Stan's Republican blood boils. Contains adult humour.  [S]</desc>
+<title>American Dad!</title>
+<end>0000</end>
+<start>2335</start>
+  </programme>
+  <programme>
+<desc>Ireland's economic recession has led to a boom in the unlikely genre of Irish rap. This film follows bands like Class A'z as they try to find success. Contains very strong language.  [S]</desc>
+<title>Irish Rappers Revealed</title>
+<end>0040</end>
+<start>0000</start>
+  </programme>
+  <programme>
+<desc>8/8. Best Bits: Highlights from series four. Russell Howard gives his take on key news stories and highlights the bizarre items that have caught his eye. Contains some strong language.  [S]</desc>
+<title>Russell Howard's Good News</title>
+<end>0110</end>
+<start>0040</start>
+  </programme>
+  <programme>
+<desc>7/8. Russell Kane hosts short films, quick-fire sketches and musical comedy, featuring Two Episodes of Mash, Nick Helm, WitTank, Totally Tom, Hari Kondabolu, Jigsaw and Joe Wilkinson. [S]</desc>
+<title>Live at the Electric</title>
+<end>0140</end>
+<start>0110</start>
+  </programme>
+  <programme>
+<desc>6/6. Comedy murder mystery series. Helen is moved to D Wing where she is befriended by white collar criminal Jo. Margaret is determined to make her potential incumbent's life a misery. [AD,S]</desc>
+<title>Dead Boss</title>
+<end>0210</end>
+<start>0140</start>
+  </programme>
+  <programme>
+<desc>5/6. A comic look at life in Britain. Emily and Florence play tennis while Kenny Craig has a girlfriend. With Anthony Head and John Culshaw. Contains adult humour.  [AD,S]</desc>
+<title>Little Britain</title>
+<end>0240</end>
+<start>0210</start>
+  </programme>
+  <programme>
+<desc>9/10. Tessa, Nina and Ryan: Makeunder show with Ellie Taylor. POD helps two Barbie wannabes who've turned sisterhood into an un-classy act and a burger-flipper often mistaken for a girl. [S]</desc>
+<title>Snog Marry Avoid?</title>
+<end>0310</end>
+<start>0240</start>
+  </programme>
+  <programme>
+<desc>Ireland's economic recession has led to a boom in the unlikely genre of Irish rap. This film follows bands like Class A'z as they try to find success. Contains very strong language.  [S]</desc>
+<title>Irish Rappers Revealed</title>
+<end>0355</end>
+<start>0310</start>
+  </programme>
+  <programme>
+<desc>8/8. Best Bits: Highlights from series four. Russell Howard gives his take on key news stories and highlights the bizarre items that have caught his eye. Contains some strong language.  [S]</desc>
+<title>Russell Howard's Good News</title>
+<end>0425</end>
+<start>0355</start>
+  </programme>
+  <programme>
+<desc>7/8. Russell Kane hosts short films, quick-fire sketches and musical comedy, featuring Two Episodes of Mash, Nick Helm, WitTank, Totally Tom, Hari Kondabolu, Jigsaw and Joe Wilkinson. [S]</desc>
+<title>Live at the Electric</title>
+<end>0455</end>
+<start>0425</start>
+  </programme>
+  <programme>
+<desc>6/6. Comedy murder mystery series. Helen is moved to D Wing where she is befriended by white collar criminal Jo. Margaret is determined to make her potential incumbent's life a misery. [AD,S,SL]</desc>
+<title>Dead Boss</title>
+<end>0525</end>
+<start>0455</start>
+  </programme>
+  <programme>
+<subtitle>BBC Three</subtitle>
+<desc>Refreshing TV for the digital age. Tune in daily from 7.00pm.</desc>
+<title>This Is BBC Three</title>
+<end>0530</end>
+<start>0525</start>
+  </programme>
+  <programme>
+<title>..programmes start at 7.00pm</title>
+<end>0600</end>
+<start>0530</start>
+  </programme>
+  <programme>
+<desc></desc>
+<title>..programmes start at 7.00pm</title>
+<end>1200</end>
+<start>0600</start>
+  </programme>
+</channel>

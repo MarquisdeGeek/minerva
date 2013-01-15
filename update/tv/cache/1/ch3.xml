@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Sat Jul  7 07:20:46 2012 -->
+<channel id="bbc3" source="XMLTV" date="12/07/2012">
+  <programme>
+<desc></desc>
+<title>..programmes start at 7.00pm</title>
+<end>1200</end>
+<start>0600</start>
+  </programme>
+  <programme>
+<desc></desc>
+<title>..programmes start at 7.00pm</title>
+<end>1800</end>
+<start>1200</start>
+  </programme>
+  <programme>
+<title>..programmes start at 7.00pm</title>
+<end>1857</end>
+<start>1800</start>
+  </programme>
+  <programme>
+<desc>BBC Three. The best in new entertainment, comedy, contemporary drama and music for the digital generation. Stay tuned for 60 Seconds news.</desc>
+<title>This Is BBC Three</title>
+<end>1900</end>
+<start>1858</start>
+  </programme>
+  <programme>
+<desc>10/13. The Girl Who Waited: Amy is trapped in a quarantine facility for victims of an alien plague. Can Rory save her before she is killed by kindness? [AD,S]</desc>
+<title>Doctor Who</title>
+<end>1945</end>
+<start>1900</start>
+  </programme>
+  <programme>
+<desc>10/13. What Dreams May Come: Can Karen Gillan get up to 100mph around one of the UK's fastest racetracks and can Arthur Darvill rise to the challenge of swimming in a tank of sharks? [S]</desc>
+<title>Doctor Who Confidential</title>
+<end>2000</end>
+<start>1945</start>
+  </programme>
+  <programme>
+<desc>...of the Rising Sun. 3/3. Stacey Dooley looks at how the economic crisis has affected young people in Japan. [S]</desc>
+<title>Coming Here Soon: Japan, Fall...</title>
+<end>2100</end>
+<start>2000</start>
+  </programme>
+  <programme>
+<desc>8/8. Best Bits: Highlights from series four. Russell Howard gives his take on key news stories and highlights the bizarre items that have caught his eye. Contains some strong language.  [S]</desc>
+<title>Russell Howard's Good News</title>
+<end>2130</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<desc>7/8. Russell Kane hosts short films, quick-fire sketches and musical comedy, featuring Two Episodes of Mash, Nick Helm, WitTank, Totally Tom, Hari Kondabolu, Jigsaw and Joe Wilkinson. [S]</desc>
+<title>Live at the Electric</title>
+<end>2200</end>
+<start>2130</start>
+  </programme>
+  <programme>
+<desc>Jay struggles to cope with his grim discovery and makes a decision that could affect his life forever - but will someone prevent him from going through with it? [AD,S]</desc>
+<title>EastEnders</title>
+<end>2230</end>
+<start>2200</start>
+  </programme>
+  <programme>
+<desc>6/6. Helen is moved to D Wing where she is befriended by white collar criminal Jo. Also in HD. [AD,S]</desc>
+<title>Dead Boss</title>
+<end>2300</end>
+<start>2230</start>
+  </programme>
+  <programme>
+<desc>8/21. Dog Gone: Animated comedy. After Brian accidentally kills another dog and no-one cares, he argues that they should value the life of a dog the same as a human. Contains adult humour.  [S]</desc>
+<title>Family Guy</title>
+<end>2320</end>
+<start>2300</start>
+  </programme>
+  <programme>
+<desc>9/21. Business Guy: Animated US comedy. When Carter slips into a coma, Lois lets Peter run Pewterschmidt Industries. Overcome by power, Peter fires the entire board. Contains adult humour.  [S]</desc>
+<title>Family Guy</title>
+<end>2345</end>
+<start>2320</start>
+  </programme>
+  <programme>
+<desc>4/16. Big Trouble in Little Langley: Animation about a CIA man. Francine's adoptive parents come to stay, to Stan's fury, so he attempts to find her birth parents. Contains adult humour.  [S]</desc>
+<title>American Dad!</title>
+<end>0005</end>
+<start>2345</start>
+  </programme>
+  <programme>
+<desc>5/16. Haylias: When Hayley decides to move to France, Stan will do anything to stop her, including revealing the fact that she was brainwashed as a child by the CIA. Contains adult humour.  [S]</desc>
+<title>American Dad!</title>
+<end>0030</end>
+<start>0005</start>
+  </programme>
+  <programme>
+<desc>7/8. Russell Kane hosts short films, quick-fire sketches and musical comedy, featuring Two Episodes of Mash, Nick Helm, WitTank, Totally Tom, Hari Kondabolu, Jigsaw and Joe Wilkinson. Also in HD. [S]</desc>
+<title>Live at the Electric</title>
+<end>0100</end>
+<start>0030</start>
+  </programme>
+  <programme>
+<desc>6/6. Comedy murder mystery series. Helen is moved to D Wing where she is befriended by white collar criminal Jo. Margaret is determined to make her potential incumbent's life a misery. [AD,S]</desc>
+<title>Dead Boss</title>
+<end>0130</end>
+<start>0100</start>
+  </programme>
+  <programme>
+<desc>8/8. Best Bits: Highlights from series four. Russell Howard gives his take on key news stories and highlights the bizarre items that have caught his eye. Contains some strong language.  [S]</desc>
+<title>Russell Howard's Good News</title>
+<end>0200</end>
+<start>0130</start>
+  </programme>
+  <programme>
+<desc>4/6. How Prejudiced Are We?: Cherry Healey finds out how prejudiced we are in today's politically-correct world, meeting a female firefighter, a black ballet dancer and a wheelchair user. [AD,S]</desc>
+<title>Cherry Healey: How to Get a Life</title>
+<end>0300</end>
+<start>0200</start>
+  </programme>
+  <programme>
+<desc>...of the Rising Sun. 3/3. Stacey Dooley looks at how the economic crisis has affected young people in Japan. [S]</desc>
+<title>Coming Here Soon: Japan, Fall...</title>
+<end>0355</end>
+<start>0300</start>
+  </programme>
+  <programme>
+<desc>9/10. Tessa, Nina and Ryan: Makeunder show with Ellie Taylor. POD helps two Barbie wannabes who've turned sisterhood into an un-classy act and a burger-flipper often mistaken for a girl. [S]</desc>
+<title>Snog Marry Avoid?</title>
+<end>0425</end>
+<start>0355</start>
+  </programme>
+  <programme>
+<desc>4/6. How Prejudiced Are We?: Cherry Healey finds out how prejudiced we are in today's politically-correct world, meeting a female firefighter, a black ballet dancer and a wheelchair user. [AD,S,SL]</desc>
+<title>Cherry Healey: How to Get a Life</title>
+<end>0525</end>
+<start>0425</start>
+  </programme>
+  <programme>
+<subtitle>BBC Three</subtitle>
+<desc>Refreshing TV for the digital age. Tune in daily from 7.00pm.</desc>
+<title>This Is BBC Three</title>
+<end>0530</end>
+<start>0525</start>
+  </programme>
+  <programme>
+<title>..programmes start at 7.00pm</title>
+<end>0600</end>
+<start>0530</start>
+  </programme>
+  <programme>
+<desc></desc>
+<title>..programmes start at 7.00pm</title>
+<end>1200</end>
+<start>0600</start>
+  </programme>
+</channel>

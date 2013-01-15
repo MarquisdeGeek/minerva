@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# This script pings a number of addresses, and fails when 3 or more can
+# not be reached. A fail will print a '1'. 0 means success.
+# 3 is the limit because it allows some sites to be down. 
+
+MINROOT=/usr/local/minerva
+
+ERROR=0
+
+for file in `cat $MINROOT/etc/ipcheck.conf`
+do
+   PING_TEST=`ping -c 1 -W 5 -A $file 2>/dev/null | grep "bytes from" | wc -l`
+
+   if [ $PING_TEST -eq 0 ]; then
+      let "ERROR += 1"
+   fi
+done
+
+if [ $ERROR -ge 2 ]
+then
+  echo 1
+  exit 1
+
+else
+
+  echo 0
+  exit 0
+fi
+

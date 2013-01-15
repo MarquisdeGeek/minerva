@@ -1,0 +1,5 @@
+#!/bin/bash
+
+MINBASE=/usr/local/minerva/bin
+$MINBASE/weatherstatus
+

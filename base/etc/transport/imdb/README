@@ -1,0 +1,6 @@
+The support classes here come from IMDBPHP, please see the header files for
+details.
+
+Anything without explicit files are Minerva files, and utilize the Minerva
+licensing agreement found within the main directory.
+

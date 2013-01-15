@@ -1,0 +1,6 @@
+MINBIN=/usr/local/minerva/bin
+
+RESULT=`$MINBIN/weatherstatus`
+$MINBIN/addinfostream status weather $RESULT
+
+

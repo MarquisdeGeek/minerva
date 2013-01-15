@@ -1,0 +1,140 @@
+#!/usr/bin/php
+<?php
+require_once "/usr/local/minerva/bin/inc/utils.inc";
+
+# e.g. hacal get steev all 0 10
+
+array_shift($argv);	// the program name
+//
+$command = array_shift($argv);
+$user = array_shift($argv);
+$calendars = array_shift($argv);
+$fromDay = array_shift($argv);
+$countDay = array_shift($argv);
+
+switch($command) {
+	case "life":
+		reportLifeStatus($user, $fromDay);
+		break;
+	case "culture":
+		reportCulture();
+		break;
+	case "ical":
+	case "gcal":
+		reportUserCalendarInfo($user, $command);
+		break;
+	case "get":
+		reportUserCalendarEvents($user, $calendars, $fromDay, $countDay);
+		break;
+	case "list":
+		reportUserCalendarEventsList($user, $calendars, $fromDay, $countDay);
+		break;
+	default:
+      print "Usage: hacal <life|culture|ical|get|list> <username> <calendar_name|all> [from_day_offset] [to_day_offset]\n";
+ 		return 1;
+}
+
+function writeArray($result) {
+	foreach($result as $r) {
+		$r = trim($r);
+		if ($r == "") continue;
+		print "$r\n";
+	}
+}
+		
+function reportCulture() {
+	exec("/usr/bin/calendar -l 0 -f /etc/calendar/default", $result);
+	writeArray($result);
+}
+
+function reportLifeStatus($unused) {
+	exec("/usr/local/minerva/bin/lstatus", $result);
+	writeArray($result);	
+}
+
+function reportUserCalendarInfo($user, $calType) {
+	$result = getUserCalendarInfo($user, $calType);
+	writeArray($result);
+}
+
+function getUserCalendarInfo($user, $calType) {
+	$array = @file("/usr/local/minerva/etc/users/$user/external/$calType");
+	$result = array();
+	array_push($result, ((count($array)-1)/2)."\n");
+	for($i=0;$i<count($array)-1;$i+=2) {
+		array_push($result, ($i/2));
+		array_push($result, $array[$i]);
+		array_push($result, $array[$i+1]);
+	}
+	return $result;
+}
+
+function reportUserCalendarEventsList($username, $calendars, $fromDay, $countDay) {
+  $array = getUserCalendarEvents($username, $calendars, $fromDay, $countDay);
+
+	for($i=0;$i<count($array)-1;$i+=4) {
+		print $array[$i+3]."\n";
+	}
+}
+
+function getUserCalendarEvents($username, $calendars, $fromDay, $countDay) {
+	$result = array();
+
+$fromDay = max($fromDay,0);
+$countDay = max($countDay,1);
+
+if ($username == "") {
+  $username = "public";
+}
+
+	// Find the ical for this username
+	$array = getUserCalendarInfo($username, "ical");
+	for($i=0;$i<$array[0];++$i) {
+  		if ($calendars == "all" || $calendars == "" || $calendars == $i) {
+    		$data = getNextEvents($array[$i*3+2], "${username}_".$i, trim($array[$i*3+3]),  $fromDay, $countDay);
+		$result = array_merge($result, $data);
+		}
+	}
+	return $result;
+}
+
+function reportUserCalendarEvents($username, $calendars, $fromDay, $countDay) {
+	$result = getUserCalendarEvents($username, $calendars, $fromDay, $countDay);
+	writeArray($result);
+}
+
+function getNextEvents($prefix, $cachename, $url, $fromDay, $countDay) {
+	$contents = getContents($url, "cal_$cachename", 60*60*24);
+
+	$regex = "/BEGIN:VEVENT.*?DTSTART;[^:]*:([^\s]*).*?SUMMARY:([^\n]*).*?END:VEVENT/is";
+	preg_match_all($regex, $contents, $matches, PREG_SET_ORDER);
+
+	$all = array();
+
+	// Get a 'now' time at the start of the current day
+	// (this picks up things at 12am midnight)
+	$nowseconds = $tomorrow  = mktime(0, 0, 0, date("m"), date("d"), date("Y"));
+	$dayofseconds = 60*60*24;
+
+	$startTime = $nowseconds + $dayofseconds * $fromDay;
+	$endTime = $nowseconds + $dayofseconds * ($fromDay+$countDay);
+
+	// We subtract one second to stop 12am the following day from being used.
+	$endTime -= 1;
+
+	for($i=0;$i<sizeof($matches);++$i) {
+		$secs = date('U', strtotime($matches[$i][1]));
+
+		if ($secs < $startTime) continue;
+		if ($secs > $endTime) continue;
+
+		array_push($all, trim($prefix));
+		array_push($all, strftime("%A %d %b %Y\n", strtotime($matches[$i][1])));
+		array_push($all, strftime("%l%P\n", strtotime($matches[$i][1])));
+		array_push($all, $matches[$i][2]);
+	}
+
+return $all;
+}
+
+?>

@@ -1,0 +1,53 @@
+#!/bin/bash
+
+MINBASE=/usr/local/minerva
+LOGFILE=/var/log/minerva/manifest/playlist
+BLOCKPATH=/var/log/minerva/manifest/block
+DEVICE=$1
+
+MP3BASE=/net/media/mp3
+MP3BASE=/net/genre/pop
+
+# pick a random file in this directory
+IFS=$'\n'
+CURRENTDIR=$MP3BASE
+FOUNDFILE=0
+BLOCKLOCK=0   # if we (randomly!?) pick blocked files more than N times, we abort
+
+while [ $FOUNDFILE -eq 0 ]; do
+   DIRLIST=( $(ls "$CURRENTDIR") )
+
+   if [ ${#DIRLIST[@]} -eq 0 ]; then
+      CURRENTDIR=$MP3BASE
+   else
+      SELECTION=$RANDOM
+      let "SELECTION %= ${#DIRLIST[@]}"
+
+      FILENAME=$CURRENTDIR/${DIRLIST[$SELECTION]}
+      # Look for media in the block list
+      IFBLOCKED=$BLOCKPATH/$FILENAME
+      if [ -f "$IFBLOCKED" ]; then
+           BLOCKLOCK=$(($BLOCKLOCK + 1))
+           if [ "$BLOCKLOCK" -gt "10" ]; then
+              FOUNDFILE=1
+           fi
+
+      elif [ -f $FILENAME ]; then
+        FILETYPE=`file $FILENAME`
+        if [[ "$FILETYPE" =~ 'MP3 encoding' || "$FILETYPE" =~ 'OGG' || "$FILETYPE" =~ 'MPEG' ]]; then 
+           date +"%F %H:%M $FILENAME" >> $LOGFILE
+           #$MINBASE/bin/mp3player $DEVICE play $FILENAME &>/dev/null
+           $MINBASE/bin/mp3player $DEVICE play $FILENAME & 2>/dev/null
+				PID=$!
+				wait $PID
+           FOUNDFILE=1
+        else
+          CURRENTDIR=$MP3BASE
+        fi
+      else
+        CURRENTDIR=$FILENAME
+      fi
+   fi
+
+done
+

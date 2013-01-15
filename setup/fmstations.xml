@@ -1,0 +1,4134 @@
+<station-list>
+
+<station frequency="100.7" band="vhf">
+  <name>100.7 Heart FM</name>
+  <location area="West Midlands" ngr="SK113003" site="Sutton Coldfield"/>
+  <technical rdspi="C3A6" switchpi="" tpta="Y" siteht="169" iuaerialht="159" iuerphp="5.5" iuerpvp="5.5" maxdir="210"/>
+  <admin license="AL169-1"/>
+</station>
+
+<station frequency="102.2" band="vhf">
+  <name>102.2 Smooth FM</name>
+  <location area="London" ngr="TQ332696" site="Croydon"/>
+  <technical rdspi="C787" switchpi="" tpta="Y" siteht="114" iuaerialht="135" iuerphp="2" iuerpvp="2" maxdir=""/>
+  <admin license="AL039-2"/>
+</station>
+
+<station frequency="102.7" band="vhf">
+  <name>102.7 Hereward</name>
+  <location area="Peterborough" ngr="TF187036" site="Gunthorpe"/>
+  <technical rdspi="C786" switchpi="" tpta="Y" siteht="3" iuaerialht="79" iuerphp="2" iuerpvp="2" maxdir=""/>
+  <admin license="AL024-2"/>
+</station>
+
+<station frequency="103.2" band="vhf">
+  <name>103.2 Power FM</name>
+  <location area="Southampton" ngr="SZ475835" site="Chillerton Down"/>
+  <technical rdspi="C79D" switchpi="" tpta="Y" siteht="166" iuaerialht="190" iuerphp="1" iuerpvp="1" maxdir="0"/>
+  <admin license="AL115-2B"/>
+</station>
+
+<station frequency="107.9" band="vhf">
+  <name>107 Star FM</name>
+  <location area="Cambridge" ngr="TL491533" site="Gog Magog"/>
+  <technical rdspi="C7B5" switchpi="" tpta="Y" siteht="72" iuaerialht="29" iuerphp="0" iuerpvp="0.1" maxdir="30"/>
+  <admin license="AL194-1"/>
+</station>
+
+<station frequency="107.1" band="vhf">
+  <name>107 Star FM</name>
+  <location area="Ely" ngr="TL541801" site="Ely Cathedral"/>
+  <technical rdspi="C7B5" switchpi="" tpta="Y" siteht="15" iuaerialht="64" iuerphp="0.1" iuerpvp="0.1" maxdir="90"/>
+  <admin license="AL194-1"/>
+</station>
+
+<station frequency="107.1" band="vhf">
+  <name>107.1 Rugby FM</name>
+  <location area="Rugby" ngr="SP498754" site="Royal Court Rounds Garden"/>
+  <technical rdspi="CA90" switchpi="" tpta="Y" siteht="100" iuaerialht="45" iuerphp="0" iuerpvp="0.1" maxdir=""/>
+  <admin license="AL271-1"/>
+</station>
+
+<station frequency="107.4" band="vhf">
+  <name>107.4 The Quay</name>
+  <location area="Portsmouth" ngr="SU626069" site="Fort Southwick"/>
+  <technical rdspi="C49B" switchpi="" tpta="Y" siteht="122" iuaerialht="18" iuerphp="0.1" iuerpvp="0.1" maxdir="180"/>
+  <admin license="AL238-1"/>
+</station>
+
+<station frequency="107.5" band="vhf">
+  <name>107.5 3TR FM</name>
+  <location area="Warminster" ngr="ST874462" site="Warminster"/>
+  <technical rdspi="CCB5" switchpi="" tpta="Y" siteht="190" iuaerialht="24" iuerphp="0" iuerpvp="0.1" maxdir="270"/>
+  <admin license="AL268-1"/>
+</station>
+
+<station frequency="107.8" band="vhf">
+  <name>107.8 Radio Jackie</name>
+  <location area="Kingston" ngr="TQ198659" site="Tolworth Tower"/>
+  <technical rdspi="C6B0" switchpi="" tpta="Y" siteht="29" iuaerialht="75" iuerphp="0.4" iuerpvp="0.4" maxdir=""/>
+  <admin license="AL191-1"/>
+</station>
+
+<station frequency="102.9" band="vhf">
+  <name>2 TEN FM</name>
+  <location area="Basingstoke and Andover" ngr="SU527568" site="Hannington"/>
+  <technical rdspi="C361" switchpi="C561" tpta="Y" siteht="229" iuaerialht="105" iuerphp="1.7" iuerpvp="1.7" maxdir=""/>
+  <admin license="AL123-2"/>
+</station>
+
+<station frequency="103.4" band="vhf">
+  <name>2 TEN FM</name>
+  <location area="Henley" ngr="SU780822" site="Henley"/>
+  <technical rdspi="C361" switchpi="C461" tpta="Y" siteht="109" iuaerialht="29" iuerphp="0.05" iuerpvp="0.05" maxdir="235"/>
+  <admin license="AL123-2"/>
+</station>
+
+<station frequency="97" band="vhf">
+  <name>2 TEN FM</name>
+  <location area="Reading" ngr="SU713733" site="Broad Street Mall"/>
+  <technical rdspi="C361" switchpi="C461" tpta="Y" siteht="41" iuaerialht="54" iuerphp="0.1" iuerpvp="0.4" maxdir="110"/>
+  <admin license="AL123-2"/>
+</station>
+
+<station frequency="99.8" band="vhf">
+  <name>2BR</name>
+  <location area="Burnley" ngr="SD825384" site="Pendle Forest"/>
+  <technical rdspi="C894" switchpi="" tpta="Y" siteht="275" iuaerialht="40" iuerphp="0.25" iuerpvp="0.5" maxdir="145"/>
+  <admin license="AL258-1"/>
+</station>
+
+<station frequency="102.3" band="vhf">
+  <name>2CR FM</name>
+  <location area="Bournemouth" ngr="SZ009811" site="Nine Barrow Down"/>
+  <technical rdspi="CE86" switchpi="" tpta="N" siteht="200" iuaerialht="20" iuerphp="0.4" iuerpvp="1.6" maxdir="320"/>
+  <admin license="AL026-2"/>
+</station>
+
+<station frequency="104.2" band="vhf">
+  <name>3FM</name>
+  <location area="Isle of Man" ngr="SC449947" site="Ramsey"/>
+  <technical rdspi="C482" switchpi="" tpta="" siteht="2" iuaerialht="8" iuerphp="0" iuerpvp="0.033" maxdir=""/>
+  <admin license="IOM_3FM"/>
+</station>
+
+<station frequency="104.2" band="vhf">
+  <name>3FM</name>
+  <location area="Isle of Man" ngr="SC206679" site="Port St Mary"/>
+  <technical rdspi="C482" switchpi="" tpta="" siteht="76" iuaerialht="28" iuerphp="0.05" iuerpvp="0.05" maxdir="60"/>
+  <admin license="IOM_3FM"/>
+</station>
+
+<station frequency="105" band="vhf">
+  <name>3FM</name>
+  <location area="Isle of Man" ngr="SC373746" site="Carnane"/>
+  <technical rdspi="C482" switchpi="" tpta="" siteht="150" iuaerialht="38" iuerphp="0.29" iuerpvp="1.8" maxdir="290"/>
+  <admin license="IOM_3FM"/>
+</station>
+
+<station frequency="106.2" band="vhf">
+  <name>3FM</name>
+  <location area="Isle of Man" ngr="SC295832" site="Beary Peark"/>
+  <technical rdspi="C482" switchpi="" tpta="" siteht="278" iuaerialht="30" iuerphp="0.063" iuerpvp="0.25" maxdir="280"/>
+  <admin license="IOM_3FM"/>
+</station>
+
+<station frequency="105.6" band="vhf">
+  <name>3FM</name>
+  <location area="Isle of Man" ngr="SC396881" site="Snaefell"/>
+  <technical rdspi="C482" switchpi="" tpta="" siteht="610" iuaerialht="20" iuerphp="0.05" iuerpvp="0.19" maxdir="30"/>
+  <admin license="IOM_3FM"/>
+</station>
+
+<station frequency="96.2" band="vhf">
+  <name>96.2 The Revolution</name>
+  <location area="Oldham" ngr="SD923051" site="The Civic Centre"/>
+  <technical rdspi="C49A" switchpi="" tpta="Y" siteht="203" iuaerialht="65" iuerphp="0" iuerpvp="0.1" maxdir=""/>
+  <admin license="AL235-1"/>
+</station>
+
+<station frequency="96.3" band="vhf">
+  <name>96.3 Radio Aire</name>
+  <location area="Leeds" ngr="SE279266" site="Tingley"/>
+  <technical rdspi="CA86" switchpi="" tpta="Y" siteht="133" iuaerialht="59" iuerphp="0.5" iuerpvp="2" maxdir=""/>
+  <admin license="AL004-2"/>
+</station>
+
+<station frequency="96.4" band="vhf">
+  <name>96.4 FM BRMB</name>
+  <location area="Birmingham" ngr="SK113003" site="Sutton Coldfield"/>
+  <technical rdspi="CAB2" switchpi="" tpta="Y" siteht="169" iuaerialht="150" iuerphp="5" iuerpvp="5" maxdir="205"/>
+  <admin license="AL077-2"/>
+</station>
+
+<station frequency="96.4" band="vhf">
+  <name>96.4 The Eagle</name>
+  <location area="Guildford" ngr="SU975486" site="Guildford"/>
+  <technical rdspi="C694" switchpi="" tpta="N" siteht="137" iuaerialht="37" iuerphp="1.5" iuerpvp="1.5" maxdir="270"/>
+  <admin license="AL081-3"/>
+</station>
+
+<station frequency="96.9" band="vhf">
+  <name>96.9 Chiltern FM</name>
+  <location area="Bedford" ngr="TL204494" site="Sandy Heath"/>
+  <technical rdspi="CB86" switchpi="" tpta="N" siteht="55" iuaerialht="190" iuerphp="0.37" iuerpvp="0.45" maxdir=""/>
+  <admin license="AL010-2B"/>
+</station>
+
+<station frequency="96.9" band="vhf">
+  <name>96.9 Viking FM</name>
+  <location area="Humberside" ngr="SE946350" site="High Hunsley"/>
+  <technical rdspi="C7B0" switchpi="" tpta="Y" siteht="164" iuaerialht="64.5" iuerphp="4.4" iuerpvp="5" maxdir="135"/>
+  <admin license="AL101-2"/>
+</station>
+
+<station frequency="97.2" band="vhf">
+  <name>97.2 Stray FM</name>
+  <location area="Harrogate" ngr="SE288542" site="Harlow Hill"/>
+  <technical rdspi="C4B2" switchpi="" tpta="Y" siteht="180" iuaerialht="30" iuerphp="0.5" iuerpvp="0.5" maxdir="0"/>
+  <admin license="AL162-2"/>
+</station>
+
+<station frequency="97.4" band="vhf">
+  <name>97.4 Vale FM</name>
+  <location area="Shaftesbury" ngr="ST864235" site="Shaftesbury"/>
+  <technical rdspi="C4B5" switchpi="" tpta="Y" siteht="218" iuaerialht="35" iuerphp="0.025" iuerpvp="0.1" maxdir="0"/>
+  <admin license="AL179-2"/>
+</station>
+
+<station frequency="96.6" band="vhf">
+  <name>97.4 Vale FM</name>
+  <location area="Blandford" ngr="ST888071" site="North Dorset Council"/>
+  <technical rdspi="C4B5" switchpi="" tpta="Y" siteht="62" iuaerialht="15" iuerphp="0" iuerpvp="0.1" maxdir=""/>
+  <admin license="AL179-2"/>
+</station>
+
+<station frequency="97.6" band="vhf">
+  <name>97.6 Chiltern FM</name>
+  <location area="Luton" ngr="TL044210" site="Zouches Farm"/>
+  <technical rdspi="CE86" switchpi="" tpta="Y" siteht="207" iuaerialht="64" iuerphp="0.5" iuerpvp="0.5" maxdir=""/>
+  <admin license="AL010-2A"/>
+</station>
+
+<station frequency="99.9" band="vhf">
+  <name>99.9 Radio Norwich</name>
+  <location area="Norwich" ngr="TG258026" site="Stoke Holy Cross"/>
+  <technical rdspi="CDB7" switchpi="" tpta="Y" siteht="65" iuaerialht="105" iuerphp="0.25" iuerpvp="0.25" maxdir=""/>
+  <admin license="AL300-1"/>
+</station>
+
+<station frequency="107.3" band="vhf">
+  <name>Abbey FM</name>
+  <location area="Barrow-in-Furness" ngr="SD230745" site="Dalton"/>
+  <technical rdspi="C883" switchpi="" tpta="Y" siteht="69" iuaerialht="43" iuerphp="0.06" iuerpvp="0.24" maxdir="145"/>
+  <admin license="AL305-1"/>
+</station>
+
+<station frequency="99.8" band="vhf">
+  <name>Aberdeen CR (ShmuFM)</name>
+  <location area="Aberdeen" ngr="NJ917082" site="Stewart Park Court"/>
+  <technical rdspi="C091" switchpi="" tpta="Y" siteht="94" iuaerialht="48" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR028"/>
+</station>
+
+<station frequency="102.5" band="vhf">
+  <name>Aldershot Army Radio</name>
+  <location area="Aldershot" ngr="SU864512" site="Aldershot"/>
+  <technical rdspi="C691" switchpi="" tpta="N" siteht="101" iuaerialht="15" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR096"/>
+</station>
+
+<station frequency="96.9" band="vhf">
+  <name>AllFM</name>
+  <location area="Manchester" ngr="SJ875951" site="Longsight"/>
+  <technical rdspi="C691" switchpi="" tpta="" siteht="45" iuaerialht="40" iuerphp="0" iuerpvp="0.05" maxdir=""/>
+  <admin license="CR023"/>
+</station>
+
+<station frequency="107.3" band="vhf">
+  <name>Alnwick CR (Lionheart )</name>
+  <location area="Alnwick" ngr="NU177127" site="Alnwick Moor"/>
+  <technical rdspi="C491" switchpi="" tpta="Y" siteht="133" iuaerialht="20" iuerphp="0" iuerpvp="0.022" maxdir=""/>
+  <admin license="CR049"/>
+</station>
+
+<station frequency="103.2" band="vhf">
+  <name>Alpha 103.2</name>
+  <location area="Darlington" ngr="NZ284187" site="Darlington"/>
+  <technical rdspi="C4B5" switchpi="" tpta="N" siteht="92" iuaerialht="38" iuerphp="0.2" iuerpvp="0.2" maxdir="0"/>
+  <admin license="AL181-2"/>
+</station>
+
+<station frequency="101.1" band="vhf">
+  <name>Angel Radio</name>
+  <location area="Havant" ngr="SU726070" site="Havant"/>
+  <technical rdspi="C791" switchpi="" tpta="" siteht="14" iuaerialht="30" iuerphp="0" iuerpvp="0.015" maxdir=""/>
+  <admin license="CR002"/>
+</station>
+
+<station frequency="91.5" band="vhf">
+  <name>Angel Radio</name>
+  <location area="Isle Of Wight" ngr="SZ513873" site="Newport"/>
+  <technical rdspi="C493" switchpi="" tpta="N" siteht="60" iuaerialht="10" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR007"/>
+</station>
+
+<station frequency="107.1" band="vhf">
+  <name>Argyll FM</name>
+  <location area="Kintyre Islay and Jura" ngr="NR629189" site="Ballygroggan"/>
+  <technical rdspi="C799" switchpi="" tpta="N" siteht="180" iuaerialht="18" iuerphp="0" iuerpvp="0.625" maxdir="0"/>
+  <admin license="AL251-1"/>
+</station>
+
+<station frequency="106.5" band="vhf">
+  <name>Argyll FM</name>
+  <location area="Kintyre Islay and Jura" ngr="NR742212" site="Campbeltown"/>
+  <technical rdspi="C799" switchpi="" tpta="N" siteht="85" iuaerialht="16" iuerphp="0" iuerpvp="0.5" maxdir="300"/>
+  <admin license="AL251-1"/>
+</station>
+
+<station frequency="107.7" band="vhf">
+  <name>Argyll FM</name>
+  <location area="Kintyre Islay and Jura" ngr="NR837748" site="South Knapdale"/>
+  <technical rdspi="C799" switchpi="" tpta="N" siteht="482" iuaerialht="27" iuerphp="0" iuerpvp="0.5" maxdir="280"/>
+  <admin license="AL251-1"/>
+</station>
+
+<station frequency="26" band="vhf">
+  <name>Arqiva_DRM</name>
+  <location area="London" ngr="TQ332696" site="Croydon"/>
+  <technical rdspi="" switchpi="" tpta="" siteht="114" iuaerialht="70" iuerphp="0" iuerpvp="2" maxdir="0"/>
+  <admin license="DRSL209"/>
+</station>
+
+<station frequency="107.8" band="vhf">
+  <name>Arrow FM</name>
+  <location area="Hastings" ngr="TQ807100" site="Hastings"/>
+  <technical rdspi="C09A" switchpi="" tpta="Y" siteht="76" iuaerialht="38" iuerphp="0.1" iuerpvp="0.1" maxdir=""/>
+  <admin license="AL210-1"/>
+</station>
+
+<station frequency="89.1" band="vhf">
+  <name>Aston CR (Aston FM)</name>
+  <location area="Birmingham Aston" ngr="SP076892" site="Barry Jackson Tower"/>
+  <technical rdspi="C580" switchpi="" tpta="" siteht="117" iuaerialht="65" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR038"/>
+</station>
+
+<station frequency="105.1" band="vhf">
+  <name>Atlantic FM</name>
+  <location area="East Cornwall" ngr="SX273707" site="Caradon Hill"/>
+  <technical rdspi="C8B5" switchpi="" tpta="Y" siteht="369" iuaerialht="167" iuerphp="0.5" iuerpvp="2" maxdir="120"/>
+  <admin license="AL296-1"/>
+</station>
+
+<station frequency="107" band="vhf">
+  <name>Atlantic FM</name>
+  <location area="West Cornwall" ngr="SW690394" site="Redruth"/>
+  <technical rdspi="C8B5" switchpi="" tpta="Y" siteht="229" iuaerialht="95" iuerphp="2.15" iuerpvp="8.54" maxdir="135"/>
+  <admin license="AL296-1"/>
+</station>
+
+<station frequency="107.2" band="vhf">
+  <name>Awaz FM</name>
+  <location area="Glasgow" ngr="NS568645" site="Glasgow"/>
+  <technical rdspi="C491" switchpi="" tpta="N" siteht="5" iuaerialht="12" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR019"/>
+</station>
+
+<station frequency="102.4" band="vhf">
+  <name>Banbridge CR (Shine FM)</name>
+  <location area="Banbridge" ngr="IJ126460" site="Bridge Street"/>
+  <technical rdspi="" switchpi="" tpta="" siteht="60" iuaerialht="20" iuerphp="0" iuerpvp="0.021" maxdir=""/>
+  <admin license="CR048"/>
+</station>
+
+<station frequency="107.9" band="vhf">
+  <name>Bath FM</name>
+  <location area="Bath" ngr="ST769655" site="Bath"/>
+  <technical rdspi="C794" switchpi="" tpta="Y" siteht="168" iuaerialht="41" iuerphp="0.05" iuerpvp="0.05" maxdir="270"/>
+  <admin license="AL248-1"/>
+</station>
+
+<station frequency="106.6" band="vhf">
+  <name>BCB</name>
+  <location area="Bradford" ngr="SE164374" site="Idle"/>
+  <technical rdspi="C491" switchpi="" tpta="" siteht="215" iuaerialht="43" iuerphp="0.1" iuerpvp="0.1" maxdir="225"/>
+  <admin license="CR021"/>
+</station>
+
+<station frequency="107.4" band="vhf">
+  <name>BCRfm</name>
+  <location area="Bridgwater" ngr="ST294367" site="Bridgwater"/>
+  <technical rdspi="CA98" switchpi="" tpta="Y" siteht="12" iuaerialht="40" iuerphp="0" iuerpvp="0.083" maxdir=""/>
+  <admin license="AL260-1"/>
+</station>
+
+<station frequency="97.2" band="vhf">
+  <name>Beacon Radio</name>
+  <location area="Wolverhampton" ngr="SO967887" site="Turners Hill 2"/>
+  <technical rdspi="C6B1" switchpi="" tpta="Y" siteht="266" iuaerialht="75" iuerphp="1" iuerpvp="1" maxdir="325"/>
+  <admin license="AL119-2"/>
+</station>
+
+<station frequency="103.1" band="vhf">
+  <name>Beacon Radio</name>
+  <location area="Shrewsbury and Telford" ngr="SJ628082" site="The Wrekin"/>
+  <technical rdspi="C5B1" switchpi="" tpta="Y" siteht="388" iuaerialht="48" iuerphp="1.35" iuerpvp="1.35" maxdir="250"/>
+  <admin license="AL119-2"/>
+</station>
+
+<station frequency="103.2" band="vhf">
+  <name>Belfast West CR (Feile FM)</name>
+  <location area="West Belfast" ngr="IJ329747" site="Belfast West"/>
+  <technical rdspi="C680" switchpi="" tpta="Y" siteht="13" iuaerialht="70" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR043"/>
+</station>
+
+<station frequency="90.1" band="vhf">
+  <name>Bournemouth CR (Hope FM)</name>
+  <location area="Bournemouth" ngr="SZ073937" site="Poole House"/>
+  <technical rdspi="C580" switchpi="" tpta="" siteht="50" iuaerialht="31" iuerphp="0.011" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR086"/>
+</station>
+
+<station frequency="95.6" band="vhf">
+  <name>BR FM</name>
+  <location area="Sheppey" ngr="TQ968733" site="Minster"/>
+  <technical rdspi="" switchpi="" tpta="" siteht="39" iuaerialht="30" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR107"/>
+</station>
+
+<station frequency="98" band="vhf">
+  <name>Brentwood CR (Phoenix FM)</name>
+  <location area="Brentwood" ngr="TQ598935" site="Brentwood"/>
+  <technical rdspi="C480" switchpi="" tpta="Y" siteht="100" iuaerialht="20" iuerphp="0" iuerpvp="0.025" maxdir="30"/>
+  <admin license="CR075"/>
+</station>
+
+<station frequency="106.3" band="vhf">
+  <name>Bridge FM</name>
+  <location area="Bridgend" ngr="SS872855" site="Mynydd Baedan"/>
+  <technical rdspi="C59F" switchpi="" tpta="" siteht="245" iuaerialht="25" iuerphp="0.4" iuerpvp="0.5" maxdir="140"/>
+  <admin license="AL257-1"/>
+</station>
+
+<station frequency="106.4" band="vhf">
+  <name>Bright 106.4</name>
+  <location area="Haywards Heath" ngr="TQ338229" site="Haywards Heath"/>
+  <technical rdspi="C998" switchpi="" tpta="Y" siteht="81" iuaerialht="35" iuerphp="0.15" iuerpvp="0.24" maxdir="180"/>
+  <admin license="AL263-1"/>
+</station>
+
+<station frequency="106.8" band="vhf">
+  <name>Bright 106.4</name>
+  <location area="Lewes" ngr="TQ408099" site="Lewes County Hall"/>
+  <technical rdspi="C998" switchpi="" tpta="Y" siteht="32" iuaerialht="26" iuerphp="0.05" iuerpvp="0.05" maxdir=""/>
+  <admin license="AL263-1"/>
+</station>
+
+<station frequency="97.2" band="vhf">
+  <name>Brighton CR (Reverb)</name>
+  <location area="Brighton" ngr="TQ330051" site="Brighton Race Course"/>
+  <technical rdspi="C091" switchpi="" tpta="" siteht="115" iuaerialht="19" iuerphp="0.025" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR057"/>
+</station>
+
+<station frequency="93.2" band="vhf">
+  <name>Bristol CR</name>
+  <location area="Bristol" ngr="ST610731" site="Barton Hill"/>
+  <technical rdspi="C091" switchpi="" tpta="N" siteht="21" iuaerialht="44" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR078"/>
+</station>
+
+<station frequency="102.4" band="vhf">
+  <name>Broadland 102</name>
+  <location area="Great Yarmouth and Norwich" ngr="TG258026" site="Stoke Holy Cross"/>
+  <technical rdspi="C463" switchpi="" tpta="N" siteht="65" iuaerialht="105" iuerphp="1.65" iuerpvp="1.65" maxdir=""/>
+  <admin license="AL109-2"/>
+</station>
+
+<station frequency="107.7" band="vhf">
+  <name>Brunel FM</name>
+  <location area="Swindon" ngr="SU143900" site="Blunsdon"/>
+  <technical rdspi="C783" switchpi="" tpta="Y" siteht="148" iuaerialht="44" iuerphp="0.1" iuerpvp="0.1" maxdir="160"/>
+  <admin license="AL304-1"/>
+</station>
+
+<station frequency="97.3" band="vhf">
+  <name>Brynmawr CR (BRFM)</name>
+  <location area="Brynmawr" ngr="SO190123" site="Brynmawr"/>
+  <technical rdspi="C891" switchpi="" tpta="Y" siteht="386" iuaerialht="9" iuerphp="0.025" iuerpvp="0.025" maxdir="165"/>
+  <admin license="CR110"/>
+</station>
+
+<station frequency="106.8" band="vhf">
+  <name>Bulford CR (Salisbury Plain Army Radio)</name>
+  <location area="Bulford" ngr="SU195429" site="Bulford Camp"/>
+  <technical rdspi="" switchpi="" tpta="" siteht="181" iuaerialht="24" iuerphp="0" iuerpvp="0.025" maxdir="60"/>
+  <admin license="CR092"/>
+</station>
+
+<station frequency="94.7" band="vhf">
+  <name>Burnham-on-Crouch CR (Saint FM)</name>
+  <location area="Burnham-on-Crouch" ngr="TL923003" site="Mayland Hill"/>
+  <technical rdspi="C780" switchpi="" tpta="N" siteht="39" iuaerialht="20" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR106X"/>
+</station>
+
+<station frequency="105" band="vhf">
+  <name>Cambridge CR (209radio)</name>
+  <location area="Cambridge" ngr="TL455577" site="Cambridge"/>
+  <technical rdspi="C791" switchpi="" tpta="N" siteht="12" iuaerialht="40" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR095"/>
+</station>
+
+<station frequency="97.4" band="vhf">
+  <name>Canterbury CR (CSR)</name>
+  <location area="Canterbury" ngr="TR141596" site="Eliot College"/>
+  <technical rdspi="C991" switchpi="" tpta="" siteht="60" iuaerialht="18" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR066"/>
+</station>
+
+<station frequency="95.8" band="vhf">
+  <name>Capital FM</name>
+  <location area="London" ngr="TQ332696" site="Croydon"/>
+  <technical rdspi="C586" switchpi="" tpta="Y" siteht="114" iuaerialht="146" iuerphp="2" iuerpvp="2" maxdir=""/>
+  <admin license="AL067-2"/>
+</station>
+
+<station frequency="98.7" band="vhf">
+  <name>Cardiff CR (Beats FM)</name>
+  <location area="Cardiff" ngr="ST187752" site="Butetown"/>
+  <technical rdspi="C491" switchpi="" tpta="Y" siteht="4" iuaerialht="52" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR094"/>
+</station>
+
+<station frequency="97.5" band="vhf">
+  <name>Carmarthenshire FM</name>
+  <location area="Carmarthen" ngr="SN412213" site="Carmarthen"/>
+  <technical rdspi="C5B3" switchpi="" tpta="Y" siteht="137" iuaerialht="23" iuerphp="0.005" iuerpvp="0.005" maxdir="150"/>
+  <admin license="AL289-1"/>
+</station>
+
+<station frequency="97.1" band="vhf">
+  <name>Carmarthenshire FM</name>
+  <location area="Carmarthenshire" ngr="SN576153" site="Carmel"/>
+  <technical rdspi="C5B3" switchpi="" tpta="Y" siteht="259" iuaerialht="137" iuerphp="1.4" iuerpvp="1.6" maxdir="80"/>
+  <admin license="AL289-1"/>
+</station>
+
+<station frequency="104.7" band="vhf">
+  <name>Castledown Radio</name>
+  <location area="Tidworth (Ludgershall)" ngr="SU243517" site="Sunnyhill Farm"/>
+  <technical rdspi="" switchpi="" tpta="" siteht="139" iuaerialht="21" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR093"/>
+</station>
+
+<station frequency="103.1" band="vhf">
+  <name>Central FM</name>
+  <location area="Stirling" ngr="NS718884" site="Earls Hill"/>
+  <technical rdspi="CAB0" switchpi="" tpta="N" siteht="429" iuaerialht="36" iuerphp="0.25" iuerpvp="0.25" maxdir="65"/>
+  <admin license="AL047-3"/>
+</station>
+
+<station frequency="105.4" band="vhf">
+  <name>Century 105</name>
+  <location area="North West England" ngr="SD660144" site="Winter Hill"/>
+  <technical rdspi="C3AE" switchpi="" tpta="Y" siteht="438" iuaerialht="190" iuerphp="2.5" iuerpvp="2.5" maxdir="285"/>
+  <admin license="AL220-1"/>
+</station>
+
+<station frequency="96.2" band="vhf">
+  <name>Century Radio</name>
+  <location area="Fenham" ngr="NZ216648" site="Fenham"/>
+  <technical rdspi="C3A8" switchpi="" tpta="Y" siteht="120" iuaerialht="42" iuerphp="0" iuerpvp="0.05" maxdir="200"/>
+  <admin license="AL165-1"/>
+</station>
+
+<station frequency="96.4" band="vhf">
+  <name>Century Radio</name>
+  <location area="Hexham" ngr="NZ036653" site="Newton"/>
+  <technical rdspi="C3A8" switchpi="" tpta="Y" siteht="165" iuaerialht="25" iuerphp="0.1" iuerpvp="0.1" maxdir="260"/>
+  <admin license="AL165-1"/>
+</station>
+
+<station frequency="100.7" band="vhf">
+  <name>Century Radio</name>
+  <location area="North East England" ngr="SE553962" site="Bilsdale"/>
+  <technical rdspi="C3A8" switchpi="" tpta="Y" siteht="381" iuaerialht="259" iuerphp="4.5" iuerpvp="4" maxdir="330"/>
+  <admin license="AL165-1"/>
+</station>
+
+<station frequency="101.8" band="vhf">
+  <name>Century Radio</name>
+  <location area="North East England" ngr="NZ184474" site="Burnhope"/>
+  <technical rdspi="C3A8" switchpi="" tpta="Y" siteht="240" iuaerialht="205" iuerphp="4.25" iuerpvp="4.25" maxdir="20"/>
+  <admin license="AL165-1"/>
+</station>
+
+<station frequency="102.5" band="vhf">
+  <name>CFM</name>
+  <location area="Penrith" ngr="NY531313" site="Penrith"/>
+  <technical rdspi="C9B1" switchpi="" tpta="Y" siteht="263" iuaerialht="38" iuerphp="0.05" iuerpvp="0.05" maxdir="240"/>
+  <admin license="AL149-2"/>
+</station>
+
+<station frequency="102.2" band="vhf">
+  <name>CFM</name>
+  <location area="West Cumbria" ngr="NY058330" site="Broughton Moor"/>
+  <technical rdspi="C6B1" switchpi="" tpta="Y" siteht="125" iuaerialht="22.5" iuerphp="0.315" iuerpvp="0.5" maxdir="180"/>
+  <admin license="AL177-2"/>
+</station>
+
+<station frequency="96.4" band="vhf">
+  <name>CFM</name>
+  <location area="Carlisle" ngr="NY299425" site="Caldbeck"/>
+  <technical rdspi="C9B1" switchpi="" tpta="Y" siteht="289" iuaerialht="161" iuerphp="2" iuerpvp="1" maxdir="25"/>
+  <admin license="AL149-2"/>
+</station>
+
+<station frequency="103.4" band="vhf">
+  <name>CFM</name>
+  <location area="West Cumbria" ngr="NX992123" site="Whitehaven"/>
+  <technical rdspi="C6B1" switchpi="" tpta="Y" siteht="133" iuaerialht="38" iuerphp="0.2" iuerpvp="0.2" maxdir="60"/>
+  <admin license="AL177-2"/>
+</station>
+
+<station frequency="103" band="vhf">
+  <name>Champion FM</name>
+  <location area="Caernarfon" ngr="SH476493" site="Arfon"/>
+  <technical rdspi="C47A" switchpi="" tpta="Y" siteht="290" iuaerialht="259" iuerphp="2.5" iuerpvp="2.5" maxdir="170"/>
+  <admin license="AL222-1"/>
+</station>
+
+<station frequency="103.7" band="vhf">
+  <name>Channel 103FM</name>
+  <location area="Jersey" ngr="CI908280" site="Fremont Point"/>
+  <technical rdspi="C586" switchpi="" tpta="N" siteht="106" iuaerialht="73.7" iuerphp="2" iuerpvp="2" maxdir="175"/>
+  <admin license="AL143-2"/>
+</station>
+
+<station frequency="96.9" band="vhf">
+  <name>Choice FM</name>
+  <location area="Brixton" ngr="TQ339712" site="Crystal Palace"/>
+  <technical rdspi="C8B2" switchpi="" tpta="Y" siteht="110" iuaerialht="170" iuerphp="0" iuerpvp="0.03" maxdir="270"/>
+  <admin license="AL041-2"/>
+</station>
+
+<station frequency="107.1" band="vhf">
+  <name>Choice FM</name>
+  <location area="North London" ngr="TQ297901" site="Alexandra Palace"/>
+  <technical rdspi="C898" switchpi="" tpta="Y" siteht="93" iuaerialht="97" iuerphp="0" iuerpvp="0.1" maxdir="100"/>
+  <admin license="AL255-1"/>
+</station>
+
+<station frequency="102.8" band="vhf">
+  <name>Chorley FM</name>
+  <location area="Chorley" ngr="SD584174" site="Chorley"/>
+  <technical rdspi="CA91" switchpi="" tpta="" siteht="86" iuaerialht="30" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR025"/>
+</station>
+
+<station frequency="102.5" band="vhf">
+  <name>City Beat</name>
+  <location area="Newtownabbey" ngr="IJ336829" site="Carnmoney Hill"/>
+  <technical rdspi="" switchpi="" tpta="" siteht="197" iuaerialht="50" iuerphp="0" iuerpvp="0.02" maxdir=""/>
+  <admin license="AL042-2"/>
+</station>
+
+<station frequency="96.7" band="vhf">
+  <name>City Beat 96.7</name>
+  <location area="Belfast" ngr="IJ278727" site="Black Mountain"/>
+  <technical rdspi="C090" switchpi="" tpta="Y" siteht="301" iuaerialht="190" iuerphp="0.25" iuerpvp="0.3" maxdir="70"/>
+  <admin license="AL042-2"/>
+</station>
+
+<station frequency="96.7" band="vhf">
+  <name>City FM</name>
+  <location area="Mersey Tunnel" ngr="SJ340902" site="Mersey Tunnel"/>
+  <technical rdspi="C481" switchpi="" tpta="Y" siteht="0" iuaerialht="0" iuerphp="0.001" iuerpvp="0.001" maxdir=""/>
+  <admin license="AL097-2"/>
+</station>
+
+<station frequency="96.7" band="vhf">
+  <name>City FM</name>
+  <location area="Liverpool" ngr="SJ412866" site="Allerton Park"/>
+  <technical rdspi="C481" switchpi="" tpta="Y" siteht="68" iuaerialht="40" iuerphp="3.7" iuerpvp="4.1" maxdir="320"/>
+  <admin license="AL097-2"/>
+</station>
+
+<station frequency="105.9" band="vhf">
+  <name>City Talk</name>
+  <location area="Liverpool" ngr="SJ412866" site="Allerton Park"/>
+  <technical rdspi="CDB6" switchpi="" tpta="Y" siteht="69" iuaerialht="40" iuerphp="3.57" iuerpvp="4" maxdir="320"/>
+  <admin license="AL321-1"/>
+</station>
+
+<station frequency="101.8" band="vhf">
+  <name>Classic FM</name>
+  <location area="Reading" ngr="SU710762" site="Hemdean"/>
+  <technical rdspi="C2A1" switchpi="C7A1" tpta="Y" siteht="69" iuaerialht="33" iuerphp="0" iuerpvp="0.5" maxdir="210"/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="101.8" band="vhf">
+  <name>Classic FM</name>
+  <location area="Morecambe Bay" ngr="SD239791" site="Morecambe Bay"/>
+  <technical rdspi="C2A1" switchpi="C6A1" tpta="Y" siteht="259" iuaerialht="67.5" iuerphp="3.2" iuerpvp="3.2" maxdir="120"/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="101" band="vhf">
+  <name>Classic FM</name>
+  <location area="Newcastle" ngr="NZ216648" site="Fenham"/>
+  <technical rdspi="C2A1" switchpi="C6A1" tpta="Y" siteht="120" iuaerialht="43" iuerphp="0" iuerpvp="0.05" maxdir="200"/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="101.5" band="vhf">
+  <name>Classic FM</name>
+  <location area="Norfolk" ngr="TM131958" site="Tacolneston"/>
+  <technical rdspi="C2A1" switchpi="C7A1" tpta="Y" siteht="70" iuaerialht="134" iuerphp="125" iuerpvp="125" maxdir=""/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="101.6" band="vhf">
+  <name>Classic FM</name>
+  <location area="North Wales" ngr="SH766834" site="Great Ormes Head"/>
+  <technical rdspi="C2A1" switchpi="C6A1" tpta="Y" siteht="201" iuaerialht="17" iuerphp="0.5" iuerpvp="2" maxdir="170"/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="101.1" band="vhf">
+  <name>Classic FM</name>
+  <location area="West Yorkshire" ngr="SE095041" site="Holme Moss"/>
+  <technical rdspi="C2A1" switchpi="C6A1" tpta="Y" siteht="524" iuaerialht="200" iuerphp="125" iuerpvp="125" maxdir=""/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="100.7" band="vhf">
+  <name>Classic FM</name>
+  <location area="North West Wales" ngr="SH476493" site="Arfon"/>
+  <technical rdspi="C2A1" switchpi="C6A1" tpta="Y" siteht="290" iuaerialht="283" iuerphp="3.75" iuerpvp="15" maxdir="80"/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="100.5" band="vhf">
+  <name>Classic FM</name>
+  <location area="Grampian" ngr="NJ761330" site="Meldrum"/>
+  <technical rdspi="C2A1" switchpi="C5A1" tpta="Y" siteht="244" iuaerialht="117" iuerphp="75" iuerpvp="75" maxdir=""/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="101.9" band="vhf">
+  <name>Classic FM</name>
+  <location area="Northern Ireland" ngr="IJ287750" site="Divis"/>
+  <technical rdspi="C2A1" switchpi="C4A1" tpta="Y" siteht="366" iuaerialht="119" iuerphp="125" iuerpvp="125" maxdir="310"/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="100.1" band="vhf">
+  <name>Classic FM</name>
+  <location area="West Midlands" ngr="SK113003" site="Sutton Coldfield"/>
+  <technical rdspi="C2A1" switchpi="C7A1" tpta="Y" siteht="169" iuaerialht="200" iuerphp="125" iuerpvp="125" maxdir=""/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="101.3" band="vhf">
+  <name>Classic FM</name>
+  <location area="Oxfordshire" ngr="SP567105" site="Oxford"/>
+  <technical rdspi="C2A1" switchpi="C7A1" tpta="Y" siteht="130" iuaerialht="130" iuerphp="23" iuerpvp="23" maxdir=""/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="100.9" band="vhf">
+  <name>Classic FM</name>
+  <location area="Selkirk" ngr="NT500294" site="Selkirk"/>
+  <technical rdspi="C2A1" switchpi="C6A1" tpta="Y" siteht="288" iuaerialht="185" iuerphp="" iuerpvp="5.4" maxdir=""/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="101.7" band="vhf">
+  <name>Classic FM</name>
+  <location area="South Glamorgan" ngr="ST110742" site="Wenvoe"/>
+  <technical rdspi="C2A1" switchpi="C8A1" tpta="Y" siteht="128" iuaerialht="200" iuerphp="125" iuerpvp="125" maxdir=""/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="100.5" band="vhf">
+  <name>Classic FM</name>
+  <location area="South West Wales" ngr="SN172306" site="Presely"/>
+  <technical rdspi="C2A1" switchpi="C8A1" tpta="Y" siteht="324" iuaerialht="160" iuerphp="1.43" iuerpvp="5.7" maxdir="50"/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="101.7" band="vhf">
+  <name>Classic FM</name>
+  <location area="South Yorkshire" ngr="SK324870" site="Tapton Hill"/>
+  <technical rdspi="C2A1" switchpi="C6A1" tpta="Y" siteht="247" iuaerialht="37" iuerphp="0.25" iuerpvp="0.25" maxdir="70"/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="100.8" band="vhf">
+  <name>Classic FM</name>
+  <location area="Swindon" ngr="SU143900" site="Blunsdon"/>
+  <technical rdspi="C2A1" switchpi="C8A1" tpta="Y" siteht="147" iuaerialht="52" iuerphp="0.36" iuerpvp="0.36" maxdir=""/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="100.1" band="vhf">
+  <name>Classic FM</name>
+  <location area="Tayside" ngr="NO394407" site="Angus"/>
+  <technical rdspi="C2A1" switchpi="C5A1" tpta="Y" siteht="313" iuaerialht="165" iuerphp="2.1" iuerpvp="8.2" maxdir="120"/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="101.6" band="vhf">
+  <name>Classic FM</name>
+  <location area="Teeside" ngr="SE553962" site="Bilsdale"/>
+  <technical rdspi="C2A1" switchpi="C6A1" tpta="Y" siteht="381" iuaerialht="270" iuerphp="1" iuerpvp="1" maxdir="330"/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="101.3" band="vhf">
+  <name>Classic FM</name>
+  <location area="West Glamorgan" ngr="SS672940" site="Kilvey Hill"/>
+  <technical rdspi="C2A1" switchpi="C8A1" tpta="Y" siteht="193" iuaerialht="31" iuerphp="0.5" iuerpvp="0.5" maxdir="10"/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="101.4" band="vhf">
+  <name>Classic FM</name>
+  <location area="Moray Firth" ngr="NH639580" site="Mounteagle"/>
+  <technical rdspi="C2A1" switchpi="C5A1" tpta="Y" siteht="212" iuaerialht="206" iuerphp="2.2" iuerpvp="8.8" maxdir="100"/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="100.5" band="vhf">
+  <name>Classic FM</name>
+  <location area="Northern Ireland" ngr="IC405176" site="Londonderry"/>
+  <technical rdspi="C2A1" switchpi="C4A1" tpta="Y" siteht="175" iuaerialht="77" iuerphp="15.5" iuerpvp="15.5" maxdir="135"/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="101.4" band="vhf">
+  <name>Classic FM</name>
+  <location area="Bristol" ngr="ST610764" site="Pur Down"/>
+  <technical rdspi="C2A1" switchpi="C8A1" tpta="Y" siteht="91" iuaerialht="56" iuerphp="0.1" iuerpvp="0.1" maxdir="180"/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="101.3" band="vhf">
+  <name>Classic FM</name>
+  <location area="Ayrshire" ngr="NS557341" site="Darvel"/>
+  <technical rdspi="C2A1" switchpi="C5A1" tpta="Y" siteht="285" iuaerialht="120" iuerphp="4" iuerpvp="4" maxdir="240"/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="100.2" band="vhf">
+  <name>Classic FM</name>
+  <location area="Bath" ngr="ST769655" site="Bath"/>
+  <technical rdspi="C2A1" switchpi="C8A1" tpta="Y" siteht="168" iuaerialht="41" iuerphp="0.1" iuerpvp="0.1" maxdir="270"/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="100.4" band="vhf">
+  <name>Classic FM</name>
+  <location area="Bedford" ngr="SP914342" site="Bow Brickhill"/>
+  <technical rdspi="C2A1" switchpi="C7A1" tpta="Y" siteht="169" iuaerialht="54" iuerphp="5" iuerpvp="5" maxdir="120"/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="100.2" band="vhf">
+  <name>Classic FM</name>
+  <location area="Isle of Man" ngr="SC373746" site="Douglas"/>
+  <technical rdspi="C2A1" switchpi="" tpta="Y" siteht="150" iuaerialht="77" iuerphp="0.17" iuerpvp="0.68" maxdir="40"/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="101.9" band="vhf">
+  <name>Classic FM</name>
+  <location area="Brighton" ngr="TQ330045" site="Whitehawk Hill"/>
+  <technical rdspi="C2A1" switchpi="C8A1" tpta="Y" siteht="121" iuaerialht="39" iuerphp="0.2" iuerpvp="0.2" maxdir=""/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="100.9" band="vhf">
+  <name>Classic FM</name>
+  <location area="London" ngr="TQ595604" site="Wrotham"/>
+  <technical rdspi="C2A1" switchpi="C9A1" tpta="Y" siteht="219" iuaerialht="150" iuerphp="125" iuerpvp="125" maxdir=""/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="101.9" band="vhf">
+  <name>Classic FM</name>
+  <location area="Cambridgeshire" ngr="TL126913" site="Peterborough"/>
+  <technical rdspi="C2A1" switchpi="C7A1" tpta="Y" siteht="56" iuaerialht="133" iuerphp="14.5" iuerpvp="20" maxdir=""/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="101.1" band="vhf">
+  <name>Classic FM</name>
+  <location area="Cardigan Bay" ngr="SN569756" site="Blaen Plwyf"/>
+  <technical rdspi="C2A1" switchpi="C6A1" tpta="Y" siteht="177" iuaerialht="80" iuerphp="2" iuerpvp="8" maxdir="110"/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="101.5" band="vhf">
+  <name>Classic FM</name>
+  <location area="Cornwall" ngr="SW690394" site="Redruth"/>
+  <technical rdspi="C2A1" switchpi="C8A1" tpta="Y" siteht="229" iuaerialht="95" iuerphp="1.6" iuerpvp="6.5" maxdir="150"/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="100.6" band="vhf">
+  <name>Classic FM</name>
+  <location area="London" ngr="TQ339712" site="Crystal Palace"/>
+  <technical rdspi="C2A1" switchpi="C8A1" tpta="Y" siteht="110" iuaerialht="170" iuerphp="0" iuerpvp="2" maxdir="270"/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="100" band="vhf">
+  <name>Classic FM</name>
+  <location area="Devon" ngr="SX578742" site="North Hessary Tor"/>
+  <technical rdspi="C2A1" switchpi="C8A1" tpta="Y" siteht="511" iuaerialht="163" iuerphp="80" iuerpvp="80" maxdir=""/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="100.3" band="vhf">
+  <name>Classic FM</name>
+  <location area="Durham" ngr="NZ147527" site="Pontop Pike"/>
+  <technical rdspi="C2A1" switchpi="C6A1" tpta="Y" siteht="305" iuaerialht="90" iuerphp="65" iuerpvp="65" maxdir=""/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="101.7" band="vhf">
+  <name>Classic FM</name>
+  <location area="Glasgow" ngr="NS828647" site="Black Hill"/>
+  <technical rdspi="C2A1" switchpi="C5A1" tpta="Y" siteht="275" iuaerialht="200" iuerphp="125" iuerpvp="125" maxdir=""/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="100.4" band="vhf">
+  <name>Classic FM</name>
+  <location area="Hereford" ngr="SO630333" site="Ridge Hill"/>
+  <technical rdspi="C2A1" switchpi="C8A1" tpta="Y" siteht="204" iuaerialht="102" iuerphp="1" iuerpvp="3.9" maxdir=""/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="100.3" band="vhf">
+  <name>Classic FM</name>
+  <location area="Isle of Wight" ngr="SZ447865" site="Rowridge"/>
+  <technical rdspi="C2A1" switchpi="C8A1" tpta="Y" siteht="137" iuaerialht="90" iuerphp="125" iuerpvp="125" maxdir="330"/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="101.8" band="vhf">
+  <name>Classic FM</name>
+  <location area="Kent" ngr="TR274397" site="Dover"/>
+  <technical rdspi="C2A1" switchpi="" tpta="Y" siteht="135" iuaerialht="90" iuerphp="1" iuerpvp="4.2" maxdir="310"/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="101.6" band="vhf">
+  <name>Classic FM</name>
+  <location area="Leeds" ngr="SE237350" site="Beecroft Hill"/>
+  <technical rdspi="C2A1" switchpi="C6A1" tpta="Y" siteht="148" iuaerialht="41.5" iuerphp="0" iuerpvp="0.3" maxdir=""/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="100.5" band="vhf">
+  <name>Classic FM</name>
+  <location area="Lincolnshire" ngr="TF218836" site="Belmont"/>
+  <technical rdspi="C2A1" switchpi="C6A1" tpta="Y" siteht="128" iuaerialht="222" iuerphp="3.2" iuerpvp="3.2" maxdir=""/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="99.9" band="vhf">
+  <name>Classic FM</name>
+  <location area="Cumbria" ngr="NY266398" site="Sandale"/>
+  <technical rdspi="C2A1" switchpi="C6A1" tpta="Y" siteht="363" iuaerialht="134" iuerphp="125" iuerpvp="125" maxdir=""/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="100.3" band="vhf">
+  <name>Classic FM</name>
+  <location area="Bradford" ngr="SE164374" site="Idle"/>
+  <technical rdspi="C2A1" switchpi="" tpta="Y" siteht="214" iuaerialht="43" iuerphp="0.25" iuerpvp="0.25" maxdir="225"/>
+  <admin license="AN001-2"/>
+</station>
+
+<station frequency="97" band="vhf">
+  <name>Clyde 1</name>
+  <location area="Vale of Leven" ngr="NS378796" site="Millburn Muir"/>
+  <technical rdspi="C5B1" switchpi="" tpta="Y" siteht="152" iuaerialht="25" iuerphp="0.05" iuerpvp="0.05" maxdir="90"/>
+  <admin license="AL075-2"/>
+</station>
+
+<station frequency="102.3" band="vhf">
+  <name>Clyde 1</name>
+  <location area="Rothesay" ngr="NS125690" site="Rothesay"/>
+  <technical rdspi="C5B1" switchpi="" tpta="N" siteht="157" iuaerialht="30" iuerphp="0.3" iuerpvp="0.3" maxdir="155"/>
+  <admin license="AL075-2"/>
+</station>
+
+<station frequency="103.3" band="vhf">
+  <name>Clyde 1</name>
+  <location area="Rosneath" ngr="NS258811" site="Rosneath"/>
+  <technical rdspi="C5B1" switchpi="" tpta="Y" siteht="107" iuaerialht="78" iuerphp="0.05" iuerpvp="0.05" maxdir="120"/>
+  <admin license="AL075-2"/>
+</station>
+
+<station frequency="102.5" band="vhf">
+  <name>Clyde 1</name>
+  <location area="Glasgow" ngr="NS828647" site="Black Hill"/>
+  <technical rdspi="C5B1" switchpi="" tpta="Y" siteht="275" iuaerialht="228" iuerphp="5" iuerpvp="10" maxdir="260"/>
+  <admin license="AL075-2"/>
+</station>
+
+<station frequency="96.3" band="vhf">
+  <name>Coast FM</name>
+  <location area="North Wales Coast" ngr="SH766834" site="Great Ormes Head"/>
+  <technical rdspi="C47B" switchpi="" tpta="Y" siteht="203" iuaerialht="17" iuerphp="0.25" iuerpvp="1" maxdir="170"/>
+  <admin license="AL152-2"/>
+</station>
+
+<station frequency="107" band="vhf">
+  <name>Colchester Garrison FM</name>
+  <location area="Colchester" ngr="TL997246" site="Colchester Garrison"/>
+  <technical rdspi="C491" switchpi="" tpta="N" siteht="32" iuaerialht="18" iuerphp="0.018" iuerpvp="0.025" maxdir="340"/>
+  <admin license="CR058"/>
+</station>
+
+<station frequency="96.4" band="vhf">
+  <name>Compass FM</name>
+  <location area="Grimsby" ngr="TA279102" site="Bevan House"/>
+  <technical rdspi="C9B2" switchpi="" tpta="Y" siteht="4" iuaerialht="55" iuerphp="0" iuerpvp="0.1" maxdir="220"/>
+  <admin license="AL266-1"/>
+</station>
+
+<station frequency="107.4" band="vhf">
+  <name>Connect FM</name>
+  <location area="Kettering" ngr="SP907839" site="Geddington"/>
+  <technical rdspi="C3B8" switchpi="C4B8" tpta="N" siteht="118" iuaerialht="46" iuerphp="0" iuerpvp="0.2" maxdir="210"/>
+  <admin license="AL043-3"/>
+</station>
+
+<station frequency="97.2" band="vhf">
+  <name>Connect FM</name>
+  <location area="Wellingborough" ngr="SP891682" site="Wellingborough"/>
+  <technical rdspi="C3B8" switchpi="C6B8" tpta="N" siteht="70" iuaerialht="30" iuerphp="0" iuerpvp="0.05" maxdir="65"/>
+  <admin license="AL043-3"/>
+</station>
+
+<station frequency="97.4" band="vhf">
+  <name>Cool FM</name>
+  <location area="Belfast" ngr="IJ278727" site="Black Mountain"/>
+  <technical rdspi="C5B2" switchpi="" tpta="Y" siteht="301" iuaerialht="232" iuerphp="1.34" iuerpvp="1.84" maxdir="80"/>
+  <admin license="AL121-2"/>
+</station>
+
+<station frequency="97" band="vhf">
+  <name>Crescent Community Radio</name>
+  <location area="Rochdale" ngr="SD896126" site="Stoneyfield"/>
+  <technical rdspi="C991" switchpi="" tpta="N" siteht="143" iuaerialht="14" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR026"/>
+</station>
+
+<station frequency="101.8" band="vhf">
+  <name>Cross Rhythms City Radio</name>
+  <location area="Stoke On Trent" ngr="SJ917496" site="Stoke On Trent"/>
+  <technical rdspi="C491" switchpi="" tpta="" siteht="213" iuaerialht="31" iuerphp="0.012" iuerpvp="0.05" maxdir=""/>
+  <admin license="CR003"/>
+</station>
+
+<station frequency="105.6" band="vhf">
+  <name>CTR 105.6</name>
+  <location area="Maidstone" ngr="TQ742508" site="Coxheath"/>
+  <technical rdspi="C684" switchpi="" tpta="Y" siteht="130" iuaerialht="27" iuerphp="0" iuerpvp="0.25" maxdir="80"/>
+  <admin license="AL283-1"/>
+</station>
+
+<station frequency="106.2" band="vhf">
+  <name>cuillin fm</name>
+  <location area="Isle of Skye" ngr="NG482440" site="Portree"/>
+  <technical rdspi="CDB0" switchpi="" tpta="" siteht="46" iuaerialht="10" iuerphp="0" iuerpvp="0.027" maxdir="180"/>
+  <admin license="AL279-1"/>
+</station>
+
+<station frequency="102.7" band="vhf">
+  <name>Cuillin FM</name>
+  <location area="Skye &amp; Lochalsh" ngr="NG451408" site="Skriaig"/>
+  <technical rdspi="CDB0" switchpi="" tpta="" siteht="385" iuaerialht="48" iuerphp="3.8" iuerpvp="5.24" maxdir=""/>
+  <admin license="AL279-1"/>
+</station>
+
+<station frequency="107.6" band="vhf">
+  <name>Dawn FM</name>
+  <location area="Nottingham" ngr="SK582428" site="Mapperley"/>
+  <technical rdspi="C080" switchpi="" tpta="N" siteht="125" iuaerialht="14" iuerphp="0" iuerpvp="0.05" maxdir=""/>
+  <admin license="CR015"/>
+</station>
+
+<station frequency="102" band="vhf">
+  <name>Dearne FM</name>
+  <location area="Barnsley" ngr="SE390061" site="Ardsley"/>
+  <technical rdspi="C597" switchpi="" tpta="Y" siteht="102" iuaerialht="44" iuerphp="0.25" iuerpvp="0.2" maxdir=""/>
+  <admin license="AL280-1"/>
+</station>
+
+<station frequency="97.1" band="vhf">
+  <name>Dearne FM</name>
+  <location area="Barnsley" ngr="SE259045" site="Penistone"/>
+  <technical rdspi="C597" switchpi="" tpta="Y" siteht="270" iuaerialht="15" iuerphp="0" iuerpvp="0.05" maxdir="180"/>
+  <admin license="AL280-1"/>
+</station>
+
+<station frequency="106.3" band="vhf">
+  <name>Dee 106.3</name>
+  <location area="Chester" ngr="SJ413666" site="The Steam Mill"/>
+  <technical rdspi="C797" switchpi="" tpta="" siteht="25" iuaerialht="41" iuerphp="0.1" iuerpvp="0.1" maxdir="0"/>
+  <admin license="AL274-1"/>
+</station>
+
+<station frequency="102" band="vhf">
+  <name>Delta FM 102</name>
+  <location area="Alton" ngr="SU723428" site="Brockham Hill"/>
+  <technical rdspi="C8B6" switchpi="" tpta="Y" siteht="210" iuaerialht="28" iuerphp="0.05" iuerpvp="0.05" maxdir="140"/>
+  <admin license="AL146-2"/>
+</station>
+
+<station frequency="101.6" band="vhf">
+  <name>Delta FM 102</name>
+  <location area="Four Marks" ngr="SU665366" site="Four Marks"/>
+  <technical rdspi="C8B6" switchpi="" tpta="Y" siteht="220" iuaerialht="16" iuerphp="0.05" iuerpvp="0.05" maxdir="250"/>
+  <admin license="AL146-2"/>
+</station>
+
+<station frequency="97.1" band="vhf">
+  <name>Delta FM 97.1</name>
+  <location area="Haslemere" ngr="SU886331" site="Haslemere"/>
+  <technical rdspi="C8B6" switchpi="" tpta="Y" siteht="167" iuaerialht="30" iuerphp="0.025" iuerpvp="0.25" maxdir="160"/>
+  <admin license="AL146-2"/>
+</station>
+
+<station frequency="101.6" band="vhf">
+  <name>Delta FM 97.1</name>
+  <location area="Hindhead" ngr="SU886356" site="Hindhead"/>
+  <technical rdspi="C8B6" switchpi="" tpta="Y" siteht="245" iuaerialht="15" iuerphp="0" iuerpvp="0.065" maxdir="270"/>
+  <admin license="AL146-2"/>
+</station>
+
+<station frequency="101.8" band="vhf">
+  <name>Delta FM 97.1</name>
+  <location area="Petersfield" ngr="SU748233" site="Rams Walk"/>
+  <technical rdspi="C8B6" switchpi="" tpta="Y" siteht="61" iuaerialht="20" iuerphp="0" iuerpvp="0.1" maxdir="0"/>
+  <admin license="AL146-2"/>
+</station>
+
+<station frequency="102.8" band="vhf">
+  <name>Derby's Ram FM</name>
+  <location area="Derby" ngr="SK375421" site="Drum Hill"/>
+  <technical rdspi="C37C" switchpi="C47C" tpta="Y" siteht="156" iuaerialht="27" iuerphp="0.35" iuerpvp="0.575" maxdir=""/>
+  <admin license="AL107-2B"/>
+</station>
+
+<station frequency="101.8" band="vhf">
+  <name>Dewsbury CR (Branch FM)</name>
+  <location area="Dewsbury" ngr="SE252230" site="Dewsbury"/>
+  <technical rdspi="C580" switchpi="" tpta="N" siteht="133" iuaerialht="12" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR085"/>
+</station>
+
+<station frequency="105" band="vhf">
+  <name>Down FM</name>
+  <location area="Downpatrick" ngr="IJ498441" site="Downpatrick"/>
+  <technical rdspi="C491" switchpi="" tpta="N" siteht="58" iuaerialht="20" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR047"/>
+</station>
+
+<station frequency="103.1" band="vhf">
+  <name>Downtown Radio</name>
+  <location area="South Newry" ngr="IJ055246" site="Camlough"/>
+  <technical rdspi="CC86" switchpi="" tpta="Y" siteht="340" iuaerialht="18.5" iuerphp="0.9" iuerpvp="0.9" maxdir="0"/>
+  <admin license="AL121-2"/>
+</station>
+
+<station frequency="102.3" band="vhf">
+  <name>Downtown Radio</name>
+  <location area="Ballymena" ngr="ID008028" site="Portglenone"/>
+  <technical rdspi="CC86" switchpi="" tpta="Y" siteht="180" iuaerialht="18" iuerphp="0.1" iuerpvp="0.4" maxdir="60"/>
+  <admin license="AL121-2"/>
+</station>
+
+<station frequency="97.1" band="vhf">
+  <name>Downtown Radio</name>
+  <location area="Larne" ngr="ID395037" site="Larne"/>
+  <technical rdspi="CC86" switchpi="" tpta="Y" siteht="119" iuaerialht="41" iuerphp="0.04" iuerpvp="0.04" maxdir="210"/>
+  <admin license="AL121-2"/>
+</station>
+
+<station frequency="96.4" band="vhf">
+  <name>Downtown Radio</name>
+  <location area="Limavady" ngr="IC711296" site="Limavady"/>
+  <technical rdspi="CC86" switchpi="" tpta="Y" siteht="350" iuaerialht="28" iuerphp="1" iuerpvp="1" maxdir="105"/>
+  <admin license="AL121-2"/>
+</station>
+
+<station frequency="102.4" band="vhf">
+  <name>Downtown Radio</name>
+  <location area="Londonderry" ngr="IC405176" site="Londonderry"/>
+  <technical rdspi="CC86" switchpi="" tpta="Y" siteht="175" iuaerialht="77" iuerphp="5" iuerpvp="5" maxdir="130"/>
+  <admin license="AL121-2"/>
+</station>
+
+<station frequency="103.4" band="vhf">
+  <name>Downtown Radio</name>
+  <location area="Newcastle" ngr="IJ362302" site="Newcastle"/>
+  <technical rdspi="CC86" switchpi="" tpta="Y" siteht="250" iuaerialht="25" iuerphp="0.1" iuerpvp="0.1" maxdir="20"/>
+  <admin license="AL121-2"/>
+</station>
+
+<station frequency="96.6" band="vhf">
+  <name>Downtown Radio</name>
+  <location area="Omagh and Enniskillen" ngr="IH350527" site="Brougher Mountain"/>
+  <technical rdspi="CC86" switchpi="" tpta="Y" siteht="305" iuaerialht="46" iuerphp="3.2" iuerpvp="5" maxdir=""/>
+  <admin license="AL121-2"/>
+</station>
+
+<station frequency="100.2" band="vhf">
+  <name>Dream 100 FM</name>
+  <location area="Tendring" ngr="TM192187" site="Telstar Nurseries"/>
+  <technical rdspi="CAB6" switchpi="" tpta="Y" siteht="10" iuaerialht="45" iuerphp="1" iuerpvp="1" maxdir="310"/>
+  <admin license="AL054-3"/>
+</station>
+
+<station frequency="107.7" band="vhf">
+  <name>Dream 107.7</name>
+  <location area="Chelmsford" ngr="TL779050" site="Church Green"/>
+  <technical rdspi="CCB6" switchpi="" tpta="Y" siteht="107" iuaerialht="30" iuerphp="0" iuerpvp="0.1" maxdir=""/>
+  <admin license="AL221-1"/>
+</station>
+
+<station frequency="107.9" band="vhf">
+  <name>Dune FM</name>
+  <location area="Southport" ngr="SD400076" site="Gaw Hill"/>
+  <technical rdspi="C592" switchpi="" tpta="Y" siteht="70" iuaerialht="30" iuerphp="0.1" iuerpvp="0.1" maxdir="320"/>
+  <admin license="AL203-1"/>
+</station>
+
+<station frequency="106.8" band="vhf">
+  <name>Durham FM</name>
+  <location area="Durham" ngr="NZ206249" site="Brusselton"/>
+  <technical rdspi="" switchpi="" tpta="" siteht="212" iuaerialht="35" iuerphp="0.1" iuerpvp="0.1" maxdir="350"/>
+  <admin license="AL297-1"/>
+</station>
+
+<station frequency="102.8" band="vhf">
+  <name>Durham FM</name>
+  <location area="Durham" ngr="NZ184474" site="Burnhope"/>
+  <technical rdspi="C683" switchpi="" tpta="Y" siteht="240" iuaerialht="152" iuerphp="0.25" iuerpvp="0.25" maxdir="150"/>
+  <admin license="AL297-1"/>
+</station>
+
+<station frequency="98.5" band="vhf">
+  <name>Edinburgh Garrison FM</name>
+  <location area="Edinburgh South" ngr="NT227683" site="Dreghorn Barracks"/>
+  <technical rdspi="C591" switchpi="" tpta="" siteht="160" iuaerialht="20" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR079"/>
+</station>
+
+<station frequency="93.4" band="vhf">
+  <name>Energy FM</name>
+  <location area="Isle of Man" ngr="SC365991" site="Jurby"/>
+  <technical rdspi="CA80" switchpi="" tpta="" siteht="27" iuaerialht="25" iuerphp="0.366" iuerpvp="1.836" maxdir="150"/>
+  <admin license="IOM_Energy"/>
+</station>
+
+<station frequency="98.4" band="vhf">
+  <name>Energy FM</name>
+  <location area="Isle of Man" ngr="SC449945" site="Ramsey"/>
+  <technical rdspi="CA80" switchpi="" tpta="" siteht="1" iuaerialht="20" iuerphp="0.009" iuerpvp="0.014" maxdir=""/>
+  <admin license="IOM_Energy"/>
+</station>
+
+<station frequency="91.2" band="vhf">
+  <name>Energy FM</name>
+  <location area="Isle of Man" ngr="SC396881" site="Snaefell"/>
+  <technical rdspi="CA80" switchpi="" tpta="" siteht="610" iuaerialht="25" iuerphp="0.2" iuerpvp="1.244" maxdir="30"/>
+  <admin license="IOM_Energy"/>
+</station>
+
+<station frequency="98.6" band="vhf">
+  <name>Energy FM</name>
+  <location area="Isle of Man" ngr="SC373746" site="Carnane"/>
+  <technical rdspi="CA80" switchpi="" tpta="Y" siteht="150" iuaerialht="57" iuerphp="0.75" iuerpvp="1.1" maxdir="315"/>
+  <admin license="IOM_Energy"/>
+</station>
+
+<station frequency="102.4" band="vhf">
+  <name>Energy FM</name>
+  <location area="Isle of Man" ngr="SC295832" site="Beary Peark"/>
+  <technical rdspi="CA80" switchpi="" tpta="" siteht="280" iuaerialht="10" iuerphp="0" iuerpvp="0.044" maxdir="280"/>
+  <admin license="IOM_Energy"/>
+</station>
+
+<station frequency="105.2" band="vhf">
+  <name>Energy FM</name>
+  <location area="Isle of Man" ngr="SC472908" site="Ballasaig"/>
+  <technical rdspi="CA80" switchpi="" tpta="" siteht="189" iuaerialht="22" iuerphp="0.01" iuerpvp="0.04" maxdir="270"/>
+  <admin license="IOM_Energy"/>
+</station>
+
+<station frequency="105.2" band="vhf">
+  <name>Energy FM</name>
+  <location area="Isle of Man" ngr="SC197678" site="The Howe"/>
+  <technical rdspi="CA80" switchpi="" tpta="Y" siteht="100" iuaerialht="6" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="IOM_Energy"/>
+</station>
+
+<station frequency="102.6" band="vhf">
+  <name>Essex Radio</name>
+  <location area="Chelmsford" ngr="TL660034" site="Bakers Wood"/>
+  <technical rdspi="C364" switchpi="C464" tpta="Y" siteht="90" iuaerialht="55" iuerphp="1" iuerpvp="1" maxdir=""/>
+  <admin license="AL006-2"/>
+</station>
+
+<station frequency="96.3" band="vhf">
+  <name>Essex Radio</name>
+  <location area="Southend" ngr="TQ790867" site="Benfleet"/>
+  <technical rdspi="C364" switchpi="C564" tpta="Y" siteht="80" iuaerialht="49" iuerphp="0.4" iuerpvp="0.63" maxdir=""/>
+  <admin license="AL006-2"/>
+</station>
+
+<station frequency="97.5" band="vhf">
+  <name>Essex Radio</name>
+  <location area="Southend Town" ngr="TQ882857" site="Maitland House"/>
+  <technical rdspi="C364" switchpi="C664" tpta="Y" siteht="20" iuaerialht="43" iuerphp="0.013" iuerpvp="0.05" maxdir="0"/>
+  <admin license="AL006-2"/>
+</station>
+
+<station frequency="93.7" band="vhf">
+  <name>Express FM</name>
+  <location area="Portsmouth" ngr="SZ645999" site="Ladywood House"/>
+  <technical rdspi="CA94" switchpi="" tpta="Y" siteht="4" iuaerialht="79" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR006"/>
+</station>
+
+<station frequency="97.1" band="vhf">
+  <name>Faza AWP</name>
+  <location area="Nottingham" ngr="SK582428" site="Mapperley"/>
+  <technical rdspi="C491" switchpi="" tpta="" siteht="125" iuaerialht="14" iuerphp="0" iuerpvp="0.05" maxdir=""/>
+  <admin license="CR014"/>
+</station>
+
+<station frequency="107.5" band="vhf">
+  <name>Fen Radio 107.5</name>
+  <location area="Wisbech" ngr="TF465047" site="Friday Bridge"/>
+  <technical rdspi="C798" switchpi="" tpta="Y" siteht="4" iuaerialht="45" iuerphp="0" iuerpvp="0.1" maxdir="85"/>
+  <admin license="AL246-1"/>
+</station>
+
+<station frequency="107.6" band="vhf">
+  <name>Fire 107.6 FM</name>
+  <location area="Bournemouth" ngr="SZ043951" site="West Howe"/>
+  <technical rdspi="C49F" switchpi="" tpta="Y" siteht="63" iuaerialht="42.7" iuerphp="0.5" iuerpvp="0.5" maxdir="160"/>
+  <admin license="AL240-1"/>
+</station>
+
+<station frequency="103.3" band="vhf">
+  <name>FM 103 Horizon</name>
+  <location area="Milton Keynes" ngr="SP914342" site="Bow Brickhill"/>
+  <technical rdspi="CC86" switchpi="" tpta="Y" siteht="163" iuaerialht="45" iuerphp="1" iuerpvp="1" maxdir="305"/>
+  <admin license="AL126-3"/>
+</station>
+
+<station frequency="92.3" band="vhf">
+  <name>Forest FM</name>
+  <location area="Verwood" ngr="SU103081" site="Enterprise Park"/>
+  <technical rdspi="C491" switchpi="" tpta="" siteht="28" iuaerialht="15" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR063"/>
+</station>
+
+<station frequency="97.6" band="vhf">
+  <name>Forth FM</name>
+  <location area="Edinburgh" ngr="NS828647" site="Black Hill"/>
+  <technical rdspi="C4B1" switchpi="" tpta="Y" siteht="275" iuaerialht="225" iuerphp="0" iuerpvp="0.1" maxdir="75"/>
+  <admin license="AL099-2"/>
+</station>
+
+<station frequency="97.3" band="vhf">
+  <name>Forth FM</name>
+  <location area="Edinburgh" ngr="NT233872" site="Craigkelly"/>
+  <technical rdspi="C4B1" switchpi="" tpta="Y" siteht="182" iuaerialht="119" iuerphp="4.9" iuerpvp="4.9" maxdir="255"/>
+  <admin license="AL099-2"/>
+</station>
+
+<station frequency="102.2" band="vhf">
+  <name>Forth FM</name>
+  <location area="Penicuik" ngr="NT252590" site="Penicuik"/>
+  <technical rdspi="C4B1" switchpi="" tpta="Y" siteht="249" iuaerialht="40" iuerphp="0.25" iuerpvp="0.25" maxdir="355"/>
+  <admin license="AL099-2"/>
+</station>
+
+<station frequency="107.9" band="vhf">
+  <name>Fosseway</name>
+  <location area="Hinckley" ngr="SP452970" site="Barwell"/>
+  <technical rdspi="C5B9" switchpi="" tpta="Y" siteht="125" iuaerialht="30" iuerphp="0.1" iuerpvp="0.1" maxdir="220"/>
+  <admin license="AL231-1"/>
+</station>
+
+<station frequency="102.6" band="vhf">
+  <name>Fox FM</name>
+  <location area="Oxford" ngr="SP567105" site="Oxford"/>
+  <technical rdspi="C4B7" switchpi="" tpta="Y" siteht="130" iuaerialht="130" iuerphp="4.5" iuerpvp="4.5" maxdir=""/>
+  <admin license="AL127-3"/>
+</station>
+
+<station frequency="97.4" band="vhf">
+  <name>Fox FM</name>
+  <location area="Banbury" ngr="SP532387" site="Farthinghoe"/>
+  <technical rdspi="C5B7" switchpi="" tpta="N" siteht="157" iuaerialht="46" iuerphp="0.15" iuerpvp="0.15" maxdir=""/>
+  <admin license="AL127-3"/>
+</station>
+
+<station frequency="102.6" band="vhf">
+  <name>Fresh Radio</name>
+  <location area="Richmond" ngr="NZ168017" site="Richmond"/>
+  <technical rdspi="CD98" switchpi="" tpta="Y" siteht="212" iuaerialht="20" iuerphp="0" iuerpvp="0.1" maxdir="270"/>
+  <admin license="AL192-1"/>
+</station>
+
+<station frequency="107.1" band="vhf">
+  <name>Fresh Radio</name>
+  <location area="Ilkley" ngr="SE135478" site="Ben Rhydding"/>
+  <technical rdspi="CE98" switchpi="" tpta="Y" siteht="86" iuaerialht="15" iuerphp="0" iuerpvp="0.05" maxdir=""/>
+  <admin license="AL192-1"/>
+</station>
+
+<station frequency="107.1" band="vhf">
+  <name>Fresh Radio</name>
+  <location area="Pateley Bridge" ngr="SE161658" site="Pateley Bridge"/>
+  <technical rdspi="CE98" switchpi="" tpta="Y" siteht="165" iuaerialht="13" iuerphp="0" iuerpvp="0.045" maxdir=""/>
+  <admin license="AL192-1"/>
+</station>
+
+<station frequency="102" band="vhf">
+  <name>Galaxy 102</name>
+  <location area="Manchester" ngr="SJ844983" site="Sunley Building"/>
+  <technical rdspi="C4AA" switchpi="" tpta="Y" siteht="44" iuaerialht="129" iuerphp="0.5" iuerpvp="0.5" maxdir=""/>
+  <admin license="AL033-2"/>
+</station>
+
+<station frequency="102.2" band="vhf">
+  <name>Galaxy 102.2</name>
+  <location area="Birmingham" ngr="SP055862" site="Metropolitan House"/>
+  <technical rdspi="C5AA" switchpi="" tpta="Y" siteht="152" iuaerialht="66" iuerphp="0.5" iuerpvp="0.5" maxdir="60"/>
+  <admin license="AL046-2"/>
+</station>
+
+<station frequency="105.6" band="vhf">
+  <name>Galaxy 105</name>
+  <location area="Bradford" ngr="SE164374" site="Idle"/>
+  <technical rdspi="C3AA" switchpi="C6AA" tpta="Y" siteht="216" iuaerialht="43" iuerphp="0.25" iuerpvp="0.25" maxdir="225"/>
+  <admin license="AL190-1"/>
+</station>
+
+<station frequency="105.8" band="vhf">
+  <name>Galaxy 105</name>
+  <location area="North Humberside" ngr="SE946350" site="High Hunsley"/>
+  <technical rdspi="C3AA" switchpi="C7AA" tpta="Y" siteht="164" iuaerialht="64.5" iuerphp="4.6" iuerpvp="5" maxdir="135"/>
+  <admin license="AL190-1"/>
+</station>
+
+<station frequency="105.6" band="vhf">
+  <name>Galaxy 105</name>
+  <location area="Sheffield" ngr="SK324870" site="Tapton Hill"/>
+  <technical rdspi="C3AA" switchpi="C6AA" tpta="Y" siteht="247" iuaerialht="37" iuerphp="0.125" iuerpvp="0.125" maxdir=""/>
+  <admin license="AL190-1"/>
+</station>
+
+<station frequency="105.1" band="vhf">
+  <name>Galaxy 105</name>
+  <location area="Yorkshire" ngr="SE222128" site="Emley Moor"/>
+  <technical rdspi="C3AA" switchpi="C6AA" tpta="Y" siteht="256" iuaerialht="305" iuerphp="0.47" iuerpvp="1.88" maxdir="65"/>
+  <admin license="AL190-1"/>
+</station>
+
+<station frequency="105.8" band="vhf">
+  <name>Galaxy 105-106</name>
+  <location area="Hexham" ngr="NZ036653" site="Newton"/>
+  <technical rdspi="C4AF" switchpi="" tpta="Y" siteht="165" iuaerialht="29" iuerphp="0.1" iuerpvp="0.1" maxdir="260"/>
+  <admin license="AL236-1"/>
+</station>
+
+<station frequency="105.6" band="vhf">
+  <name>Galaxy 105-106</name>
+  <location area="North East England" ngr="NZ216648" site="Fenham"/>
+  <technical rdspi="C4AF" switchpi="" tpta="Y" siteht="120" iuaerialht="42" iuerphp="0" iuerpvp="0.05" maxdir="200"/>
+  <admin license="AL236-1"/>
+</station>
+
+<station frequency="106.4" band="vhf">
+  <name>Galaxy 105-106</name>
+  <location area="North East England" ngr="SE553962" site="Bilsdale"/>
+  <technical rdspi="C4AF" switchpi="" tpta="Y" siteht="381" iuaerialht="270" iuerphp="4.45" iuerpvp="4.45" maxdir="330"/>
+  <admin license="AL236-1"/>
+</station>
+
+<station frequency="105.3" band="vhf">
+  <name>Galaxy 105-106</name>
+  <location area="North East England" ngr="NZ184474" site="Burnhope"/>
+  <technical rdspi="C4AF" switchpi="" tpta="Y" siteht="240" iuaerialht="205" iuerphp="4.2" iuerpvp="4.2" maxdir="20"/>
+  <admin license="AL236-1"/>
+</station>
+
+<station frequency="103" band="vhf">
+  <name>Gemini FM</name>
+  <location area="East Devon" ngr="ST222014" site="Stockland Hill"/>
+  <technical rdspi="C4B0" switchpi="" tpta="Y" siteht="229" iuaerialht="205" iuerphp="0.5" iuerpvp="0.5" maxdir="220"/>
+  <admin license="AL032-2"/>
+</station>
+
+<station frequency="97" band="vhf">
+  <name>Gemini FM</name>
+  <location area="Exeter" ngr="SX898922" site="Exeter (St Thomas)"/>
+  <technical rdspi="C4B0" switchpi="" tpta="Y" siteht="99" iuaerialht="40" iuerphp="0.45" iuerpvp="0.55" maxdir="50"/>
+  <admin license="AL032-2"/>
+</station>
+
+<station frequency="96.4" band="vhf">
+  <name>Gemini FM</name>
+  <location area="Torbay" ngr="SX857619" site="Beacon Hill A"/>
+  <technical rdspi="C8B0" switchpi="" tpta="Y" siteht="188" iuaerialht="78" iuerphp="0.8" iuerpvp="0.8" maxdir="45"/>
+  <admin license="AL032-2   "/>
+</station>
+
+<station frequency="96.6" band="vhf">
+  <name>GFM</name>
+  <location area="Gloucester" ngr="SO835189" site="Clapham Court"/>
+  <technical rdspi="C691" switchpi="" tpta="N" siteht="15" iuaerialht="36" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR054"/>
+</station>
+
+<station frequency="103.5" band="vhf">
+  <name>Glasgow CR (Sunny Govan)</name>
+  <location area="Glasgow" ngr="NS536640" site="Glasgow"/>
+  <technical rdspi="C480" switchpi="" tpta="" siteht="42" iuaerialht="37" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR018"/>
+</station>
+
+<station frequency="97.2" band="vhf">
+  <name>GWR FM (East)</name>
+  <location area="Swindon" ngr="SU143900" site="Blunsdon"/>
+  <technical rdspi="CB86" switchpi="" tpta="N" siteht="147" iuaerialht="52" iuerphp="0.35" iuerpvp="0.35" maxdir=""/>
+  <admin license="AL065-2"/>
+</station>
+
+<station frequency="102.2" band="vhf">
+  <name>GWR FM (East)</name>
+  <location area="West Wiltshire" ngr="ST947686" site="Naish Hill"/>
+  <technical rdspi="CB86" switchpi="" tpta="Y" siteht="177" iuaerialht="62" iuerphp="0.24" iuerpvp="0.24" maxdir=""/>
+  <admin license="AL065-2"/>
+</station>
+
+<station frequency="96.5" band="vhf">
+  <name>GWR FM (East)</name>
+  <location area="Marlborough" ngr="SU209688" site="Marlborough"/>
+  <technical rdspi="CB86" switchpi="" tpta="N" siteht="198" iuaerialht="37" iuerphp="0.02" iuerpvp="0.03" maxdir="290"/>
+  <admin license="AL065-2"/>
+</station>
+
+<station frequency="103" band="vhf">
+  <name>GWR FM (West)</name>
+  <location area="Bath" ngr="ST769655" site="Bath"/>
+  <technical rdspi="CD86" switchpi="" tpta="N" siteht="168" iuaerialht="41" iuerphp="0.04" iuerpvp="0.04" maxdir="270"/>
+  <admin license="AL016-2"/>
+</station>
+
+<station frequency="96.3" band="vhf">
+  <name>GWR FM (West)</name>
+  <location area="Bristol" ngr="ST551669" site="Dundry"/>
+  <technical rdspi="CC86" switchpi="" tpta="N" siteht="233" iuaerialht="22" iuerphp="1" iuerpvp="1" maxdir="30"/>
+  <admin license="AL016-2"/>
+</station>
+
+<station frequency="103" band="vhf">
+  <name>GWR FM (West)</name>
+  <location area="Weston-Super-Mare" ngr="ST325627" site="Worlebury Hill"/>
+  <technical rdspi="CF86" switchpi="" tpta="N" siteht="102" iuaerialht="38" iuerphp="0.05" iuerpvp="0.05" maxdir="135"/>
+  <admin license="AL016-2"/>
+</station>
+
+<station frequency="96.7" band="vhf">
+  <name>Halifax CR (Phoenix)</name>
+  <location area="Halifax" ngr="SE103242" site="Halifax"/>
+  <technical rdspi="C0B1" switchpi="" tpta="N" siteht="246" iuaerialht="36" iuerphp="0" iuerpvp="0.025" maxdir="316"/>
+  <admin license="CR022X"/>
+</station>
+
+<station frequency="102.9" band="vhf">
+  <name>Hallam FM</name>
+  <location area="Barnsley" ngr="SE390061" site="Ardsley"/>
+  <technical rdspi="C5B0" switchpi="" tpta="Y" siteht="102" iuaerialht="44" iuerphp="0.25" iuerpvp="0.2" maxdir=""/>
+  <admin license="AL093-2"/>
+</station>
+
+<station frequency="103.4" band="vhf">
+  <name>Hallam FM</name>
+  <location area="Doncaster" ngr="SK518959" site="Clifton"/>
+  <technical rdspi="C5B0" switchpi="" tpta="Y" siteht="138" iuaerialht="52" iuerphp="0.6" iuerpvp="1" maxdir="70"/>
+  <admin license="AL093-2"/>
+</station>
+
+<station frequency="97.4" band="vhf">
+  <name>Hallam FM</name>
+  <location area="Sheffield" ngr="SK324870" site="Tapton Hill"/>
+  <technical rdspi="C5B0" switchpi="" tpta="Y" siteht="247" iuaerialht="37" iuerphp="0.2" iuerpvp="0.2" maxdir=""/>
+  <admin license="AL093-2"/>
+</station>
+
+<station frequency="103.6" band="vhf">
+  <name>Harlesden CR (Life FM)</name>
+  <location area="Harlesden" ngr="TQ206838" site="Harlesden"/>
+  <technical rdspi="" switchpi="" tpta="" siteht="31" iuaerialht="18" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR068"/>
+</station>
+
+<station frequency="92.2" band="vhf">
+  <name>Harold Hill CR (Link FM)</name>
+  <location area="Havering" ngr="TQ552925" site="Harold Hill"/>
+  <technical rdspi="CA91" switchpi="" tpta="N" siteht="73" iuaerialht="30" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR076"/>
+</station>
+
+<station frequency="91.8" band="vhf">
+  <name>Hayes CR (Hayes FM)</name>
+  <location area="London Hayes" ngr="TQ098796" site="St Anselms Church"/>
+  <technical rdspi="C082" switchpi="" tpta="Y" siteht="32" iuaerialht="20" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR073"/>
+</station>
+
+<station frequency="106.2" band="vhf">
+  <name>Heart 106.2</name>
+  <location area="London" ngr="TQ332696" site="Croydon"/>
+  <technical rdspi="C3A6" switchpi="" tpta="Y" siteht="114" iuaerialht="146" iuerphp="2" iuerpvp="2" maxdir=""/>
+  <admin license="AL174-1"/>
+</station>
+
+<station frequency="106" band="vhf">
+  <name>Heart FM</name>
+  <location area="East Midlands" ngr="SK483126" site="Copt Oak"/>
+  <technical rdspi="C3AB" switchpi="" tpta="Y" siteht="240" iuaerialht="71" iuerphp="4" iuerpvp="4" maxdir="65"/>
+  <admin license="AL200-1"/>
+</station>
+
+<station frequency="97.5" band="vhf">
+  <name>Heartland Radio</name>
+  <location area="Pitlochry and Aberfeldy" ngr="NN993583" site="Faire Mhor"/>
+  <technical rdspi="C890" switchpi="" tpta="N" siteht="480" iuaerialht="34" iuerphp="0.18" iuerpvp="0.18" maxdir=""/>
+  <admin license="AL133-2"/>
+</station>
+
+<station frequency="102.5" band="vhf">
+  <name>Hedge End CR (Skyline)</name>
+  <location area="Botley" ngr="SU519134" site="Hillsons Road"/>
+  <technical rdspi="C591" switchpi="" tpta="Y" siteht="15" iuaerialht="18" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR009"/>
+</station>
+
+<station frequency="106.7" band="vhf">
+  <name>Hertbeat FM</name>
+  <location area="Stevenage" ngr="TL231208" site="Old Knebworth"/>
+  <technical rdspi="C899" switchpi="" tpta="Y" siteht="125" iuaerialht="13" iuerphp="0" iuerpvp="0.1" maxdir="0"/>
+  <admin license="AL259-1"/>
+</station>
+
+<station frequency="106.9" band="vhf">
+  <name>Hertbeat FM</name>
+  <location area="Hertford" ngr="TL287116" site="Cole Green"/>
+  <technical rdspi="C899" switchpi="" tpta="Y" siteht="70" iuaerialht="20" iuerphp="0.047" iuerpvp="0.233" maxdir="0"/>
+  <admin license="AL259-1"/>
+</station>
+
+<station frequency="106.9" band="vhf">
+  <name>Hertbeat FM</name>
+  <location area="Hitchin and Letchworth" ngr="TL206308" site="Letchworth"/>
+  <technical rdspi="C899" switchpi="" tpta="Y" siteht="92" iuaerialht="6" iuerphp="0" iuerpvp="0.05" maxdir=""/>
+  <admin license="AL259-1"/>
+</station>
+
+<station frequency="103.3" band="vhf">
+  <name>High Peak Radio</name>
+  <location area="Buxton" ngr="SK177842" site="Hope Valley"/>
+  <technical rdspi="C999" switchpi="" tpta="Y" siteht="220" iuaerialht="15" iuerphp="0" iuerpvp="0.1" maxdir=""/>
+  <admin license="AL286-1"/>
+</station>
+
+<station frequency="106.4" band="vhf">
+  <name>High Peak Radio</name>
+  <location area="Buxton" ngr="SK027953" site="Glossop"/>
+  <technical rdspi="C999" switchpi="" tpta="Y" siteht="273" iuaerialht="40" iuerphp="0" iuerpvp="0.25" maxdir="115"/>
+  <admin license="AL286-1"/>
+</station>
+
+<station frequency="106.4" band="vhf">
+  <name>High Peak Radio</name>
+  <location area="Buxton" ngr="SK060753" site="Buxton"/>
+  <technical rdspi="C999" switchpi="" tpta="Y" siteht="416" iuaerialht="22" iuerphp="0" iuerpvp="0.25" maxdir=""/>
+  <admin license="AL286-1"/>
+</station>
+
+<station frequency="103.3" band="vhf">
+  <name>High Peak Radio</name>
+  <location area="Buxton" ngr="SK026833" site="Buxworth"/>
+  <technical rdspi="C999" switchpi="" tpta="Y" siteht="320" iuaerialht="25" iuerphp="0" iuerpvp="0.17" maxdir="120"/>
+  <admin license="AL286-1"/>
+</station>
+
+<station frequency="106.6" band="vhf">
+  <name>High Peak Radio</name>
+  <location area="Buxton" ngr="SK064809" site="Chapel-en-le-Frith"/>
+  <technical rdspi="C999" switchpi="" tpta="Y" siteht="213" iuaerialht="10" iuerphp="0" iuerpvp="0.07" maxdir="290"/>
+  <admin license="AL286-1"/>
+</station>
+
+<station frequency="107.9" band="vhf">
+  <name>Home FM</name>
+  <location area="Huddersfield" ngr="SE124197" site="Ainley Top"/>
+  <technical rdspi="C593" switchpi="" tpta="Y" siteht="257" iuaerialht="34" iuerphp="0.1" iuerpvp="0.1" maxdir="160"/>
+  <admin license="AL204-1"/>
+</station>
+
+<station frequency="96.4" band="vhf">
+  <name>ILR Dundee FM -  Tay Bridge Relay</name>
+  <location area="Dundee" ngr="NO430284" site="Tay Bridge"/>
+  <technical rdspi="" switchpi="" tpta="" siteht="101" iuaerialht="41" iuerphp="0.05" iuerpvp="0.05" maxdir=""/>
+  <admin license="AL028-2"/>
+</station>
+
+<station frequency="104.9" band="vhf">
+  <name>Imagine FM</name>
+  <location area="Stockport" ngr="SJ954904" site="Romiley"/>
+  <technical rdspi="C590" switchpi="" tpta="N" siteht="120" iuaerialht="44" iuerphp="0.32" iuerpvp="0.32" maxdir="260"/>
+  <admin license="AL038-3"/>
+</station>
+
+<station frequency="95.9" band="vhf">
+  <name>Invicta FM</name>
+  <location area="East Kent" ngr="TR366678" site="Thanet"/>
+  <technical rdspi="C886" switchpi="" tpta="Y" siteht="49" iuaerialht="48" iuerphp="0.135" iuerpvp="0.135" maxdir=""/>
+  <admin license="AL113-2"/>
+</station>
+
+<station frequency="103.1" band="vhf">
+  <name>Invicta FM</name>
+  <location area="Maidstone and Medway" ngr="TQ757613" site="Bluebell Hill"/>
+  <technical rdspi="C886" switchpi="" tpta="Y" siteht="189" iuaerialht="46" iuerphp="2" iuerpvp="2" maxdir=""/>
+  <admin license="AL113-2"/>
+</station>
+
+<station frequency="96.1" band="vhf">
+  <name>Invicta FM</name>
+  <location area="East Kent (Ashford)" ngr="TR066472" site="Wye"/>
+  <technical rdspi="C886" switchpi="" tpta="Y" siteht="99" iuaerialht="37" iuerphp="0.125" iuerpvp="0.1" maxdir="240"/>
+  <admin license="AL113-2"/>
+</station>
+
+<station frequency="97" band="vhf">
+  <name>Invicta FM</name>
+  <location area="East Kent" ngr="TR274397" site="Dover"/>
+  <technical rdspi="C886" switchpi="" tpta="Y" siteht="135" iuaerialht="100" iuerphp="0.25" iuerpvp="0.25" maxdir="350"/>
+  <admin license="AL113-2"/>
+</station>
+
+<station frequency="102.8" band="vhf">
+  <name>Invicta FM</name>
+  <location area="East Kent (Canterbury)" ngr="TR078590" site="Dunkirk"/>
+  <technical rdspi="C886" switchpi="" tpta="Y" siteht="122" iuaerialht="97" iuerphp="0.5" iuerpvp="0.5" maxdir=""/>
+  <admin license="AL113-2"/>
+</station>
+
+<station frequency="105.7" band="vhf">
+  <name>Ipswich Community Radio</name>
+  <location area="Ipswich" ngr="TM169443" site="Suffolk College"/>
+  <technical rdspi="C691" switchpi="" tpta="N" siteht="6" iuaerialht="28" iuerphp="0" iuerpvp="0.015" maxdir=""/>
+  <admin license="CR087"/>
+</station>
+
+<station frequency="93.7" band="vhf">
+  <name>Island FM</name>
+  <location area="Alderney" ngr="CI868805" site="Fort Albert"/>
+  <technical rdspi="C6B2" switchpi="" tpta="" siteht="52" iuaerialht="20" iuerphp="0" iuerpvp="0.01" maxdir=""/>
+  <admin license="AL142-2"/>
+</station>
+
+<station frequency="104.7" band="vhf">
+  <name>Island FM</name>
+  <location area="Guernsey" ngr="CI582511" site="Les Touillets"/>
+  <technical rdspi="C6B2" switchpi="" tpta="" siteht="76" iuaerialht="46" iuerphp="0.25" iuerpvp="1" maxdir="130"/>
+  <admin license="AL142-2"/>
+</station>
+
+<station frequency="107" band="vhf">
+  <name>Isle of Wight Radio</name>
+  <location area="Isle of Wight" ngr="SZ475835" site="Chillerton Down"/>
+  <technical rdspi="C8B7" switchpi="" tpta="N" siteht="166" iuaerialht="206" iuerphp="0.02" iuerpvp="0.08" maxdir="7"/>
+  <admin license="AL044-3"/>
+</station>
+
+<station frequency="102" band="vhf">
+  <name>Isle of Wight Radio</name>
+  <location area="Ryde" ngr="SZ593937" site="Ryde Pier"/>
+  <technical rdspi="C8B7" switchpi="" tpta="N" siteht="7" iuaerialht="13" iuerphp="0" iuerpvp="0.02" maxdir="165"/>
+  <admin license="AL044-3"/>
+</station>
+
+<station frequency="102" band="vhf">
+  <name>Isle of Wight Radio</name>
+  <location area="Cowes" ngr="SZ501958" site="Cowes (GKN)"/>
+  <technical rdspi="C8B7" switchpi="" tpta="N" siteht="0" iuaerialht="20" iuerphp="0" iuerpvp="0.007" maxdir=""/>
+  <admin license="AL044-3"/>
+</station>
+
+<station frequency="102" band="vhf">
+  <name>Isle of Wight Radio</name>
+  <location area="Ventnor" ngr="SZ567783" site="Ventnor"/>
+  <technical rdspi="C8B7" switchpi="" tpta="N" siteht="229" iuaerialht="40" iuerphp="0.023" iuerpvp="0.025" maxdir="260"/>
+  <admin license="AL044-3"/>
+</station>
+
+<station frequency="103" band="vhf">
+  <name>Isles FM</name>
+  <location area="Isle of Lewis" ngr="NB306305" site="Eitshal"/>
+  <technical rdspi="C7B2" switchpi="" tpta="Y" siteht="247" iuaerialht="24" iuerphp="2" iuerpvp="2" maxdir="45"/>
+  <admin license="AL202-1"/>
+</station>
+
+<station frequency="107.9" band="vhf">
+  <name>Isles of Scilly CR (Radio Scilly)</name>
+  <location area="Isles of Scilly" ngr="SV912121" site="Marine and Coastguard Agency"/>
+  <technical rdspi="" switchpi="" tpta="" siteht="50" iuaerialht="14" iuerphp="0" iuerpvp="0.1" maxdir="280"/>
+  <admin license="CR030"/>
+</station>
+
+<station frequency="106.6" band="vhf">
+  <name>Ivel FM</name>
+  <location area="Chard" ngr="ST384096" site="Windwhistle"/>
+  <technical rdspi="C6B9" switchpi="" tpta="Y" siteht="215" iuaerialht="60" iuerphp="0" iuerpvp="0.25" maxdir=""/>
+  <admin license="AL281-1"/>
+</station>
+
+<station frequency="105.6" band="vhf">
+  <name>Ivel FM</name>
+  <location area="Yeovil" ngr="ST509133" site="Coker Hill"/>
+  <technical rdspi="C6B9" switchpi="" tpta="Y" siteht="134" iuaerialht="26" iuerphp="0" iuerpvp="0.25" maxdir=""/>
+  <admin license="AL281-1"/>
+</station>
+
+<station frequency="106.4" band="vhf">
+  <name>Jack FM</name>
+  <location area="Bicester" ngr="SP592231" site="Bicester"/>
+  <technical rdspi="C48C" switchpi="" tpta="" siteht="70" iuaerialht="17" iuerphp="0" iuerpvp="0.03" maxdir="140"/>
+  <admin license="AL320-1"/>
+</station>
+
+<station frequency="106.8" band="vhf">
+  <name>Jack FM</name>
+  <location area="Oxford" ngr="SP483029" site="Boars Hill"/>
+  <technical rdspi="C48C" switchpi="" tpta="" siteht="161" iuaerialht="51" iuerphp="0.046" iuerpvp="0.23" maxdir="0"/>
+  <admin license="AL320-1"/>
+</station>
+
+<station frequency="107.2" band="vhf">
+  <name>Juice 107.2</name>
+  <location area="Brighton" ngr="TQ304041" site="Sussex Heights"/>
+  <technical rdspi="C099" switchpi="" tpta="Y" siteht="19" iuaerialht="122" iuerphp="0.1" iuerpvp="0.1" maxdir="0"/>
+  <admin license="AL211-1"/>
+</station>
+
+<station frequency="107.6" band="vhf">
+  <name>Juice FM</name>
+  <location area="Liverpool" ngr="SJ354894" site="Liverpool Cathedral"/>
+  <technical rdspi="C098" switchpi="" tpta="Y" siteht="37" iuaerialht="109" iuerphp="0.1" iuerpvp="0.1" maxdir="60"/>
+  <admin license="AL207-1"/>
+</station>
+
+<station frequency="99.8" band="vhf">
+  <name>KCFM 99.8</name>
+  <location area="Kingston-Upon-Hull" ngr="TA025253" site="Humber Bridge - North Pier"/>
+  <technical rdspi="CA82" switchpi="" tpta="Y" siteht="0" iuaerialht="164" iuerphp="0.25" iuerpvp="0.5" maxdir="0"/>
+  <admin license="AL315-1"/>
+</station>
+
+<station frequency="106.7" band="vhf">
+  <name>KCR 106.7</name>
+  <location area="Knowsley" ngr="SJ442908" site="Knowsley"/>
+  <technical rdspi="C49C" switchpi="" tpta="Y" siteht="31" iuaerialht="57" iuerphp="0.015" iuerpvp="0.1" maxdir="70"/>
+  <admin license="AL262-1"/>
+</station>
+
+<station frequency="105.2" band="vhf">
+  <name>Kerrang!</name>
+  <location area="West Midlands" ngr="SK113003" site="Sutton Coldfield"/>
+  <technical rdspi="C4B3" switchpi="" tpta="Y" siteht="169" iuaerialht="159" iuerphp="5.5" iuerpvp="5.5" maxdir="210"/>
+  <admin license="AL288-1"/>
+</station>
+
+<station frequency="107.6" band="vhf">
+  <name>Kestrel</name>
+  <location area="Basingstoke" ngr="SU649527" site="Fanum House (AA)"/>
+  <technical rdspi="C09C" switchpi="" tpta="Y" siteht="87" iuaerialht="88" iuerphp="0" iuerpvp="0.1" maxdir="270"/>
+  <admin license="AL212-1"/>
+</station>
+
+<station frequency="103" band="vhf">
+  <name>Key 103</name>
+  <location area="Manchester" ngr="SD987050" site="Saddleworth"/>
+  <technical rdspi="C584" switchpi="" tpta="Y" siteht="347" iuaerialht="40" iuerphp="2" iuerpvp="2" maxdir="260"/>
+  <admin license="AL079-2"/>
+</station>
+
+<station frequency="107.4" band="vhf">
+  <name>Kick FM</name>
+  <location area="Hungerford" ngr="SU338674" site="Hungerford"/>
+  <technical rdspi="C699" switchpi="" tpta="Y" siteht="126" iuaerialht="17" iuerphp="0" iuerpvp="0.025" maxdir="0"/>
+  <admin license="AL256-1"/>
+</station>
+
+<station frequency="105.6" band="vhf">
+  <name>Kick FM</name>
+  <location area="Newbury" ngr="SU452648" site="Newbury"/>
+  <technical rdspi="C699" switchpi="" tpta="Y" siteht="120" iuaerialht="34" iuerphp="0" iuerpvp="0.1" maxdir="10"/>
+  <admin license="AL256-1"/>
+</station>
+
+<station frequency="95.2" band="vhf">
+  <name>Kingdom FM</name>
+  <location area="Dunfermline" ngr="NT054937" site="Knock Hill"/>
+  <technical rdspi="C9B7" switchpi="" tpta="Y" siteht="364" iuaerialht="27" iuerphp="0.1" iuerpvp="0.1" maxdir="100"/>
+  <admin license="AL223-1"/>
+</station>
+
+<station frequency="96.6" band="vhf">
+  <name>Kingdom FM</name>
+  <location area="Kirkcaldy" ngr="NT289926" site="Kirkcaldy"/>
+  <technical rdspi="C9B7" switchpi="" tpta="Y" siteht="40" iuaerialht="50" iuerphp="0" iuerpvp="0.01" maxdir=""/>
+  <admin license="AL223-1"/>
+</station>
+
+<station frequency="96.1" band="vhf">
+  <name>Kingdom FM</name>
+  <location area="Glenrothes" ngr="NO252059" site="Purin Hill"/>
+  <technical rdspi="C9B7" switchpi="" tpta="Y" siteht="337" iuaerialht="22" iuerphp="0.25" iuerpvp="0.25" maxdir="170"/>
+  <admin license="AL223-1"/>
+</station>
+
+<station frequency="106.3" band="vhf">
+  <name>Kingdom FM</name>
+  <location area="Fife" ngr="NO568088" site="East Neuk"/>
+  <technical rdspi="C9B7" switchpi="" tpta="" siteht="115" iuaerialht="17" iuerphp="0" iuerpvp="0.15" maxdir=""/>
+  <admin license="AL223-1"/>
+</station>
+
+<station frequency="105.4" band="vhf">
+  <name>Kingdom FM</name>
+  <location area="Fife" ngr="NO520141" site="Allanhill Farm"/>
+  <technical rdspi="C9B7" switchpi="" tpta="Y" siteht="116" iuaerialht="20" iuerphp="0" iuerpvp="0.1" maxdir=""/>
+  <admin license="AL223-1"/>
+</station>
+
+<station frequency="105.6" band="vhf">
+  <name>Kiss</name>
+  <location area="Cambridge" ngr="TL392594" site="Madingley"/>
+  <technical rdspi="C3AC" switchpi="" tpta="Y" siteht="64" iuaerialht="43" iuerphp="0.5" iuerpvp="0.5" maxdir="90"/>
+  <admin license="AL208-1"/>
+</station>
+
+<station frequency="106.4" band="vhf">
+  <name>Kiss</name>
+  <location area="Ipswich" ngr="TM122641" site="Mendlesham"/>
+  <technical rdspi="C3AC" switchpi="" tpta="Y" siteht="64" iuaerialht="292" iuerphp="10" iuerpvp="10" maxdir="330"/>
+  <admin license="AL208-1"/>
+</station>
+
+<station frequency="106.1" band="vhf">
+  <name>Kiss</name>
+  <location area="Norwich" ngr="TG258026" site="Stoke Holy Cross"/>
+  <technical rdspi="C3AC" switchpi="" tpta="Y" siteht="65" iuaerialht="95" iuerphp="2" iuerpvp="2" maxdir="330"/>
+  <admin license="AL208-1"/>
+</station>
+
+<station frequency="107.7" band="vhf">
+  <name>Kiss</name>
+  <location area="Peterborough" ngr="TF187036" site="Gunthorpe"/>
+  <technical rdspi="C3AC" switchpi="" tpta="Y" siteht="3" iuaerialht="79" iuerphp="0.1" iuerpvp="0.1" maxdir=""/>
+  <admin license="AL208-1"/>
+</station>
+
+<station frequency="100" band="vhf">
+  <name>Kiss 100 FM</name>
+  <location area="London" ngr="TQ332696" site="Croydon"/>
+  <technical rdspi="C483" switchpi="" tpta="N" siteht="114" iuaerialht="146" iuerphp="2" iuerpvp="2" maxdir=""/>
+  <admin license="AL053-2"/>
+</station>
+
+<station frequency="97.2" band="vhf">
+  <name>Kiss 101</name>
+  <location area="Bristol" ngr="ST610764" site="Pur Down"/>
+  <technical rdspi="C3A5" switchpi="" tpta="Y" siteht="91" iuaerialht="56" iuerphp="0.1" iuerpvp="0.1" maxdir="180"/>
+  <admin license="AL167-1"/>
+</station>
+
+<station frequency="101" band="vhf">
+  <name>Kiss 101</name>
+  <location area="Severn Estuary" ngr="ST563488" site="Mendip"/>
+  <technical rdspi="C3A5" switchpi="" tpta="Y" siteht="302" iuaerialht="265" iuerphp="20" iuerpvp="20" maxdir="310"/>
+  <admin license="AL167-1"/>
+</station>
+
+<station frequency="96.7" band="vhf">
+  <name>KLFM 96.7</name>
+  <location area="Kings Lynn" ngr="TF789229" site="Great Massingham"/>
+  <technical rdspi="C6B5" switchpi="" tpta="N" siteht="92" iuaerialht="42.5" iuerphp="1" iuerpvp="2" maxdir="167"/>
+  <admin license="AL134-2"/>
+</station>
+
+<station frequency="107.9" band="vhf">
+  <name>KM-fm</name>
+  <location area="Medway" ngr="TQ776667" site="Gillingham"/>
+  <technical rdspi="C692" switchpi="" tpta="N" siteht="78" iuaerialht="23" iuerphp="0" iuerpvp="0.1" maxdir=""/>
+  <admin license="AL195-1"/>
+</station>
+
+<station frequency="100.4" band="vhf">
+  <name>KM-fm</name>
+  <location area="Medway" ngr="TQ774731" site="Hoo St Werburgh"/>
+  <technical rdspi="C692" switchpi="" tpta="Y" siteht="61" iuaerialht="25" iuerphp="0.025" iuerpvp="0.025" maxdir=""/>
+  <admin license="AL195-1"/>
+</station>
+
+<station frequency="101.6" band="vhf">
+  <name>KM-fm</name>
+  <location area="Sevenoaks" ngr="TQ595604" site="Wrotham"/>
+  <technical rdspi="CA92" switchpi="" tpta="Y" siteht="219" iuaerialht="170" iuerphp="0.2" iuerpvp="0.2" maxdir="160"/>
+  <admin license="AL180-2"/>
+</station>
+
+<station frequency="96.2" band="vhf">
+  <name>KM-fm</name>
+  <location area="Tonbridge" ngr="TQ607440" site="Tunbridge Wells"/>
+  <technical rdspi="CA92" switchpi="" tpta="Y" siteht="122" iuaerialht="45" iuerphp="0.04" iuerpvp="0.15" maxdir="270"/>
+  <admin license="AL180-2"/>
+</station>
+
+<station frequency="106" band="vhf">
+  <name>KM-FM 106</name>
+  <location area="Canterbury" ngr="TR124597" site="Rough Common"/>
+  <technical rdspi="C492" switchpi="" tpta="Y" siteht="74" iuaerialht="56" iuerphp="0" iuerpvp="0.1" maxdir=""/>
+  <admin license="AL201-1"/>
+</station>
+
+<station frequency="107.6" band="vhf">
+  <name>KM-FM Ashford</name>
+  <location area="Ashford" ngr="TR011429" site="Charter House"/>
+  <technical rdspi="CC92" switchpi="" tpta="Y" siteht="54" iuaerialht="41" iuerphp="0.25" iuerpvp="0.25" maxdir=""/>
+  <admin license="AL293-1"/>
+</station>
+
+<station frequency="96.4" band="vhf">
+  <name>KM-FM for Folkstone and Dover</name>
+  <location area="Folkestone" ngr="TR229382" site="Creteway Down"/>
+  <technical rdspi="CD92" switchpi="" tpta="Y" siteht="166" iuaerialht="40" iuerphp="0" iuerpvp="0.1" maxdir="252"/>
+  <admin license="AL205-1"/>
+</station>
+
+<station frequency="106.8" band="vhf">
+  <name>KM-FM for Folkstone and Dover</name>
+  <location area="Dover" ngr="TR320436" site="Guston"/>
+  <technical rdspi="CD92" switchpi="" tpta="Y" siteht="123" iuaerialht="38" iuerphp="0" iuerpvp="0.1" maxdir="312"/>
+  <admin license="AL205-1"/>
+</station>
+
+<station frequency="107.5" band="vhf">
+  <name>L107</name>
+  <location area="Cumbernauld" ngr="NS765750" site="Cumbernauld"/>
+  <technical rdspi="C793" switchpi="" tpta="Y" siteht="141" iuaerialht="71" iuerphp="0" iuerpvp="0.05" maxdir="210"/>
+  <admin license="AL250-1"/>
+</station>
+
+<station frequency="107.9" band="vhf">
+  <name>L107</name>
+  <location area="Lanarkshire" ngr="NS695531" site="Hamilton"/>
+  <technical rdspi="C793" switchpi="" tpta="" siteht="189" iuaerialht="25" iuerphp="0.1" iuerpvp="0.1" maxdir="70"/>
+  <admin license="AL250-1"/>
+</station>
+
+<station frequency="100.1" band="vhf">
+  <name>Lakeland Radio</name>
+  <location area="Kendal" ngr="SD540912" site="Kendal"/>
+  <technical rdspi="C990" switchpi="" tpta="Y" siteht="177" iuaerialht="44" iuerphp="0.1" iuerpvp="0.1" maxdir="280"/>
+  <admin license="AL267-1"/>
+</station>
+
+<station frequency="100.8" band="vhf">
+  <name>Lakeland Radio</name>
+  <location area="Windermere" ngr="SD383980" site="Windermere"/>
+  <technical rdspi="C990" switchpi="" tpta="Y" siteht="217" iuaerialht="22.5" iuerphp="0.025" iuerpvp="0.1" maxdir="335"/>
+  <admin license="AL267-1"/>
+</station>
+
+<station frequency="96.2" band="vhf">
+  <name>Lantern Radio</name>
+  <location area="Barnstaple" ngr="SS527220" site="Huntshaw Cross"/>
+  <technical rdspi="C4B6" switchpi="" tpta="N" siteht="201" iuaerialht="125" iuerphp="0.5" iuerpvp="2" maxdir="330"/>
+  <admin license="AL140-2"/>
+</station>
+
+<station frequency="97.3" band="vhf">
+  <name>Lantern Radio</name>
+  <location area="Ilfracombe" ngr="SS507465" site="Ilfracombe"/>
+  <technical rdspi="C4B6" switchpi="" tpta="N" siteht="203" iuaerialht="19" iuerphp="0.05" iuerpvp="0.05" maxdir="30"/>
+  <admin license="AL140-2"/>
+</station>
+
+<station frequency="97.3" band="vhf">
+  <name>LBC 97.3</name>
+  <location area="London" ngr="TQ332696" site="Croydon"/>
+  <technical rdspi="C581" switchpi="" tpta="Y" siteht="114" iuaerialht="146" iuerphp="2" iuerpvp="2" maxdir=""/>
+  <admin license="AL008-2"/>
+</station>
+
+<station frequency="107.3" band="vhf">
+  <name>Leeds CR (Asian Fever)</name>
+  <location area="Leeds (Harehills&amp;Chapeltown)" ngr="SE318357" site="Roundhay Road"/>
+  <technical rdspi="C081" switchpi="" tpta="" siteht="48" iuaerialht="18" iuerphp="0" iuerpvp="0.025" maxdir="270"/>
+  <admin license="CR031"/>
+</station>
+
+<station frequency="105.4" band="vhf">
+  <name>Leicester Sound FM</name>
+  <location area="Leicester" ngr="SK725050" site="Billesdon"/>
+  <technical rdspi="C366" switchpi="C466" tpta="Y" siteht="220" iuaerialht="45" iuerphp="1" iuerpvp="4" maxdir="310"/>
+  <admin license="AL059-2"/>
+</station>
+
+<station frequency="98.8" band="vhf">
+  <name>Leith FM</name>
+  <location area="Leith" ngr="NT270760" site="Leith"/>
+  <technical rdspi="C080" switchpi="" tpta="" siteht="8" iuaerialht="60" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR080"/>
+</station>
+
+<station frequency="103.3" band="vhf">
+  <name>LGR</name>
+  <location area="Haringey" ngr="TQ297901" site="Alexandra Palace"/>
+  <technical rdspi="C092" switchpi="" tpta="N" siteht="93" iuaerialht="97" iuerphp="0" iuerpvp="0.05" maxdir="100"/>
+  <admin license="AL036-3"/>
+</station>
+
+<station frequency="107.3" band="vhf">
+  <name>Lincoln CR ( Siren FM)</name>
+  <location area="Lincoln" ngr="SK970711" site="Lincoln University"/>
+  <technical rdspi="C691" switchpi="" tpta="" siteht="4" iuaerialht="21" iuerphp="0" iuerpvp="0.025" maxdir="270"/>
+  <admin license="CR088"/>
+</station>
+
+<station frequency="96.7" band="vhf">
+  <name>Lincs FM</name>
+  <location area="Grantham" ngr="SK905337" site="Grantham"/>
+  <technical rdspi="C4B9" switchpi="" tpta="Y" siteht="115" iuaerialht="17" iuerphp="0" iuerpvp="0.05" maxdir="17"/>
+  <admin license="AL132-2"/>
+</station>
+
+<station frequency="102.2" band="vhf">
+  <name>Lincs FM</name>
+  <location area="Lincoln" ngr="TF218836" site="Belmont"/>
+  <technical rdspi="C4B9" switchpi="" tpta="Y" siteht="128" iuaerialht="222" iuerphp="3.2" iuerpvp="3.2" maxdir=""/>
+  <admin license="AL132-2"/>
+</station>
+
+<station frequency="97.6" band="vhf">
+  <name>Lincs FM</name>
+  <location area="Scunthorpe" ngr="SE882092" site="Trent View Flats"/>
+  <technical rdspi="C4B9" switchpi="" tpta="Y" siteht="42" iuaerialht="44" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="AL132-2"/>
+</station>
+
+<station frequency="100.6" band="vhf">
+  <name>Lisburn CR (BFBS Lisburn)</name>
+  <location area="Lisburn" ngr="IJ262659" site="BFBS Lisburn"/>
+  <technical rdspi="C497" switchpi="" tpta="N" siteht="73" iuaerialht="58" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR045"/>
+</station>
+
+<station frequency="106.8" band="vhf">
+  <name>Lite FM</name>
+  <location area="Peterborough" ngr="TF187036" site="Gunthorpe"/>
+  <technical rdspi="C599" switchpi="" tpta="Y" siteht="3" iuaerialht="79" iuerphp="0.1" iuerpvp="0.1" maxdir=""/>
+  <admin license="AL245-1"/>
+</station>
+
+<station frequency="96.8" band="vhf">
+  <name>Lochbroom FM</name>
+  <location area="Ullapool" ngr="NB999109" site="Polbain"/>
+  <technical rdspi="CEB1" switchpi="" tpta="N" siteht="160" iuaerialht="25" iuerphp="0" iuerpvp="0.5" maxdir=""/>
+  <admin license="AL198-1"/>
+</station>
+
+<station frequency="102.2" band="vhf">
+  <name>Lochbroom FM</name>
+  <location area="Ullapool" ngr="NH142935" site="Ullapool"/>
+  <technical rdspi="CEB1" switchpi="" tpta="N" siteht="150" iuaerialht="23" iuerphp="0" iuerpvp="0.7" maxdir="220"/>
+  <admin license="AL198-1"/>
+</station>
+
+<station frequency="102.8" band="vhf">
+  <name>Luton CR (Diverse FM)</name>
+  <location area="Luton" ngr="TL075213" site="Farley Hill"/>
+  <technical rdspi="C491" switchpi="" tpta="N" siteht="162" iuaerialht="46" iuerphp="0" iuerpvp="0.025" maxdir="45"/>
+  <admin license="CR089"/>
+</station>
+
+<station frequency="105.4" band="vhf">
+  <name>Magic 105.4 FM</name>
+  <location area="London" ngr="TQ332696" site="Croydon"/>
+  <technical rdspi="C788" switchpi="" tpta="Y" siteht="114" iuaerialht="146" iuerphp="2" iuerpvp="2" maxdir=""/>
+  <admin license="AL051-2"/>
+</station>
+
+<station frequency="103.2" band="vhf">
+  <name>Mansfield 103.2</name>
+  <location area="Mansfield" ngr="SK514606" site="Fishpond Hill"/>
+  <technical rdspi="C598" switchpi="" tpta="Y" siteht="168" iuaerialht="46" iuerphp="0" iuerpvp="0.1" maxdir="235"/>
+  <admin license="AL226-1"/>
+</station>
+
+<station frequency="103.7" band="vhf">
+  <name>Manx Radio</name>
+  <location area="Isle of Man" ngr="SC365991" site="Jurby"/>
+  <technical rdspi="C3BE" switchpi="" tpta="" siteht="35" iuaerialht="50" iuerphp="1.95" iuerpvp="1.95" maxdir=""/>
+  <admin license="IOM_Manx"/>
+</station>
+
+<station frequency="89" band="vhf">
+  <name>Manx Radio</name>
+  <location area="Isle of Man" ngr="SC396881" site="Snaefell"/>
+  <technical rdspi="C3BE" switchpi="" tpta="" siteht="610" iuaerialht="30" iuerphp="0.93" iuerpvp="0.93" maxdir="45"/>
+  <admin license="IOM_Manx"/>
+</station>
+
+<station frequency="97.2" band="vhf">
+  <name>Manx Radio</name>
+  <location area="Isle of Man" ngr="SC373746" site="Carnane"/>
+  <technical rdspi="C3BE" switchpi="" tpta="" siteht="150" iuaerialht="73.5" iuerphp="5.66" iuerpvp="5.66" maxdir="340"/>
+  <admin license="IOM_Manx"/>
+</station>
+
+<station frequency="102.3" band="vhf">
+  <name>Market Harborough CR (HBR FM)</name>
+  <location area="Market Harborough" ngr="SP727840" site="Little Oxendon Farm"/>
+  <technical rdspi="C591" switchpi="" tpta="" siteht="152" iuaerialht="35" iuerphp="0.025" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR013"/>
+</station>
+
+<station frequency="97" band="vhf">
+  <name>Mercia FM</name>
+  <location area="Coventry" ngr="SP410836" site="Shilton"/>
+  <technical rdspi="C367" switchpi="C467" tpta="N" siteht="106" iuaerialht="52" iuerphp="0.8" iuerpvp="1" maxdir="270"/>
+  <admin license="AL022-2"/>
+</station>
+
+<station frequency="102.9" band="vhf">
+  <name>Mercia FM</name>
+  <location area="Leamington Spa" ngr="SP329663" site="Leamington Spa"/>
+  <technical rdspi="C367" switchpi="C567" tpta="N" siteht="91" iuaerialht="39" iuerphp="0.025" iuerpvp="0.025" maxdir="225"/>
+  <admin license="AL022-2"/>
+</station>
+
+<station frequency="97.5" band="vhf">
+  <name>Mercury FM</name>
+  <location area="Reigate and Crawley" ngr="TQ176307" site="Horsham"/>
+  <technical rdspi="C9B5" switchpi="" tpta="Y" siteht="51" iuaerialht="21" iuerphp="0.015" iuerpvp="0.015" maxdir=""/>
+  <admin license="AL117-3"/>
+</station>
+
+<station frequency="102.7" band="vhf">
+  <name>Mercury FM</name>
+  <location area="Reigate and Crawley" ngr="TQ256521" site="Reigate"/>
+  <technical rdspi="C9B5" switchpi="" tpta="Y" siteht="227" iuaerialht="51" iuerphp="1.8" iuerpvp="1.8" maxdir="180"/>
+  <admin license="AL117-3"/>
+</station>
+
+<station frequency="96.6" band="vhf">
+  <name>Mercury FM</name>
+  <location area="St Albans" ngr="TL088045" site="Pimlico"/>
+  <technical rdspi="C786" switchpi="" tpta="Y" siteht="137" iuaerialht="40" iuerphp="0.25" iuerpvp="0.25" maxdir="60"/>
+  <admin license="AL170-2"/>
+</station>
+
+<station frequency="103" band="vhf">
+  <name>Metro FM</name>
+  <location area="Tyne and Wear" ngr="NZ216648" site="Fenham"/>
+  <technical rdspi="C4B0" switchpi="" tpta="Y" siteht="120" iuaerialht="43" iuerphp="0" iuerpvp="0.05" maxdir="200"/>
+  <admin license="AL083-2"/>
+</station>
+
+<station frequency="97.1" band="vhf">
+  <name>Metro FM</name>
+  <location area="Tyne and Wear" ngr="NZ184474" site="Burnhope"/>
+  <technical rdspi="C4B0" switchpi="" tpta="Y" siteht="240" iuaerialht="183" iuerphp="6" iuerpvp="4" maxdir="20"/>
+  <admin license="AL083-2"/>
+</station>
+
+<station frequency="103.2" band="vhf">
+  <name>Metro FM</name>
+  <location area="Hexham" ngr="NZ036653" site="Newton"/>
+  <technical rdspi="C4B0" switchpi="" tpta="Y" siteht="165" iuaerialht="29" iuerphp="0.02" iuerpvp="0.1" maxdir="270"/>
+  <admin license="AL083-2"/>
+</station>
+
+<station frequency="97.1" band="vhf">
+  <name>Metro FM</name>
+  <location area="Tyne Tunnel" ngr="NZ330659" site="Tyne Tunnel"/>
+  <technical rdspi="C4B0" switchpi="" tpta="Y" siteht="0" iuaerialht="0" iuerphp="" iuerpvp="" maxdir=""/>
+  <admin license="AL083-2"/>
+</station>
+
+<station frequency="102.6" band="vhf">
+  <name>Metro FM</name>
+  <location area="Alnwick" ngr="NU191081" site="Shilbottle"/>
+  <technical rdspi="C4B0" switchpi="" tpta="Y" siteht="162" iuaerialht="30" iuerphp="0.025" iuerpvp="0.1" maxdir=""/>
+  <admin license="AL083-2"/>
+</station>
+
+<station frequency="103.4" band="vhf">
+  <name>MFM</name>
+  <location area="Wrexham" ngr="SJ301537" site="Wrexham Rhos"/>
+  <technical rdspi="C47D" switchpi="" tpta="Y" siteht="210" iuaerialht="40" iuerphp="0.7" iuerpvp="0.7" maxdir=""/>
+  <admin license="AL087-3A"/>
+</station>
+
+<station frequency="107.8" band="vhf">
+  <name>MidLothian CR (Black Diamond)</name>
+  <location area="Midlothian" ngr="NT341628" site="Newtongrange"/>
+  <technical rdspi="C781" switchpi="" tpta="" siteht="157" iuaerialht="21" iuerphp="0" iuerpvp="0.021" maxdir=""/>
+  <admin license="CR081"/>
+</station>
+
+<station frequency="104.7" band="vhf">
+  <name>Minster FM</name>
+  <location area="York" ngr="SE795619" site="Acklam Wold"/>
+  <technical rdspi="CC86" switchpi="" tpta="Y" siteht="224" iuaerialht="43" iuerphp="0.5" iuerpvp="2" maxdir="310"/>
+  <admin license="AL135-2"/>
+</station>
+
+<station frequency="103.5" band="vhf">
+  <name>Minster Northallerton</name>
+  <location area="Northallerton" ngr="SE365943" site="Northallerton"/>
+  <technical rdspi="C8B3" switchpi="" tpta="Y" siteht="36" iuaerialht="43" iuerphp="0" iuerpvp="0.2" maxdir=""/>
+  <admin license="AL307-1"/>
+</station>
+
+<station frequency="102.3" band="vhf">
+  <name>Minster Northallerton</name>
+  <location area="Thirsk" ngr="SE429819" site="Calverts Carpets"/>
+  <technical rdspi="C8B3" switchpi="" tpta="Y" siteht="32" iuaerialht="15" iuerphp="" iuerpvp="0.1" maxdir="330"/>
+  <admin license="AL307-1"/>
+</station>
+
+<station frequency="107.7" band="vhf">
+  <name>Mix 107</name>
+  <location area="High Wycombe" ngr="SU967983" site="Amersham"/>
+  <technical rdspi="C993" switchpi="" tpta="" siteht="146" iuaerialht="16" iuerphp="0.03" iuerpvp="0.1" maxdir="330"/>
+  <admin license="AL276-1"/>
+</station>
+
+<station frequency="107.4" band="vhf">
+  <name>Mix 107</name>
+  <location area="High Wycombe" ngr="SU877911" site="Chepping Wycombe"/>
+  <technical rdspi="C993" switchpi="" tpta="Y" siteht="142" iuaerialht="44" iuerphp="0" iuerpvp="0.1" maxdir="10"/>
+  <admin license="AL276-1"/>
+</station>
+
+<station frequency="96.2" band="vhf">
+  <name>Mix 96</name>
+  <location area="Aylesbury" ngr="SP750213" site="Quainton Hill"/>
+  <technical rdspi="CA93" switchpi="" tpta="Y" siteht="187" iuaerialht="40" iuerphp="0.5" iuerpvp="0.5" maxdir="140"/>
+  <admin license="AL159-2"/>
+</station>
+
+<station frequency="102.8" band="vhf">
+  <name>Moray Firth Radio</name>
+  <location area="Keith" ngr="NJ425581" site="Tor Sliasg"/>
+  <technical rdspi="CBB1" switchpi="" tpta="N" siteht="292" iuaerialht="25" iuerphp="0.44" iuerpvp="0.56" maxdir="270"/>
+  <admin license="AL057-2"/>
+</station>
+
+<station frequency="96.6" band="vhf">
+  <name>Moray Firth Radio</name>
+  <location area="Speyside" ngr="NJ006048" site="Cairn Gorm"/>
+  <technical rdspi="CBB1" switchpi="" tpta="N" siteht="1080" iuaerialht="10" iuerphp="0.225" iuerpvp="0.225" maxdir="270"/>
+  <admin license="AL057-2"/>
+</station>
+
+<station frequency="96.7" band="vhf">
+  <name>Moray Firth Radio</name>
+  <location area="Fraserburgh" ngr="NJ982569" site="Mormond Hill"/>
+  <technical rdspi="CBB1" switchpi="" tpta="" siteht="232" iuaerialht="17" iuerphp="0.05" iuerpvp="0.05" maxdir="0"/>
+  <admin license="AL057-2"/>
+</station>
+
+<station frequency="102.5" band="vhf">
+  <name>Moray Firth Radio</name>
+  <location area="Caithness" ngr="ND063551" site="Ben Dorrery"/>
+  <technical rdspi="CBB1" switchpi="" tpta="N" siteht="231" iuaerialht="17.5" iuerphp="0.6" iuerpvp="0.6" maxdir="80"/>
+  <admin license="AL057-2"/>
+</station>
+
+<station frequency="97.4" band="vhf">
+  <name>Moray Firth Radio</name>
+  <location area="Inverness" ngr="NH639580" site="Mounteagle"/>
+  <technical rdspi="CBB1" switchpi="" tpta="N" siteht="212" iuaerialht="206" iuerphp="1.25" iuerpvp="5" maxdir="100"/>
+  <admin license="AL057-2"/>
+</station>
+
+<station frequency="103.1" band="vhf">
+  <name>Nelson CR (Pendle)</name>
+  <location area="Nelson" ngr="SD857369" site="Marsden Heights"/>
+  <technical rdspi="CC91" switchpi="" tpta="N" siteht="202" iuaerialht="11" iuerphp="0" iuerpvp="0.02" maxdir=""/>
+  <admin license="CR099"/>
+</station>
+
+<station frequency="96.6" band="vhf">
+  <name>Nevis Radio</name>
+  <location area="Fort William" ngr="NN086749" site="Trislaig"/>
+  <technical rdspi="CDB1" switchpi="" tpta="N" siteht="270" iuaerialht="15" iuerphp="0.15" iuerpvp="0.3" maxdir="70"/>
+  <admin license="AL166-2"/>
+</station>
+
+<station frequency="102.3" band="vhf">
+  <name>Nevis Radio</name>
+  <location area="Skye/Mallaig" ngr="NG654081" site="Cnoc Malagan"/>
+  <technical rdspi="CDB1" switchpi="" tpta="N" siteht="180" iuaerialht="16" iuerphp="0" iuerpvp="0.8" maxdir="170"/>
+  <admin license="AL166-2"/>
+</station>
+
+<station frequency="97" band="vhf">
+  <name>Nevis Radio</name>
+  <location area="Glencoe" ngr="NN260515" site="Glencoe"/>
+  <technical rdspi="CDB1" switchpi="" tpta="N" siteht="690" iuaerialht="10" iuerphp="0" iuerpvp="0.25" maxdir=""/>
+  <admin license="AL166-2"/>
+</station>
+
+<station frequency="102.4" band="vhf">
+  <name>Nevis Radio</name>
+  <location area="Loch Leven" ngr="NN034591" site="Glenachulish"/>
+  <technical rdspi="CDB1" switchpi="" tpta="N" siteht="228" iuaerialht="8" iuerphp="0" iuerpvp="0.8" maxdir="60"/>
+  <admin license="AL166-2"/>
+</station>
+
+<station frequency="98.7" band="vhf">
+  <name>New Style Radio</name>
+  <location area="Birmingham" ngr="SP062869" site="Cambridge Tower"/>
+  <technical rdspi="C491" switchpi="" tpta="" siteht="120" iuaerialht="50" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR037"/>
+</station>
+
+<station frequency="102.5" band="vhf">
+  <name>Newcastle Upon Tyne CR (NE1 FM)</name>
+  <location area="Newcastle Upon Tyne" ngr="NZ266615" site="Gateshead"/>
+  <technical rdspi="C691" switchpi="" tpta="Y" siteht="136" iuaerialht="11" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR050"/>
+</station>
+
+<station frequency="92" band="vhf">
+  <name>Newham CR (Nu Sound)</name>
+  <location area="Newham" ngr="TQ411851" site="Forest Gate"/>
+  <technical rdspi="C091" switchpi="" tpta="" siteht="9" iuaerialht="22" iuerphp="0" iuerpvp="0.025" maxdir="15"/>
+  <admin license="CR069"/>
+</station>
+
+<station frequency="101.1" band="vhf">
+  <name>Newry - Kilkeel Relay (Five FM)</name>
+  <location area="Kilkeel" ngr="IJ281180" site="Kilkeel"/>
+  <technical rdspi="C781" switchpi="" tpta="N" siteht="267" iuaerialht="33" iuerphp="0.217" iuerpvp="0.217" maxdir="140"/>
+  <admin license="AL316-1"/>
+</station>
+
+<station frequency="100.5" band="vhf">
+  <name>Newry (Five FM)</name>
+  <location area="Newry" ngr="IJ055246" site="Camlough"/>
+  <technical rdspi="C781" switchpi="" tpta="Y" siteht="345" iuaerialht="30" iuerphp="0.5" iuerpvp="0.5" maxdir=""/>
+  <admin license="AL316-1"/>
+</station>
+
+<station frequency="101.4" band="vhf">
+  <name>Newry CR (IUR FM)</name>
+  <location area="Newry" ngr="IJ077238" site="Newry Golf Club"/>
+  <technical rdspi="C080" switchpi="" tpta="" siteht="159" iuaerialht="10" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR046X"/>
+</station>
+
+<station frequency="103.2" band="vhf">
+  <name>North East Community Radio</name>
+  <location area="Colpy" ngr="NJ608335" site="Hill of Foudland"/>
+  <technical rdspi="C5B4" switchpi="" tpta="N" siteht="455" iuaerialht="43" iuerphp="0" iuerpvp="0.3" maxdir=""/>
+  <admin license="AL163-2"/>
+</station>
+
+<station frequency="97.1" band="vhf">
+  <name>North East Community Radio</name>
+  <location area="Braemar" ngr="NO132886" site="Morrone"/>
+  <technical rdspi="" switchpi="" tpta="" siteht="859" iuaerialht="20" iuerphp="0" iuerpvp="0.3" maxdir="70"/>
+  <admin license="AL163-2"/>
+</station>
+
+<station frequency="106.4" band="vhf">
+  <name>North East Community Radio</name>
+  <location area="Cock Bridge" ngr="NJ258100" site="Hill of Allargue"/>
+  <technical rdspi="" switchpi="" tpta="" siteht="553" iuaerialht="24" iuerphp="0" iuerpvp="0.3" maxdir=""/>
+  <admin license="AL163-2"/>
+</station>
+
+<station frequency="102.1" band="vhf">
+  <name>North East Community Radio</name>
+  <location area="Inverurie" ngr="NJ761329" site="Meldrum"/>
+  <technical rdspi="C5B4" switchpi="" tpta="N" siteht="244" iuaerialht="95" iuerphp="0.25" iuerpvp="1" maxdir=""/>
+  <admin license="AL163-2"/>
+</station>
+
+<station frequency="101.9" band="vhf">
+  <name>North East Community Radio</name>
+  <location area="Tullich" ngr="NO378984" site="Tullich"/>
+  <technical rdspi="" switchpi="" tpta="" siteht="466" iuaerialht="10" iuerphp="0" iuerpvp="0.225" maxdir=""/>
+  <admin license="AL163-2"/>
+</station>
+
+<station frequency="97.1" band="vhf">
+  <name>North East Community Radio</name>
+  <location area="Turriff" ngr="NJ729505" site="Markethill Industrial Estate"/>
+  <technical rdspi="" switchpi="" tpta="" siteht="98" iuaerialht="12" iuerphp="0" iuerpvp="0.1" maxdir=""/>
+  <admin license="AL163-2"/>
+</station>
+
+<station frequency="102.6" band="vhf">
+  <name>North East Community Radio</name>
+  <location area="Kildrummy" ngr="NJ486112" site="Scar Hill"/>
+  <technical rdspi="C5B4" switchpi="" tpta="N" siteht="524" iuaerialht="16" iuerphp="0" iuerpvp="0.3" maxdir="270"/>
+  <admin license="AL163-2"/>
+</station>
+
+<station frequency="103.2" band="vhf">
+  <name>North Norfolk Radio</name>
+  <location area="North Norfolk" ngr="TG188408" site="Aylmerton"/>
+  <technical rdspi="CBB6" switchpi="" tpta="" siteht="94" iuaerialht="33" iuerphp="0" iuerpvp="0.25" maxdir=""/>
+  <admin license="AL285-1"/>
+</station>
+
+<station frequency="103.2" band="vhf">
+  <name>North Norfolk Radio</name>
+  <location area="North Norfolk" ngr="TF903388" site="Bunkers Hill"/>
+  <technical rdspi="CBB6" switchpi="" tpta="" siteht="71" iuaerialht="24" iuerphp="0" iuerpvp="0.25" maxdir=""/>
+  <admin license="AL285-1"/>
+</station>
+
+<station frequency="96.2" band="vhf">
+  <name>North Norfolk Radio</name>
+  <location area="North Norfolk" ngr="TF926302" site="Fakenham"/>
+  <technical rdspi="CBB6" switchpi="" tpta="" siteht="51" iuaerialht="20" iuerphp="0" iuerpvp="0.01" maxdir="240"/>
+  <admin license="AL285-1"/>
+</station>
+
+<station frequency="96.2" band="vhf">
+  <name>North Norfolk Radio</name>
+  <location area="North Norfolk" ngr="TG073333" site="Stody"/>
+  <technical rdspi="CBB6" switchpi="" tpta="" siteht="61" iuaerialht="40" iuerphp="0.68" iuerpvp="1.9" maxdir="55"/>
+  <admin license="AL285-1"/>
+</station>
+
+<station frequency="96.6" band="vhf">
+  <name>Northants 96</name>
+  <location area="Northampton" ngr="SP760647" site="Northampton"/>
+  <technical rdspi="CA86" switchpi="" tpta="Y" siteht="127" iuaerialht="48" iuerphp="2" iuerpvp="2" maxdir="335"/>
+  <admin license="AL012-3"/>
+</station>
+
+<station frequency="103" band="vhf">
+  <name>NorthSound Radio</name>
+  <location area="Peterhead" ngr="NK124411" site="Stirling Hill"/>
+  <technical rdspi="C8B1" switchpi="" tpta="Y" siteht="80" iuaerialht="15" iuerphp="0" iuerpvp="0.174" maxdir="285"/>
+  <admin license="AL002-2"/>
+</station>
+
+<station frequency="96.9" band="vhf">
+  <name>NorthSound Radio</name>
+  <location area="Aberdeen" ngr="NO763899" site="Durris"/>
+  <technical rdspi="C8B1" switchpi="" tpta="Y" siteht="325" iuaerialht="253" iuerphp="5.6" iuerpvp="5.1" maxdir="30"/>
+  <admin license="AL002-2"/>
+</station>
+
+<station frequency="97.6" band="vhf">
+  <name>NorthSound Radio</name>
+  <location area="Aberdeen" ngr="NJ927104" site="Balgownie"/>
+  <technical rdspi="C8B1" switchpi="" tpta="Y" siteht="76" iuaerialht="20" iuerphp="0" iuerpvp="0.025" maxdir="200"/>
+  <admin license="AL002-2"/>
+</station>
+
+<station frequency="92.5" band="vhf">
+  <name>Northwich CR (Mid-Cheshire FM)</name>
+  <location area="Northwich" ngr="SJ663687" site="Northwich"/>
+  <technical rdspi="C981" switchpi="" tpta="Y" siteht="41" iuaerialht="30" iuerphp="0" iuerpvp="0.019" maxdir=""/>
+  <admin license="CR103"/>
+</station>
+
+<station frequency="97.5" band="vhf">
+  <name>Nottingham 3 CR (Kemet Radio)</name>
+  <location area="Nottingham" ngr="SK560403" site="Nottingham"/>
+  <technical rdspi="C781" switchpi="" tpta="N" siteht="62" iuaerialht="39" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR016"/>
+</station>
+
+<station frequency="107" band="vhf">
+  <name>Oak FM</name>
+  <location area="Loughborough" ngr="SK524190" site="Loughborough University"/>
+  <technical rdspi="C792" switchpi="" tpta="Y" siteht="58" iuaerialht="66" iuerphp="0.02" iuerpvp="0.08" maxdir="335"/>
+  <admin license="AL230-1"/>
+</station>
+
+<station frequency="103.3" band="vhf">
+  <name>Oban FM</name>
+  <location area="Oban" ngr="NM850290" site="Pulpit Hill"/>
+  <technical rdspi="C5B8" switchpi="" tpta="" siteht="122" iuaerialht="28.5" iuerphp="0.125" iuerpvp="0.19" maxdir="25"/>
+  <admin license="AL187-2"/>
+</station>
+
+<station frequency="97.5" band="vhf">
+  <name>Ocean FM</name>
+  <location area="Portsmouth" ngr="SU657065" site="Fort Widley"/>
+  <technical rdspi="C986" switchpi="" tpta="Y" siteht="103" iuaerialht="28" iuerphp="0.425" iuerpvp="0.425" maxdir=""/>
+  <admin license="AL115-2A"/>
+</station>
+
+<station frequency="96.7" band="vhf">
+  <name>Ocean FM</name>
+  <location area="Winchester" ngr="SU449295" site="Crabwood Farm"/>
+  <technical rdspi="C986" switchpi="" tpta="Y" siteht="158" iuaerialht="46" iuerphp="0.225" iuerpvp="0.225" maxdir=""/>
+  <admin license="AL115-2A"/>
+</station>
+
+<station frequency="99.7" band="vhf">
+  <name>Oldham CR</name>
+  <location area="Oldham" ngr="SD923051" site="Oldham"/>
+  <technical rdspi="C881" switchpi="" tpta="N" siteht="203" iuaerialht="65" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR032"/>
+</station>
+
+<station frequency="97.1" band="vhf">
+  <name>Orchard FM</name>
+  <location area="Yeovil" ngr="ST501050" site="Chedington"/>
+  <technical rdspi="C4B2" switchpi="" tpta="N" siteht="250" iuaerialht="18" iuerphp="0" iuerpvp="0.2" maxdir="330"/>
+  <admin license="AL128-3"/>
+</station>
+
+<station frequency="96.5" band="vhf">
+  <name>Orchard FM</name>
+  <location area="Taunton" ngr="ST240225" site="Taunton"/>
+  <technical rdspi="C4B2" switchpi="" tpta="N" siteht="33" iuaerialht="11" iuerphp="0.025" iuerpvp="0.05" maxdir="300"/>
+  <admin license="AL128-3"/>
+</station>
+
+<station frequency="102.6" band="vhf">
+  <name>Orchard FM</name>
+  <location area="Somerset" ngr="ST563488" site="Mendip"/>
+  <technical rdspi="C4B2" switchpi="" tpta="N" siteht="302" iuaerialht="213" iuerphp="2" iuerpvp="2" maxdir="210"/>
+  <admin license="AL128-3"/>
+</station>
+
+<station frequency="106.6" band="vhf">
+  <name>Original 106</name>
+  <location area="Poole" ngr="SZ038941" site="Mannings Heath"/>
+  <technical rdspi="C384" switchpi="" tpta="Y" siteht="62" iuaerialht="41" iuerphp="0.08" iuerpvp="0.23" maxdir="140"/>
+  <admin license="AL302-1"/>
+</station>
+
+<station frequency="106.6" band="vhf">
+  <name>Original 106</name>
+  <location area="Winchester" ngr="SU449295" site="Crabwood Farm"/>
+  <technical rdspi="C384" switchpi="" tpta="Y" siteht="158" iuaerialht="46" iuerphp="0.01" iuerpvp="0.01" maxdir=""/>
+  <admin license="AL302-1"/>
+</station>
+
+<station frequency="106" band="vhf">
+  <name>Original 106</name>
+  <location area="Solent" ngr="SZ475835" site="Chillerton Down"/>
+  <technical rdspi="C384" switchpi="" tpta="Y" siteht="166" iuaerialht="214" iuerphp="2" iuerpvp="2" maxdir="350"/>
+  <admin license="AL302-1"/>
+</station>
+
+<station frequency="106.8" band="vhf">
+  <name>Original FM</name>
+  <location area="Aberdeen" ngr="NO763899" site="Durris"/>
+  <technical rdspi="CC94" switchpi="" tpta="Y" siteht="325" iuaerialht="253" iuerphp="10" iuerpvp="9" maxdir="25"/>
+  <admin license="AL324-1"/>
+</station>
+
+<station frequency="106.3" band="vhf">
+  <name>Original FM</name>
+  <location area="Aberdeen" ngr="NJ942025" site="Redmoss"/>
+  <technical rdspi="CC94" switchpi="" tpta="Y" siteht="87" iuaerialht="37" iuerphp="0" iuerpvp="0.025" maxdir="330"/>
+  <admin license="AL324-1"/>
+</station>
+
+<station frequency="106.5" band="vhf">
+  <name>Original FM</name>
+  <location area="Bristol" ngr="ST573665" site="East Dundry"/>
+  <technical rdspi="CF92" switchpi="" tpta="Y" siteht="194" iuaerialht="55" iuerphp="0.5" iuerpvp="0.5" maxdir="0"/>
+  <admin license="AL319-1"/>
+</station>
+
+<station frequency="107.9" band="vhf">
+  <name>Oxfords FM1079</name>
+  <location area="Oxford" ngr="SP483029" site="Boars Hill"/>
+  <technical rdspi="C090" switchpi="" tpta="Y" siteht="160" iuaerialht="28" iuerphp="0.1" iuerpvp="0.1" maxdir="80"/>
+  <admin license="AL193-2"/>
+</station>
+
+<station frequency="105.5" band="vhf">
+  <name>Palm FM</name>
+  <location area="Torbay" ngr="SX857619" site="Beacon Hill A"/>
+  <technical rdspi="C7B3" switchpi="" tpta="Y" siteht="188" iuaerialht="78" iuerphp="0.8" iuerpvp="0.8" maxdir="40"/>
+  <admin license="AL303-1"/>
+</station>
+
+<station frequency="107.4" band="vhf">
+  <name>Peak 107 FM</name>
+  <location area="Chesterfield" ngr="SK382764" site="Chesterfield"/>
+  <technical rdspi="C494" switchpi="" tpta="Y" siteht="180" iuaerialht="36" iuerphp="0.1" iuerpvp="0.1" maxdir="180"/>
+  <admin license="AL227-1"/>
+</station>
+
+<station frequency="102" band="vhf">
+  <name>Peak 107 FM</name>
+  <location area="Matlock" ngr="SK246637" site="Stanton Moor"/>
+  <technical rdspi="C494" switchpi="" tpta="Y" siteht="305" iuaerialht="40" iuerphp="0.05" iuerpvp="0.05" maxdir=""/>
+  <admin license="AL227-1"/>
+</station>
+
+<station frequency="102.8" band="vhf">
+  <name>Pirate FM</name>
+  <location area="West Cornwall" ngr="SW690394" site="Redruth"/>
+  <technical rdspi="C486" switchpi="" tpta="N" siteht="229" iuaerialht="95" iuerphp="1.7" iuerpvp="8.3" maxdir="135"/>
+  <admin license="AL136-2"/>
+</station>
+
+<station frequency="102.2" band="vhf">
+  <name>Pirate FM</name>
+  <location area="East Cornwall" ngr="SX273707" site="Caradon Hill"/>
+  <technical rdspi="C486" switchpi="" tpta="N" siteht="369" iuaerialht="167" iuerphp="0.5" iuerpvp="2" maxdir="120"/>
+  <admin license="AL136-2"/>
+</station>
+
+<station frequency="94.3" band="vhf">
+  <name>Plaistow CR (Voice of Africa)</name>
+  <location area="Plaistow" ngr="TQ392853" site="Plaistow"/>
+  <technical rdspi="CB82" switchpi="" tpta="N" siteht="12" iuaerialht="75" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR070"/>
+</station>
+
+<station frequency="97" band="vhf">
+  <name>Plymouth Sound</name>
+  <location area="Plymouth" ngr="SX531555" site="Plympton"/>
+  <technical rdspi="C4B4" switchpi="" tpta="N" siteht="114" iuaerialht="43" iuerphp="1" iuerpvp="1" maxdir="300"/>
+  <admin license="AL103-2"/>
+</station>
+
+<station frequency="96.6" band="vhf">
+  <name>Plymouth Sound</name>
+  <location area="Tavistock" ngr="SX485716" site="Tavistock"/>
+  <technical rdspi="C4B4" switchpi="" tpta="N" siteht="159" iuaerialht="30" iuerphp="0.02" iuerpvp="0.02" maxdir="0"/>
+  <admin license="AL103-2"/>
+</station>
+
+<station frequency="107.9" band="vhf">
+  <name>Pontypridd CR (GTFM)</name>
+  <location area="Pontypridd" ngr="ST093899" site="Bryn Tail Farm"/>
+  <technical rdspi="C781" switchpi="" tpta="" siteht="258" iuaerialht="14" iuerphp="0.05" iuerpvp="0.05" maxdir="270"/>
+  <admin license="CR004"/>
+</station>
+
+<station frequency="107.9" band="vhf">
+  <name>Port Talbot and Neath CR (Afan FM)</name>
+  <location area="Port Talbot" ngr="SS764901" site="Port Talbot (Aberavon)"/>
+  <technical rdspi="C591" switchpi="" tpta="" siteht="10" iuaerialht="30" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR005"/>
+</station>
+
+<station frequency="107.8" band="vhf">
+  <name>Pure Radio</name>
+  <location area="Stockport" ngr="SJ877884" site="Sanderling Building"/>
+  <technical rdspi="C480" switchpi="" tpta="N" siteht="51" iuaerialht="25" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR034"/>
+</station>
+
+<station frequency="101.2" band="vhf">
+  <name>Q101.2 FM West</name>
+  <location area="Omagh and Enniskillen" ngr="IH352529" site="Brougher Mountain II"/>
+  <technical rdspi="C9B6" switchpi="" tpta="y" siteht="293" iuaerialht="39" iuerphp="1.26" iuerpvp="5" maxdir="35"/>
+  <admin license="AL270-1"/>
+</station>
+
+<station frequency="102.9" band="vhf">
+  <name>Q102.9 FM</name>
+  <location area="Londonderry" ngr="IC397173" site="Minkey Hill"/>
+  <technical rdspi="C4B6" switchpi="" tpta="Y" siteht="211" iuaerialht="34" iuerphp="0" iuerpvp="3.14" maxdir="140"/>
+  <admin license="AL155-2"/>
+</station>
+
+<station frequency="97.4" band="vhf">
+  <name>Q103 FM</name>
+  <location area="Newmarket" ngr="TL640635" site="Icewell Hill"/>
+  <technical rdspi="CF86" switchpi="" tpta="Y" siteht="36" iuaerialht="20" iuerphp="0" iuerpvp="0.004" maxdir=""/>
+  <admin license="AL125-2"/>
+</station>
+
+<station frequency="103" band="vhf">
+  <name>Q103 FM</name>
+  <location area="Cambridge" ngr="TL392594" site="Madingley"/>
+  <technical rdspi="CF86" switchpi="" tpta="Y" siteht="64" iuaerialht="66" iuerphp="0.5" iuerpvp="0.5" maxdir=""/>
+  <admin license="AL125-2"/>
+</station>
+
+<station frequency="97.4" band="vhf">
+  <name>Q103 FM</name>
+  <location area="Haverhill" ngr="TL662449" site="Haverhill"/>
+  <technical rdspi="CF86" switchpi="" tpta="Y" siteht="103" iuaerialht="28" iuerphp="0" iuerpvp="0.01" maxdir=""/>
+  <admin license="AL125-2"/>
+</station>
+
+<station frequency="96.3" band="vhf">
+  <name>Q96</name>
+  <location area="Paisley" ngr="NS457598" site="Gleniffer Braes"/>
+  <technical rdspi="C886" switchpi="" tpta="Y" siteht="220" iuaerialht="60" iuerphp="0.1" iuerpvp="0.1" maxdir=""/>
+  <admin license="AL141-2"/>
+</station>
+
+<station frequency="97.2" band="vhf">
+  <name>Q97.2 Causeway Coast Radio</name>
+  <location area="Coleraine" ngr="IC847376" site="Maddybenny More"/>
+  <technical rdspi="C7B6" switchpi="" tpta="Y" siteht="60" iuaerialht="56" iuerphp="0.062" iuerpvp="0.25" maxdir="170"/>
+  <admin license="AL254-1"/>
+</station>
+
+<station frequency="102.4" band="vhf">
+  <name>Quay FM</name>
+  <location area="West Somerset" ngr="SS965472" site="Minehead North"/>
+  <technical rdspi="CBB7" switchpi="" tpta="Y" siteht="160" iuaerialht="15" iuerphp="2" iuerpvp="2" maxdir="190"/>
+  <admin license="AL218-1"/>
+</station>
+
+<station frequency="100.8" band="vhf">
+  <name>Quay FM</name>
+  <location area="West Somerset" ngr="SS883462" site="Porlock"/>
+  <technical rdspi="CBB7" switchpi="" tpta="Y" siteht="156" iuaerialht="21" iuerphp="0.008" iuerpvp="0.1" maxdir="0"/>
+  <admin license="AL218-1"/>
+</station>
+
+<station frequency="102.3" band="vhf">
+  <name>Radio Borders</name>
+  <location area="Borders" ngr="NT980547" site="Berwick-Upon-Tweed"/>
+  <technical rdspi="C7B1" switchpi="" tpta="Y" siteht="131" iuaerialht="15" iuerphp="0" iuerpvp="0.01" maxdir="155"/>
+  <admin license="AL129-3"/>
+</station>
+
+<station frequency="96.8" band="vhf">
+  <name>Radio Borders</name>
+  <location area="Borders" ngr="NT500294" site="Selkirk"/>
+  <technical rdspi="C7B1" switchpi="" tpta="Y" siteht="288" iuaerialht="185" iuerphp="0" iuerpvp="5" maxdir=""/>
+  <admin license="AL129-3"/>
+</station>
+
+<station frequency="103.4" band="vhf">
+  <name>Radio Borders</name>
+  <location area="Borders" ngr="NT947599" site="Eyemouth"/>
+  <technical rdspi="C7B1" switchpi="" tpta="Y" siteht="192" iuaerialht="35" iuerphp="0" iuerpvp="0.5" maxdir="255"/>
+  <admin license="AL129-3"/>
+</station>
+
+<station frequency="103.1" band="vhf">
+  <name>Radio Borders</name>
+  <location area="Borders" ngr="NT228416" site="Peebles"/>
+  <technical rdspi="C7B1" switchpi="" tpta="Y" siteht="353" iuaerialht="52" iuerphp="0.035" iuerpvp="0.035" maxdir="95"/>
+  <admin license="AL129-3"/>
+</station>
+
+<station frequency="103.3" band="vhf">
+  <name>Radio Ceredigion</name>
+  <location area="Cardigan Bay" ngr="SN569756" site="Blaen Plwyf"/>
+  <technical rdspi="CBB0" switchpi="" tpta="N" siteht="173" iuaerialht="80" iuerphp="1.2" iuerpvp="4.6" maxdir="110"/>
+  <admin license="AL139-2"/>
+</station>
+
+<station frequency="96.6" band="vhf">
+  <name>Radio Ceredigion</name>
+  <location area="Cardigan Bay" ngr="SN577430" site="Mynydd Pencarreg"/>
+  <technical rdspi="CBB0" switchpi="" tpta="N" siteht="408" iuaerialht="50" iuerphp="0.2" iuerpvp="0.2" maxdir="315"/>
+  <admin license="AL139-2"/>
+</station>
+
+<station frequency="97.4" band="vhf">
+  <name>Radio Ceredigion</name>
+  <location area="Cardigan Bay" ngr="SN154442" site="Penwaun"/>
+  <technical rdspi="CBB0" switchpi="" tpta="N" siteht="182" iuaerialht="32" iuerphp="0.2" iuerpvp="0.2" maxdir="75"/>
+  <admin license="AL139-2"/>
+</station>
+
+<station frequency="107.1" band="vhf">
+  <name>Radio Failte</name>
+  <location area="Belfast" ngr="IJ318734" site="Belfast"/>
+  <technical rdspi="C591" switchpi="" tpta="N" siteht="10" iuaerialht="30" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR044"/>
+</station>
+
+<station frequency="107.8" band="vhf">
+  <name>Radio Hampshire</name>
+  <location area="Southampton" ngr="SU406180" site="Chilworth"/>
+  <technical rdspi="C698" switchpi="" tpta="N" siteht="84" iuaerialht="24" iuerphp="0.4" iuerpvp="0.5" maxdir="165"/>
+  <admin license="AL239-1"/>
+</station>
+
+<station frequency="107.8" band="vhf">
+  <name>Radio Ikhlas</name>
+  <location area="Derby" ngr="SK335345" site="Normanton"/>
+  <technical rdspi="C991" switchpi="" tpta="N" siteht="96" iuaerialht="15" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR011"/>
+</station>
+
+<station frequency="96.6" band="vhf">
+  <name>Radio North Angus</name>
+  <location area="Arbroath" ngr="NO634404" site="Arbroath Infirmary"/>
+  <technical rdspi="C097" switchpi="" tpta="N" siteht="19" iuaerialht="15" iuerphp="0" iuerpvp="0.2" maxdir=""/>
+  <admin license="AL233-1"/>
+</station>
+
+<station frequency="107.5" band="vhf">
+  <name>Radio Pembrokeshire</name>
+  <location area="Pembrokeshire" ngr="SM944391" site="Fishguard"/>
+  <technical rdspi="CBB2" switchpi="" tpta="Y" siteht="128" iuaerialht="32" iuerphp="0" iuerpvp="0.09" maxdir="180"/>
+  <admin license="AL272-1"/>
+</station>
+
+<station frequency="107.5" band="vhf">
+  <name>Radio Pembrokeshire</name>
+  <location area="Pembrokeshire" ngr="SN133013" site="Tenby"/>
+  <technical rdspi="CBB2" switchpi="" tpta="Y" siteht="52" iuaerialht="20" iuerphp="0" iuerpvp="0.07" maxdir="200"/>
+  <admin license="AL272-1"/>
+</station>
+
+<station frequency="102.5" band="vhf">
+  <name>Radio Pembrokeshire</name>
+  <location area="Pembrokeshire" ngr="SN028261" site="Haverfordwest"/>
+  <technical rdspi="CBB2" switchpi="" tpta="Y" siteht="189" iuaerialht="130" iuerphp="10" iuerpvp="10" maxdir="190"/>
+  <admin license="AL272-1"/>
+</station>
+
+<station frequency="105.5" band="vhf">
+  <name>Radio Teesdale CR</name>
+  <location area="Teesdale" ngr="NZ057172" site="Barnard Castle"/>
+  <technical rdspi="C881" switchpi="" tpta="N" siteht="191" iuaerialht="15" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR082"/>
+</station>
+
+<station frequency="102.1" band="vhf">
+  <name>Radio Teesdale CR</name>
+  <location area="Teesdale" ngr="NY974220" site="Mickleton"/>
+  <technical rdspi="C591" switchpi="" tpta="" siteht="352" iuaerialht="13" iuerphp="0.05" iuerpvp="0.05" maxdir=""/>
+  <admin license="CR082"/>
+</station>
+
+<station frequency="96.5" band="vhf">
+  <name>Radio Wave 96.5 FM</name>
+  <location area="Blackpool" ngr="SD306360" site="Blackpool Tower"/>
+  <technical rdspi="C886" switchpi="" tpta="Y" siteht="5" iuaerialht="135" iuerphp="0.05" iuerpvp="0.05" maxdir=""/>
+  <admin license="AL137-2"/>
+</station>
+
+<station frequency="107" band="vhf">
+  <name>Reading 107</name>
+  <location area="Reading" ngr="SU663729" site="Park Royal Water Tower"/>
+  <technical rdspi="C697" switchpi="" tpta="Y" siteht="104" iuaerialht="48" iuerphp="0.1" iuerpvp="0.1" maxdir="90"/>
+  <admin license="AL273-1"/>
+</station>
+
+<station frequency="105.2" band="vhf">
+  <name>Real Radio</name>
+  <location area="Abergavenny" ngr="SO244126" site="Abergavenny"/>
+  <technical rdspi="" switchpi="" tpta="" siteht="436" iuaerialht="30" iuerphp="0.015" iuerpvp="0.015" maxdir="10"/>
+  <admin license="AL261-1"/>
+</station>
+
+<station frequency="105.7" band="vhf">
+  <name>Real Radio</name>
+  <location area="South Wales" ngr="SN172306" site="Presely"/>
+  <technical rdspi="C3A3" switchpi="" tpta="Y" siteht="322" iuaerialht="160" iuerphp="1.9" iuerpvp="7.5" maxdir="50"/>
+  <admin license="AL261-1"/>
+</station>
+
+<station frequency="106.2" band="vhf">
+  <name>Real Radio</name>
+  <location area="South Wales" ngr="SM944391" site="Fishguard"/>
+  <technical rdspi="C3A3" switchpi="" tpta="Y" siteht="128" iuaerialht="32" iuerphp="" iuerpvp="0.5" maxdir="180"/>
+  <admin license="AL261-1"/>
+</station>
+
+<station frequency="101.1" band="vhf">
+  <name>Real Radio</name>
+  <location area="Rosneath" ngr="NS258811" site="Rosneath"/>
+  <technical rdspi="C3A9" switchpi="" tpta="" siteht="107" iuaerialht="80" iuerphp="0.05" iuerpvp="0.05" maxdir="120"/>
+  <admin license="AL168-1"/>
+</station>
+
+<station frequency="105.9" band="vhf">
+  <name>Real Radio</name>
+  <location area="Newport" ngr="ST353896" site="Christchurch"/>
+  <technical rdspi="C3A3" switchpi="" tpta="Y" siteht="94" iuaerialht="45" iuerphp="0.5" iuerpvp="0.5" maxdir="310"/>
+  <admin license="AL261-1"/>
+</station>
+
+<station frequency="106.1" band="vhf">
+  <name>Real Radio</name>
+  <location area="Ebbw Vale" ngr="SO159088" site="Ebbw Vale"/>
+  <technical rdspi="" switchpi="" tpta="" siteht="442" iuaerialht="50" iuerphp="0.012" iuerpvp="0.012" maxdir=""/>
+  <admin license="AL261-1"/>
+</station>
+
+<station frequency="101.1" band="vhf">
+  <name>Real Radio</name>
+  <location area="Central Scotland" ngr="NT233872" site="Craigkelly"/>
+  <technical rdspi="C4A9" switchpi="" tpta="Y" siteht="182" iuaerialht="107" iuerphp="4.8" iuerpvp="4.8" maxdir="180"/>
+  <admin license="AL168-1"/>
+</station>
+
+<station frequency="100.3" band="vhf">
+  <name>Real Radio</name>
+  <location area="Central Scotland" ngr="NS828647" site="Black Hill"/>
+  <technical rdspi="C3A9" switchpi="" tpta="Y" siteht="275" iuaerialht="173" iuerphp="10" iuerpvp="10" maxdir="190"/>
+  <admin license="AL168-1"/>
+</station>
+
+<station frequency="105.2" band="vhf">
+  <name>Real Radio</name>
+  <location area="Carmarthenshire" ngr="SN576153" site="Carmel"/>
+  <technical rdspi="C3A3" switchpi="" tpta="Y" siteht="259" iuaerialht="137" iuerphp="1.4" iuerpvp="1.6" maxdir="80"/>
+  <admin license="AL261-1"/>
+</station>
+
+<station frequency="105.4" band="vhf">
+  <name>Real Radio</name>
+  <location area="Cardiff" ngr="ST026741" site="St Hilary"/>
+  <technical rdspi="C3A3" switchpi="" tpta="Y" siteht="126" iuaerialht="222" iuerphp="2.5" iuerpvp="2.5" maxdir="5"/>
+  <admin license="AL261-1"/>
+</station>
+
+<station frequency="105.9" band="vhf">
+  <name>Real Radio</name>
+  <location area="Aberdare" ngr="SO020055" site="Aberdare"/>
+  <technical rdspi="" switchpi="" tpta="" siteht="451" iuaerialht="42" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="AL261-1"/>
+</station>
+
+<station frequency="106" band="vhf">
+  <name>Real Radio</name>
+  <location area="Swansea" ngr="SS672940" site="Kilvey Hill"/>
+  <technical rdspi="C3A3" switchpi="" tpta="Y" siteht="193" iuaerialht="31" iuerphp="0.5" iuerpvp="0.5" maxdir="10"/>
+  <admin license="AL261-1"/>
+</station>
+
+<station frequency="100" band="vhf">
+  <name>Real Radio</name>
+  <location area="Vale of Leven" ngr="NS378796" site="Millburn Muir"/>
+  <technical rdspi="" switchpi="" tpta="" siteht="152" iuaerialht="36.5" iuerphp="0.05" iuerpvp="0.05" maxdir="90"/>
+  <admin license="AL168-1"/>
+</station>
+
+<station frequency="106" band="vhf">
+  <name>Real Radio</name>
+  <location area="Carmarthen" ngr="SN412212" site="Carmarthen A"/>
+  <technical rdspi="C3A3" switchpi="" tpta="Y" siteht="137" iuaerialht="25" iuerphp="0.01" iuerpvp="0.01" maxdir="160"/>
+  <admin license="AL261-1"/>
+</station>
+
+<station frequency="107.6" band="vhf">
+  <name>Real Radio for Yorkshire</name>
+  <location area="Bradford" ngr="SE164374" site="Idle"/>
+  <technical rdspi="C3A4" switchpi="C4A4" tpta="Y" siteht="216" iuaerialht="43" iuerphp="0.1" iuerpvp="0.1" maxdir="225"/>
+  <admin license="AL269-1"/>
+</station>
+
+<station frequency="106.2" band="vhf">
+  <name>Real Radio for Yorkshire</name>
+  <location area="South West Yorkshire" ngr="SE222128" site="Emley Moor"/>
+  <technical rdspi="C3A4" switchpi="C4A4" tpta="Y" siteht="256" iuaerialht="305" iuerphp="0.47" iuerpvp="1.88" maxdir="70"/>
+  <admin license="AL269-1"/>
+</station>
+
+<station frequency="107.7" band="vhf">
+  <name>Real Radio for Yorkshire</name>
+  <location area="Sheffield" ngr="SK324870" site="Tapton Hill"/>
+  <technical rdspi="C3A4" switchpi="C5A4" tpta="Y" siteht="247" iuaerialht="37" iuerphp="0.1" iuerpvp="0.1" maxdir=""/>
+  <admin license="AL269-1"/>
+</station>
+
+<station frequency="103.2" band="vhf">
+  <name>Red Dragon FM</name>
+  <location area="Cardiff" ngr="ST153835" site="Wenallt"/>
+  <technical rdspi="C68C" switchpi="" tpta="N" siteht="226" iuaerialht="56" iuerphp="1" iuerpvp="1" maxdir=""/>
+  <admin license="AL020-2"/>
+</station>
+
+<station frequency="97.4" band="vhf">
+  <name>Red Dragon FM</name>
+  <location area="Newport" ngr="ST353896" site="Christchurch"/>
+  <technical rdspi="C68C" switchpi="" tpta="Y" siteht="94" iuaerialht="58" iuerphp="0.25" iuerpvp="0.25" maxdir=""/>
+  <admin license="AL020-2"/>
+</station>
+
+<station frequency="104.4" band="vhf">
+  <name>Resonance FM</name>
+  <location area="London" ngr="TQ329800" site="Guys Hospital Tower"/>
+  <technical rdspi="C580" switchpi="" tpta="" siteht="3" iuaerialht="88" iuerphp="0.025" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR060"/>
+</station>
+
+<station frequency="100.8" band="vhf">
+  <name>Revival Radio</name>
+  <location area="Cumbernauld" ngr="NS765750" site="Cumbernauld"/>
+  <technical rdspi="C691" switchpi="" tpta="" siteht="141" iuaerialht="" iuerphp="0.005" iuerpvp="0.025" maxdir="330"/>
+  <admin license="CR020"/>
+</station>
+
+<station frequency="106.8" band="vhf">
+  <name>Ridings FM</name>
+  <location area="Wakefield" ngr="SE361234" site="Birkwood Farm"/>
+  <technical rdspi="C69E" switchpi="" tpta="Y" siteht="39" iuaerialht="19" iuerphp="0" iuerpvp="0.5" maxdir="150"/>
+  <admin license="AL242-1"/>
+</station>
+
+<station frequency="97.4" band="vhf">
+  <name>Rock FM</name>
+  <location area="Preston and Blackpool" ngr="SD660144" site="Winter Hill"/>
+  <technical rdspi="C686" switchpi="" tpta="N" siteht="438" iuaerialht="82" iuerphp="1" iuerpvp="1" maxdir="305"/>
+  <admin license="AL063-2"/>
+</station>
+
+<station frequency="96.1" band="vhf">
+  <name>Rother FM</name>
+  <location area="Rotherham" ngr="SK432913" site="Rotherham"/>
+  <technical rdspi="C983" switchpi="" tpta="Y" siteht="111" iuaerialht="53" iuerphp="0.1" iuerpvp="0.1" maxdir="340"/>
+  <admin license="AL314-1"/>
+</station>
+
+<station frequency="107.2" band="vhf">
+  <name>Rutland FM</name>
+  <location area="Rutland" ngr="SK877044" site="Manton"/>
+  <technical rdspi="C79E" switchpi="" tpta="N" siteht="122" iuaerialht="18" iuerphp="0.1" iuerpvp="0.1" maxdir=""/>
+  <admin license="AL229-1"/>
+</station>
+
+<station frequency="97.4" band="vhf">
+  <name>Rutland FM</name>
+  <location area="Stamford" ngr="TF019080" site="East Casterton"/>
+  <technical rdspi="C79E" switchpi="" tpta="N" siteht="58" iuaerialht="38" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="AL229-1"/>
+</station>
+
+<station frequency="94.4" band="vhf">
+  <name>Salford CR</name>
+  <location area="Salford" ngr="SD775016" site="Swinton Civic Centre"/>
+  <technical rdspi="C083" switchpi="" tpta="N" siteht="65" iuaerialht="30" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR035"/>
+</station>
+
+<station frequency="97.5" band="vhf">
+  <name>Scarlet FM</name>
+  <location area="Llanelli" ngr="SN510023" site="Llanelli"/>
+  <technical rdspi="CB94" switchpi="" tpta="Y" siteht="111" iuaerialht="31" iuerphp="0" iuerpvp="0.2" maxdir="150"/>
+  <admin license="AL289-1"/>
+</station>
+
+<station frequency="107" band="vhf">
+  <name>Seven Towers FM</name>
+  <location area="Ballymena" ngr="ID008028" site="Portglenone"/>
+  <technical rdspi="C484" switchpi="" tpta="" siteht="180" iuaerialht="18" iuerphp="0.125" iuerpvp="0.5" maxdir=""/>
+  <admin license="AL301-1"/>
+</station>
+
+<station frequency="102.4" band="vhf">
+  <name>Severn Sound FM</name>
+  <location area="Gloucester and Cheltenham" ngr="SO880188" site="Churchdown Hill"/>
+  <technical rdspi="C377" switchpi="C477" tpta="N" siteht="147" iuaerialht="21" iuerphp="1" iuerpvp="1" maxdir=""/>
+  <admin license="AL030-3"/>
+</station>
+
+<station frequency="103" band="vhf">
+  <name>Severn Sound FM</name>
+  <location area="Gloucester and Cheltenham" ngr="SO836077" site="Stroud"/>
+  <technical rdspi="C377" switchpi="C577" tpta="N" siteht="220" iuaerialht="35" iuerphp="0.05" iuerpvp="0.05" maxdir="100"/>
+  <admin license="AL030-3"/>
+</station>
+
+<station frequency="96.1" band="vhf">
+  <name>SGR-Colchester</name>
+  <location area="Colchester" ngr="TM028239" site="Wivenhoe Park"/>
+  <technical rdspi="C46B" switchpi="" tpta="N" siteht="23" iuaerialht="62" iuerphp="0.25" iuerpvp="0.25" maxdir=""/>
+  <admin license="AL153-2"/>
+</station>
+
+<station frequency="96.4" band="vhf">
+  <name>SGR-FM</name>
+  <location area="Bury St Edmunds" ngr="TL886686" site="Great Barton"/>
+  <technical rdspi="C36C" switchpi="C46C" tpta="N" siteht="63" iuaerialht="46" iuerphp="1" iuerpvp="1" maxdir=""/>
+  <admin license="AL071-3"/>
+</station>
+
+<station frequency="97.1" band="vhf">
+  <name>SGR-FM</name>
+  <location area="Ipswich" ngr="TM212445" site="Foxhall Heath"/>
+  <technical rdspi="C36C" switchpi="C56C" tpta="N" siteht="33" iuaerialht="46" iuerphp="1.4" iuerpvp="2" maxdir="250"/>
+  <admin license="AL071-3"/>
+</station>
+
+<station frequency="93.2" band="vhf">
+  <name>Sheffield Live!</name>
+  <location area="West Sheffield" ngr="SK324870" site="Tapton Hill"/>
+  <technical rdspi="CA81" switchpi="" tpta="N" siteht="247" iuaerialht="45" iuerphp="0.006" iuerpvp="0.025" maxdir="90"/>
+  <admin license="CR083"/>
+</station>
+
+<station frequency="96.2" band="vhf">
+  <name>SIBC</name>
+  <location area="Shetland" ngr="HU503387" site="Bressay"/>
+  <technical rdspi="C486" switchpi="" tpta="N" siteht="223" iuaerialht="30" iuerphp="0" iuerpvp="4" maxdir="280"/>
+  <admin license="AL131-2"/>
+</station>
+
+<station frequency="102.2" band="vhf">
+  <name>SIBC</name>
+  <location area="Shetland" ngr="HU475415" site="Lerwick"/>
+  <technical rdspi="C486" switchpi="" tpta="N" siteht="25" iuaerialht="29" iuerphp="0" iuerpvp="0.025" maxdir="135"/>
+  <admin license="AL131-2"/>
+</station>
+
+<station frequency="96.9" band="vhf">
+  <name>Signal One</name>
+  <location area="Stafford" ngr="SJ987145" site="Pye Green BT"/>
+  <technical rdspi="CB98" switchpi="" tpta="Y" siteht="230" iuaerialht="85" iuerphp="0.1" iuerpvp="0.1" maxdir="340"/>
+  <admin license="AL089-2"/>
+</station>
+
+<station frequency="102.6" band="vhf">
+  <name>Signal One</name>
+  <location area="Stoke-on-Trent" ngr="SJ812478" site="Alsagers Bank"/>
+  <technical rdspi="C490" switchpi="" tpta="N" siteht="220" iuaerialht="42" iuerphp="2" iuerpvp="2" maxdir="110"/>
+  <admin license="AL089-2"/>
+</station>
+
+<station frequency="96.4" band="vhf">
+  <name>Signal One</name>
+  <location area="Congleton" ngr="SJ933676" site="Sutton Common"/>
+  <technical rdspi="CDB5" switchpi="" tpta="N" siteht="401" iuaerialht="55" iuerphp="0.125" iuerpvp="0.125" maxdir="230"/>
+  <admin license="AL089-2"/>
+</station>
+
+<station frequency="106.9" band="vhf">
+  <name>Silk FM</name>
+  <location area="Macclesfield" ngr="SJ933676" site="Sutton Common"/>
+  <technical rdspi="C09B" switchpi="" tpta="Y" siteht="402" iuaerialht="58" iuerphp="0.05" iuerpvp="0.1" maxdir=""/>
+  <admin license="AL213-1"/>
+</station>
+
+<station frequency="106" band="vhf">
+  <name>Six FM</name>
+  <location area="Cookstown" ngr="IH824874" site="Tulnagee Quarry"/>
+  <technical rdspi="CCB0" switchpi="" tpta="Y" siteht="270" iuaerialht="12" iuerphp="0.1" iuerpvp="0.5" maxdir="70"/>
+  <admin license="AL275-1"/>
+</station>
+
+<station frequency="107.2" band="vhf">
+  <name>Six FM</name>
+  <location area="Dungannon" ngr="IH798625" site="Dungannon"/>
+  <technical rdspi="CCB0" switchpi="" tpta="Y" siteht="132" iuaerialht="15" iuerphp="0" iuerpvp="0.25" maxdir="0"/>
+  <admin license="AL275-1"/>
+</station>
+
+<station frequency="101.6" band="vhf">
+  <name>Slough CR (Asian Star)</name>
+  <location area="Slough" ngr="SU962809" site="The Centre"/>
+  <technical rdspi="C080" switchpi="" tpta="" siteht="30" iuaerialht="20" iuerphp="0" iuerpvp="0.019" maxdir=""/>
+  <admin license="CR067"/>
+</station>
+
+<station frequency="97.5" band="vhf">
+  <name>Smooth</name>
+  <location area="North East England" ngr="NZ184474" site="Burnhope"/>
+  <technical rdspi="C5A2" switchpi="" tpta="Y" siteht="240" iuaerialht="205" iuerphp="4.5" iuerpvp="4.5" maxdir="20"/>
+  <admin license="AL311-1"/>
+</station>
+
+<station frequency="101.2" band="vhf">
+  <name>Smooth</name>
+  <location area="North East England" ngr="NZ036653" site="Newton"/>
+  <technical rdspi="" switchpi="" tpta="" siteht="165" iuaerialht="26.5" iuerphp="0.1" iuerpvp="0.1" maxdir="250"/>
+  <admin license="AL311-1"/>
+</station>
+
+<station frequency="105.7" band="vhf">
+  <name>Smooth</name>
+  <location area="West Midlands" ngr="SK113003" site="Sutton Coldfield"/>
+  <technical rdspi="C4A8" switchpi="" tpta="" siteht="169" iuaerialht="159" iuerphp="5.5" iuerpvp="5.5" maxdir="210"/>
+  <admin license="AL265-1"/>
+</station>
+
+<station frequency="107.5" band="vhf">
+  <name>Smooth</name>
+  <location area="North East England" ngr="NZ216648" site="Fenham"/>
+  <technical rdspi="C371" switchpi="C471" tpta="" siteht="120" iuaerialht="45" iuerphp="0" iuerpvp="0.05" maxdir="260"/>
+  <admin license="AL311-1"/>
+</station>
+
+<station frequency="107.7" band="vhf">
+  <name>Smooth</name>
+  <location area="North East England" ngr="NZ569183" site="Eston Nab"/>
+  <technical rdspi="C6A2" switchpi="" tpta="Y" siteht="241" iuaerialht="33" iuerphp="2.5" iuerpvp="2.5" maxdir="46 286"/>
+  <admin license="AL311-1"/>
+</station>
+
+<station frequency="106.6" band="vhf">
+  <name>Smooth</name>
+  <location area="East Midlands" ngr="SK809233" site="Waltham"/>
+  <technical rdspi="C3A2" switchpi="" tpta="Y" siteht="132" iuaerialht="200" iuerphp="4.6" iuerpvp="6.2" maxdir="295"/>
+  <admin license="AL277-1"/>
+</station>
+
+<station frequency="101.4" band="vhf">
+  <name>Smooth</name>
+  <location area="Derby" ngr="SK375421" site="Drum Hill"/>
+  <technical rdspi="C3A2" switchpi="" tpta="Y" siteht="156" iuaerialht="27" iuerphp="0.075" iuerpvp="0.125" maxdir=""/>
+  <admin license="AL277-1"/>
+</station>
+
+<station frequency="100.4" band="vhf">
+  <name>Smooth</name>
+  <location area="North West England" ngr="SD660144" site="Winter Hill"/>
+  <technical rdspi="C3A7" switchpi="" tpta="Y" siteht="438" iuaerialht="190" iuerphp="2.5" iuerpvp="2.5" maxdir="285"/>
+  <admin license="AL164-1"/>
+</station>
+
+<station frequency="105.2" band="vhf">
+  <name>Smooth</name>
+  <location area="Glasgow" ngr="NS828647" site="Black Hill"/>
+  <technical rdspi="C4A2" switchpi="" tpta="Y" siteht="275" iuaerialht="161" iuerphp="15" iuerpvp="15" maxdir="265"/>
+  <admin license="AL290-1"/>
+</station>
+
+<station frequency="101.9" band="vhf">
+  <name>South Hams Radio</name>
+  <location area="Ivybridge" ngr="SX631538" site="Ivybridge"/>
+  <technical rdspi="C7B8" switchpi="" tpta="Y" siteht="143" iuaerialht="35" iuerphp="0.25" iuerpvp="0.25" maxdir="80"/>
+  <admin license="AL252-1"/>
+</station>
+
+<station frequency="101.2" band="vhf">
+  <name>South Hams Radio</name>
+  <location area="South Hams" ngr="SX718376" site="Soar"/>
+  <technical rdspi="C7B8" switchpi="" tpta="N" siteht="131" iuaerialht="45" iuerphp="0.158" iuerpvp="1" maxdir="30"/>
+  <admin license="AL252-1"/>
+</station>
+
+<station frequency="100.8" band="vhf">
+  <name>South Hams Radio</name>
+  <location area="Dartmouth" ngr="SX866508" site="Dartmouth"/>
+  <technical rdspi="C7B8" switchpi="" tpta="Y" siteht="144" iuaerialht="12" iuerphp="0" iuerpvp="0.1" maxdir="50"/>
+  <admin license="AL252-1"/>
+</station>
+
+<station frequency="100.5" band="vhf">
+  <name>South Hams Radio</name>
+  <location area="Totnes" ngr="SX796598" site="Totnes"/>
+  <technical rdspi="C7B8" switchpi="" tpta="Y" siteht="146" iuaerialht="11" iuerphp="0.06" iuerpvp="0.25" maxdir="320"/>
+  <admin license="AL252-1"/>
+</station>
+
+<station frequency="107.3" band="vhf">
+  <name>South London Radio</name>
+  <location area="Lewisham" ngr="TQ379745" site="Bredgar"/>
+  <technical rdspi="C594" switchpi="" tpta="N" siteht="14" iuaerialht="65" iuerphp="0.4" iuerpvp="0.4" maxdir="145"/>
+  <admin license="AL219-1"/>
+</station>
+
+<station frequency="97" band="vhf">
+  <name>South West Sound</name>
+  <location area="Dumfries" ngr="NX903779" site="Riddings Hill"/>
+  <technical rdspi="CAB1" switchpi="" tpta="N" siteht="230" iuaerialht="60" iuerphp="0" iuerpvp="1" maxdir="160"/>
+  <admin license="AL130-3"/>
+</station>
+
+<station frequency="103" band="vhf">
+  <name>South West Sound</name>
+  <location area="Kirkcudbright" ngr="NX524578" site="Cambret Hill"/>
+  <technical rdspi="CAB1" switchpi="" tpta="N" siteht="348" iuaerialht="45" iuerphp="0.13" iuerpvp="0.54" maxdir="260"/>
+  <admin license="AL130-3"/>
+</station>
+
+<station frequency="96.5" band="vhf">
+  <name>South West Sound</name>
+  <location area="Stranraer" ngr="NX044563" site="Cairn Pat"/>
+  <technical rdspi="CAB1" switchpi="" tpta="N" siteht="158" iuaerialht="35" iuerphp="0.02" iuerpvp="0.1" maxdir="35"/>
+  <admin license="AL130-3"/>
+</station>
+
+<station frequency="89.6" band="vhf">
+  <name>Southall CR (Westside)</name>
+  <location area="Southall" ngr="TQ142801" site="Windmill Business Centre"/>
+  <technical rdspi="C591" switchpi="" tpta="N" siteht="23" iuaerialht="25" iuerphp="0.025" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR072"/>
+</station>
+
+<station frequency="102" band="vhf">
+  <name>Southern FM</name>
+  <location area="Hastings" ngr="TQ807100" site="Hastings"/>
+  <technical rdspi="CB86" switchpi="" tpta="Y" siteht="76" iuaerialht="38" iuerphp="0.1" iuerpvp="0.1" maxdir=""/>
+  <admin license="AL085-2"/>
+</station>
+
+<station frequency="102.4" band="vhf">
+  <name>Southern FM</name>
+  <location area="Eastbourne" ngr="TQ566220" site="Heathfield"/>
+  <technical rdspi="CB86" switchpi="" tpta="Y" siteht="157" iuaerialht="115" iuerphp="4.1" iuerpvp="4.1" maxdir="180"/>
+  <admin license="AL085-2"/>
+</station>
+
+<station frequency="96.9" band="vhf">
+  <name>Southern FM</name>
+  <location area="Brighton" ngr="TQ435006" site="Newhaven"/>
+  <technical rdspi="CB86" switchpi="" tpta="Y" siteht="83" iuaerialht="40" iuerphp="0.05" iuerpvp="0.05" maxdir="70"/>
+  <admin license="AL085-2"/>
+</station>
+
+<station frequency="103.5" band="vhf">
+  <name>Southern FM</name>
+  <location area="Brighton" ngr="TQ330045" site="Whitehawk Hill"/>
+  <technical rdspi="CB86" switchpi="" tpta="Y" siteht="121" iuaerialht="39" iuerphp="0.45" iuerpvp="0.45" maxdir="285"/>
+  <admin license="AL085-2"/>
+</station>
+
+<station frequency="107.5" band="vhf">
+  <name>Sovereign Radio</name>
+  <location area="Eastbourne" ngr="TQ580015" site="Butts Brow"/>
+  <technical rdspi="C093" switchpi="" tpta="Y" siteht="183" iuaerialht="19.5" iuerphp="0.05" iuerpvp="0.1" maxdir="320"/>
+  <admin license="AL206-1"/>
+</station>
+
+<station frequency="102" band="vhf">
+  <name>Spire FM</name>
+  <location area="Salisbury" ngr="SU112337" site="Camp Hill"/>
+  <technical rdspi="C486" switchpi="" tpta="Y" siteht="136" iuaerialht="21" iuerphp="0.25" iuerpvp="1" maxdir="80"/>
+  <admin license="AL145-2"/>
+</station>
+
+<station frequency="96.6" band="vhf">
+  <name>Spirit FM</name>
+  <location area="Chichester" ngr="SU876111" site="The Trundle"/>
+  <technical rdspi="C5B1" switchpi="" tpta="Y" siteht="190" iuaerialht="20.5" iuerphp="0.08" iuerpvp="0.32" maxdir="240"/>
+  <admin license="AL182-2"/>
+</station>
+
+<station frequency="102.3" band="vhf">
+  <name>Spirit FM</name>
+  <location area="Littlehampton" ngr="TQ072055" site="Hammerpot"/>
+  <technical rdspi="C5B1" switchpi="" tpta="Y" siteht="40" iuaerialht="21" iuerphp="0.178" iuerpvp="0.222" maxdir="220"/>
+  <admin license="AL182-2"/>
+</station>
+
+<station frequency="106.6" band="vhf">
+  <name>Spirit FM</name>
+  <location area="Midhurst" ngr="SU911250" site="Midhurst"/>
+  <technical rdspi="C5B1" switchpi="" tpta="" siteht="190" iuaerialht="81" iuerphp="0.2" iuerpvp="0.2" maxdir="125"/>
+  <admin license="AL182-2"/>
+</station>
+
+<station frequency="96.3" band="vhf">
+  <name>Spirit of Plymouth</name>
+  <location area="Plymouth" ngr="SX487564" site="Mannamead"/>
+  <technical rdspi="C091" switchpi="" tpta="" siteht="80" iuaerialht="30" iuerphp="0.005" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR059"/>
+</station>
+
+<station frequency="107.7" band="vhf">
+  <name>Splash FM</name>
+  <location area="Worthing" ngr="TQ149027" site="Guildbourne House"/>
+  <technical rdspi="C89E" switchpi="" tpta="Y" siteht="4" iuaerialht="32" iuerphp="0" iuerpvp="0.1" maxdir=""/>
+  <admin license="AL278-1"/>
+</station>
+
+<station frequency="92.6" band="vhf">
+  <name>St Albans CR (Radio Verulam)</name>
+  <location area="St Albans" ngr="TL153071" site="St Albans"/>
+  <technical rdspi="C680" switchpi="" tpta="N" siteht="101" iuaerialht="12" iuerphp="0.025" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR090"/>
+</station>
+
+<station frequency="105.6" band="vhf">
+  <name>St Austell CR (Radio St Austell Bay)</name>
+  <location area="St Austell" ngr="SX024512" site="St Austell RFC"/>
+  <technical rdspi="" switchpi="" tpta="" siteht="90" iuaerialht="15" iuerphp="0" iuerpvp="0.025" maxdir="45"/>
+  <admin license="CR115"/>
+</station>
+
+<station frequency="107.2" band="vhf">
+  <name>Star 107.2</name>
+  <location area="Bristol" ngr="ST610764" site="Pur Down"/>
+  <technical rdspi="C893" switchpi="" tpta="" siteht="91" iuaerialht="65" iuerphp="0.16" iuerpvp="0.5" maxdir="210"/>
+  <admin license="AL247-1"/>
+</station>
+
+<station frequency="107.5" band="vhf">
+  <name>Star 107.5</name>
+  <location area="Cheltenham" ngr="SO948217" site="Cheltenham"/>
+  <technical rdspi="C982" switchpi="" tpta="Y" siteht="60" iuaerialht="57" iuerphp="0" iuerpvp="0.1" maxdir=""/>
+  <admin license="AL225-1"/>
+</station>
+
+<station frequency="107.7" band="vhf">
+  <name>Star 107.7</name>
+  <location area="Weston-Super-Mare" ngr="ST325627" site="Worlebury Hill"/>
+  <technical rdspi="C682" switchpi="" tpta="N" siteht="102" iuaerialht="30" iuerphp="0" iuerpvp="0.1" maxdir="160"/>
+  <admin license="AL249-1"/>
+</station>
+
+<station frequency="102.5" band="vhf">
+  <name>Stourbridge CR (The Bridge)</name>
+  <location area="Stourbridge" ngr="SO919823" site="Wollescote"/>
+  <technical rdspi="CB81" switchpi="" tpta="" siteht="159" iuaerialht="25" iuerphp="0.022" iuerpvp="0.025" maxdir="240"/>
+  <admin license="CR041"/>
+</station>
+
+<station frequency="103.4" band="vhf">
+  <name>Sun FM</name>
+  <location area="Sunderland" ngr="NZ355509" site="Haining"/>
+  <technical rdspi="CD86" switchpi="" tpta="Y" siteht="160" iuaerialht="32" iuerphp="0.08" iuerpvp="0.08" maxdir="60"/>
+  <admin license="AL055-3"/>
+</station>
+
+<station frequency="103.2" band="vhf">
+  <name>Sunrise Radio</name>
+  <location area="Bradford" ngr="SE164374" site="Idle"/>
+  <technical rdspi="CB92" switchpi="" tpta="N" siteht="214" iuaerialht="43" iuerphp="0.2" iuerpvp="0.2" maxdir="225"/>
+  <admin license="AL037-2"/>
+</station>
+
+<station frequency="107" band="vhf">
+  <name>Sunshine FM</name>
+  <location area="Monmouth" ngr="SO526128" site="Monmouth"/>
+  <technical rdspi="CB83" switchpi="" tpta="Y" siteht="195" iuaerialht="17" iuerphp="0.5" iuerpvp="0.5" maxdir="330"/>
+  <admin license="AL326-1"/>
+</station>
+
+<station frequency="107.8" band="vhf">
+  <name>Sunshine FM</name>
+  <location area="Monmouthshire" ngr="SO244126" site="Abergavenny"/>
+  <technical rdspi="CB83" switchpi="" tpta="Y" siteht="436" iuaerialht="30" iuerphp="0.02" iuerpvp="0.02" maxdir="10"/>
+  <admin license="AL326-1"/>
+</station>
+
+<station frequency="106.2" band="vhf">
+  <name>Sunshine FM</name>
+  <location area="Hereford" ngr="SO630333" site="Ridge Hill"/>
+  <technical rdspi="CA83" switchpi="" tpta="Y" siteht="204" iuaerialht="71" iuerphp="0.8" iuerpvp="0.8" maxdir=""/>
+  <admin license="AL326-1"/>
+</station>
+
+<station frequency="102.1" band="vhf">
+  <name>Swansea Bay Radio</name>
+  <location area="Swansea" ngr="SS672940" site="Kilvey Hill"/>
+  <technical rdspi="C784" switchpi="" tpta="Y" siteht="193" iuaerialht="18" iuerphp="0.25" iuerpvp="1" maxdir="350"/>
+  <admin license="AL306-1"/>
+</station>
+
+<station frequency="103.2" band="vhf">
+  <name>Takeover Radio</name>
+  <location area="Leicester" ngr="SK583046" site="Leicester"/>
+  <technical rdspi="C491" switchpi="" tpta="N" siteht="60" iuaerialht="22" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR010"/>
+</station>
+
+<station frequency="107" band="vhf">
+  <name>Talk 107</name>
+  <location area="Edinburgh" ngr="NT233872" site="Craigkelly"/>
+  <technical rdspi="C782" switchpi="" tpta="Y" siteht="182" iuaerialht="119" iuerphp="5" iuerpvp="5" maxdir="255"/>
+  <admin license="AL291-1"/>
+</station>
+
+<station frequency="103.6" band="vhf">
+  <name>Tameside Radio</name>
+  <location area="Tameside" ngr="SJ984964" site="Harrop Edge"/>
+  <technical rdspi="C791" switchpi="" tpta="" siteht="298" iuaerialht="" iuerphp="" iuerpvp="" maxdir=""/>
+  <admin license="CR033"/>
+</station>
+
+<station frequency="102.8" band="vhf">
+  <name>Tay FM</name>
+  <location area="Dundee" ngr="NO394407" site="Angus"/>
+  <technical rdspi="C6B1" switchpi="" tpta="Y" siteht="313" iuaerialht="165" iuerphp="1" iuerpvp="4" maxdir="120"/>
+  <admin license="AL028-2"/>
+</station>
+
+<station frequency="96.4" band="vhf">
+  <name>Tay FM</name>
+  <location area="Perth" ngr="NO108212" site="Perth"/>
+  <technical rdspi="C6B1" switchpi="" tpta="Y" siteht="122" iuaerialht="40" iuerphp="0.5" iuerpvp="0.3" maxdir=""/>
+  <admin license="AL028-2"/>
+</station>
+
+<station frequency="107.4" band="vhf">
+  <name>Telford FM</name>
+  <location area="Telford" ngr="SJ681077" site="Heath Hill"/>
+  <technical rdspi="C693" switchpi="" tpta="N" siteht="198" iuaerialht="42" iuerphp="0" iuerpvp="0.1" maxdir="300"/>
+  <admin license="AL237-1"/>
+</station>
+
+<station frequency="107.4" band="vhf">
+  <name>Tempo FM</name>
+  <location area="Wetherby" ngr="SE407486" site="Wetherby"/>
+  <technical rdspi="C891" switchpi="" tpta="" siteht="29" iuaerialht="13" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR064"/>
+</station>
+
+<station frequency="101.7" band="vhf">
+  <name>Ten 17</name>
+  <location area="Harlow" ngr="TL449067" site="Harlow (Rye Hill)"/>
+  <technical rdspi="C36D" switchpi="C46D" tpta="Y" siteht="110" iuaerialht="28" iuerphp="0.05" iuerpvp="0.05" maxdir="0"/>
+  <admin license="AL150-2"/>
+</station>
+
+<station frequency="96.6" band="vhf">
+  <name>TFM Radio</name>
+  <location area="Teeside" ngr="SE553962" site="Bilsdale"/>
+  <technical rdspi="C5B0" switchpi="" tpta="Y" siteht="381" iuaerialht="270" iuerphp="4.45" iuerpvp="4.45" maxdir="330"/>
+  <admin license="AL105-2"/>
+</station>
+
+<station frequency="103.7" band="vhf">
+  <name>TGR Sound</name>
+  <location area="Bexley" ngr="TQ503785" site="Belvedere"/>
+  <technical rdspi="" switchpi="" tpta="" siteht="29" iuaerialht="30" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR077"/>
+</station>
+
+<station frequency="107.2" band="vhf">
+  <name>Thanets KM-FM</name>
+  <location area="Thanet" ngr="TR374674" site="Broadstairs"/>
+  <technical rdspi="C094" switchpi="" tpta="Y" siteht="50" iuaerialht="47" iuerphp="0" iuerpvp="0.1" maxdir="285"/>
+  <admin license="AL197-1"/>
+</station>
+
+<station frequency="103.2" band="vhf">
+  <name>The Bay</name>
+  <location area="Kendal" ngr="SD540912" site="Kendal"/>
+  <technical rdspi="C486" switchpi="" tpta="Y" siteht="177" iuaerialht="44" iuerphp="0.05" iuerpvp="0.05" maxdir="280"/>
+  <admin license="AL147-2"/>
+</station>
+
+<station frequency="96.9" band="vhf">
+  <name>The Bay</name>
+  <location area="Morecambe Bay" ngr="SD239791" site="Morecambe Bay"/>
+  <technical rdspi="C486" switchpi="" tpta="Y" siteht="259" iuaerialht="67.5" iuerphp="1.6" iuerpvp="1.6" maxdir="120"/>
+  <admin license="AL147-2"/>
+</station>
+
+<station frequency="102.3" band="vhf">
+  <name>The Bay</name>
+  <location area="Windermere" ngr="SD383980" site="Windermere"/>
+  <technical rdspi="C486" switchpi="" tpta="Y" siteht="217" iuaerialht="22.5" iuerphp="0.008" iuerpvp="0.032" maxdir="335"/>
+  <admin license="AL147-2"/>
+</station>
+
+<station frequency="97.4" band="vhf">
+  <name>The Beach</name>
+  <location area="Great Yarmouth" ngr="TG520076" site="Great Yarmouth"/>
+  <technical rdspi="C5B6" switchpi="" tpta="" siteht="1" iuaerialht="36" iuerphp="0" iuerpvp="0.05" maxdir=""/>
+  <admin license="AL186-1"/>
+</station>
+
+<station frequency="103.4" band="vhf">
+  <name>The Beach</name>
+  <location area="Great Yarmouth and Lowestoft" ngr="TM523942" site="Oulton"/>
+  <technical rdspi="C5B6" switchpi="" tpta="N" siteht="13" iuaerialht="38" iuerphp="1" iuerpvp="1" maxdir="5"/>
+  <admin license="AL186-1"/>
+</station>
+
+<station frequency="97.4" band="vhf">
+  <name>The Beach</name>
+  <location area="Southwold" ngr="TM453742" site="Blythburgh Water Tower"/>
+  <technical rdspi="C5B6" switchpi="" tpta="" siteht="22" iuaerialht="30" iuerphp="0.04" iuerpvp="0.2" maxdir="210"/>
+  <admin license="AL186-1"/>
+</station>
+
+<station frequency="107" band="vhf">
+  <name>The Bee</name>
+  <location area="Blackburn" ngr="SD696267" site="Blackburn"/>
+  <technical rdspi="C582" switchpi="" tpta="Y" siteht="198" iuaerialht="32" iuerphp="0.25" iuerpvp="0.25" maxdir="300"/>
+  <admin license="AL292-1"/>
+</station>
+
+<station frequency="103" band="vhf">
+  <name>The Eye</name>
+  <location area="Vale of Belvoir" ngr="SK721238" site="White Lodge Farm"/>
+  <technical rdspi="C891" switchpi="" tpta="Y" siteht="167" iuaerialht="20" iuerphp="0.025" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR012"/>
+</station>
+
+<station frequency="97.5" band="vhf">
+  <name>The Pulse</name>
+  <location area="Bradford" ngr="SE164374" site="Idle"/>
+  <technical rdspi="C9B0" switchpi="" tpta="Y" siteht="215" iuaerialht="43" iuerphp="0.25" iuerpvp="0.25" maxdir="225"/>
+  <admin license="AL073-2"/>
+</station>
+
+<station frequency="102.5" band="vhf">
+  <name>The Pulse</name>
+  <location area="Halifax and Huddersfield" ngr="SE071172" site="Vicars Lot"/>
+  <technical rdspi="C9B0" switchpi="" tpta="Y" siteht="340" iuaerialht="61" iuerphp="1" iuerpvp="1" maxdir=""/>
+  <admin license="AL073-2"/>
+</station>
+
+<station frequency="107.1" band="vhf">
+  <name>The Severn</name>
+  <location area="Oswestry" ngr="SJ266318" site="Selattyn"/>
+  <technical rdspi="CE92" switchpi="" tpta="Y" siteht="305" iuaerialht="20" iuerphp="0.05" iuerpvp="0.05" maxdir="120"/>
+  <admin license="AL310-1"/>
+</station>
+
+<station frequency="106.5" band="vhf">
+  <name>The Severn</name>
+  <location area="Shrewsbury" ngr="SJ465135" site="Shelton"/>
+  <technical rdspi="C483" switchpi="" tpta="Y" siteht="90" iuaerialht="27" iuerphp="0.25" iuerpvp="0.25" maxdir="120"/>
+  <admin license="AL310-1"/>
+</station>
+
+<station frequency="96.4" band="vhf">
+  <name>The Wave 96.4</name>
+  <location area="Swansea" ngr="SS672940" site="Kilvey Hill"/>
+  <technical rdspi="C5B5" switchpi="" tpta="Y" siteht="193" iuaerialht="36" iuerphp="0.5" iuerpvp="1" maxdir="35"/>
+  <admin license="AL091-2"/>
+</station>
+
+<station frequency="107.7" band="vhf">
+  <name>The Wolf</name>
+  <location area="Wolverhampton" ngr="SO915986" site="Mander House"/>
+  <technical rdspi="C6B4" switchpi="" tpta="Y" siteht="154" iuaerialht="53" iuerphp="0.085" iuerpvp="0.085" maxdir="270"/>
+  <admin license="AL199-1"/>
+</station>
+
+<station frequency="107.2" band="vhf">
+  <name>The Wyre</name>
+  <location area="Kidderminster" ngr="SO808739" site="Kidderminster"/>
+  <technical rdspi="C0B5" switchpi="" tpta="Y" siteht="84" iuaerialht="44" iuerphp="0.1" iuerpvp="0.1" maxdir="60"/>
+  <admin license="AL294-1"/>
+</station>
+
+<station frequency="106.8" band="vhf">
+  <name>Time</name>
+  <location area="Thamesmead" ngr="TQ438767" site="Shooters Hill"/>
+  <technical rdspi="C090" switchpi="" tpta="N" siteht="124" iuaerialht="24" iuerphp="0.08" iuerpvp="0.1" maxdir="110"/>
+  <admin license="AL040-3"/>
+</station>
+
+<station frequency="106.6" band="vhf">
+  <name>Time 106.6</name>
+  <location area="Slough" ngr="SU954814" site="Slough"/>
+  <technical rdspi="CAB9" switchpi="" tpta="Y" siteht="35" iuaerialht="110" iuerphp="0.125" iuerpvp="0.125" maxdir="190"/>
+  <admin license="AL148-2"/>
+</station>
+
+<station frequency="107.5" band="vhf">
+  <name>Time 107.5</name>
+  <location area="Havering" ngr="TQ513887" site="Lambourne House"/>
+  <technical rdspi="C09E" switchpi="" tpta="N" siteht="17" iuaerialht="39" iuerphp="0.16" iuerpvp="0.18" maxdir=""/>
+  <admin license="AL216-1"/>
+</station>
+
+<station frequency="101.6" band="vhf">
+  <name>Touch FM</name>
+  <location area="South East Staffordshire" ngr="SK164043" site="Lichfield"/>
+  <technical rdspi="C3B7" switchpi="CAB7" tpta="Y" siteht="152" iuaerialht="109" iuerphp="0.012" iuerpvp="0.05" maxdir="360"/>
+  <admin license="AL217-1"/>
+</station>
+
+<station frequency="102" band="vhf">
+  <name>Touch FM</name>
+  <location area="Stratford" ngr="SP187427" site="Lark Stoke"/>
+  <technical rdspi="C686" switchpi="" tpta="Y" siteht="259" iuaerialht="12" iuerphp="1.14" iuerpvp="1.43" maxdir="50"/>
+  <admin license="AL185-2"/>
+</station>
+
+<station frequency="102.4" band="vhf">
+  <name>Touch FM</name>
+  <location area="South East Staffordshire" ngr="SK266227" site="Burton"/>
+  <technical rdspi="C3B7" switchpi="C9B7" tpta="Y" siteht="122" iuaerialht="30" iuerphp="0.012" iuerpvp="0.05" maxdir="230"/>
+  <admin license="AL217-1"/>
+</station>
+
+<station frequency="96.2" band="vhf">
+  <name>Touch FM</name>
+  <location area="Coventry" ngr="SP331795" site="Samuel Vale House"/>
+  <technical rdspi="C59A" switchpi="" tpta="Y" siteht="91" iuaerialht="58" iuerphp="0.02" iuerpvp="0.08" maxdir="120"/>
+  <admin license="AL052-2"/>
+</station>
+
+<station frequency="107.6" band="vhf">
+  <name>Touch FM</name>
+  <location area="Banbury" ngr="SP532387" site="Farthinghoe"/>
+  <technical rdspi="C681" switchpi="" tpta="Y" siteht="157" iuaerialht="46" iuerphp="0.1" iuerpvp="0.1" maxdir=""/>
+  <admin license="AL299-1"/>
+</station>
+
+<station frequency="107.4" band="vhf">
+  <name>Tower FM</name>
+  <location area="Bolton" ngr="SD763121" site="Tottington"/>
+  <technical rdspi="C499" switchpi="" tpta="Y" siteht="215" iuaerialht="25" iuerphp="0.08" iuerpvp="0.1" maxdir="125"/>
+  <admin license="AL234-1"/>
+</station>
+
+<station frequency="102" band="vhf">
+  <name>Town FM</name>
+  <location area="Ipswich" ngr="TM196425" site="Warren Heath"/>
+  <technical rdspi="CCB7" switchpi="" tpta="Y" siteht="32" iuaerialht="48" iuerphp="0.17" iuerpvp="0.85" maxdir="295"/>
+  <admin license="AL308-1"/>
+</station>
+
+<station frequency="107.1" band="vhf">
+  <name>TRAX FM</name>
+  <location area="Doncaster" ngr="SK518959" site="Clifton"/>
+  <technical rdspi="C49E" switchpi="" tpta="Y" siteht="138" iuaerialht="36" iuerphp="0.25" iuerpvp="0.25" maxdir="50"/>
+  <admin license="AL244-1"/>
+</station>
+
+<station frequency="107.9" band="vhf">
+  <name>TRAX FM</name>
+  <location area="Worksop" ngr="SK603822" site="Worksop"/>
+  <technical rdspi="C59E" switchpi="" tpta="Y" siteht="50" iuaerialht="36" iuerphp="0.02" iuerpvp="0.08" maxdir="150"/>
+  <admin license="AL224-1"/>
+</station>
+
+<station frequency="96.5" band="vhf">
+  <name>Trent FM (Nottingham)</name>
+  <location area="Mansfield" ngr="SK514606" site="Fishpond Hill"/>
+  <technical rdspi="C36E" switchpi="C46E" tpta="Y" siteht="168" iuaerialht="46" iuerphp="0" iuerpvp="0.05" maxdir="235"/>
+  <admin license="AL107-2A"/>
+</station>
+
+<station frequency="96.2" band="vhf">
+  <name>Trent FM (Nottingham)</name>
+  <location area="Nottingham" ngr="SK583424" site="Mapperley Ridge"/>
+  <technical rdspi="C36E" switchpi="C56E" tpta="Y" siteht="122" iuaerialht="46" iuerphp="0.4" iuerpvp="0.5" maxdir=""/>
+  <admin license="AL107-2A"/>
+</station>
+
+<station frequency="106" band="vhf">
+  <name>Two Lochs Radio</name>
+  <location area="Gairloch" ngr="NG763740" site="Port Henderson"/>
+  <technical rdspi="CBB5" switchpi="" tpta="Y" siteht="64" iuaerialht="19" iuerphp="0" iuerpvp="0.6" maxdir="30"/>
+  <admin license="AL282-1"/>
+</station>
+
+<station frequency="106.6" band="vhf">
+  <name>Two Lochs Radio</name>
+  <location area="Loch Ewe" ngr="NG850799" site="Cliff Hill"/>
+  <technical rdspi="CBB5" switchpi="" tpta="Y" siteht="229" iuaerialht="18" iuerphp="0" iuerpvp="2" maxdir="100"/>
+  <admin license="AL282-1"/>
+</station>
+
+<station frequency="105.8" band="vhf">
+  <name>U105</name>
+  <location area="Belfast" ngr="IJ278727" site="Black Mountain"/>
+  <technical rdspi="C583" switchpi="" tpta="Y" siteht="301" iuaerialht="190" iuerphp="0.92" iuerpvp="1" maxdir="70"/>
+  <admin license="AL295-1"/>
+</station>
+
+<station frequency="93.5" band="vhf">
+  <name>Unity FM</name>
+  <location area="Birmingham" ngr="SP083856" site="Birmingham East"/>
+  <technical rdspi="" switchpi="" tpta="" siteht="125" iuaerialht="27" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR039"/>
+</station>
+
+<station frequency="101.1" band="vhf">
+  <name>Unity101</name>
+  <location area="Southampton" ngr="SU447142" site="Midanbury"/>
+  <technical rdspi="C891" switchpi="" tpta="N" siteht="60" iuaerialht="14" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR008"/>
+</station>
+
+<station frequency="105.8" band="vhf">
+  <name>Virgin 105.8 FM</name>
+  <location area="London" ngr="TQ339712" site="Crystal Palace"/>
+  <technical rdspi="C4B4" switchpi="" tpta="Y" siteht="110" iuaerialht="149" iuerphp="2" iuerpvp="1.73" maxdir=""/>
+  <admin license="AL173-1"/>
+</station>
+
+<station frequency="25.7" band="vhf">
+  <name>VTMerlin_DRM</name>
+  <location area="London" ngr="TQ339712" site="Crystal Palace"/>
+  <technical rdspi="" switchpi="" tpta="" siteht="114" iuaerialht="65" iuerphp="0" iuerpvp="4.5" maxdir="350"/>
+  <admin license="DRSL222"/>
+</station>
+
+<station frequency="102" band="vhf">
+  <name>Wave 102</name>
+  <location area="Dundee" ngr="NO392313" site="Dundee Law"/>
+  <technical rdspi="C892" switchpi="" tpta="Y" siteht="174" iuaerialht="12" iuerphp="0.1" iuerpvp="0.1" maxdir="300"/>
+  <admin license="AL232-1"/>
+</station>
+
+<station frequency="105.8" band="vhf">
+  <name>Wave 105 FM</name>
+  <location area="Poole" ngr="SZ037921" site="Poole"/>
+  <technical rdspi="C3AD" switchpi="" tpta="Y" siteht="64" iuaerialht="40" iuerphp="0.125" iuerpvp="0.5" maxdir="315"/>
+  <admin license="AL215-1"/>
+</station>
+
+<station frequency="105.2" band="vhf">
+  <name>Wave 105 FM</name>
+  <location area="Solent" ngr="SZ475835" site="Chillerton Down"/>
+  <technical rdspi="C3AD" switchpi="" tpta="Y" siteht="166" iuaerialht="214" iuerphp="5" iuerpvp="5" maxdir="350"/>
+  <admin license="AL215-1"/>
+</station>
+
+<station frequency="101.2" band="vhf">
+  <name>Waves Radio Peterhead</name>
+  <location area="Peterhead and Fraserburgh" ngr="NJ983571" site="Mormond Hill"/>
+  <technical rdspi="C6B6" switchpi="" tpta="N" siteht="219" iuaerialht="58" iuerphp="0.65" iuerpvp="1" maxdir="210"/>
+  <admin license="AL209-1"/>
+</station>
+
+<station frequency="97.2" band="vhf">
+  <name>Wessex FM</name>
+  <location area="Dorchester and Weymouth" ngr="SY687848" site="Bincombe"/>
+  <technical rdspi="C4B1" switchpi="" tpta="N" siteht="160" iuaerialht="35" iuerphp="0.125" iuerpvp="0.5" maxdir="90"/>
+  <admin license="AL154-2"/>
+</station>
+
+<station frequency="96" band="vhf">
+  <name>Wessex FM</name>
+  <location area="Dorchester and Weymouth" ngr="SY453915" site="Bridport"/>
+  <technical rdspi="C4B1" switchpi="" tpta="N" siteht="64" iuaerialht="35" iuerphp="0.012" iuerpvp="0.05" maxdir=""/>
+  <admin license="AL154-2"/>
+</station>
+
+<station frequency="101" band="vhf">
+  <name>West Glasgow CR (Insight)</name>
+  <location area="West Glasgow" ngr="NS547688" site="Glasgow"/>
+  <technical rdspi="C081" switchpi="" tpta="N" siteht="28" iuaerialht="74" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR017"/>
+</station>
+
+<station frequency="106.9" band="vhf">
+  <name>West Hull CR</name>
+  <location area="West Hull" ngr="TA084287" site="Royal Infirmary"/>
+  <technical rdspi="C591" switchpi="" tpta="N" siteht="2" iuaerialht="65" iuerphp="0.019" iuerpvp="0.025" maxdir="245"/>
+  <admin license="CR056"/>
+</station>
+
+<station frequency="96.9" band="vhf">
+  <name>West Norwich CR (Future Radio)</name>
+  <location area="West Norwich" ngr="TG213109" site="Markham Tower"/>
+  <technical rdspi="C091" switchpi="" tpta="N" siteht="22" iuaerialht="" iuerphp="0.025" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR027"/>
+</station>
+
+<station frequency="96.7" band="vhf">
+  <name>West Sound Radio</name>
+  <location area="Ayr" ngr="NS557341" site="Darvel"/>
+  <technical rdspi="CCB1" switchpi="" tpta="N" siteht="287" iuaerialht="120" iuerphp="1.1" iuerpvp="1.1" maxdir="240"/>
+  <admin license="AL014-2"/>
+</station>
+
+<station frequency="97.5" band="vhf">
+  <name>West Sound Radio</name>
+  <location area="Ayr" ngr="NX211981" site="Girvan"/>
+  <technical rdspi="CCB1" switchpi="" tpta="N" siteht="195" iuaerialht="25" iuerphp="0.052" iuerpvp="0.075" maxdir="150"/>
+  <admin license="AL014-2"/>
+</station>
+
+<station frequency="106.7" band="vhf">
+  <name>West Sound Radio</name>
+  <location area="Rothesay" ngr="NS125690" site="Rothesay"/>
+  <technical rdspi="CCB1" switchpi="" tpta="" siteht="157" iuaerialht="30" iuerphp="0.3" iuerpvp="0.3" maxdir="155"/>
+  <admin license="AL014-2"/>
+</station>
+
+<station frequency="107.2" band="vhf">
+  <name>Win 107</name>
+  <location area="Winchester" ngr="SU449295" site="Crabwood Farm"/>
+  <technical rdspi="C992" switchpi="" tpta="Y" siteht="152" iuaerialht="46" iuerphp="0.1" iuerpvp="0.1" maxdir=""/>
+  <admin license="AL241-1"/>
+</station>
+
+<station frequency="107.2" band="vhf">
+  <name>Wire FM</name>
+  <location area="Warrington" ngr="SJ614843" site="High Warren Reservoir"/>
+  <technical rdspi="C09D" switchpi="" tpta="Y" siteht="105" iuaerialht="25" iuerphp="0.08" iuerpvp="0.1" maxdir="350"/>
+  <admin license="AL214-1"/>
+</station>
+
+<station frequency="97.1" band="vhf">
+  <name>Wirral's Buzz 97.1</name>
+  <location area="Deeside" ngr="SJ314841" site="Storeton"/>
+  <technical rdspi="C47E" switchpi="" tpta="Y" siteht="66" iuaerialht="40" iuerphp="0.5" iuerpvp="0.5" maxdir="225"/>
+  <admin license="AL087-3B"/>
+</station>
+
+<station frequency="102.4" band="vhf">
+  <name>Wish 102</name>
+  <location area="Wigan" ngr="SD523016" site="Billinge Hill"/>
+  <technical rdspi="C6B7" switchpi="" tpta="Y" siteht="170" iuaerialht="30" iuerphp="0.042" iuerpvp="0.05" maxdir="25"/>
+  <admin license="AL189-1"/>
+</station>
+
+<station frequency="105.3" band="vhf">
+  <name>Withernsea CR (Seaside Radio)</name>
+  <location area="Withernsea" ngr="TA342280" site="Withernsea"/>
+  <technical rdspi="C580" switchpi="" tpta="Y" siteht="6" iuaerialht="20" iuerphp="0" iuerpvp="0.023" maxdir=""/>
+  <admin license="CR052"/>
+</station>
+
+<station frequency="101.8" band="vhf">
+  <name>Wolverhampton CR (WCR)</name>
+  <location area="Wolverhampton" ngr="SO917984" site="Wolverhampton"/>
+  <technical rdspi="CB91" switchpi="" tpta="Y" siteht="155" iuaerialht="20" iuerphp="0" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR042"/>
+</station>
+
+<station frequency="106.7" band="vhf">
+  <name>Worcester CR (Youth Comm Radio)</name>
+  <location area="Worcester" ngr="SO868551" site="Worcester"/>
+  <technical rdspi="C791" switchpi="" tpta="" siteht="73" iuaerialht="18" iuerphp="" iuerpvp="0.025" maxdir=""/>
+  <admin license="CR053"/>
+</station>
+
+<station frequency="97.2" band="vhf">
+  <name>Wythenshawe FM</name>
+  <location area="Manchester" ngr="SJ827871" site="Wythenshawe"/>
+  <technical rdspi="C591" switchpi="" tpta="" siteht="60" iuaerialht="30" iuerphp="0" iuerpvp="0.05" maxdir=""/>
+  <admin license="CR024"/>
+</station>
+
+<station frequency="97.6" band="vhf">
+  <name>Wyvern FM</name>
+  <location area="Hereford" ngr="SO630333" site="Ridge Hill"/>
+  <technical rdspi="C4B0" switchpi="" tpta="Y" siteht="204" iuaerialht="95" iuerphp="0.4" iuerpvp="0.4" maxdir=""/>
+  <admin license="AL061-3"/>
+</station>
+
+<station frequency="96.7" band="vhf">
+  <name>Wyvern FM</name>
+  <location area="Kidderminster" ngr="SO808739" site="Kidderminster"/>
+  <technical rdspi="C4B0" switchpi="" tpta="" siteht="84" iuaerialht="32" iuerphp="0.05" iuerpvp="0.05" maxdir="30"/>
+  <admin license="AL061-3"/>
+</station>
+
+<station frequency="102.8" band="vhf">
+  <name>Wyvern FM</name>
+  <location area="Worcester" ngr="SO774464" site="Malvern"/>
+  <technical rdspi="C4B0" switchpi="" tpta="Y" siteht="170" iuaerialht="36" iuerphp="0.5" iuerpvp="0.5" maxdir="80"/>
+  <admin license="AL061-3"/>
+</station>
+
+<station frequency="106.8" band="vhf">
+  <name>XFM</name>
+  <location area="Cardiff" ngr="ST110742" site="Wenvoe"/>
+  <technical rdspi="C376" switchpi="C476" tpta="N" siteht="128" iuaerialht="145" iuerphp="2.04" iuerpvp="2.5" maxdir=""/>
+  <admin license="AL327-1"/>
+</station>
+
+<station frequency="107.3" band="vhf">
+  <name>XFM</name>
+  <location area="Swansea" ngr="SS672940" site="Kilvey Hill"/>
+  <technical rdspi="C376" switchpi="C576" tpta="Y" siteht="193" iuaerialht="20" iuerphp="0.25" iuerpvp="1" maxdir="350"/>
+  <admin license="AL327-1"/>
+</station>
+
+<station frequency="104.9" band="vhf">
+  <name>XFM</name>
+  <location area="London" ngr="TQ339712" site="Crystal Palace"/>
+  <technical rdspi="C0B8" switchpi="" tpta="Y" siteht="110" iuaerialht="144" iuerphp="2" iuerpvp="1.9" maxdir="50"/>
+  <admin license="AL196-1"/>
+</station>
+
+<station frequency="97.7" band="vhf">
+  <name>XFM</name>
+  <location area="Manchester" ngr="SJ844983" site="Sunley Building"/>
+  <technical rdspi="C8B8" switchpi="" tpta="Y" siteht="44" iuaerialht="129" iuerphp="0.5" iuerpvp="0.5" maxdir=""/>
+  <admin license="AL298-1"/>
+</station>
+
+<station frequency="106.1" band="vhf">
+  <name>XFM Scotland</name>
+  <location area="Central Scotland" ngr="NS828647" site="Black Hill"/>
+  <technical rdspi="C3AF" switchpi="" tpta="Y" siteht="275" iuaerialht="175" iuerphp="10" iuerpvp="10" maxdir="190"/>
+  <admin license="AL243-1"/>
+</station>
+
+<station frequency="105.7" band="vhf">
+  <name>XFM Scotland</name>
+  <location area="Central Scotland" ngr="NT233872" site="Craigkelly"/>
+  <technical rdspi="C3AF" switchpi="" tpta="Y" siteht="182" iuaerialht="107" iuerphp="5" iuerpvp="5" maxdir=""/>
+  <admin license="AL243-1"/>
+</station>
+
+<station frequency="102.4" band="vhf">
+  <name>Yorkshire Coast Radio</name>
+  <location area="Bridlington" ngr="TA165714" site="Buckton Barn"/>
+  <technical rdspi="C790" switchpi="" tpta="Y" siteht="105" iuaerialht="28" iuerphp="0" iuerpvp="0.1" maxdir="210"/>
+  <admin license="AL253-1"/>
+</station>
+
+<station frequency="96.2" band="vhf">
+  <name>Yorkshire Coast Radio</name>
+  <location area="Scarborough" ngr="TA040869" site="Olivers Mount"/>
+  <technical rdspi="C4B1" switchpi="" tpta="N" siteht="151" iuaerialht="25" iuerphp="0.125" iuerpvp="0.5" maxdir="155"/>
+  <admin license="AL158-2"/>
+</station>
+
+<station frequency="103.1" band="vhf">
+  <name>Yorkshire Coast Radio</name>
+  <location area="Whitby" ngr="NZ911096" site="Whitby"/>
+  <technical rdspi="" switchpi="" tpta="" siteht="60" iuaerialht="33" iuerphp="0.04" iuerpvp="0.04" maxdir="265"/>
+  <admin license="AL158-2"/>
+</station>
+
+<station frequency="106.9" band="vhf">
+  <name>YOURradio</name>
+  <location area="Helensburgh" ngr="NS258811" site="Rosneath"/>
+  <technical rdspi="C994" switchpi="" tpta="" siteht="107" iuaerialht="38" iuerphp="0.02" iuerpvp="0.1" maxdir=""/>
+  <admin license="AL287-1"/>
+</station>
+
+<station frequency="103" band="vhf">
+  <name>YOURradio</name>
+  <location area="Dumbarton" ngr="NS391754" site="Dumbarton"/>
+  <technical rdspi="C994" switchpi="" tpta="Y" siteht="6" iuaerialht="48" iuerphp="0" iuerpvp="0.1" maxdir=""/>
+  <admin license="AL264-1"/>
+</station>
+
+<station frequency="" band="vhf">
+  <name></name>
+  <location area="" ngr="" site=""/>
+  <technical rdspi="" switchpi="" tpta="" siteht="" iuaerialht="" iuerphp="" iuerpvp="" maxdir=""/>
+  <admin license=""/>
+</station>
+</station-list>
+
+

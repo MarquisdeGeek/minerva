@@ -1,0 +1,75 @@
+#!/bin/bash
+
+MINBIN=/usr/local/minerva/bin
+MINCONF=/usr/local/minerva/conf/tvconf.conf
+
+$MINBIN/minlog cmd $0 $*
+
+. $MINCONF
+
+if [ $# -lt 4 ]
+then
+      echo "Usage: $0 <device> <channel> <duration> <filename> [opts]"
+      echo "    channel ::= 0, 1, 2, etc..."
+      echo "    duration ::= in seconds"
+      echo "    duration ::= mins:secs"
+      echo "    duration ::= hours:mins:secs"
+      echo "    filename ::= a full path or 'auto' to create one in the default directory (as set in conf/tvconf.conf)"
+      echo "    opts ::= mute (which mutes the linein during record)"
+      exit -1
+fi
+
+DEVICE=$1
+CHANNEL=$2
+CHANNELNUM=`$MINBIN/tvinfo $DEVICE getchannel $CHANNEL`
+DURATION=$3
+FILENAME=$4
+OPTION=$5
+
+
+DEVICE=`$MINBIN/finddev tvrecord $*`
+if [ $? == 0 ]; then
+  echo $DEVICE
+  exit 0;
+fi
+
+
+WIDTH=640
+HEIGHT=480
+MENCODER=/usr/bin/mencoder
+AUDIO="-oac mp3lame -lameopts cbr:br=128:mode=3"
+VIDEO="-ovc lavc -lavcopts vcodec=mpeg4:vbitrate=6400"
+DSP="adevice=/dev/dsp1"
+TV=" -tv driver=v4l:width=$WIDTH:height=$HEIGHT:outfmt=yuy2:input=0:device=/dev/video0:norm=MPAL:chanlist=europe-west:channel=$CHANNELNUM:$DSP"
+
+if [ "$FILENAME" = auto ]
+then
+  FILENAME=${DEFAULT_DIR}/`date +"%F-%a-%H-%M"`_`$MINBIN/tvinfo $DEVICE getname $CHANNEL`.avi
+fi
+
+if [ "$OPTION" = mute ]
+then
+  MIXER_RESET=`$MINBIN/mixer default get linein`
+  $MINBIN/mixer default set linein 0
+fi
+
+INFO_FILENAME=${FILENAME}.txt
+date >>$INFO_FILENAME
+echo >>$INFO_FILENAME
+$MINBIN/tvinfo $DEVICE getname $CHANNEL >>$INFO_FILENAME
+$MINBIN/tvinfo $DEVICE onnow $CHANNEL timeon >>$INFO_FILENAME
+$MINBIN/tvinfo $DEVICE onnow $CHANNEL timeoff >>$INFO_FILENAME
+echo >>$INFO_FILENAME
+$MINBIN/tvinfo $DEVICE onnow $CHANNEL name >>$INFO_FILENAME
+$MINBIN/tvinfo $DEVICE onnow $CHANNEL info >>$INFO_FILENAME
+
+
+$MENCODER tv:// $TV $VIDEO $AUDIO -endpos $DURATION -ffourcc divx -o  "$FILENAME" >/dev/null 2>&1 
+
+
+if [ "$OPTION" = mute ]
+then
+  $MINBIN/mixer default set linein $MIXER_RESET
+fi
+
+

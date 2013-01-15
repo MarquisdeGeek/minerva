@@ -1,0 +1,8 @@
+LOGFILE=/var/log/minerva/weblog
+
+shift; 
+USER=$1; shift
+
+mkdir -p $LOGFILE 2>/dev/null
+echo $* >>$LOGFILE/$USER
+

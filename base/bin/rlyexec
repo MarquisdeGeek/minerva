@@ -1,0 +1,35 @@
+#!/bin/bash
+
+MINBASE=/usr/local/minerva
+VARLOG=/var/log/minerva
+MINLOG=$VARLOG/rlyexec
+
+if [ $# == 0 ]; then
+  echo "Usage: $0 [conduit] [user] <command> <arguments>"
+fi
+
+$MINBASE/bin/minlog cmd $0 $*
+
+CONDUIT=$1; shift
+USER=$1; shift
+COMMAND=$1; shift
+ARGUMENTS=$*
+
+RELAYPATH=$MINBASE/etc/users/$USER/relay/$CONDUIT
+
+if [ -d $RELAYPATH ]; then
+   FILELIST=`ls -1 $RELAYPATH`
+
+   for FILE in `ls -1 $RELAYPATH`; do
+     FULLNAME="$RELAYPATH/$FILE"
+     if [ -x $FULLNAME ]; then
+       $FULLNAME $COMMAND $ARGUMENTS
+       if [[ $? -ne 0 ]]; then
+          break
+       fi
+     fi
+   done
+fi
+
+
+

@@ -1,0 +1,26 @@
+#!/bin/bash
+
+INFO=`basename $0`
+CHANNEL=$1
+BASECMD="/usr/local/minerva/bin/tvonnow default all"
+
+function writeField() {
+	echo "  <data field=\"$1\">"
+	$BASECMD $CHANNEL $2
+	echo "  </data>"
+}
+
+echo "<tv info='$INFO'>"
+if [ "$CHANNEL" == "." ]; then
+	$BASECMD
+else
+	echo "<channel ref=$CHANNEL>"
+	writeField Title name
+	writeField About info
+	writeField Begins timeon
+	writeField Ends timeoff
+fi
+
+echo "</tv>"
+
+

@@ -1,0 +1,31 @@
+#!/bin/bash
+
+VARLOG=/var/log/minerva/infostream
+
+DATE=`date +"%F %H:%M"`
+
+STREAM=$1; shift
+
+if [ "$STREAM" == "action" ]; then
+	MESSAGE=$*
+	VARFILE=$VALOG/action/list
+	touch $VARLOG
+	TMPFILE=`mktemp`
+	tail -n 9 $VARFILE >$TMPFILE
+	cp $TMPFILE $VARFILE 
+	rm $TMPFILE
+	echo "<action date=\"$DATE\">$MESSAGE</action>" >> $VARFILE
+
+elif [ "$STREAM" == "status" ]; then
+	DEVICE=$1; shift
+	VARFILE=$VARLOG/status/$DEVICE
+	echo "<status type=\"$DEVICE\">" > $VARFILE
+	echo $* >> $VARFILE
+	echo "</status>" >> $VARFILE
+
+else
+   echo "Usage: $0 <action|status> [message]"
+   exit 1;
+fi
+
+

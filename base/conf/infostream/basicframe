@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# This copies a set of default files to the frame.
+
+source /usr/local/minerva/conf/infostream/stdphotoframe
+
+FRAMESIZE=76800
+FRAMEDEVICE=/dev/rfcomm0
+FRAMEMAC=00:12:1c:00:18:ee
+
+DIRSTUB=$TARGET/basicframe/
+mkdir -p $DIRSTUB
+
+#removeoldimages
+#copyfilelist /usr/local/minerva/conf/photolist
+copyfilelist /usr/local/minerva/conf/myphotolist
+#sendimages &
+

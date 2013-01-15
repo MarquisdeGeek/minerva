@@ -1,0 +1,7 @@
+This directory deals with the user-oriented configurations. Each user of the
+system who has external accounts/passwords, or specific configuration params,
+will generally go here.
+
+The user accounts for Minerva itself are in etc, since they're concerned with
+the maintenance of Minvera.
+

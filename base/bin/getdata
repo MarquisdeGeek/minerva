@@ -1,0 +1,52 @@
+#!/bin/bash
+
+MINBASE=/usr/local/minerva
+TRANSPORT_BASE=$MINBASE/etc/transport
+
+SOURCE=$1
+REFERENCE=$2
+REFERENCE_ID=$3
+DATA_FORMAT=$4
+
+$MINBASE/bin/minlog cmd $0 $*
+
+if [ $# -lt 1 ]; then
+	echo "A tool to write structured status updates to stdout";
+	echo "Usage: $0 [source_transport] [reference] [id] <format>";
+	echo -n "    source_transport ::= "
+	ls  $TRANSPORT_BASE
+	echo "       reference ::= (according to transport, leave blank for options)"
+	exit 1
+fi
+
+if [[ $SOURCE == *.* ]]; then
+	echo "No periods are allowed in transport names."
+	exit 2
+fi
+if [[ $REFERENCE == *.* ]]; then
+	echo "No periods are allowed in reference names."
+	exit 3
+fi
+if [ "$REFERENCE" == "" ]; then
+	echo -n "  reference ::= "
+	ls $TRANSPORT_BASE/$SOURCE/ | grep -v "\."
+	exit 3
+fi
+
+if [ "$REFERENCE_ID" == "" ]; then
+	REFERENCE_ID="."
+fi
+
+if [ "$DATA_FORMAT" == "" ]; then
+	DATA_FORMAT=xml
+fi
+
+HANDLER=$TRANSPORT_BASE/$SOURCE/$REFERENCE
+
+if [ -f "$HANDLER" ]; then
+	$HANDLER "$REFERENCE_ID" $DATA_FORMAT
+	exit 0
+fi
+ 
+exit 10
+

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+MINBIN=/usr/local/minerva/bin
+
+$MINBIN/tweet default Everything has been switched off
+

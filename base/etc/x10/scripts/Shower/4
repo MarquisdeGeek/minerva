@@ -1,0 +1,16 @@
+ #!/bin/bash
+
+if [ "$1" == "query" ]; then
+  echo "Shower button 2"
+  exit 0
+fi
+
+ # Default paths
+MINBASE=/usr/local/minerva
+MINBIN=$MINBASE/bin
+
+## Code goes here
+$MINBIN/sfx shower start
+$MINBIN/manifest shower next news 5
+$MINBIN/sfx shower end
+

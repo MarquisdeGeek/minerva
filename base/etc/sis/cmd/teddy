@@ -1,0 +1,8 @@
+#!/bin/bash
+
+MINBASE=/usr/local/minerva/
+
+COOKIES=`basename $0`
+
+shuf -n 1 $MINBASE/etc/sis/fortunes/$COOKIES
+

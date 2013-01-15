@@ -1,0 +1,13 @@
+#!/bin/bash
+
+MINBIN=/usr/local/minerva/bin
+
+say default Goodbye
+
+RAIN=`$MINBIN/weatherstatus | head -n 2 | grep -i rain`
+
+if [ "$?" -eq 0 ]; then
+   say default Remember your umbrella it might rain today.
+   say default $RAIN
+fi
+

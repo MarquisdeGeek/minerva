@@ -1,0 +1,8 @@
+#!/bin/bash
+
+MINBASE=/usr/local/minerva
+DEVICE=$1
+STORY=$2
+
+$MINBASE/bin/say $DEVICE `$MINBASE/bin/news-read bbc public vox $STORY story`
+

@@ -1,0 +1,157 @@
+#!/bin/bash
+
+LOGFILE=/var/log/minerva/photoframe
+MINBIN=/usr/local/minerva/bin
+MEDIADIR=`$MINBIN/getalias mediadir`
+FRAME=$MEDIADIR/images/photoframes/frame320x240.png
+
+TARGET=`$MINBIN/getalias framedir`
+IMAGEINDEX=0
+
+function todaysdate() {
+	textonly "`date "+%A %d"`" "`date "+%B %Y"`"
+}
+
+function weather() {
+	STATUS=`$MINBIN/getinfostream status weather`
+	STATUS=`echo $STATUS | $MINBIN/stripmarkup`
+
+	FILENAME=$DIRSTUB$IMAGEINDEX.jpg
+	WEATHERDIR=$MEDIADIR/images/weather
+	
+	INFO="Low: "`$MINBIN/weatherinfo today low`"  High: "`$MINBIN/weatherinfo today high`
+	TODAY=`$MINBIN/weatherinfo today day`
+	WIMG=`$MINBIN/weatherinfo today image`
+
+	composite -gravity center -geometry +0-10 $WEATHERDIR/$WIMG.png $FRAME  $FILENAME
+	convert $FILENAME -pointsize 24 -fill white -undercolor '#00000080' -gravity south -annotate 0x0+10+30 "  $INFO  " $FILENAME
+	convert $FILENAME -pointsize 24 -fill black -gravity north -annotate 0x0+0+20 "$TODAY" $FILENAME
+
+	IMAGEINDEX=$(($IMAGEINDEX+1))
+}
+
+function calendar() {
+	OLDIFS=$IFS
+	IFS=";"
+
+	$MINBIN/getcalendar steev 10 |
+	while read CALNAME; do
+		read CALDATE
+		read CALTIME
+		read EVENT
+		textonly "$EVENT" "$CALDATE"
+	done
+
+	IFS=$OLDIFS
+}
+
+function textonly() {
+	TEXT=$1
+	if [ "$TEXT" == "" ]; then
+		return 0
+	fi
+
+	FILENAME=$DIRSTUB$IMAGEINDEX.jpg
+	convert $FRAME -pointsize 24 -fill black -gravity center -annotate 0x0+0-30 "$TEXT" $FILENAME
+
+	if [ "$2" != "" ]; then
+		convert $FILENAME -pointsize 24 -fill red -gravity center -annotate 0x0+0+40 "$2" $FILENAME
+	fi
+
+	IMAGEINDEX=$(($IMAGEINDEX+1))
+}
+
+function mediamp3() {
+	# Any images in the directory? (e.g. cover.jpg)
+	if [ `$MINBIN/mp3player default isplaying` == 1 ]; then
+		textonly "`$MINBIN/mp3player default artist`" "`$MINBIN/mp3player default current`"
+
+		MP3DIR=`$MINBIN/mp3player default fullname`
+		MP3DIR=`dirname "$MP3DIR"`
+	
+		ls "$MP3DIR" |
+		while read FILE
+		do
+			TYPE=`file "$MP3DIR/$FILE"`
+			if [[ $TYPE == *image* ]]; then
+				copyimage "$MP3DIR/$FILE"
+			fi
+		done 
+	fi
+}
+
+function ontoday() {
+	TEMPFILE=`mktemp`
+	(exec calendar -l 0) > $TEMPFILE
+
+	cat $TEMPFILE |
+	while read a; do 
+		textonly "${a:7}"
+	done
+}
+
+
+function copyimage() {
+	convert -resize @$FRAMESIZE "$1" $DIRSTUB$IMAGEINDEX.jpg
+	IMAGEINDEX=$((IMAGEINDEX+1))
+}
+
+function removeallimages() {
+	FILELIST=`mktemp`
+	KILLSCRIPT=`mktemp`
+
+	obexftp -b $FRAMEMAC -c ../Jpegfiles/ -l >$FILELIST
+	xsltproc /usr/local/minerva/bin/photodelete.xsl $FILELIST > $KILLSCRIPT
+	source $KILLSCRIPT
+
+	rm $FILELIST
+	rm $KILLSCRIPT
+}
+
+function copyfilelist() {
+	FILENAME=$1
+	cat $FILENAME |
+	while read FILE
+	do
+		if [[ "$FILE" != "" && -f "$FILE" ]]; then
+			echo copyimage "$FILE"
+			copyimage "$FILE"
+		fi
+	done
+echo done
+}
+
+function removeoldimages() {
+	ls "$DIRSTUB" |
+	while read FILE
+	do
+		obexftp -b $FRAMEMAC -c "../Jpegfiles/" -k $FILE
+		sleep 1
+	done
+}
+
+function powercycle() {
+	DEVID=$1
+
+	$MINBIN/homedevice default off $DEVID
+	sleep 3
+	$MINBIN/homedevice default on $DEVID
+	sleep 7
+}
+
+function sendimages() {
+
+	ls "$DIRSTUB" |
+	while read FILE
+	do
+		date +"%F %H:%M Sending $DIRSTUB/$FILE to $FRAMEDEVICE" >>$LOGFILE
+		ussp-push $FRAMEDEVICE "$DIRSTUB/$FILE" $FILE >/dev/null 2>&1
+		if [ $? != 0 ]; then
+			date +"%F %H:%M Can not write to $FRAMEDEVICE" >> $LOGFILE
+			return 0
+		fi
+		sleep 1
+	done
+
+}
+

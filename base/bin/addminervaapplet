@@ -1,0 +1,69 @@
+#!/bin/bash
+
+MINBIN=/usr/local/minerva/bin
+
+$MINBIN/minlog cmd $0 $*
+
+
+if [ $# == 0 ]; then
+   echo "Usage: $0 <name>"
+   exit 1
+fi
+
+APPLET=$1
+
+echo Installing $APPLET
+
+LOG=/var/log/minerva
+WEBDEST=`$MINBIN/getalias minervawebroot`
+
+# Any bearskin components?
+if [ -d "$APPLET/bearskin" ]; then
+   cp -r $APPLET/bearskin/* $MINBIN
+fi
+
+# Is there a WARP applet?
+if [ -d $APPLET/warp ]; then
+   mkdir -p $WEBDEST/warp/applets/$APPLET
+   mkdir -p $WEBDEST/warp/conf/$APPLET
+
+   cp -r $APPLET/warp/app/* $WEBDEST/warp/applets/$APPLET/
+
+   if [ -d $APPLET/warp/conf ]; then
+      cp -r $APPLET/warp/conf/* $WEBDEST/warp/applets/$APPLET/
+   fi
+fi
+
+# Any Zinc components?
+if [ -d $APPLET/zinc ]; then
+   cp     $APPLET/zinc/cmd  $WEBDEST/zinc/system/$APPLET.inc
+   cp -r $APPLET/zinc/conf/* $WEBDEST/zinc/conf/
+fi
+
+# Initialize and create logs
+# Only bearskin generally has log files, sometimes the warp applets do,
+# so we always create a log directory for them.
+mkdir -p $LOG/$APPLET
+
+if [ -d $APPLET/bearskin ]; then
+   for BIN in `ls $APPLET/bearskin/*` 
+   do
+     $BIN default init
+   done
+
+fi
+
+# Now mod them, so anyone can use them
+chown -R minerva $LOG/$APPLET
+chgrp -R minerva $LOG/$APPLET
+chmod -R ugo+rw  $LOG/$APPLET
+
+# Run the components own installer, if it exists
+if [ -f $APPLET/install/install.sh ]; then
+   pushd $APPLET/install >/dev/null
+   . install.sh
+   popd
+fi
+
+echo Installation is now complete...
+

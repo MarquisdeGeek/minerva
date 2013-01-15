@@ -1,0 +1,8 @@
+#!/bin/bash
+# Move onto the next randomly playing music
+
+MINBIN=/usr/local/minerva/bin/
+
+$MINBIN/manifest default next
+
+

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Sat Jul  7 07:25:01 2012 -->
+<channel id="five_us" source="XMLTV" date="12/07/2012">
+  <programme>
+<flags></flags>
+<desc>The Jewellery Channel. Beautifully handcrafted jewellery at fantastic prices.</desc>
+<title>Jewellery Channel</title>
+<end>1200</end>
+<start>0600</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Drew Carey is the chairman for another session of comedy as a regular panel and guests create spontaneous routines and sketches based on suggestions from the studio audience.</desc>
+<title>Whose Line Is It Anyway?</title>
+<end>1230</end>
+<start>1200</start>
+  </programme>
+  <programme>
+<subtitle>Big Middle</subtitle>
+<flags>(S)</flags>
+<desc>Grissom's team track a killer to a convention for plus-sized people; and Catherine's team investigate when a large sum of cash is found near a badly mutilated body.</desc>
+<title>CSI: Crime Scene Investigation</title>
+<end>1325</end>
+<start>1230</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Murder mystery starring Kellie Martin and Nina Siemaszko. A book signing weekend at a bookstore owned by an amateur sleuth ends in the murder of a well-known author.</desc>
+<type>Film</type>
+<title>Mystery Woman - Mystery Weekend</title>
+<year>2005</year>
+<end>1510</end>
+<start>1325</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>New Series. Arrow of Time. Convicted killer Buck Winters (David Gallagher) escapes from prison and goes looking for Don, who uses his new-found faith to guide him through the ordeal.</desc>
+<title>Numbers</title>
+<end>1615</end>
+<start>1510</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Noah MacManus is a rising young politician, caught in a scandal. The woman he has been engaged to for eight seconds cheats on him, he winds up on Cape Cod with his dog and finds love and purpose.</desc>
+<title>Fairfield Road</title>
+<end>1800</end>
+<start>1615</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>New Series. Cover Me. Charlie devises a strategy to stop a dangerous drug hitting the streets. The FBI agree to put his plan into action, but if it backfires it could lead to catastrophe.</desc>
+<title>Numbers</title>
+<end>1855</end>
+<start>1800</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Get your daily fix of the latest film and TV news from the USA. Presented by Mark Morris.</desc>
+<title>Inside Hollywood</title>
+<end>1900</end>
+<start>1855</start>
+  </programme>
+  <programme>
+<subtitle>Big Middle</subtitle>
+<flags>(S)</flags>
+<desc>Grissom's team track a killer to a convention for plus-sized people; and Catherine's team investigate when a large sum of cash is found near a badly mutilated body.</desc>
+<title>CSI: Crime Scene Investigation</title>
+<end>1958</end>
+<start>1900</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Get your daily fix of the latest film and TV news from the USA. Presented by Mark Morris.</desc>
+<title>Inside Hollywood</title>
+<end>2000</end>
+<start>1958</start>
+  </programme>
+  <programme>
+<subtitle>Jamalot</subtitle>
+<flags></flags>
+<desc>Crime drama series. Mac and Stella investigate after a rising roller derby star drops dead during a match. Hawkes and Danny probe the murder of a struggling novelist (10/24).</desc>
+<title>CSI: New York</title>
+<end>2100</end>
+<start>2000</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>American drama series about a team of forensic investigations in Las Vegas.</desc>
+<title>CSI: Crime Scene Investigation</title>
+<end>2200</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>The Good Wives' Club: Series following special agents who investigate crimes connected to the Navy. A mummified woman is found wearing a wedding dress (2/23).</desc>
+<title>NCIS</title>
+<end>2300</end>
+<start>2200</start>
+  </programme>
+  <programme>
+<subtitle>Frame Up</subtitle>
+<flags></flags>
+<desc>Drama series about the US Navy's dedicated federal agency. Tony is accused of murdering a woman whose body is found at Quantico (9/24). [AD,S]</desc>
+<title>NCIS</title>
+<end>0000</end>
+<start>2300</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Help. As young brides-to-be fight over a killer dress at the biggest wedding gown sale of the year, one of the shoppers winds up dead and the CSI team is called in. [AD,S]</desc>
+<title>CSI: New York</title>
+<end>0100</end>
+<start>0000</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Live interactive gaming featuring roulette, blackjack and autowheel. For more information and to register visit www.SuperCasino.com.</desc>
+<title>Super Casino</title>
+<end>0400</end>
+<start>0100</start>
+  </programme>
+</channel>

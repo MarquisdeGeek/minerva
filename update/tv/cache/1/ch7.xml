@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Sat Jul  7 07:19:48 2012 -->
+<channel id="five" source="XMLTV" date="12/07/2012">
+  <programme>
+<subtitle>Thomas and the Pigs</subtitle>
+<desc>Railway adventures. Farmer Trotter asks Thomas to collect some straw for the piglets, which are soon to be born.</desc>
+<title>Thomas and Friends</title>
+<end>0610</end>
+<start>0600</start>
+  </programme>
+  <programme>
+<subtitle>Socket Sprocket Pocket</subtitle>
+<desc>Two fluffy alien siblings land on Earth. In this episode, DottyWot's chair is broken and her brother is going to fix it, but he keeps losing his spanner.</desc>
+<title>The WotWots</title>
+<end>0620</end>
+<start>0610</start>
+  </programme>
+  <programme>
+<desc>Animation. While Bobby and Tiffany are away, Max investigates a robbery, a fire and a car accident, unaware that they are just stories written for a school project.</desc>
+<title>City of Friends</title>
+<end>0635</end>
+<start>0620</start>
+  </programme>
+  <programme>
+<desc>Goomo wakes up to think he has ruined all the Jellyberry trees when he finds them all knocked down.</desc>
+<title>Jelly Jamm</title>
+<end>0645</end>
+<start>0635</start>
+  </programme>
+  <programme>
+<subtitle>Bedtime</subtitle>
+<desc>Animated series about a lovable little pig. It's nearly time for bed. Peppa and George play outside then they are called in for their bath.</desc>
+<title>Peppa Pig</title>
+<end>0650</end>
+<start>0645</start>
+  </programme>
+  <programme>
+<subtitle>Runny Nose</subtitle>
+<desc>Hooray, snow! Farm Girl and Piggy want to play snowballs, but first they must clear the snowdrift in front of the castle so that Farmer can go outside.</desc>
+<title>Castle Farm</title>
+<end>0700</end>
+<start>0650</start>
+  </programme>
+  <programme>
+<subtitle>I'm Going to Win the Rosette</subtitle>
+<desc>Regal larks. It is the castle's annual pet talent contest, and Little Princess is determined to win the golden rosette.</desc>
+<title>Little Princess</title>
+<end>0710</end>
+<start>0700</start>
+  </programme>
+  <programme>
+<subtitle>The Party</subtitle>
+<desc>Impish animation. Chaos ensues when the twins invite their little friends to the castle for a birthday party.</desc>
+<title>Ben and Holly's Little Kingdom</title>
+<end>0720</end>
+<start>0710</start>
+  </programme>
+  <programme>
+<subtitle>Reptiles</subtitle>
+<desc>Mr Bump finds Mr Stubborn's swamp tour more than a little testing, while Mr Grumpy and Miss Chatterbox share a decidedly bumpy ride along with some scaly friends.</desc>
+<title>Mr Men</title>
+<end>0730</end>
+<start>0720</start>
+  </programme>
+  <programme>
+<desc>A look ahead to today's children's programmes, including competitions and dedications.</desc>
+<title>Milkshake</title>
+<end>0735</end>
+<start>0730</start>
+  </programme>
+  <programme>
+<subtitle>Flash Bang Wallop!</subtitle>
+<desc>CGI animated railway adventures. A photographer arrives on the Island of Sodor to take photographs for a book.</desc>
+<title>Thomas and Friends</title>
+<end>0745</end>
+<start>0735</start>
+  </programme>
+  <programme>
+<subtitle>Noddy Goes Shopping</subtitle>
+<desc>Children's animated series. Noddy learns the importance of making a list.</desc>
+<title>Make Way For Noddy</title>
+<end>0800</end>
+<start>0745</start>
+  </programme>
+  <programme>
+<desc>The twins inadvertently ruin Fifi's garden while playing a game. Can they and the other tots make it better before Fifi finds out?</desc>
+<title>Fifi and The Flowertots</title>
+<end>0815</end>
+<start>0800</start>
+  </programme>
+  <programme>
+<subtitle>Thunderstorm</subtitle>
+<desc>Animation about a lovable young pig. Peppa and George get caught in a thunderstorm.</desc>
+<title>Peppa Pig</title>
+<end>0825</end>
+<start>0815</start>
+  </programme>
+  <programme>
+<subtitle>Cleaning the Car</subtitle>
+<desc>Pig tales. Daddy Pig is taking everyone for a drive in the country, but the car is very muddy and Mummy insists they wash it first.</desc>
+<title>Peppa Pig</title>
+<end>0830</end>
+<start>0825</start>
+  </programme>
+  <programme>
+<subtitle>Big Chris Babysits</subtitle>
+<desc>Roary has an argument with Cici and races back to the pits without her, just as a storm is brewing on the horizon.</desc>
+<title>Roary The Racing Car</title>
+<end>0845</end>
+<start>0830</start>
+  </programme>
+  <programme>
+<subtitle>The Hopping Bananas</subtitle>
+<desc>Animation. The Bananas try to teach Topsy how to ride a bike, but she falls off and gets upset. She tells everyone that bike riding is silly.</desc>
+<title>Bananas In Pyjamas</title>
+<end>0900</end>
+<start>0845</start>
+  </programme>
+  <programme>
+<desc>Prehistoric animation. Igam Ogam and her friends try to avoid having a bath.</desc>
+<title>Igam Ogam</title>
+<end>0915</end>
+<start>0900</start>
+  </programme>
+  <programme>
+<desc>Lively magazine show in which Matthew Wright and guests discuss the topical issues of the day.</desc>
+<title>The Wright Stuff</title>
+<end>1110</end>
+<start>0915</start>
+  </programme>
+  <programme>
+<desc>Fishing adventure show. Robson heads to Florida, where he goes after the ultimate marine predator. (7/8)</desc>
+<title>Extreme Fishing With Robson Green</title>
+<end>1210</end>
+<start>1110</start>
+  </programme>
+  <programme>
+<desc>National and International news update.</desc>
+<title>5 News at Lunchtime</title>
+<end>1215</end>
+<start>1210</start>
+  </programme>
+  <programme>
+<desc>Coverage of all the latest goings-on from inside the Big Brother house.</desc>
+<title>Big Brother</title>
+<end>1315</end>
+<start>1215</start>
+  </programme>
+  <programme>
+<desc>It is the day of Danny's court case and Brax is stressing that his father could get out of jail. Lottie decides to act like a teenager by skipping school.</desc>
+<title>Home and Away</title>
+<end>1345</end>
+<start>1315</start>
+  </programme>
+  <programme>
+<desc>Vanessa cracks and invites Rhys over for dinner. The couple close in on a kiss, only for Lucas to arrive and spoil it. Callum goes to throw a rock through Troy's window.</desc>
+<title>Neighbours</title>
+<end>1415</end>
+<start>1345</start>
+  </programme>
+  <programme>
+<subtitle>The Thin Red Line</subtitle>
+<desc>Crime drama. A witness in a high-profile narcotics case is murdered along with his girlfriend, and Patrick wonders whether the girl was the primary target. (8/23)</desc>
+<title>The Mentalist</title>
+<end>1515</end>
+<start>1415</start>
+  </programme>
+  <programme>
+<desc>Drama starring Connie Sellecca and Beau Starr. A columnist, a boutique owner and a reporter attempt to rock the fashion industry with an incriminating expose. (1997)</desc>
+<type>Film</type>
+<title>While My Pretty One Sleeps</title>
+<end>1700</end>
+<start>1515</start>
+  </programme>
+  <programme>
+<desc>National and International news update.</desc>
+<title>5 News at 5</title>
+<end>1730</end>
+<start>1700</start>
+  </programme>
+  <programme>
+<desc>Vanessa cracks and invites Rhys over for dinner. The couple close in on a kiss, only for Lucas to arrive and spoil it. Callum goes to throw a rock through Troy's window.</desc>
+<title>Neighbours</title>
+<end>1800</end>
+<start>1730</start>
+  </programme>
+  <programme>
+<desc>It is the day of Danny's court case and Brax is stressing that his father could get out of jail. Lottie decides to act like a teenager by skipping school.</desc>
+<title>Home and Away</title>
+<end>1830</end>
+<start>1800</start>
+  </programme>
+  <programme>
+<desc>National and International news update.</desc>
+<title>5 News at 6.30</title>
+<end>1900</end>
+<start>1830</start>
+  </programme>
+  <programme>
+<desc>Real-life documentary series. The team get more than they bargained for when they catch a gang of burglars who have made their getaway in a horse trailer.</desc>
+<title>New Police Interceptors</title>
+<end>1958</end>
+<start>1900</start>
+  </programme>
+  <programme>
+<desc>National and International news update.</desc>
+<title>5 News at 19.58</title>
+<end>2000</end>
+<start>1958</start>
+  </programme>
+  <programme>
+<desc>Competitive cooking show with Marco Pierre White. Marco chooses halibut, duck and sirloin steak as his ingredients to test three more cooking and front-of-house teams.</desc>
+<title>Marco Pierre White's Kitchen Wars</title>
+<end>2058</end>
+<start>2000</start>
+  </programme>
+  <programme>
+<desc>National and International news update.</desc>
+<title>5 News at 20.58</title>
+<end>2100</end>
+<start>2058</start>
+  </programme>
+  <programme>
+<subtitle>The Oakland</subtitle>
+<desc>Documentary series with Alex Polizzi. Alex visits a hotel and nightclub in Essex that is run by a family who are simply not dancing to the same beat.</desc>
+<title>The Hotel Inspector</title>
+<end>2200</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<desc>Coverage of all the latest goings-on from inside the Big Brother house.</desc>
+<title>Big Brother</title>
+<end>2300</end>
+<start>2200</start>
+  </programme>
+  <programme>
+<desc>Emma Willis hosts a round-up of Big Brother-related news and debate, with special guests, exclusive footage and behind the scenes treats.</desc>
+<title>Big Brother's Bit On The Side</title>
+<end>0000</end>
+<start>2300</start>
+  </programme>
+  <programme>
+<desc>Live interactive gaming featuring roulette, blackjack and autowheel. For more information and to register visit www.SuperCasino.com.</desc>
+<title>Super Casino</title>
+<end>0355</end>
+<start>0000</start>
+  </programme>
+  <programme>
+<desc>Art historian Tim Marlow looks at the work of the Western world's most famous artists. Featuring British artist Joseph Turner (1775 - 1851).</desc>
+<title>Great Artists</title>
+<end>0420</end>
+<start>0355</start>
+  </programme>
+  <programme>
+<desc>Documentary series about the work of dedicated animal lovers who save injured and orphaned wild animals brought into their sanctuary.</desc>
+<title>Wildlife SOS</title>
+<end>0445</end>
+<start>0420</start>
+  </programme>
+  <programme>
+<desc>Documentary series about the work of dedicated animal lovers who save injured and orphaned wild animals brought into their sanctuary.</desc>
+<title>Wildlife SOS</title>
+<end>0510</end>
+<start>0445</start>
+  </programme>
+  <programme>
+<desc>Ann Maurice presents more home improvements for properties that are proving difficult to sell. A two-bedroomed cottage in Leicestershire receives an affordable makeover.</desc>
+<title>House Doctor</title>
+<end>0535</end>
+<start>0510</start>
+  </programme>
+  <programme>
+<desc>Ann Maurice and Alistair Appleton present more home improvements for properties that are proving hard to sell. This property is in Bow, East London.</desc>
+<title>House Doctor</title>
+<end>0600</end>
+<start>0535</start>
+  </programme>
+  <programme>
+<subtitle>Time for a Story</subtitle>
+<desc>Railway adventures. The Fat Controller announces that the library is holding a story time for the children and he needs an engine to deliver the storybooks.</desc>
+<title>Thomas and Friends</title>
+<end>0610</end>
+<start>0600</start>
+  </programme>
+</channel>

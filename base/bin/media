@@ -1,0 +1,79 @@
+#!/bin/bash
+MINBASE=/usr/local/minerva
+MINBIN=$MINBASE/bin
+$MINBASE/bin/minlog cmd $0 $*
+
+DEVICE=$1
+CMD=$2
+FILENAME=$3
+PARAM1=$3
+PARAM2=$4
+
+
+if [ "$DEVICE" == "" ]; then
+  DEVICE=default
+fi
+
+function get_media_device()
+{
+echo -n "$MINBIN/"
+
+if [ `$MINBIN/mp3player $DEVICE isplaying` == 1 ]; then
+ echo "mp3player"
+
+elif [ "`$MINBIN/cdplayer $DEVICE isplaying`" == 1 ]; then
+ echo "cdplayer"
+
+elif [ "`$MINBIN/fmradio $DEVICE isplaying`" == 1 ]; then
+ echo "fmradio"
+
+else
+ echo "nomedia"
+fi
+}
+
+MEDIA_PLAYER=$(get_media_device)
+
+case $CMD in
+   init)
+      $MINBIN/mp3player $DEVICE init
+      $MINBIN/cdplayer $DEVICE init
+      $MINBIN/fmradio $DEVICE init
+      ;;
+
+	play)
+		$MINBIN/mp3player $DEVICE $FILENAME
+		;;
+
+   toggle)
+		$MEDIA_PLAYER $DEVICE ispaused >/dev/null
+		if [ $? == 1 ]; then
+			$MEDIA_PLAYER $DEVICE resume
+		else
+			$MEDIA_PLAYER $DEVICE pause
+		fi
+		;;
+
+	next)
+		if [ "`$MINBIN/mp3player $DEVICE isplaying`" == "1" ]; then
+			$MEDIA_PLAYER $DEVICE $CMD $PARAM1 $PARAM2
+		else
+			$MINBIN/manifest $DEVICE next $PARAM1 $PARAM2
+		fi
+		;;
+		
+	pause|resume|status|stop|toggle|ispaused|prev|previous|fwd|rew)
+		$MEDIA_PLAYER $DEVICE $CMD $PARAM1
+		;;
+
+	isplaying)
+		if [ "`$MINBIN/mp3player $DEVICE isplaying`" == "1" ]; then
+			echo 1
+			exit 1
+		else
+			echo 0
+			exit 0
+		fi
+		;;
+esac
+

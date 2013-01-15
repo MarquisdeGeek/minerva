@@ -1,0 +1,5 @@
+This directory structures mirrors that of Unix itself. All the Minerva
+configuration and binaries should live here.
+
+All logs are stored in /var/log/minerva
+

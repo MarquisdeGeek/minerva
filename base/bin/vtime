@@ -1,0 +1,122 @@
+#!/bin/bash
+MINBASE=/usr/local/minerva
+PLAY=/usr/bin/play
+PLAYARGS=-q
+
+VOICE=default
+
+if [ -f $MINBASE/etc/defaults/samplevox ]; then
+   VOICE=`cat $MINBASE/etc/defaults/samplevox`
+fi
+
+VOXDIR=$MINBASE/media/voices/$VOICE
+
+$MINBASE/bin/minlog cmd $0 $*
+
+HOURS=`date +%I`
+MINS=`date +%M`
+
+function playNum {
+  REMAINDER=$1
+  if [ $1 -gt 50 ]; then
+     $PLAY $PLAYARGS $VOXDIR/numbers/50.wav
+     REMAINDER=$(($REMAINDER - 50))
+  elif  [ $1 -gt 40 ]; then
+     $PLAY $PLAYARGS $VOXDIR/numbers/40.wav
+     REMAINDER=$(($REMAINDER - 40))
+  elif  [ $1 -gt 30 ]; then
+     $PLAY $PLAYARGS $VOXDIR/numbers/40.wav
+     REMAINDER=$(($REMAINDER - 30))
+  elif  [ $1 -gt 20 ]; then
+     $PLAY $PLAYARGS $VOXDIR/numbers/20.wav
+     REMAINDER=$(($REMAINDER - 20))
+  fi
+
+  if [ $REMAINDER -ne 0 ]; then
+     $PLAY $PLAYARGS $VOXDIR/numbers/$REMAINDER.wav
+  fi
+}
+
+function playHour {
+  if [ $1 -eq 0 ]; then
+     $PLAY $PLAYARGS $VOXDIR/times/midnight.wav
+  else
+     playNum $1
+  fi
+}
+
+if [ $MINS -lt 10 ]; then
+  MINS=${MINS:1:1}
+fi
+
+if [ $HOURS -lt 10 ]; then
+  HOURS=${HOURS:1:1}
+fi
+
+NEXTHOUR=$((HOURS + 1))
+
+if [ $NEXTHOUR -gt 12 ]; then
+   NEXTHOUR=$((NEXTHOUR - 12))
+fi
+
+
+# bug warn: midnight is not treated correctly
+case $MINS in
+  0)
+     playHour $HOURS
+     $PLAY $PLAYARGS $VOXDIR/times/oclock.wav
+     ;;
+
+  1)
+     $PLAY $PLAYARGS $VOXDIR/times/1minpast.wav
+     playHour $HOURS
+     ;;
+
+  5|10|20|25)
+     playNum $MINS
+     $PLAY $PLAYARGS $VOXDIR/times/past.wav
+     playHour $HOURS
+     ;;
+  15)
+     $PLAY $PLAYARGS $VOXDIR/times/quarter-past.wav
+     playHour $HOURS
+     ;;
+  30)
+     $PLAY $PLAYARGS $VOXDIR/times/half-past.wav
+     playHour $HOURS
+     ;;
+  35|40|50|55)
+     playNum $((60 - $MINS))
+     $PLAY $PLAYARGS $VOXDIR/times/to.wav
+     playHour $NEXTHOUR
+     ;;
+
+  45)
+     $PLAY $PLAYARGS $VOXDIR/times/quarter-to.wav
+     playHour $NEXTHOUR
+     ;;
+
+  59)
+     $PLAY $PLAYARGS $VOXDIR/times/1minto.wav
+     playHour $NEXTHOUR
+     ;;
+
+  *)
+     if [ $MINS -lt 30 ]; then
+        HUMAN="$MINS minutes past $HOURS"
+        playNum $MINS
+        $PLAY $PLAYARGS $VOXDIR/times/minutespast.wav
+        playNum $HOURS
+     else
+        HUMAN=$((60 - $MINS))" minutes to $NEXTHOUR"
+        playNum $((60 - $MINS))
+        $PLAY $PLAYARGS $VOXDIR/times/minutesto.wav
+        playNum $NEXTHOUR
+     fi
+     ;;
+esac
+
+
+#HUMAN=$HUMAN" `date +%p`"
+
+

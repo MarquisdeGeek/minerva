@@ -1,0 +1,146 @@
+#!/usr/bin/php
+<?php
+require_once "/usr/local/minerva/bin/inc/utils.inc";
+
+
+# use directly in cron with | head -n 1 piped into say
+# Needs config for: leaving train, home train
+# also means args are broken
+# 1. use this as example
+# 2. separate minerva version
+
+
+$data = @file_get_contents("/usr/local/minerva/conf/ldbstations.conf");
+$list = explode("\n", $data);
+
+foreach($list as $line) {
+	$elements = explode(" ", $line);
+	$code = trim(strtolower($elements[count($elements)-1]));
+	if ($code != "") {
+		$stations[$code] = trim(substr($line, 0, -strlen($code)));
+	}
+}
+
+$timeToStation = 45;
+$graceThreshold = 0;
+$maxGracePeriod = 60;
+$currentTime = localtime();
+
+$command = $argv[1];
+$fromCode = strtolower($argv[2]);
+$toCode = strtolower($argv[3]);
+//print "cmd=$command from=$fromCode to=$toCode  ".defined($command);
+
+if ($command == "help") {
+  print "Usage: [stations|get] [from] [to] <grace>\n";
+  return 1;
+
+} else if ($command == "stations") {
+  if ($fromCode != "") {
+     print $stations{$fromCode}."\n";
+  } else {
+     foreach ($stations as $id=>$value) {
+        print "$id ($value)\n";
+     }
+  }
+  return 0;
+}
+
+#print "From $fromCode to $toCode\n";
+$fromName = $stations{$fromCode};
+$toName = $stations{$toCode};
+
+if ($fromName == "" || $toName == "") {
+  print "Unknown station code: $fromCode $toCode\n";
+  return 0;
+}
+
+$fromName = str_replace("+", " ", $fromName);
+$toName = str_replace("+", " ", $toName);
+
+if (defined($argv[3])) {
+	$graceThreshold = $argv[3];
+}
+
+if (defined($argv[4])) {
+	$maxGracePeriod = $argv[4];
+}
+
+$theTime = localtime();
+$currentHour = $theTime[2];
+$currentMin = $theTime[1];
+
+
+$url = "http://ojp.nationalrail.co.uk/en/s/ldb/liveTrainsJson?departing=true&liveTrainsFrom=$fromCode&liveTrainsTo=$toCode&serviceId=";
+
+$contents = getContents($url, "ldb_${fromCode}_$toCode", 5*60);
+
+$trainTimes = json_decode($contents);
+$trains = $trainTimes->{'trains'};
+
+foreach($trains as $entry) {
+	$expectedTime = $entry[1];
+	$destination = $entry[2];
+	$status = $entry[3];
+	$platform = $entry[4];
+	$arrivalTime = $expectedTime;
+
+	if (preg_match('/((\d+):0?(\d+))/', $status, $matches)) {
+		$expectedTime = $matches[0];
+	}
+   $destination = str_replace("&amp;", "&", $destination);
+
+//print "Starting from $origin to $expectedTime to $destination is expected at '$expectedTime' on platform $platform\n";
+
+    #print "Arrival:".$arrivalTime."\n";
+
+    # the 0? inclusion here shortens '04' to '4'
+	if (preg_match('/(\d+):0?(\d+)/', $expectedTime, $matches)) {
+		$expectedTime = $matches[0];
+    $arriveHour = $matches[1];
+    $arriveMins = $matches[2];
+	}
+
+    $t;
+    $minsAway = 0;
+
+    $t = $arriveMins - $currentMin;
+    if ($t >= 0) {
+       $minsAway += $t;
+    } else {
+       $minsAway += 60+$t;
+       --$arriveHour;   # because we carry over '1'
+       if ($arriveHour == -1) {
+			$arriveHour = 23;
+		}
+    }
+
+    $t = $arriveHour - $currentHour;
+#print "$arriveHour - $currentHour = da:$t";
+    if ($t >= 0) {
+       $minsAway += $t * 60;
+    } else {
+       $minsAway += (24+$t) * 60;
+   }
+
+   $graceMinutes = $minsAway-$timeToStation;
+   if ($graceMinutes >= $graceThreshold && $graceMinutes < $maxGracePeriod) {
+		if ($arrivalTime == $expectedTime) {
+			if ($command == "getshort") {
+				print "$arrivalTime to $destination. ";
+			} else {
+      		print "You can get the $arrivalTime to $destination. There is $graceMinutes minutes grace.\n";
+			}
+		} else {
+			if ($command == "getshort") {
+				print "The delayed $arrivalTime to $destination,  expected at $expectedTime.";
+			} else {
+      		print "You can get the delayed $arrivalTime to $destination, now expected at $expectedTime. There is $graceMinutes minutes grace.\n";
+			}
+		}
+   }
+
+     #print $stream->get_trimmed_text("/tr");
+}
+
+?>

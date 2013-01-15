@@ -1,0 +1,29 @@
+#!/bin/bash
+
+MINVAR=/var/log/minerva
+PARAM=$1
+
+if [ "$PARAM" == "" ]; then
+  PARAM=all
+fi
+
+FILENAME=$MINVAR/cache/weather.txt
+
+if [ -f $FILENAME ]; then
+   case "$PARAM" in
+     today|0)
+        head -n1 $FILENAME
+        ;;
+     tomorrow|1)
+        tail -n 1 $FILENAME
+        ;;
+     *)
+        cat $FILENAME
+        ;;
+   esac
+   exit 0;
+else
+   echo "No weather data is currently available"
+   exit 1;
+fi
+

@@ -1,0 +1,23 @@
+#!/bin/bash
+
+MINBIN=/usr/local/minerva/bin
+LOGFILE=/var/log/minerva/minx/voxrecordpid
+DIR_MEDIA=/usr/local/minerva/media/
+DIR_INCOMING=/usr/local/minerva/media/voxrecord
+WAVPLAY=$MINBIN/wavplayer
+
+if [ "$1" == "start" ]; then
+  $WAVPLAY default play $DIR_MEDIA/wav/chime.wav
+  FILENAME=`mktemp -p $DIR_INCOMING`.wav
+  arecord -f cd -t wav $FILENAME >/dev/null >/dev/null 2>&1 &
+  PID=$!
+  echo $PID >$LOGFILE
+fi
+
+if [ "$1" == "stop" ]; then
+  PID=`cat $LOGFILE`
+  kill $PID
+  rm $LOGFILE
+  $WAVPLAY default play $DIR_MEDIA/wav/chime.wav
+fi
+

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+MESSAGE=$1
+MESSAGE=$(< /dev/stdin)
+echo $MESSAGE |  sed -e :a -e 's/<[^>]*>//g;/</N;//ba'
+

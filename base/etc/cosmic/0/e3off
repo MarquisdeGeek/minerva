@@ -1,0 +1,11 @@
+#!/bin/bash
+
+MINBIN=/usr/local/minerva/bin/
+
+if [ `$MINBIN/cdplayer default isplaying` == 0 ]; then
+   $MINBIN/wavplayer default play /usr/local/minerva/media/wav/chime.wav
+   $MINBIN/cdplayer default play 1
+else
+   $MINBIN/cdplayer default next
+fi
+

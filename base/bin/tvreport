@@ -1,0 +1,43 @@
+#!/usr/bin/php
+<?php
+ini_set('include_path', '/usr/local/minerva/:'.ini_get('include_path'));
+
+require_once 'bin/inc/tvguide/progs.inc';
+require_once 'bin/inc/tvguide/users.conf';
+require_once 'bin/inc/tvguide/channels.conf';
+
+   // argv[1] = device. Unused, but kept for uniformity
+   if ($argc < 2) {
+      print "tvreport <device> <username|all> [short|full]\n";
+      return 1;
+   }
+
+   $user = $argv[2];
+   if($user == "") {
+      $user = "public";
+   }
+
+   $type = $argv[3];
+   if($type == "") {
+      $type = "full";
+   }
+
+   $stations = TVGuide_Channels::getChannelList();
+   $u = TVGuide_Users::getUserGuide($user);
+   $day = 0;
+   $lastChannel = "";
+
+   if ($type == "full") {
+   foreach($stations as $id => $name) {
+      print "<h1>$name</h1>";
+      print $u->getDay($day)->getTableFor($id);
+   }
+   } else { // short
+      foreach($stations as $id => $name) {
+         print "$name=";
+         print $u->getDay($day)->getShortList($id);
+      }
+   }
+
+?>
+

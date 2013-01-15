@@ -1,0 +1,7 @@
+#!/bin/bash
+# Start a random selection of 5 music tracks
+
+MINBIN=/usr/local/minerva/bin/
+
+$MINBIN/manifest default start music 5 2>/dev/null >/dev/null
+

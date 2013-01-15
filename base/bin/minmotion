@@ -1,0 +1,25 @@
+<?php
+echo "Command not implemented..."
+/*
+
+
+01-20120109152127-00.jpg
+
+01-2012 01 09   15.21.27 -xx.jpg
+
+minmotion default list [today|date]
+minmotion default prune [today|date]
+minmotion default get [today|date] <opt:times> // list of SWFs etc
+
+[for applet, we expect a symlinked folder in /var/www to /home/motion]
+[for applet, config indicates both folders]
+
+<date datestamp="">
+  <set id="0" time=">
+    <anim url="swf"/>
+    <image url="stub" image_count=""/>
+
+
+*/
+?>
+

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+HDATE=`date +"%A the "`
+ 
+DAY=`date +%d`
+if [ $DAY == 01 -o $DAY == 21 -o $DAY == 31 ]; then
+  HDATE=$HDATE$DAY'st'
+elif [ $DAY == 02 -o $DAY == 22 ]; then
+  HDATE=$HDATE$DAY'nd'
+elif [ $DAY == 03 -o $DAY == 23 ]; then
+  HDATE=$HDATE$DAY'rd'
+elif [ $DAY -lt 10 ]; then
+  HDATE=$HDATE${DAY:1:1}'th'
+else
+  HDATE=$HDATE$DAY'th'
+fi
+
+HDATE=$HDATE"`date  +' of %B %Y'`"
+
+echo $HDATE
+

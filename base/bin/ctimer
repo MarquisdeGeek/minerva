@@ -1,0 +1,87 @@
+#!/bin/bash
+
+# NOTE: This doesn't use finddev, since it's the resulting announcement
+# that needs it.
+
+MINBIN=/usr/local/minerva/bin
+REPORT=$MINBIN/announce
+ALARM=$MINBIN/alarm 
+LOGDIR=/var/log/minerva/cosmic
+LOGFILE=$LOGDIR/timer
+IDFILE=$LOGDIR/timerid
+
+$MINBIN/minlog cmd $0 $*
+
+# Usage options:
+# $0 <device> press <TIME> 	increases time of current timer
+# $0 <device> start 		begin last timer
+# $0 <device> start <TIME>	begin N minut etimer
+# $0 <device> clear 		reset timer to 0, or start new timer
+DEVICE=$1
+COMMAND=$2
+PARAM=$3
+
+case $COMMAND in
+   init)
+       mkdir -p $LOGDIR
+       echo 0 > $LOGFILE
+       echo A > $IDFILE
+		chgrp -R minerva $LOGDIR/*
+		chmod -R ug+rw   $LOGDIR/*
+       ;;
+
+   start)
+       if [ $# == 3 ]; then
+          DURATION=$PARAM
+       elif [ -f $LOGFILE ]; then
+          DURATION=`cat $LOGFILE`
+       fi
+
+       if [ "$DURATION" != "0" ]; then
+         if [ -f $IDFILE ]; then
+            ID=`cat $IDFILE`
+         else
+            ID=A
+         fi
+
+         WAITSCRIPT=`mktemp`
+         DURATION_IN_SECONDS=$(($DURATION * 60))
+         echo sleep $DURATION_IN_SECONDS > $WAITSCRIPT
+         echo $ALARM $DEVICE $ID \"$DURATION minutes\" >> $WAITSCRIPT
+
+         echo $ID | tr A-Za-z B-ZAb-za > $IDFILE
+         echo 0 > $LOGFILE
+
+         $MINBIN/announce $DEVICE Timer $ID set for $DURATION minutes
+
+         (. $WAITSCRIPT &)& 2>&1 >/dev/null
+
+       else
+          $REPORT $DEVICE No timer set
+       fi
+       ;;
+
+   clear|init|reset)
+       echo 0 > $LOGFILE
+       $REPORT $DEVICE Timer cleared
+       ;;
+
+   press)
+      # increment current
+      if [ -f $LOGFILE ]; then
+           CURR=`cat $LOGFILE`
+           CURR=$((CURR + $PARAM))
+           echo $CURR >$LOGFILE
+           $REPORT $DEVICE $CURR minutes
+      else
+           echo $PARAM >$LOGFILE
+           $REPORT $DEVICE Set for $PARAM minutes
+      fi
+      ;;
+  
+   *)
+       echo "Usage: $0 <device> <init|press|start|clear> [time]"
+       ;;
+
+esac
+

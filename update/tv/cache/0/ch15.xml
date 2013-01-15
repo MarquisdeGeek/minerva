@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Wed Jul 11 08:45:25 2012 -->
+<channel id="five_us" source="XMLTV" date="11/07/2012">
+  <programme>
+<flags></flags>
+<desc>Drew Carey is the chairman for another session of comedy as a regular panel and guests create spontaneous routines and sketches based on suggestions from the studio audience.</desc>
+<title>Whose Line Is It Anyway?</title>
+<end>1230</end>
+<start>1200</start>
+  </programme>
+  <programme>
+<subtitle>Who Shot Sherlock</subtitle>
+<flags>(S)</flags>
+<desc>When a member of a Sherlock Holmes club is killed, Greg must figure out how he was murdered as part of his final proficiency test. (11/26)</desc>
+<title>CSI: Crime Scene Investigation</title>
+<end>1330</end>
+<start>1230</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Romantic drama starring Lisa Hartman and Rue McClanahan. A doctor with little time for romance attends her high-school reunion and meets her childhood sweetheart.</desc>
+<type>Film</type>
+<title>Back To You and Me</title>
+<year>2005</year>
+<end>1515</end>
+<start>1330</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>New Series. Frienemies. Charlie is forced to join forces with his arch-rival Marshall Penfield (Colin Hanks) in order to solve a case.</desc>
+<title>Numbers</title>
+<end>1615</end>
+<start>1515</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Romantic comedy about two chefs. In a bid to win a prestigious prize, their professional relationship turns into a recipe for love. Stars Lauren Holly and Costas Mandylor.</desc>
+<type>Film</type>
+<title>Just Desserts</title>
+<year>2004</year>
+<end>1800</end>
+<start>1615</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>New Series. Guilt Trip. When Robin loses a supposed 'slam dunk' case involving the murder of an informant, the team suspect the jury was tampered with.</desc>
+<title>Numbers</title>
+<end>1855</end>
+<start>1800</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Get your daily fix of the latest film and TV news from the USA. Presented by Mark Morris.</desc>
+<title>Inside Hollywood</title>
+<end>1900</end>
+<start>1855</start>
+  </programme>
+  <programme>
+<subtitle>Who Shot Sherlock</subtitle>
+<flags>(S)</flags>
+<desc>When a member of a Sherlock Holmes club is killed, Greg must figure out how he was murdered as part of his final proficiency test. (11/26)</desc>
+<title>CSI: Crime Scene Investigation</title>
+<end>2000</end>
+<start>1900</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>City of the Dolls. The body of a man is discovered buried among a pile of doll parts, leading Mac, Lindsay, Maka and Danny to one of their most bizarre crime scenes yet. (9/24)</desc>
+<title>CSI: New York</title>
+<end>2100</end>
+<start>2000</start>
+  </programme>
+  <programme>
+<subtitle>Blood Alley</subtitle>
+<flags></flags>
+<desc>Action-packed drama, created by and starring Steven Seagal. This week, the CIA asks Kane and his team to take down a high-level gang boss involved in human smuggling.</desc>
+<title>True Justice</title>
+<end>2200</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Action thriller starring Steven Seagal. A mercenary seeks revenge after being tricked into staging a prison break to free the son of an arms dealer.</desc>
+<type>Film</type>
+<title>Mercenary For Justice</title>
+<year>2006</year>
+<end>2355</end>
+<start>2200</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>As he is pursuing Boyd Crowder following the breakup of a Miami-based drug cartel, Raylan's investigation of a paroled sex offender brings the U.S. Marshal face-to-face with an old family nemesis.</desc>
+<title>Justified</title>
+<end>0100</end>
+<start>2355</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping</desc>
+<title>Teleshopping</title>
+<end>0130</end>
+<start>0100</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping on 5USA.</desc>
+<title>Teleshopping</title>
+<end>0200</end>
+<start>0130</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping on 5USA.</desc>
+<title>Teleshopping</title>
+<end>0230</end>
+<start>0200</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping on 5USA.</desc>
+<title>Teleshopping</title>
+<end>0300</end>
+<start>0230</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping</desc>
+<title>Teleshopping</title>
+<end>0330</end>
+<start>0300</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping on 5USA.</desc>
+<title>Teleshopping</title>
+<end>0400</end>
+<start>0330</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping on 5USA.</desc>
+<title>Teleshopping</title>
+<end>0430</end>
+<start>0400</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping</desc>
+<title>Teleshopping</title>
+<end>0500</end>
+<start>0430</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping on 5USA.</desc>
+<title>Teleshopping</title>
+<end>0530</end>
+<start>0500</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Teleshopping</desc>
+<title>Teleshopping</title>
+<end>0555</end>
+<start>0530</start>
+  </programme>
+</channel>

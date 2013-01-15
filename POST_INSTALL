@@ -1,0 +1,30 @@
+You will now need to make sure that the web server (www-data) has access
+to,
+
+* the CD-ROM if you intend to control it via the web. 
+* the serial port (/dev/ttyS0) if you intend to control heyu via the web
+
+So either add www-data to the minerva group and restart the web server, 
+or place the devices themselves into the Minerva group.
+
+usermod -G minerva -a www-data
+
+Repeat this for any of Linux users you want to be able to control Minerva.
+
+If you are using Cosmic, you will need to update /etc/heyu/x10.conf
+and run 
+
+   heyu restart 
+   heyu engine
+
+If you are wanting the TV guide, please add
+55  8  *   *   *      ~minerva/update/tv/daily_process.sh
+to your crontab.
+
+If you are wanting weather updates, please add
+0   5  *   *   *     ~minerva/update/weather
+to your crontab.
+
+You might also want to set the password to the 'minerva' user to something
+usable.
+

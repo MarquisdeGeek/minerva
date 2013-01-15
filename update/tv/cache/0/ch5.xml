@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Wed Jul 11 08:39:44 2012 -->
+<channel id="ch4" source="XMLTV" date="11/07/2012">
+  <programme>
+<flags>(S)</flags>
+<desc>Celebrity interviews, exclusives and an irresistible mix of music videos. Catch new videos from Conor Maynard and Katy Perry, plus an interview with The Vaccines.</desc>
+<title>Freshly Squeezed</title>
+<end>0735</end>
+<start>0705</start>
+  </programme>
+  <programme>
+<subtitle>Scary Movie</subtitle>
+<flags>(S)</flags>
+<desc>Gracie and Ruby start having nightmares after Jim takes them to see a scary film.</desc>
+<title>According to Jim</title>
+<end>0800</end>
+<start>0735</start>
+  </programme>
+  <programme>
+<subtitle>Older Women</subtitle>
+<flags>(S)</flags>
+<desc>It's the first Thanksgiving since Debra's parents divorced and she's happy they've agreed to have dinner with them, but Warren is bringing a date.</desc>
+<title>Everybody Loves Raymond</title>
+<end>0830</end>
+<start>0800</start>
+  </programme>
+  <programme>
+<subtitle>The Unkindest Cut of All</subtitle>
+<flags>(S)</flags>
+<desc>Frasier hopes to stop Eddie the dog from putting himself about after he finds himself foster-father to a litter of puppies sired by the mutt.</desc>
+<title>Frasier</title>
+<end>0900</end>
+<start>0830</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>David Rife, an owner of White Castle, the oldest fast-food chain in the US, wants to improve the business his grandfather founded 88 years ago, so he poses as a new recruit in the company.</desc>
+<title>Undercover Boss USA</title>
+<end>1000</end>
+<start>0900</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Can a collection of Christmas cards from Princess Diana to her personal chef, an original 1960s Dalek or a cigar owned by Winston Churchill make their owners rich?</desc>
+<title>Four Rooms</title>
+<end>1100</end>
+<start>1000</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>There is a surprise in store for ex-firefighter and first aider Mark Fretter, as Amanda Lamb and the team are let loose making over his home in Yorkshire just 36 hours.</desc>
+<title>You Deserve This House</title>
+<end>1200</end>
+<start>1100</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Includes news headlines and weather.</desc>
+<title>Channel 4 News Summary</title>
+<end>1205</end>
+<start>1200</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Jamie Oliver prepares crispy salmon with jazzed-up rice, baby courgette salad, gorgeous guacamole and berry spritzer.  [AD,S]</desc>
+<title>Jamie's 30 Minute Meals</title>
+<end>1230</end>
+<start>1205</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>...Sainsbury's and Channel 4 Present: The Boccia player and Paralympic gold medallist is very clear about his 2012 goals: to win a couple of gold medals and sing the national anthem badly.</desc>
+<title>London 2012: David Smith Pt III...</title>
+<end>1235</end>
+<start>1230</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>The brothers cook up the food of love, including a romantic breakfast in bed, some melt in the middle chocolate pots and a slow cooked cassoulet.</desc>
+<title>The Fabulous Baker Brothers</title>
+<end>1305</end>
+<start>1235</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>River Cottage head chef Gill shows how to make the most of left-over home-made bread, from the tasty Italian bread salad panzanella to the Christmas classic, bread sauce.</desc>
+<title>River Cottage Bites</title>
+<end>1315</end>
+<start>1305</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Michael Powell and Emeric Pressburger's Second World War drama in which a bomber crew must bail out over occupied Holland, where the Resistance try to help them find a way back home.</desc>
+<type>Film</type>
+<title>One of Our Aircraft Is Missing</title>
+<year>1942</year>
+<end>1510</end>
+<start>1315</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Nick Hewer hosts with Rachel Riley, as contestants race against the clock to pit their wits against vowels, consonants and numbers.The Dictionary Corner guest is Jo Brand.</desc>
+<title>Countdown</title>
+<end>1600</end>
+<start>1510</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Noel Edmonds asks the all-important question as contestants do battle with the Banker in their quest to leave the Dream Factory with £250,000.  [AD,S]</desc>
+<title>Deal or No Deal</title>
+<end>1700</end>
+<start>1600</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Mary and Nelson Haerr welcome their guests to The Meadowsweet Hotel in Llanrwst, North Wales, where most of the guests are bowled over by their rooms and activities include sheep herding.</desc>
+<title>Four in a Bed</title>
+<end>1730</end>
+<start>1700</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Stuart Henson is bringing the Serengeti to Milton Keynes. Can his exotic menu and parlour games smooth over the insults and tensions of the previous nights?</desc>
+<title>Come Dine with Me</title>
+<end>1800</end>
+<start>1730</start>
+  </programme>
+  <programme>
+<subtitle>Sweets and Sour Marge</subtitle>
+<flags></flags>
+<desc>Springfield is declared the fattest town on earth when Homer's attempt to create the world's biggest human pyramid goes disastrously wrong.  [AD,S]</desc>
+<title>The Simpsons</title>
+<end>1830</end>
+<start>1800</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>The village is reeling following yesterday's events. George is forced to spend the day in London with Ryan. Mercedes plays the doting carer as she works to keep Riley and Mitzeee apart.  [AD,S]</desc>
+<title>Hollyoaks</title>
+<end>1855</end>
+<start>1830</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Susie Leafe is a lay member of the General Synod of the Church of England. She believes that only men have the qualities of leadership and decision-making required to be a religious leader.</desc>
+<title>4thought.tv</title>
+<end>1900</end>
+<start>1855</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Includes sports and weather.</desc>
+<title>Channel 4 News</title>
+<end>1955</end>
+<start>1900</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>...Pt III: Sainsbury's and Channel 4 Present: The blind footballer, who has 121 caps and 116 England goals, has his heart set on gold at this year's Games. Here he reflects on his ambition.</desc>
+<title>London 2012: David Clarke...</title>
+<end>2000</end>
+<start>1955</start>
+  </programme>
+  <programme>
+<subtitle>...Skin</subtitle>
+<flags>(S)</flags>
+<desc>The doctors catch up with some of the show's most sensitive and scabby cases, all of them concerning the skin, from oozing, smelly underarms to a bottom wound that wouldn't heal.</desc>
+<title>Embarrassing Bodies: Under the...</title>
+<end>2100</end>
+<start>2000</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>This episode focuses on mothers and daughters, including Jackie, who's trying to come to terms with her terminally ill mother Josephine's mortality.</desc>
+<title>24 Hours in A&amp;E</title>
+<end>2200</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>In a groundbreaking experiment, the managing director of Pimlico Plumbers challenges his staff to tell each other how much they earn and to help establish a fairer system of pay.</desc>
+<title>Show Me Your Money</title>
+<end>2305</end>
+<start>2200</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Channel 4's nightly short-form arts strand. An epic battle starts with a click.</desc>
+<title>Random Acts</title>
+<end>2310</end>
+<start>2305</start>
+  </programme>
+  <programme>
+<subtitle>Bulldog</subtitle>
+<flags></flags>
+<desc>Sarah and Holder strive to retrieve vital evidence from the casino, while Stan is confronted with an agonising choice.  [AD,S]</desc>
+<title>The Killing</title>
+<end>0005</end>
+<start>2310</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Reality show following a group of colourful characters around the summer festivals. In this first episode, the mix of festival veterans and newcomers are at Blissfields in Hampshire.</desc>
+<title>Summer Daze with BlackBerry</title>
+<end>0035</end>
+<start>0005</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Exclusive chat and performance from Camden four piece Tribes with their debut album 'Baby'.</desc>
+<title>Music on 4: Tribes: Intro</title>
+<end>0050</end>
+<start>0035</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Profile of Yorkshire band The Cribs and the making of their new album 'Belly of the Brazen Bull'.</desc>
+<title>Music on 4: 4Play: The Cribs</title>
+<end>0100</end>
+<start>0050</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>...Pop and Dance: A round up of the week's hottest releases, latest videos and performances from the newest pop and dance acts.</desc>
+<title>Music on 4: Spotlight...</title>
+<end>0115</end>
+<start>0100</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>... Krushems: Will Best is joined by guest host Amy Childs. Featuring performances and interviews from Little Mix, Usher, Kelly Clarkson, Conor Maynard, Marina and the Diamonds and more!</desc>
+<title>Music on 4: The Crush with KFC...</title>
+<end>0210</end>
+<start>0115</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Drama starring Keke Palmer as Akeelah, a young girl from a ghetto, who makes it to the final of the National Spelling Bee with the help of her English coach (Laurence Fishburne).</desc>
+<type>Film</type>
+<title>Akeelah and the Bee</title>
+<year>2006</year>
+<end>0400</end>
+<start>0210</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>...That Paralympic Show: To celebrate the final programme of the series, the show hosts a very British tea party at the Olympic Park. Invited along are six key GB Paralympic hopefuls.  [AD,S,SL]</desc>
+<title>Road to London 2012:...</title>
+<end>0425</end>
+<start>0400</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Noel Edmonds asks the all-important question as contestants do battle with the Banker in their quest to leave the Dream Factory with £250,000.  [AD,S]</desc>
+<title>Deal or No Deal</title>
+<end>0520</end>
+<start>0425</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Nick Hewer hosts with Rachel Riley, as contestants race against the clock to pit their wits against vowels, consonants and numbers. The Dictionary Corner guest is Jo Brand.</desc>
+<title>Countdown</title>
+<end>0605</end>
+<start>0520</start>
+  </programme>
+</channel>

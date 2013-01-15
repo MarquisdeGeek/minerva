@@ -1,0 +1,39 @@
+#!/usr/bin/php
+<?php
+require("imdb_person.class.php");
+require("imdb.minerva.php");
+require("search.minerva.php");
+
+$charset = "iso-8859-1";
+
+$personID = $argv[1];
+$personID = getPersonID($personID);
+$person = new imdb_person($personID);
+$person->setid($personID);
+
+writeField("Name", $person->name(), "person", $personID);
+
+$birthday = $person->born();
+$birthday = $birthday["day"].".".$birthday["month"]." ".$birthday["year"];
+writeField("Born", $birthday);
+
+$deathday = $person->died();
+$deathday = $deathday["day"].".".$deathday["month"]." ".$deathday["year"];
+writeField("Died", $deathday);
+
+$bio = $person->bio();
+writeField("Biography", $bio[0]["desc"]);
+
+$ff = array("producer","director","actor","self");
+foreach ($ff as $var) {
+	$fdt = "movies_$var";
+	$filmo = $person->$fdt();
+	foreach ($filmo as $film) {
+		$entry = $film["name"];
+		if (!empty($film["chname"])) $entry.= " (".trim($film["chname"]).")";
+		writeField(ucfirst($var), $entry, "film", $film["mid"]);
+	}
+}
+
+return 0;
+?>

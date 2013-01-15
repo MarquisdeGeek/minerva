@@ -1,0 +1,25 @@
+#!/usr/bin/php
+<?php
+
+$url = "http://rss.slashdot.org/Slashdot/slashdot";
+$newsPrevious = $argv[1];
+$newsNext = $argv[2];
+$newsReader = $argv[3];
+
+$logPrev = "/var/log/minerva/rss/$newsPrevious";
+$logCurr = "/var/log/minerva/rss/$newsNext";
+
+$maxItems = 4;
+
+$previousLeadStory = file_get_contents("$logPrev/0");
+
+for($i=0;$i < $maxItems;++$i) {
+  $story = file_get_contents("$logCurr/$i");
+  if ($story != $previousLeadStory) {
+     $storyArray = preg_split("/\n/", $story);
+     system("$newsReader \"".$storyArray[0]."\"");
+  }
+}
+
+
+?>

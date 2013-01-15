@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- produced for the bleb.org TV system at Wed Jul 11 08:39:14 2012 -->
+<channel id="bbc1" source="XMLTV" date="11/07/2012">
+  <programme>
+<flags>(S)</flags>
+<desc>23/25. Series following the work of probate researchers. The heir hunters search for relatives of Red Cross nurse and hairdresser Ivy Hudson, who died at the ripe old age of 103.</desc>
+<title>Heir Hunters</title>
+<end>1000</end>
+<start>0915</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Martin Roberts and Lucy Alexander visit a house in Derby, a property in Gravesend, and a picturesque cottage in Dorset, and find out how much they sold for at auction. [S] Then BBC News; Weather.</desc>
+<title>Homes Under the Hammer</title>
+<end>1100</end>
+<start>1000</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Clive Holland has help for those who have fallen victim to cowboy builders. His team visits two Preston women on the same street whose homes were blighted by the same builder.</desc>
+<title>Cowboy Trap</title>
+<end>1145</end>
+<start>1100</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>8/10. Two siblings explain how their late mother was conned by rogue driveway installers. Also in HD. [S] Then BBC News; Weather.</desc>
+<title>Doorstep Crime 999</title>
+<end>1215</end>
+<start>1145</start>
+  </programme>
+  <programme>
+<subtitle>Norfolk</subtitle>
+<flags>(S)</flags>
+<desc>Antiques challenge. Two couples go head-to-head as experts Paul Laidlaw and Jonathan Pratt lead teams hailing from the US and Essex around the Norfolk Antiques Fair.</desc>
+<title>Bargain Hunt</title>
+<end>1300</end>
+<start>1215</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>The latest national and international news stories from the BBC News team, followed by weather.</desc>
+<title>BBC News at One</title>
+<end>1330</end>
+<start>1300</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>The latest news, sport and weather for the Midlands.</desc>
+<title>Midlands Today</title>
+<end>1345</end>
+<start>1330</start>
+  </programme>
+  <programme>
+<subtitle>Sweet Surrender</subtitle>
+<flags></flags>
+<desc>Daniel and Zara are at loggerheads over his plans to buy a new car, but when they meet a surrendered wife and her husband can they learn the art of compromise? Also in HD. [AD,S]</desc>
+<title>Doctors</title>
+<end>1415</end>
+<start>1345</start>
+  </programme>
+  <programme>
+<subtitle>Dorset</subtitle>
+<flags>(S)</flags>
+<desc>Property series. With 650,000 pounds, Nicki Chapman tries to help a couple find a house big enough to accommodate three teenage boys and three Rottweilers in rural Dorset.</desc>
+<title>Escape to the Country</title>
+<end>1500</end>
+<start>1415</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>The latest national and international news stories from the BBC News team, followed by weather.</desc>
+<title>BBC News</title>
+<end>1505</end>
+<start>1500</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>CBBC. Unseen: This show is devoted to the incredible critters Steve Backshall met on his travels who didn't quite make the Deadly 60 list. They still deserve their own programme.</desc>
+<title>Deadly 60</title>
+<end>1535</end>
+<start>1505</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>CBBC. Dream Machine: Comedy prank series. Prankster Olivia invites her friend Demi along to participate in a dream study at a sleep research centre. [S] Then Diddy Dick and Dom.</desc>
+<title>Prank Patrol Down Under</title>
+<end>1600</end>
+<start>1535</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>CBBC. Sam and Mark host as two families battle it out in a range of hilarious games, like Quick on the Draw, Mime Time, Music Round, and the formidable Copycats Challenge. Also in HD.</desc>
+<title>Copycats</title>
+<end>1630</end>
+<start>1600</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>CBBC. 12/13. Quirky quizzes and gory games. Rattus hates the first game - many of his cousins, uncles, aunts, sisters, brothers, friends and friends of friends come in for a bit of a bashing.</desc>
+<title>Horrible Histories: Gory Games</title>
+<end>1700</end>
+<start>1630</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>CBBC. Topical news magazine for children.</desc>
+<title>Newsround</title>
+<end>1715</end>
+<start>1700</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Quiz in which contestants try to score as few points as possible by plumbing the depths of their general knowledge to come up with the answers no-one else can think of.</desc>
+<title>Pointless</title>
+<end>1800</end>
+<start>1715</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>The latest national and international news stories from the BBC News team, followed by weather.</desc>
+<title>BBC News at Six</title>
+<end>1830</end>
+<start>1800</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>The latest news, sport and weather for the Midlands.</desc>
+<title>Midlands Today</title>
+<end>1900</end>
+<start>1830</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Matt Baker and Alex Jones bring you the stories that matter from across the country. Also in HD.</desc>
+<title>The One Show</title>
+<end>1930</end>
+<start>1900</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>3/15. Dominic Littlewood is with the Greater Manchester police as they root out the fakers in Britain's counterfeiting capital, the Strangeways district. Also in HD. [S] Then BBC News.</desc>
+<title>Fake Britain</title>
+<end>2000</end>
+<start>1930</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>6/6. Ottery St Mary: Nick Knowles and the SOS team enlist the help of the local community to finish converting a bungalow into a four-bedroom home for a family. Also in HD.</desc>
+<title>DIY SOS: The Big Build</title>
+<end>2100</end>
+<start>2000</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>1/2. Nick Hewer and Margaret Mountford head up an experiment to send pensioners back into full time work in Preston. Will any of the 14 pensioners be kept on for a second week? Also in HD. [AD,S]</desc>
+<title>The Town that Never Retired</title>
+<end>2200</end>
+<start>2100</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>The latest national and international news, with reports from BBC correspondents worldwide.</desc>
+<title>BBC News at Ten</title>
+<end>2225</end>
+<start>2200</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>The latest news, sport and weather for the Midlands. [S] Followed by national weather.</desc>
+<title>Midlands Today</title>
+<end>2235</end>
+<start>2225</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>...Night Draws. The National Lottery Wednesday night draws presented by John Partridge. Includes Lotto and Thunderball draws.</desc>
+<title>The National Lottery Wednesday...</title>
+<end>2245</end>
+<start>2235</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>5/11. Popular news quiz with team captains Paul Merton and Ian Hislop, guest host David Mitchell and guest panellists Roisin Conaty and Andy Hamilton.</desc>
+<title>Have I Got Old News for You</title>
+<end>2315</end>
+<start>2245</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>Thriller. Three disparate cops end up at the same deadly location. Contains very strong language, sexual content and some violence.  Also in HD. [2009] [S] Followed by National Lottery Update.</desc>
+<title>Brooklyn's Finest</title>
+<end>0120</end>
+<start>2315</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>Detailed weather forecast.</desc>
+<title>Weatherview</title>
+<end>0125</end>
+<start>0120</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>...Past. 3/3. Reconstructing a mysterious medieval building in Wales, 30 years after it was dismantled. [AD,S,SL]</desc>
+<title>Brick by Brick: Rebuilding Our...</title>
+<end>0225</end>
+<start>0125</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>2/2. Arts expert Michael Lynch draws on his experience to help bring long-term financial stability to the Theatre Royal in Bury St Edmunds - the UK's only working Regency theatre. [AD,S,SL]</desc>
+<title>Arts Troubleshooter</title>
+<end>0325</end>
+<start>0225</start>
+  </programme>
+  <programme>
+<flags></flags>
+<desc>12/15. Consumer series. Fake Britain goes on patrol with Trading Standards as they take on the takeaway pizza restaurants fooling the public with fake ingredients. [S,SL]</desc>
+<title>Fake Britain</title>
+<end>0410</end>
+<start>0325</start>
+  </programme>
+  <programme>
+<subtitle>South West Fish</subtitle>
+<flags></flags>
+<desc>Chefs Paul Ainsworth, Nathan Outlaw and Simon Hulstone cook their fish course. Great British Menu veteran Tom Kerridge decides who goes through to the judges. [S,SL]</desc>
+<title>Great British Menu</title>
+<end>0440</end>
+<start>0410</start>
+  </programme>
+  <programme>
+<flags>(S)</flags>
+<desc>BBC One joins the BBC's rolling news channel for a night of news, with bulletins on the hour and the headlines every 15 minutes.</desc>
+<title>BBC News</title>
+<end>0600</end>
+<start>0440</start>
+  </programme>
+</channel>

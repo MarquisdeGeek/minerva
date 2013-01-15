@@ -1,0 +1,21 @@
+#!/bin/bash
+CONFDIR=/usr/local/minerva/conf/infostream
+
+WHICH=$1
+PARAM=$2
+
+if [ "$WHICH" == "" ]; then
+	WHICH=all
+fi
+
+
+ls $CONFDIR |
+while read FILE
+do
+	if [[ "$WHICH" == "all" || "$WHICH" == "$FILE" ]]; then
+		. "$CONFDIR/$FILE" $PARAM 2>/dev/null
+	fi
+done
+
+
+

@@ -1,0 +1,34 @@
+#!/bin/bash
+
+MINBIN=/usr/local/minerva/bin
+MINMEDIA=/usr/local/minerva/media
+WAVPLAY=$MINBIN/wavplayer
+
+$MINBIN/minlog cmd $0 $*
+
+DEVICE=$1
+
+if [ "$DEVICE" == "" ]; then
+   DEVICE=default
+fi
+
+
+#
+# This just ensures the user knows we're preparing the status report
+#
+$MINBIN/announce $DEVICE Preparing status report
+
+STATUS=`$MINBIN/status`
+
+
+#
+# Now just say it all in one go!
+#
+$MINBIN/announce $DEVICE $STATUS
+
+#
+# end
+#
+$MINBIN/sfx $DEVICE end
+
+

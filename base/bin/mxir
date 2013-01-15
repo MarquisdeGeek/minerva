@@ -1,0 +1,10 @@
+#!/bin/bash
+
+MINBASE=/usr/local/minerva
+
+TYPE=$1; shift
+TODEVICE=$1; shift
+MSG=$1
+
+$MINBASE/bin/irsend default send $TODEVICE $MSG
+
